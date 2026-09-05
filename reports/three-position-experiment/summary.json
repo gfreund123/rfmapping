@@ -1,0 +1,852 @@
+{
+  "schema": "rfmapping.three-position-summary/v1",
+  "created_utc": "2026-09-05T23:51:08.259621+00:00",
+  "positions": [
+    {
+      "identity": {
+        "run_id": "2026-09-05T221649Z_position-01",
+        "position_id": "position-01",
+        "results_relative_path": "experiments/2026-09-05T221649Z_position-01/results.json",
+        "results_sha256_lf_utf8": "fd1ef16e5ddc4ed1813f7af2a0139a3967e6c3c62fff3298768131eb625817a0",
+        "review_sha256_lf_utf8": "2096f6e1402914aca5572f2dd5e91bdb88edd069aef0d94fe6a16f0aaa6832e5",
+        "bundle_sha256_lf_utf8": "2ec2213110388bf8ff2be2cdb183241c02d9ca8c0e68f6159f783516bc5e9040",
+        "position_note": "First multi-position capture at the original desk location.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "schema": "rfmapping.operator-events/v1",
+          "events": [
+            {
+              "recorded_utc": "2026-09-05T22:26:43.881295+00:00",
+              "event": "operator_motion_confirmation",
+              "reply": "Equipment fixed; I stayed in place",
+              "scope": "During the main multi-frequency position-01 capture. Annotation time, not a measured physical movement timestamp."
+            }
+          ],
+          "position_coordinates": "Not supplied; geometric-reference question remains unanswered."
+        },
+        "operator_metadata_sha256_lf_utf8": "7227a270c62fae72b3825359ce2cc4666616c2d691e084be4326f4b139dd1a45"
+      },
+      "rf_bursts": 242,
+      "raw_files": 817,
+      "raw_bytes": 2705326080,
+      "commanded_unmute_seconds": 92.97592190009891,
+      "paired_centers": 97,
+      "main_warnings": [
+        "95th percentile forward/reverse power change exceeds 0.5 dB."
+      ],
+      "median_absolute_repeat_difference_db": 0.30435508956881563,
+      "p95_absolute_repeat_difference_db": 0.6701724006215896,
+      "held_summaries": [
+        {
+          "center_hz": 5771500000,
+          "burst_count": 7,
+          "mean_db": -62.32081148582758,
+          "between_burst_sd_db": 0.014795893496373098,
+          "min_max_db": [
+            -62.34229823433595,
+            -62.29468551233984
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5771500000_initial",
+            "held_5771500000_repeat1",
+            "held_5771500000_repeat2",
+            "held_5771500000_repeat3",
+            "held_5771500000_repeat4",
+            "held_5771500000_repeat5",
+            "held_5771500000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5771500000_final_off"
+          ]
+        },
+        {
+          "center_hz": 5800000000,
+          "burst_count": 7,
+          "mean_db": -65.22184959157462,
+          "between_burst_sd_db": 0.04345850050554912,
+          "min_max_db": [
+            -65.28644690416677,
+            -65.16697985086
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5800000000_initial",
+            "held_5800000000_repeat1",
+            "held_5800000000_repeat2",
+            "held_5800000000_repeat3",
+            "held_5800000000_repeat4",
+            "held_5800000000_repeat5",
+            "held_5800000000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5800000000_final_off"
+          ]
+        },
+        {
+          "center_hz": 5853100000,
+          "burst_count": 7,
+          "mean_db": -71.31749281240238,
+          "between_burst_sd_db": 0.04902139203897868,
+          "min_max_db": [
+            -71.37682288008989,
+            -71.25915466567646
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5853100000_initial",
+            "held_5853100000_repeat1",
+            "held_5853100000_repeat2",
+            "held_5853100000_repeat3",
+            "held_5853100000_repeat4",
+            "held_5853100000_repeat5",
+            "held_5853100000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5853100000_final_off"
+          ]
+        }
+      ],
+      "final_mute_verified": true,
+      "fringe_stability_screen_passed": false,
+      "fringe_screen_failures": [
+        "Preferred delay changes by more than one inverse-bandwidth interval across baseline/metric choices.",
+        "Sweep-specific preferred delays disagree.",
+        "A preferred delay lies at a search boundary.",
+        "Ripple fails to improve blocked prediction by 10% for every baseline/metric choice.",
+        "Preferred delay is unstable across frequency-block fits."
+      ],
+      "fringe_preferred_delays_ns": [
+        7.0,
+        7.0,
+        118.5,
+        7.0,
+        7.0,
+        61.5
+      ],
+      "closure_summary": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.187746798711332,
+          "p95_absolute": 6.8045918166955595,
+          "max_absolute": 7.59928536137911
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 4.828347351217564,
+          "p95_absolute": 20.46782333610855,
+          "max_absolute": 41.240063675475454
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.08390237256374125,
+          "p95_absolute": 0.24758201109165834,
+          "max_absolute": 0.3956280734321179
+        }
+      },
+      "completed_profile_bursts": 240,
+      "fringe_file_sha256_lf_utf8": "5c21a09b9baf3bb94d2f2e8a08ca23cfcdb191a2767bfe3763ec59e1f1f8f25e",
+      "closure_file_sha256_lf_utf8": "f6751211f0443808d92a0d8910b4be43d4229da110d82912190979ee64be5ed6"
+    },
+    {
+      "identity": {
+        "run_id": "2026-09-05T225813Z_position-02",
+        "position_id": "position-02",
+        "results_relative_path": "experiments/2026-09-05T225813Z_position-02/results.json",
+        "results_sha256_lf_utf8": "00c068d41e83dae03da501a5a2aa84c8a9bc67874d6c8070af0ed39d04b14d75",
+        "review_sha256_lf_utf8": "64ae2d94a11f14afb632b307ac319dbcc95c819d66da1b826bebd9cd263dc944",
+        "bundle_sha256_lf_utf8": "67f0894058108e74dee43686ccbad581aaa83a886fe2a78224c9d9b282e7c7da",
+        "position_note": "Operator placed setup at spot 2. Reported SDR rotation approximately 140-220 degrees relative to spot 1; axis and direction unspecified. Position, height and antenna geometry unmeasured. Combined position-and-orientation comparison.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "recorded_utc": "2026-09-05T22:59:07.519115+00:00",
+          "events": [
+            {
+              "event": "placement_report",
+              "user_text": "youre in spot number 2, the sdr is roughly 140-220 degrees rotated around. cant gurantee more.",
+              "relative_orientation": {
+                "reference_position": "position-01",
+                "reported_rotation_interval_degrees": [
+                  140,
+                  220
+                ],
+                "source": "Operator estimate",
+                "axis_and_direction": null,
+                "interpretation": "Approximate interval, not a calibrated heading or probability distribution."
+              }
+            },
+            {
+              "event": "capture_instruction",
+              "instruction": "Keep setup fixed for the complete capture bundle and wait for a verified move cue."
+            },
+            {
+              "event": "blind_inference_preference",
+              "recorded_utc": "2026-09-05T22:59:25.973688+00:00",
+              "user_text": "thats for you to figure out :)",
+              "interpretation": "No position/height ground truth supplied. Treat these as unknown latent quantities; do not fill them with assumed coordinates. Operator position during capture also remains unspecified."
+            },
+            {
+              "event": "capture_completed_and_move_cue",
+              "recorded_utc": "2026-09-05T23:19:55.355823+00:00",
+              "completed_rf_bursts_main": 219,
+              "completed_rf_bursts_held_controls": 21,
+              "capture_review_passed": true,
+              "independent_final_tx_mute_verified": true,
+              "instruction": "Spot 2 is complete and verified. TX muted; operator may move to spot 3.",
+              "actual_movement_time": "Unknown; cue permits movement, does not assert it occurred."
+            }
+          ],
+          "coordinates_m": null,
+          "height_m": null,
+          "antenna_spacing_m": null,
+          "antenna_relative_angles": "Not explicitly confirmed after relocation.",
+          "operator_during_capture": "No further equipment or operator movement reported before the move cue; exact posture/presence not independently confirmed.",
+          "geometry_status_note": "User requests blind inference; no further placement measurements requested. Generic geometry placeholders in capture metadata remain unknown."
+        },
+        "operator_metadata_sha256_lf_utf8": "91d2cd57ecbc6fd70fe9ce593dc46d116dabb2949d8c5ef7e503ada3f39e87b3"
+      },
+      "rf_bursts": 240,
+      "raw_files": 812,
+      "raw_bytes": 2690646016,
+      "commanded_unmute_seconds": 91.99007230013376,
+      "paired_centers": 97,
+      "main_warnings": [
+        "95th percentile forward/reverse power change exceeds 0.5 dB."
+      ],
+      "median_absolute_repeat_difference_db": 0.3232086650646693,
+      "p95_absolute_repeat_difference_db": 0.9026140475556794,
+      "held_summaries": [
+        {
+          "center_hz": 5771500000,
+          "burst_count": 7,
+          "mean_db": -60.460146134660114,
+          "between_burst_sd_db": 0.03878466432410096,
+          "min_max_db": [
+            -60.511265807060326,
+            -60.409379987325345
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5771500000_initial",
+            "held_5771500000_repeat1",
+            "held_5771500000_repeat2",
+            "held_5771500000_repeat3",
+            "held_5771500000_repeat4",
+            "held_5771500000_repeat5",
+            "held_5771500000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5771500000_final_off"
+          ]
+        },
+        {
+          "center_hz": 5800000000,
+          "burst_count": 7,
+          "mean_db": -64.31600595304273,
+          "between_burst_sd_db": 0.0877210026363064,
+          "min_max_db": [
+            -64.47555298755579,
+            -64.21138828576674
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5800000000_initial",
+            "held_5800000000_repeat1",
+            "held_5800000000_repeat2",
+            "held_5800000000_repeat3",
+            "held_5800000000_repeat4",
+            "held_5800000000_repeat5",
+            "held_5800000000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5800000000_final_off"
+          ]
+        },
+        {
+          "center_hz": 5853100000,
+          "burst_count": 7,
+          "mean_db": -70.78953914482256,
+          "between_burst_sd_db": 0.04083012293192653,
+          "min_max_db": [
+            -70.86257005072784,
+            -70.74322697872648
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5853100000_initial",
+            "held_5853100000_repeat1",
+            "held_5853100000_repeat2",
+            "held_5853100000_repeat3",
+            "held_5853100000_repeat4",
+            "held_5853100000_repeat5",
+            "held_5853100000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5853100000_final_off"
+          ]
+        }
+      ],
+      "final_mute_verified": true,
+      "fringe_stability_screen_passed": false,
+      "fringe_screen_failures": [
+        "Preferred delay changes by more than one inverse-bandwidth interval across baseline/metric choices.",
+        "Sweep-specific preferred delays disagree.",
+        "A preferred delay lies at a search boundary.",
+        "Ripple fails to improve blocked prediction by 10% for every baseline/metric choice.",
+        "Preferred delay is unstable across frequency-block fits."
+      ],
+      "fringe_preferred_delays_ns": [
+        7.0,
+        7.75,
+        30.5,
+        7.0,
+        7.0,
+        12.25
+      ],
+      "closure_summary": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.12408402044627,
+          "p95_absolute": 6.895669680957386,
+          "max_absolute": 7.243886306609522
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 3.632193150604098,
+          "p95_absolute": 22.209848711135454,
+          "max_absolute": 57.957415043219235
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.060676064219765624,
+          "p95_absolute": 0.23811717993476997,
+          "max_absolute": 0.38382549392755944
+        }
+      },
+      "completed_profile_bursts": 240,
+      "fringe_file_sha256_lf_utf8": "880a51bf39a67411c8cd7cec9554a6b8fca4e1bb545ca54cbf3dffecb8031bb2",
+      "closure_file_sha256_lf_utf8": "e52a510bc306ab4088a4db169a6f24b3afd47d0cea0d1edac6778fcfe8c00179"
+    },
+    {
+      "identity": {
+        "run_id": "2026-09-05T232905Z_position-03",
+        "position_id": "position-03",
+        "results_relative_path": "experiments/2026-09-05T232905Z_position-03/results.json",
+        "results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe",
+        "review_sha256_lf_utf8": "59f79a39121baf5642ed9ceef617e2e4823ae7b0d4923923b644f880f25669ea",
+        "bundle_sha256_lf_utf8": "4beeb33b9eb7a448650663f27b83a8efdcdaf1a7dbb3889a1e965df9269c3c0a",
+        "position_note": "Third and final operator-chosen spot. SDR rotated approximately 30-60 degrees counterclockwise relative to spot 1, as described by imagining spot 1 turning counterclockwise. Location and height withheld for blind RF inference; antenna geometry unmeasured.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "recorded_utc": "2026-09-05T23:30:38.874538+00:00",
+          "events": [
+            {
+              "event": "third_and_final_placement",
+              "user_text": "ok go for the third and final spot - roughly 30-60 degree from spot 1 (imagine turning spot 1 counter clock wise) - go!",
+              "relative_orientation": {
+                "reference_position": "position-01",
+                "reported_rotation_interval_degrees": [
+                  30,
+                  60
+                ],
+                "direction": "counterclockwise",
+                "axis": "Not otherwise specified; operator described imagining spot 1 turning counterclockwise.",
+                "source": "Operator estimate",
+                "interpretation": "Approximate interval, not calibrated heading or a probability distribution."
+              }
+            },
+            {
+              "event": "capture_instruction",
+              "instruction": "Keep the setup fixed for the full capture and verification; this is the final planned position."
+            },
+            {
+              "recorded_utc": "2026-09-05T23:50:01.278858+00:00",
+              "event": "final_position_collection_complete",
+              "message": "Spot 3 is complete and verified. TX is muted, confirmed by a separate device readback. You can move freely now; no fourth spot is needed.",
+              "actual_subsequent_movement": "Not observed or asserted",
+              "final_state_check": "experiments/2026-09-05T232905Z_position-03/final-state-check.json",
+              "bundle": "experiments/2026-09-05T232905Z_position-03/bundle.json"
+            }
+          ],
+          "coordinates_m": null,
+          "height_m": null,
+          "antenna_spacing_m": null,
+          "operator_during_capture": "Instructed to keep equipment fixed; exact posture and movement not independently recorded.",
+          "blind_inference_preference": "Earlier user explicitly withheld placement/height ground truth and requested inference from RF."
+        },
+        "operator_metadata_sha256_lf_utf8": "85b682d12d26604144ccedad74bc260675c4060d54281149f037bd33e69f5e1a"
+      },
+      "rf_bursts": 240,
+      "raw_files": 812,
+      "raw_bytes": 2690646016,
+      "commanded_unmute_seconds": 92.30952460030676,
+      "paired_centers": 97,
+      "main_warnings": [
+        "95th percentile forward/reverse power change exceeds 0.5 dB."
+      ],
+      "median_absolute_repeat_difference_db": 0.3051587768359951,
+      "p95_absolute_repeat_difference_db": 0.7589891024938736,
+      "held_summaries": [
+        {
+          "center_hz": 5771500000,
+          "burst_count": 7,
+          "mean_db": -60.52884703612375,
+          "between_burst_sd_db": 0.07362413742602983,
+          "min_max_db": [
+            -60.627146971015065,
+            -60.44147850357052
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5771500000_initial",
+            "held_5771500000_repeat1",
+            "held_5771500000_repeat2",
+            "held_5771500000_repeat3",
+            "held_5771500000_repeat4",
+            "held_5771500000_repeat5",
+            "held_5771500000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5771500000_final_off"
+          ]
+        },
+        {
+          "center_hz": 5800000000,
+          "burst_count": 7,
+          "mean_db": -64.69227780267151,
+          "between_burst_sd_db": 0.07022135512804303,
+          "min_max_db": [
+            -64.80347099473776,
+            -64.594335617869
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5800000000_initial",
+            "held_5800000000_repeat1",
+            "held_5800000000_repeat2",
+            "held_5800000000_repeat3",
+            "held_5800000000_repeat4",
+            "held_5800000000_repeat5",
+            "held_5800000000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5800000000_final_off"
+          ]
+        },
+        {
+          "center_hz": 5853100000,
+          "burst_count": 7,
+          "mean_db": -70.79082186357098,
+          "between_burst_sd_db": 0.05355412407158031,
+          "min_max_db": [
+            -70.85500165968813,
+            -70.71259155543935
+          ],
+          "complete_train": true,
+          "pilot_ids": [
+            "held_5853100000_initial",
+            "held_5853100000_repeat1",
+            "held_5853100000_repeat2",
+            "held_5853100000_repeat3",
+            "held_5853100000_repeat4",
+            "held_5853100000_repeat5",
+            "held_5853100000_repeat6"
+          ],
+          "final_off_ids": [
+            "held_5853100000_final_off"
+          ]
+        }
+      ],
+      "final_mute_verified": true,
+      "fringe_stability_screen_passed": false,
+      "fringe_screen_failures": [
+        "Preferred delay changes by more than one inverse-bandwidth interval across baseline/metric choices.",
+        "Sweep-specific preferred delays disagree.",
+        "A preferred delay lies at a search boundary.",
+        "Ripple fails to improve blocked prediction by 10% for every baseline/metric choice.",
+        "Preferred delay is unstable across frequency-block fits."
+      ],
+      "fringe_preferred_delays_ns": [
+        7.0,
+        7.0,
+        47.75,
+        7.0,
+        7.0,
+        15.25
+      ],
+      "closure_summary": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.2111348267800315,
+          "p95_absolute": 7.030707895896712,
+          "max_absolute": 32.60056902847913
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 5.059131940847934,
+          "p95_absolute": 22.356414966118766,
+          "max_absolute": 229.73205938998535
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.06193143524666585,
+          "p95_absolute": 0.2643475462832655,
+          "max_absolute": 0.5124153648126946
+        }
+      },
+      "completed_profile_bursts": 240,
+      "fringe_file_sha256_lf_utf8": "e4cc11558ba66c7a3579a0eb6689e8f8ae0e32d105c104e13e16eec6f43b3699",
+      "closure_file_sha256_lf_utf8": "629cbf07e17a7f9cfae38e0dbb7201e789a2274a38a09185e84e4bf30249422a"
+    }
+  ],
+  "total_rf_bursts_including_retained_partial_controls": 722,
+  "total_verified_raw_files": 2441,
+  "total_verified_raw_bytes": 8086618112,
+  "total_commanded_unmute_seconds": 277.27551880053943,
+  "completed_profile_bursts": 720,
+  "full_profile_bursts": 720,
+  "all_final_mutes_verified": true,
+  "comparisons": [
+    {
+      "first": "position-01",
+      "second": "position-02",
+      "common_centers": 97,
+      "summary": {
+        "power_db": {
+          "median_second_minus_first_db": 1.4231860477439398,
+          "range_second_minus_first_db": [
+            -0.926943054580903,
+            2.8750590878422173
+          ],
+          "rms_after_removing_median_db": 1.0614917239480997,
+          "p95_absolute_after_removing_median_db": 1.880741951758338
+        },
+        "signal_to_averaging_noise_db": {
+          "median_second_minus_first_db": 1.4563966125849568,
+          "range_second_minus_first_db": [
+            -0.4535567203203108,
+            2.315496452839838
+          ],
+          "rms_after_removing_median_db": 0.9896207361370086,
+          "p95_absolute_after_removing_median_db": 1.8158051552387107
+        }
+      }
+    },
+    {
+      "first": "position-01",
+      "second": "position-03",
+      "common_centers": 97,
+      "summary": {
+        "power_db": {
+          "median_second_minus_first_db": 1.0073753173078046,
+          "range_second_minus_first_db": [
+            -0.7860103347613006,
+            2.2839198255341984
+          ],
+          "rms_after_removing_median_db": 0.8380903883765622,
+          "p95_absolute_after_removing_median_db": 1.3477345922398456
+        },
+        "signal_to_averaging_noise_db": {
+          "median_second_minus_first_db": 1.1356635177009977,
+          "range_second_minus_first_db": [
+            -0.3113545199824941,
+            2.0100725674973177
+          ],
+          "rms_after_removing_median_db": 0.8080690257444958,
+          "p95_absolute_after_removing_median_db": 1.3532905400411164
+        }
+      }
+    },
+    {
+      "first": "position-02",
+      "second": "position-03",
+      "common_centers": 97,
+      "summary": {
+        "power_db": {
+          "median_second_minus_first_db": -0.12909103582932602,
+          "range_second_minus_first_db": [
+            -1.102038070590801,
+            1.0736692380847472
+          ],
+          "rms_after_removing_median_db": 0.4187390897959426,
+          "p95_absolute_after_removing_median_db": 0.8928365491625783
+        },
+        "signal_to_averaging_noise_db": {
+          "median_second_minus_first_db": -0.226213248609632,
+          "range_second_minus_first_db": [
+            -0.41432269950226086,
+            0.33372187964740085
+          ],
+          "rms_after_removing_median_db": 0.18638449045050715,
+          "p95_absolute_after_removing_median_db": 0.3971520447041335
+        }
+      }
+    }
+  ],
+  "room_geometry_status": "not identified",
+  "wall_distances_m": null,
+  "room_dimensions_m": null,
+  "placement_coordinates_m": null,
+  "fringe_method_specificity_validated": false,
+  "validation_file_sha256_lf_utf8": "57ce4a52bd852b73743dbbbe646ac77fa377f10396cdde8d320a9bf779bc58ab",
+  "phase_shape_file_sha256_lf_utf8": "5a2ea36f2e2916a346b4819c3b0e00b71562a7370a7083581c1b91dd9fed73b7",
+  "phase_shape": {
+    "schema": "rfmapping.phase-shape-diagnostic/v1",
+    "created_utc": "2026-09-05T23:50:25.552068+00:00",
+    "training_run": "2026-09-05T221649Z_position-01",
+    "cubic_correction_rad_per_mhz3": -0.044123107373708316,
+    "unit_cubic_triangle_response_deg": -140.23823721895053,
+    "source_sha256": {
+      "phase_shape_diagnostic.py": "93f85cd8574abc7ee6068614b4c1b3a951765bb60f275a792073aaa119d1dd71",
+      "overlap_closure.py": "7e89a7957189c5c7df8373452befa5d74786dd49d74d2ae036ae55f928c8d516",
+      "compare_positions.py": "0017de4fff8ff196aea115cb25fc6e506633813e875009dae06ba0d82b83be13"
+    },
+    "absolute_delay_calibrated": false,
+    "room_geometry_validated": false,
+    "limits": "One effective cubic-offset phase term is fitted from spot 1 only. Improvement on other spots supports a repeatable measurement contribution but does not identify its physical cause. Noise, gain response, global phase/delay ambiguity and unknown geometry remain. No original complex samples are changed."
+  },
+  "phase_shape_placements": [
+    {
+      "input": {
+        "run_id": "2026-09-05T221649Z_position-01",
+        "position_id": "position-01",
+        "results_relative_path": "experiments/2026-09-05T221649Z_position-01/results.json",
+        "results_sha256_lf_utf8": "fd1ef16e5ddc4ed1813f7af2a0139a3967e6c3c62fff3298768131eb625817a0",
+        "review_sha256_lf_utf8": "2096f6e1402914aca5572f2dd5e91bdb88edd069aef0d94fe6a16f0aaa6832e5",
+        "bundle_sha256_lf_utf8": "2ec2213110388bf8ff2be2cdb183241c02d9ca8c0e68f6159f783516bc5e9040",
+        "position_note": "First multi-position capture at the original desk location.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "schema": "rfmapping.operator-events/v1",
+          "events": [
+            {
+              "recorded_utc": "2026-09-05T22:26:43.881295+00:00",
+              "event": "operator_motion_confirmation",
+              "reply": "Equipment fixed; I stayed in place",
+              "scope": "During the main multi-frequency position-01 capture. Annotation time, not a measured physical movement timestamp."
+            }
+          ],
+          "position_coordinates": "Not supplied; geometric-reference question remains unanswered."
+        },
+        "operator_metadata_sha256_lf_utf8": "7227a270c62fae72b3825359ce2cc4666616c2d691e084be4326f4b139dd1a45"
+      },
+      "role": "training",
+      "before": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.187746798711332,
+          "p95_absolute": 6.8045918166955595,
+          "max_absolute": 7.59928536137911
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 4.828347351217564,
+          "p95_absolute": 20.46782333610855,
+          "max_absolute": 41.240063675475454
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.08390237256374125,
+          "p95_absolute": 0.24758201109165834,
+          "max_absolute": 0.3956280734321179
+        }
+      },
+      "after": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 0.24119155151786953,
+          "p95_absolute": 0.8804320362521811,
+          "max_absolute": 3.216793837499365
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 4.816403578498967,
+          "p95_absolute": 20.47609792763398,
+          "max_absolute": 41.32258520205771
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.08396106286061522,
+          "p95_absolute": 0.24762365404003417,
+          "max_absolute": 0.3957575379830795
+        }
+      }
+    },
+    {
+      "input": {
+        "run_id": "2026-09-05T225813Z_position-02",
+        "position_id": "position-02",
+        "results_relative_path": "experiments/2026-09-05T225813Z_position-02/results.json",
+        "results_sha256_lf_utf8": "00c068d41e83dae03da501a5a2aa84c8a9bc67874d6c8070af0ed39d04b14d75",
+        "review_sha256_lf_utf8": "64ae2d94a11f14afb632b307ac319dbcc95c819d66da1b826bebd9cd263dc944",
+        "bundle_sha256_lf_utf8": "67f0894058108e74dee43686ccbad581aaa83a886fe2a78224c9d9b282e7c7da",
+        "position_note": "Operator placed setup at spot 2. Reported SDR rotation approximately 140-220 degrees relative to spot 1; axis and direction unspecified. Position, height and antenna geometry unmeasured. Combined position-and-orientation comparison.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "recorded_utc": "2026-09-05T22:59:07.519115+00:00",
+          "events": [
+            {
+              "event": "placement_report",
+              "user_text": "youre in spot number 2, the sdr is roughly 140-220 degrees rotated around. cant gurantee more.",
+              "relative_orientation": {
+                "reference_position": "position-01",
+                "reported_rotation_interval_degrees": [
+                  140,
+                  220
+                ],
+                "source": "Operator estimate",
+                "axis_and_direction": null,
+                "interpretation": "Approximate interval, not a calibrated heading or probability distribution."
+              }
+            },
+            {
+              "event": "capture_instruction",
+              "instruction": "Keep setup fixed for the complete capture bundle and wait for a verified move cue."
+            },
+            {
+              "event": "blind_inference_preference",
+              "recorded_utc": "2026-09-05T22:59:25.973688+00:00",
+              "user_text": "thats for you to figure out :)",
+              "interpretation": "No position/height ground truth supplied. Treat these as unknown latent quantities; do not fill them with assumed coordinates. Operator position during capture also remains unspecified."
+            },
+            {
+              "event": "capture_completed_and_move_cue",
+              "recorded_utc": "2026-09-05T23:19:55.355823+00:00",
+              "completed_rf_bursts_main": 219,
+              "completed_rf_bursts_held_controls": 21,
+              "capture_review_passed": true,
+              "independent_final_tx_mute_verified": true,
+              "instruction": "Spot 2 is complete and verified. TX muted; operator may move to spot 3.",
+              "actual_movement_time": "Unknown; cue permits movement, does not assert it occurred."
+            }
+          ],
+          "coordinates_m": null,
+          "height_m": null,
+          "antenna_spacing_m": null,
+          "antenna_relative_angles": "Not explicitly confirmed after relocation.",
+          "operator_during_capture": "No further equipment or operator movement reported before the move cue; exact posture/presence not independently confirmed.",
+          "geometry_status_note": "User requests blind inference; no further placement measurements requested. Generic geometry placeholders in capture metadata remain unknown."
+        },
+        "operator_metadata_sha256_lf_utf8": "91d2cd57ecbc6fd70fe9ce593dc46d116dabb2949d8c5ef7e503ada3f39e87b3"
+      },
+      "role": "held-out placement",
+      "before": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.12408402044627,
+          "p95_absolute": 6.895669680957386,
+          "max_absolute": 7.243886306609522
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 3.632193150604098,
+          "p95_absolute": 22.209848711135454,
+          "max_absolute": 57.957415043219235
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.060676064219765624,
+          "p95_absolute": 0.23811717993476997,
+          "max_absolute": 0.38382549392755944
+        }
+      },
+      "after": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 0.2732557106438488,
+          "p95_absolute": 0.9439171635728889,
+          "max_absolute": 1.712167835140954
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 3.562156441846501,
+          "p95_absolute": 22.29360238692115,
+          "max_absolute": 57.87472263592673
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.06069004295340408,
+          "p95_absolute": 0.23817310641827139,
+          "max_absolute": 0.38361417070580217
+        }
+      }
+    },
+    {
+      "input": {
+        "run_id": "2026-09-05T232905Z_position-03",
+        "position_id": "position-03",
+        "results_relative_path": "experiments/2026-09-05T232905Z_position-03/results.json",
+        "results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe",
+        "review_sha256_lf_utf8": "59f79a39121baf5642ed9ceef617e2e4823ae7b0d4923923b644f880f25669ea",
+        "bundle_sha256_lf_utf8": "4beeb33b9eb7a448650663f27b83a8efdcdaf1a7dbb3889a1e965df9269c3c0a",
+        "position_note": "Third and final operator-chosen spot. SDR rotated approximately 30-60 degrees counterclockwise relative to spot 1, as described by imagining spot 1 turning counterclockwise. Location and height withheld for blind RF inference; antenna geometry unmeasured.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "recorded_utc": "2026-09-05T23:30:38.874538+00:00",
+          "events": [
+            {
+              "event": "third_and_final_placement",
+              "user_text": "ok go for the third and final spot - roughly 30-60 degree from spot 1 (imagine turning spot 1 counter clock wise) - go!",
+              "relative_orientation": {
+                "reference_position": "position-01",
+                "reported_rotation_interval_degrees": [
+                  30,
+                  60
+                ],
+                "direction": "counterclockwise",
+                "axis": "Not otherwise specified; operator described imagining spot 1 turning counterclockwise.",
+                "source": "Operator estimate",
+                "interpretation": "Approximate interval, not calibrated heading or a probability distribution."
+              }
+            },
+            {
+              "event": "capture_instruction",
+              "instruction": "Keep the setup fixed for the full capture and verification; this is the final planned position."
+            },
+            {
+              "recorded_utc": "2026-09-05T23:50:01.278858+00:00",
+              "event": "final_position_collection_complete",
+              "message": "Spot 3 is complete and verified. TX is muted, confirmed by a separate device readback. You can move freely now; no fourth spot is needed.",
+              "actual_subsequent_movement": "Not observed or asserted",
+              "final_state_check": "experiments/2026-09-05T232905Z_position-03/final-state-check.json",
+              "bundle": "experiments/2026-09-05T232905Z_position-03/bundle.json"
+            }
+          ],
+          "coordinates_m": null,
+          "height_m": null,
+          "antenna_spacing_m": null,
+          "operator_during_capture": "Instructed to keep equipment fixed; exact posture and movement not independently recorded.",
+          "blind_inference_preference": "Earlier user explicitly withheld placement/height ground truth and requested inference from RF."
+        },
+        "operator_metadata_sha256_lf_utf8": "85b682d12d26604144ccedad74bc260675c4060d54281149f037bd33e69f5e1a"
+      },
+      "role": "held-out placement",
+      "before": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.2111348267800315,
+          "p95_absolute": 7.030707895896712,
+          "max_absolute": 32.60056902847913
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 5.059131940847934,
+          "p95_absolute": 22.356414966118766,
+          "max_absolute": 229.73205938998535
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.06193143524666585,
+          "p95_absolute": 0.2643475462832655,
+          "max_absolute": 0.5124153648126946
+        }
+      },
+      "after": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 0.26825202993666447,
+          "p95_absolute": 1.249677711390282,
+          "max_absolute": 28.32405950300369
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 5.141798341833399,
+          "p95_absolute": 22.273731762231037,
+          "max_absolute": 229.8141056849913
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.06182565835514457,
+          "p95_absolute": 0.26446381972617616,
+          "max_absolute": 0.5123526330071061
+        }
+      }
+    }
+  ],
+  "report_source_sha256": "2553a687cd90c343e4179c18433f4dcdcd96c45913157e53de21cec3b1ef6063"
+}

@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-05T23:50:13.428903+00:00",
+  "main_run": "2026-09-05T232905Z_position-03",
+  "position_id": "position-03",
+  "rf_bursts": 240,
+  "raw_file_count": 812,
+  "raw_bytes_verified": 2690646016,
+  "commanded_unmute_seconds": 92.30952460030676,
+  "all_stages_final_mute_verified": true,
+  "all_stages_restore_errors": [],
+  "temperature_readback_median_c": 37.719,
+  "temperature_readback_outliers": [],
+  "temperature_flag_rule": "More than 8 C from the median of all pilot readbacks; descriptive outlier flag, not a sensor diagnosis or calibration.",
+  "report_source_sha256": "f336da5344e1b33957c806f9f2e3dcd56754d815fdea1de6e32b4314b08130ec"
+}

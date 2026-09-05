@@ -1,0 +1,3110 @@
+{
+  "schema": "rfmapping.position-review/v1",
+  "run_id": "2026-09-05T232905Z_position-03",
+  "results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe",
+  "reviewed_utc": "2026-09-05T23:49:34.722617+00:00",
+  "raw_hashes_verified": true,
+  "raw_file_count": 764,
+  "raw_bytes": 2539651072,
+  "channel_file_count_verified": 219,
+  "blockers": [],
+  "warnings": [
+    "95th percentile forward/reverse power change exceeds 0.5 dB."
+  ],
+  "conservative_screen_weak_but_averaged_evidence_passed": [
+    "start_5853100000_repeat1",
+    "start_5853100000_repeat2",
+    "start_5853100000_repeat3",
+    "start_5853100000_atten48",
+    "forward_5830000000",
+    "forward_5831500000",
+    "forward_5833000000",
+    "forward_5834500000",
+    "forward_5836000000",
+    "forward_5837500000",
+    "forward_5839000000",
+    "forward_5840500000",
+    "forward_5842000000",
+    "forward_5843500000",
+    "forward_5845000000",
+    "forward_5846500000",
+    "forward_5848000000",
+    "forward_5849500000",
+    "forward_5851000000",
+    "forward_5852500000",
+    "forward_5854000000",
+    "forward_5855500000",
+    "forward_5857000000",
+    "forward_5858500000",
+    "forward_5860000000",
+    "forward_5861500000",
+    "forward_5863000000",
+    "forward_5864500000",
+    "forward_5866000000",
+    "forward_5867500000",
+    "forward_5869000000",
+    "forward_5870500000",
+    "forward_5872000000",
+    "middle_5853100000_repeat1",
+    "middle_5853100000_repeat2",
+    "middle_5853100000_repeat3",
+    "reverse_5872000000",
+    "reverse_5870500000",
+    "reverse_5869000000",
+    "reverse_5867500000",
+    "reverse_5866000000",
+    "reverse_5864500000",
+    "reverse_5863000000",
+    "reverse_5861500000",
+    "reverse_5860000000",
+    "reverse_5858500000",
+    "reverse_5857000000",
+    "reverse_5855500000",
+    "reverse_5854000000",
+    "reverse_5852500000",
+    "reverse_5851000000",
+    "reverse_5849500000",
+    "reverse_5848000000",
+    "reverse_5846500000",
+    "reverse_5845000000",
+    "reverse_5843500000",
+    "reverse_5842000000",
+    "reverse_5840500000",
+    "reverse_5839000000",
+    "reverse_5837500000",
+    "reverse_5836000000",
+    "reverse_5834500000",
+    "reverse_5833000000",
+    "reverse_5831500000",
+    "reverse_5830000000",
+    "end_5853100000_repeat1",
+    "end_5853100000_repeat2",
+    "end_5853100000_repeat3",
+    "end_5853100000_atten48"
+  ],
+  "averaged_evidence_rule": {
+    "minimum_correlation": 0.06,
+    "maximum_estimator_noise_to_signal_ratio": 0.25,
+    "maximum_phase_residual_rms_deg": 15
+  },
+  "acquisition_ready_to_move": true,
+  "mapping_ready": false,
+  "mapping_limit": "Retune phase, propagation delay and room geometry remain uncalibrated; position metadata may be unknown.",
+  "paired_centers": 97,
+  "planned_centers": 97,
+  "forward_reverse_median_abs_difference_db": 0.3051587768359951,
+  "forward_reverse_p95_abs_difference_db": 0.7589891024938736,
+  "forward_reverse_median_abs_snr_difference_db": 0.0766692803933822,
+  "forward_reverse_p95_abs_snr_difference_db": 0.19530736221415346,
+  "sweep_pairs": [
+    {
+      "center_hz": 5728000000,
+      "forward_db": -57.519402548053414,
+      "reverse_db": -56.84972189669081,
+      "reverse_minus_forward_db": 0.6696806513626044,
+      "reverse_minus_forward_snr_db": -0.09221087886763965,
+      "forward_correlation": 0.477704991242841,
+      "reverse_correlation": 0.4708603263685843
+    },
+    {
+      "center_hz": 5729500000,
+      "forward_db": -57.04327265048347,
+      "reverse_db": -57.44727059491307,
+      "reverse_minus_forward_db": -0.403997944429598,
+      "reverse_minus_forward_snr_db": -0.11914719570438777,
+      "forward_correlation": 0.4798486778541997,
+      "reverse_correlation": 0.47065223665072176
+    },
+    {
+      "center_hz": 5731000000,
+      "forward_db": -57.78486018258932,
+      "reverse_db": -57.088743647106234,
+      "reverse_minus_forward_db": 0.6961165354830854,
+      "reverse_minus_forward_snr_db": 0.013688868289311061,
+      "forward_correlation": 0.46858280207172187,
+      "reverse_correlation": 0.4768924153005585
+    },
+    {
+      "center_hz": 5732500000,
+      "forward_db": -57.39454631022063,
+      "reverse_db": -57.66311930461961,
+      "reverse_minus_forward_db": -0.26857299439897986,
+      "reverse_minus_forward_snr_db": 0.048378669428660134,
+      "forward_correlation": 0.4663104178623061,
+      "reverse_correlation": 0.47882186986855646
+    },
+    {
+      "center_hz": 5734000000,
+      "forward_db": -57.11995278874127,
+      "reverse_db": -57.13242050505062,
+      "reverse_minus_forward_db": -0.012467716309345178,
+      "reverse_minus_forward_snr_db": 0.13827420291135423,
+      "forward_correlation": 0.46041042747229266,
+      "reverse_correlation": 0.4723733904680871
+    },
+    {
+      "center_hz": 5735500000,
+      "forward_db": -57.789460205885554,
+      "reverse_db": -57.6040984300889,
+      "reverse_minus_forward_db": 0.18536177579665747,
+      "reverse_minus_forward_snr_db": 0.020836250391388866,
+      "forward_correlation": 0.4576561947078194,
+      "reverse_correlation": 0.45898161517283764
+    },
+    {
+      "center_hz": 5737000000,
+      "forward_db": -57.416214707447686,
+      "reverse_db": -58.16176178306048,
+      "reverse_minus_forward_db": -0.7455470756127909,
+      "reverse_minus_forward_snr_db": 0.028592202133194463,
+      "forward_correlation": 0.4519248801691147,
+      "reverse_correlation": 0.4529047298236296
+    },
+    {
+      "center_hz": 5738500000,
+      "forward_db": -58.00716319299943,
+      "reverse_db": -57.67871149910823,
+      "reverse_minus_forward_db": 0.32845169389119633,
+      "reverse_minus_forward_snr_db": -0.030730462887112505,
+      "forward_correlation": 0.4496061760467601,
+      "reverse_correlation": 0.44675680535837414
+    },
+    {
+      "center_hz": 5740000000,
+      "forward_db": -57.56350009000553,
+      "reverse_db": -58.46481925016202,
+      "reverse_minus_forward_db": -0.9013191601564898,
+      "reverse_minus_forward_snr_db": 0.09378101768014482,
+      "forward_correlation": 0.44140004297499924,
+      "reverse_correlation": 0.45586453158346507
+    },
+    {
+      "center_hz": 5741500000,
+      "forward_db": -58.118941861560344,
+      "reverse_db": -57.94770930956443,
+      "reverse_minus_forward_db": 0.1712325519959137,
+      "reverse_minus_forward_snr_db": -0.17641487003399123,
+      "forward_correlation": 0.4510001952833915,
+      "reverse_correlation": 0.4382236000430829
+    },
+    {
+      "center_hz": 5743000000,
+      "forward_db": -57.805701728977425,
+      "reverse_db": -58.70917077674104,
+      "reverse_minus_forward_db": -0.9034690477636147,
+      "reverse_minus_forward_snr_db": 0.15585759344405506,
+      "forward_correlation": 0.43342419645239505,
+      "reverse_correlation": 0.45033617660571457
+    },
+    {
+      "center_hz": 5744500000,
+      "forward_db": -58.64664561546307,
+      "reverse_db": -58.21585932721972,
+      "reverse_minus_forward_db": 0.43078628824335397,
+      "reverse_minus_forward_snr_db": 0.12668624672529727,
+      "forward_correlation": 0.43105608764555714,
+      "reverse_correlation": 0.44189926499132726
+    },
+    {
+      "center_hz": 5746000000,
+      "forward_db": -58.30006381870709,
+      "reverse_db": -58.88549012144835,
+      "reverse_minus_forward_db": -0.5854263027412614,
+      "reverse_minus_forward_snr_db": 0.016948075101875397,
+      "forward_correlation": 0.4268156671840727,
+      "reverse_correlation": 0.4299433408103922
+    },
+    {
+      "center_hz": 5747500000,
+      "forward_db": -59.073915329705116,
+      "reverse_db": -58.307973597722395,
+      "reverse_minus_forward_db": 0.7659417319827213,
+      "reverse_minus_forward_snr_db": 0.01959661231395664,
+      "forward_correlation": 0.4226609006007962,
+      "reverse_correlation": 0.4209268119594155
+    },
+    {
+      "center_hz": 5749000000,
+      "forward_db": -58.623196768139174,
+      "reverse_db": -58.89562565319671,
+      "reverse_minus_forward_db": -0.27242888505753626,
+      "reverse_minus_forward_snr_db": -0.037274854528089964,
+      "forward_correlation": 0.42813800051203343,
+      "reverse_correlation": 0.4264659000793176
+    },
+    {
+      "center_hz": 5750500000,
+      "forward_db": -59.31748450121069,
+      "reverse_db": -58.366449791835606,
+      "reverse_minus_forward_db": 0.9510347093750866,
+      "reverse_minus_forward_snr_db": -0.0169908874977492,
+      "forward_correlation": 0.41017446968958693,
+      "reverse_correlation": 0.4084146483161297
+    },
+    {
+      "center_hz": 5752000000,
+      "forward_db": -58.84987673931508,
+      "reverse_db": -59.072154909937275,
+      "reverse_minus_forward_db": -0.22227817062219657,
+      "reverse_minus_forward_snr_db": 0.11548329214255547,
+      "forward_correlation": 0.40805079377572256,
+      "reverse_correlation": 0.41716325823014566
+    },
+    {
+      "center_hz": 5753500000,
+      "forward_db": -59.51596359105614,
+      "reverse_db": -58.75871264593448,
+      "reverse_minus_forward_db": 0.7572509451216618,
+      "reverse_minus_forward_snr_db": 0.0766692803933822,
+      "forward_correlation": 0.4003877943078552,
+      "reverse_correlation": 0.40726617138063526
+    },
+    {
+      "center_hz": 5755000000,
+      "forward_db": -59.11988701920015,
+      "reverse_db": -59.425045796036144,
+      "reverse_minus_forward_db": -0.3051587768359951,
+      "reverse_minus_forward_snr_db": 0.03148223575321203,
+      "forward_correlation": 0.3924668731764187,
+      "reverse_correlation": 0.39794410786869416
+    },
+    {
+      "center_hz": 5756500000,
+      "forward_db": -58.97403167966256,
+      "reverse_db": -59.03886681031324,
+      "reverse_minus_forward_db": -0.06483513065067825,
+      "reverse_minus_forward_snr_db": 0.05868346069633281,
+      "forward_correlation": 0.38428411236146987,
+      "reverse_correlation": 0.3875929506915041
+    },
+    {
+      "center_hz": 5758000000,
+      "forward_db": -59.73121413175869,
+      "reverse_db": -59.686307489680445,
+      "reverse_minus_forward_db": 0.044906642078245795,
+      "reverse_minus_forward_snr_db": 0.18041865530964177,
+      "forward_correlation": 0.3820432204988503,
+      "reverse_correlation": 0.3976165176820886
+    },
+    {
+      "center_hz": 5759500000,
+      "forward_db": -59.42484862377611,
+      "reverse_db": -59.263275361937076,
+      "reverse_minus_forward_db": 0.1615732618390311,
+      "reverse_minus_forward_snr_db": 0.03957346766822558,
+      "forward_correlation": 0.3754987732328279,
+      "reverse_correlation": 0.3760300109653954
+    },
+    {
+      "center_hz": 5761000000,
+      "forward_db": -60.18175266416593,
+      "reverse_db": -59.804764361437606,
+      "reverse_minus_forward_db": 0.3769883027283214,
+      "reverse_minus_forward_snr_db": -0.01945620118451884,
+      "forward_correlation": 0.3745091088901833,
+      "reverse_correlation": 0.37182635557273025
+    },
+    {
+      "center_hz": 5762500000,
+      "forward_db": -59.83349197104788,
+      "reverse_db": -60.41746948053702,
+      "reverse_minus_forward_db": -0.5839775094891451,
+      "reverse_minus_forward_snr_db": -0.1442381662005522,
+      "forward_correlation": 0.3786639469385711,
+      "reverse_correlation": 0.36604574540883206
+    },
+    {
+      "center_hz": 5764000000,
+      "forward_db": -60.54323891495531,
+      "reverse_db": -59.93063472681072,
+      "reverse_minus_forward_db": 0.6126041881445872,
+      "reverse_minus_forward_snr_db": -0.13818744735856478,
+      "forward_correlation": 0.3731724467705644,
+      "reverse_correlation": 0.36093995334948703
+    },
+    {
+      "center_hz": 5765500000,
+      "forward_db": -60.065377893069716,
+      "reverse_db": -60.74204881995108,
+      "reverse_minus_forward_db": -0.6766709268813642,
+      "reverse_minus_forward_snr_db": 0.10075832266469031,
+      "forward_correlation": 0.3554813601001967,
+      "reverse_correlation": 0.3661125274921166
+    },
+    {
+      "center_hz": 5767000000,
+      "forward_db": -60.73702509397836,
+      "reverse_db": -60.350003352178085,
+      "reverse_minus_forward_db": 0.38702174180027527,
+      "reverse_minus_forward_snr_db": -0.17246990264916082,
+      "forward_correlation": 0.3629259365373695,
+      "reverse_correlation": 0.35146886446218106
+    },
+    {
+      "center_hz": 5768500000,
+      "forward_db": -60.47917909254001,
+      "reverse_db": -61.1121475760843,
+      "reverse_minus_forward_db": -0.632968483544289,
+      "reverse_minus_forward_snr_db": -0.010476480084892815,
+      "forward_correlation": 0.3441816021573824,
+      "reverse_correlation": 0.345856420958221
+    },
+    {
+      "center_hz": 5770000000,
+      "forward_db": -60.354550918269254,
+      "reverse_db": -60.696849828937744,
+      "reverse_minus_forward_db": -0.3422989106684895,
+      "reverse_minus_forward_snr_db": -0.1525070520123255,
+      "forward_correlation": 0.34735503927787115,
+      "reverse_correlation": 0.3387157195577999
+    },
+    {
+      "center_hz": 5771500000,
+      "forward_db": -61.0771518966343,
+      "reverse_db": -61.4018537178154,
+      "reverse_minus_forward_db": -0.324701821181101,
+      "reverse_minus_forward_snr_db": 0.11680887456774844,
+      "forward_correlation": 0.33510305271460694,
+      "reverse_correlation": 0.34459724539852843
+    },
+    {
+      "center_hz": 5773000000,
+      "forward_db": -60.77570465426791,
+      "reverse_db": -60.84475903251111,
+      "reverse_minus_forward_db": -0.06905437824319449,
+      "reverse_minus_forward_snr_db": -0.12184209503692697,
+      "forward_correlation": 0.33729140891059106,
+      "reverse_correlation": 0.32660409577416416
+    },
+    {
+      "center_hz": 5774500000,
+      "forward_db": -61.4897620906542,
+      "reverse_db": -61.43126678005105,
+      "reverse_minus_forward_db": 0.05849531060315627,
+      "reverse_minus_forward_snr_db": 0.15902693974199855,
+      "forward_correlation": 0.32362858135115513,
+      "reverse_correlation": 0.33435867287974286
+    },
+    {
+      "center_hz": 5776000000,
+      "forward_db": -61.12073868251539,
+      "reverse_db": -61.022793443732,
+      "reverse_minus_forward_db": 0.09794523878338879,
+      "reverse_minus_forward_snr_db": 0.1377579072972061,
+      "forward_correlation": 0.316143774017448,
+      "reverse_correlation": 0.3252802656452361
+    },
+    {
+      "center_hz": 5777500000,
+      "forward_db": -61.767483225587554,
+      "reverse_db": -61.70744253349882,
+      "reverse_minus_forward_db": 0.06004069208873375,
+      "reverse_minus_forward_snr_db": -0.09383233818498254,
+      "forward_correlation": 0.3229584138668846,
+      "reverse_correlation": 0.3112912570496956
+    },
+    {
+      "center_hz": 5779000000,
+      "forward_db": -61.39949405568278,
+      "reverse_db": -61.53995175086728,
+      "reverse_minus_forward_db": -0.14045769518450157,
+      "reverse_minus_forward_snr_db": 0.08522619589571026,
+      "forward_correlation": 0.3037656739688893,
+      "reverse_correlation": 0.3130811348019497
+    },
+    {
+      "center_hz": 5780500000,
+      "forward_db": -62.20015762938027,
+      "reverse_db": -62.18676744748485,
+      "reverse_minus_forward_db": 0.013390181895424291,
+      "reverse_minus_forward_snr_db": 0.007305130827735107,
+      "forward_correlation": 0.30013839037279144,
+      "reverse_correlation": 0.3012120115534884
+    },
+    {
+      "center_hz": 5782000000,
+      "forward_db": -61.970422455252034,
+      "reverse_db": -61.90241781520357,
+      "reverse_minus_forward_db": 0.06800464004846418,
+      "reverse_minus_forward_snr_db": -0.037935719055138005,
+      "forward_correlation": 0.2916333670550725,
+      "reverse_correlation": 0.29442295831433635
+    },
+    {
+      "center_hz": 5783500000,
+      "forward_db": -62.83321994163511,
+      "reverse_db": -62.51949561145213,
+      "reverse_minus_forward_db": 0.3137243301829784,
+      "reverse_minus_forward_snr_db": -0.032184142843300095,
+      "forward_correlation": 0.29074539885940276,
+      "reverse_correlation": 0.290209116239037
+    },
+    {
+      "center_hz": 5785000000,
+      "forward_db": -62.46598062047282,
+      "reverse_db": -62.13855768704552,
+      "reverse_minus_forward_db": 0.3274229334273002,
+      "reverse_minus_forward_snr_db": -0.16673583865104893,
+      "forward_correlation": 0.29134260881193463,
+      "reverse_correlation": 0.28040014158180115
+    },
+    {
+      "center_hz": 5786500000,
+      "forward_db": -63.226544783836786,
+      "reverse_db": -62.7615267088455,
+      "reverse_minus_forward_db": 0.4650180749912849,
+      "reverse_minus_forward_snr_db": 0.023638173560813734,
+      "forward_correlation": 0.28122383431830483,
+      "reverse_correlation": 0.28608141037868895
+    },
+    {
+      "center_hz": 5788000000,
+      "forward_db": -62.85660264571114,
+      "reverse_db": -63.34211008768648,
+      "reverse_minus_forward_db": -0.48550744197533646,
+      "reverse_minus_forward_snr_db": -0.057586748958798645,
+      "forward_correlation": 0.27927717913694583,
+      "reverse_correlation": 0.27680680996025414
+    },
+    {
+      "center_hz": 5789500000,
+      "forward_db": -63.551813230620944,
+      "reverse_db": -62.97577933250811,
+      "reverse_minus_forward_db": 0.5760338981128328,
+      "reverse_minus_forward_snr_db": -0.048503521249668294,
+      "forward_correlation": 0.2772698903729655,
+      "reverse_correlation": 0.2747153623370051
+    },
+    {
+      "center_hz": 5791000000,
+      "forward_db": -63.08811198921336,
+      "reverse_db": -63.7464336537636,
+      "reverse_minus_forward_db": -0.6583216645502432,
+      "reverse_minus_forward_snr_db": -0.0828437523518423,
+      "forward_correlation": 0.26915592972513214,
+      "reverse_correlation": 0.2661441696406339
+    },
+    {
+      "center_hz": 5792500000,
+      "forward_db": -63.895399210819726,
+      "reverse_db": -63.41783055114219,
+      "reverse_minus_forward_db": 0.47756865967753725,
+      "reverse_minus_forward_snr_db": -0.1869356833979197,
+      "forward_correlation": 0.26689708105375204,
+      "reverse_correlation": 0.25678853788095884
+    },
+    {
+      "center_hz": 5794000000,
+      "forward_db": -63.59648869846854,
+      "reverse_db": -64.24452802882354,
+      "reverse_minus_forward_db": -0.6480393303549974,
+      "reverse_minus_forward_snr_db": 0.07666023072085205,
+      "forward_correlation": 0.2517570535374367,
+      "reverse_correlation": 0.26071781576601255
+    },
+    {
+      "center_hz": 5795500000,
+      "forward_db": -63.43295680600859,
+      "reverse_db": -63.80240544265651,
+      "reverse_minus_forward_db": -0.36944863664791683,
+      "reverse_minus_forward_snr_db": -0.04935956113775012,
+      "forward_correlation": 0.25358656315987915,
+      "reverse_correlation": 0.25265190601904486
+    },
+    {
+      "center_hz": 5797000000,
+      "forward_db": -64.24319778557012,
+      "reverse_db": -64.53855246025262,
+      "reverse_minus_forward_db": -0.29535467468249976,
+      "reverse_minus_forward_snr_db": -0.016319321810892407,
+      "forward_correlation": 0.2501872885269929,
+      "reverse_correlation": 0.2493853137933673
+    },
+    {
+      "center_hz": 5798500000,
+      "forward_db": -63.8971557924668,
+      "reverse_db": -64.01339012706424,
+      "reverse_minus_forward_db": -0.11623433459744348,
+      "reverse_minus_forward_snr_db": 0.10554828896621259,
+      "forward_correlation": 0.23515727319247454,
+      "reverse_correlation": 0.24326458557174746
+    },
+    {
+      "center_hz": 5800000000,
+      "forward_db": -64.577270831541,
+      "reverse_db": -64.5691022910135,
+      "reverse_minus_forward_db": 0.008168540527506707,
+      "reverse_minus_forward_snr_db": -0.04903760288549762,
+      "forward_correlation": 0.23369188780959158,
+      "reverse_correlation": 0.23196148990866766
+    },
+    {
+      "center_hz": 5801500000,
+      "forward_db": -64.29150335802501,
+      "reverse_db": -64.24254677018179,
+      "reverse_minus_forward_db": 0.048956587843221655,
+      "reverse_minus_forward_snr_db": -0.15828997872147083,
+      "forward_correlation": 0.2322270188508124,
+      "reverse_correlation": 0.22498594940599181
+    },
+    {
+      "center_hz": 5803000000,
+      "forward_db": -64.93812541163818,
+      "reverse_db": -65.01884709513295,
+      "reverse_minus_forward_db": -0.08072168349477238,
+      "reverse_minus_forward_snr_db": 0.12527148526680276,
+      "forward_correlation": 0.22162835897469038,
+      "reverse_correlation": 0.2302159779883191
+    },
+    {
+      "center_hz": 5804500000,
+      "forward_db": -64.62607323958439,
+      "reverse_db": -64.67925749003535,
+      "reverse_minus_forward_db": -0.05318425045096831,
+      "reverse_minus_forward_snr_db": -0.062467317994848275,
+      "forward_correlation": 0.21744203667404152,
+      "reverse_correlation": 0.21625964292701716
+    },
+    {
+      "center_hz": 5806000000,
+      "forward_db": -65.61839193018427,
+      "reverse_db": -65.44691765930148,
+      "reverse_minus_forward_db": 0.171474270882797,
+      "reverse_minus_forward_snr_db": 0.08689589491454872,
+      "forward_correlation": 0.21422176044219565,
+      "reverse_correlation": 0.2195162898151481
+    },
+    {
+      "center_hz": 5807500000,
+      "forward_db": -65.34136468591198,
+      "reverse_db": -65.17178285662041,
+      "reverse_minus_forward_db": 0.16958182929157317,
+      "reverse_minus_forward_snr_db": -0.0773197177625382,
+      "forward_correlation": 0.2089790683009749,
+      "reverse_correlation": 0.20733375178024543
+    },
+    {
+      "center_hz": 5809000000,
+      "forward_db": -66.17835188192981,
+      "reverse_db": -65.81313513653014,
+      "reverse_minus_forward_db": 0.3652167453996782,
+      "reverse_minus_forward_snr_db": -0.05309365845394042,
+      "forward_correlation": 0.21116419544587475,
+      "reverse_correlation": 0.20902835689616994
+    },
+    {
+      "center_hz": 5810500000,
+      "forward_db": -65.84892582196962,
+      "reverse_db": -65.42911434054159,
+      "reverse_minus_forward_db": 0.4198114814280274,
+      "reverse_minus_forward_snr_db": -0.16029300516963707,
+      "forward_correlation": 0.20353978948942358,
+      "reverse_correlation": 0.1977008233116188
+    },
+    {
+      "center_hz": 5812000000,
+      "forward_db": -65.6354549469563,
+      "reverse_db": -65.95099125310934,
+      "reverse_minus_forward_db": -0.3155363061530352,
+      "reverse_minus_forward_snr_db": -0.098838479152909,
+      "forward_correlation": 0.19871868095026252,
+      "reverse_correlation": 0.19442807507201554
+    },
+    {
+      "center_hz": 5813500000,
+      "forward_db": -66.27303697047384,
+      "reverse_db": -66.62392923114302,
+      "reverse_minus_forward_db": -0.350892260669184,
+      "reverse_minus_forward_snr_db": -0.07132413790513428,
+      "forward_correlation": 0.19059597244122714,
+      "reverse_correlation": 0.1904294572817059
+    },
+    {
+      "center_hz": 5815000000,
+      "forward_db": -66.01534132844138,
+      "reverse_db": -66.29466053328316,
+      "reverse_minus_forward_db": -0.27931920484178363,
+      "reverse_minus_forward_snr_db": -0.18651173561915216,
+      "forward_correlation": 0.19032569736146954,
+      "reverse_correlation": 0.18332082741243982
+    },
+    {
+      "center_hz": 5816500000,
+      "forward_db": -66.7837216068223,
+      "reverse_db": -67.09579400154519,
+      "reverse_minus_forward_db": -0.3120723947228896,
+      "reverse_minus_forward_snr_db": -0.1120264704238359,
+      "forward_correlation": 0.18578131655497293,
+      "reverse_correlation": 0.18227611058835896
+    },
+    {
+      "center_hz": 5818000000,
+      "forward_db": -66.61673220345027,
+      "reverse_db": -66.68912811392381,
+      "reverse_minus_forward_db": -0.07239591047354565,
+      "reverse_minus_forward_snr_db": 0.004329779287633404,
+      "forward_correlation": 0.17742855494106813,
+      "reverse_correlation": 0.1764238009202792
+    },
+    {
+      "center_hz": 5819500000,
+      "forward_db": -67.5178047337104,
+      "reverse_db": -67.51252451181324,
+      "reverse_minus_forward_db": 0.005280221897166371,
+      "reverse_minus_forward_snr_db": -0.05426029736485937,
+      "forward_correlation": 0.17957139822139095,
+      "reverse_correlation": 0.1790718948993077
+    },
+    {
+      "center_hz": 5821000000,
+      "forward_db": -67.21759004352609,
+      "reverse_db": -67.06463482462149,
+      "reverse_minus_forward_db": 0.1529552189045944,
+      "reverse_minus_forward_snr_db": -0.00010147097159029257,
+      "forward_correlation": 0.1748137258880343,
+      "reverse_correlation": 0.17509116624867088
+    },
+    {
+      "center_hz": 5822500000,
+      "forward_db": -68.00773859826974,
+      "reverse_db": -67.68390063078913,
+      "reverse_minus_forward_db": 0.323837967480614,
+      "reverse_minus_forward_snr_db": 0.02845245835907309,
+      "forward_correlation": 0.16617273618532669,
+      "reverse_correlation": 0.1657203547916028
+    },
+    {
+      "center_hz": 5824000000,
+      "forward_db": -67.62656078757539,
+      "reverse_db": -67.39331741247527,
+      "reverse_minus_forward_db": 0.23324337510011617,
+      "reverse_minus_forward_snr_db": 0.04673251707348805,
+      "forward_correlation": 0.16205409297031065,
+      "reverse_correlation": 0.16531593843649806
+    },
+    {
+      "center_hz": 5825500000,
+      "forward_db": -68.41089585944013,
+      "reverse_db": -67.84191273768536,
+      "reverse_minus_forward_db": 0.5689831217547692,
+      "reverse_minus_forward_snr_db": -0.1575836829113897,
+      "forward_correlation": 0.16549177936429021,
+      "reverse_correlation": 0.15737104868979127
+    },
+    {
+      "center_hz": 5827000000,
+      "forward_db": -68.00231087730481,
+      "reverse_db": -68.62367328430753,
+      "reverse_minus_forward_db": -0.6213624070027208,
+      "reverse_minus_forward_snr_db": 0.1418209231098682,
+      "forward_correlation": 0.1524962694034149,
+      "reverse_correlation": 0.1593609247964417
+    },
+    {
+      "center_hz": 5828500000,
+      "forward_db": -68.72694406685905,
+      "reverse_db": -68.24762324001557,
+      "reverse_minus_forward_db": 0.47932082684347677,
+      "reverse_minus_forward_snr_db": 0.1946291641935183,
+      "forward_correlation": 0.15019711419953674,
+      "reverse_correlation": 0.15722898865833487
+    },
+    {
+      "center_hz": 5830000000,
+      "forward_db": -68.53366036618263,
+      "reverse_db": -69.0653642143787,
+      "reverse_minus_forward_db": -0.5317038481960736,
+      "reverse_minus_forward_snr_db": 0.05480116212733423,
+      "forward_correlation": 0.14624778990759726,
+      "reverse_correlation": 0.1469296162363986
+    },
+    {
+      "center_hz": 5831500000,
+      "forward_db": -68.41280652495436,
+      "reverse_db": -68.58479677180088,
+      "reverse_minus_forward_db": -0.1719902468465193,
+      "reverse_minus_forward_snr_db": 0.18766802019782478,
+      "forward_correlation": 0.14246269319216706,
+      "reverse_correlation": 0.1456331905481446
+    },
+    {
+      "center_hz": 5833000000,
+      "forward_db": -69.11714364758906,
+      "reverse_db": -69.38037438171925,
+      "reverse_minus_forward_db": -0.2632307341301896,
+      "reverse_minus_forward_snr_db": 0.05075156131205853,
+      "forward_correlation": 0.14073808124265663,
+      "reverse_correlation": 0.14157647619498925
+    },
+    {
+      "center_hz": 5834500000,
+      "forward_db": -68.86920323496044,
+      "reverse_db": -68.97532787661578,
+      "reverse_minus_forward_db": -0.10612464165534163,
+      "reverse_minus_forward_snr_db": 0.18396716677607972,
+      "forward_correlation": 0.1371903053737999,
+      "reverse_correlation": 0.14200224837351777
+    },
+    {
+      "center_hz": 5836000000,
+      "forward_db": -69.5548220935218,
+      "reverse_db": -69.56815190792697,
+      "reverse_minus_forward_db": -0.013329814405167895,
+      "reverse_minus_forward_snr_db": 0.2691098201289368,
+      "forward_correlation": 0.1336939104006734,
+      "reverse_correlation": 0.1426091511859353
+    },
+    {
+      "center_hz": 5837500000,
+      "forward_db": -69.14446230101976,
+      "reverse_db": -69.0837300937907,
+      "reverse_minus_forward_db": 0.06073220722905148,
+      "reverse_minus_forward_snr_db": 0.04431660454245066,
+      "forward_correlation": 0.13114010794160175,
+      "reverse_correlation": 0.13356397702746362
+    },
+    {
+      "center_hz": 5839000000,
+      "forward_db": -69.80187527485795,
+      "reverse_db": -69.70581520819334,
+      "reverse_minus_forward_db": 0.09606006666460587,
+      "reverse_minus_forward_snr_db": 0.025691743997421454,
+      "forward_correlation": 0.13121868517847307,
+      "reverse_correlation": 0.13026252888773082
+    },
+    {
+      "center_hz": 5840500000,
+      "forward_db": -69.49842871030746,
+      "reverse_db": -69.47858030667152,
+      "reverse_minus_forward_db": 0.01984840363594742,
+      "reverse_minus_forward_snr_db": 0.20911997294194476,
+      "forward_correlation": 0.12501872865962102,
+      "reverse_correlation": 0.1313624452090187
+    },
+    {
+      "center_hz": 5842000000,
+      "forward_db": -70.18409672748416,
+      "reverse_db": -70.07404915443144,
+      "reverse_minus_forward_db": 0.11004757305272506,
+      "reverse_minus_forward_snr_db": -0.035248716998549624,
+      "forward_correlation": 0.13046452899302236,
+      "reverse_correlation": 0.12660153078271677
+    },
+    {
+      "center_hz": 5843500000,
+      "forward_db": -69.86036060670946,
+      "reverse_db": -69.75261048426465,
+      "reverse_minus_forward_db": 0.10775012244481275,
+      "reverse_minus_forward_snr_db": -0.011235001269638428,
+      "forward_correlation": 0.12381640855619977,
+      "reverse_correlation": 0.12319945472669258
+    },
+    {
+      "center_hz": 5845000000,
+      "forward_db": -70.75105867958436,
+      "reverse_db": -70.42878989108794,
+      "reverse_minus_forward_db": 0.32226878849641594,
+      "reverse_minus_forward_snr_db": 0.02080723369021136,
+      "forward_correlation": 0.12197090589747317,
+      "reverse_correlation": 0.12133579428131419
+    },
+    {
+      "center_hz": 5846500000,
+      "forward_db": -70.29998204523694,
+      "reverse_db": -70.04317797425139,
+      "reverse_minus_forward_db": 0.25680407098555236,
+      "reverse_minus_forward_snr_db": 0.13091875430094024,
+      "forward_correlation": 0.11944452158310521,
+      "reverse_correlation": 0.12362199005144303
+    },
+    {
+      "center_hz": 5848000000,
+      "forward_db": -71.00191757375752,
+      "reverse_db": -70.5656048085439,
+      "reverse_minus_forward_db": 0.4363127652136285,
+      "reverse_minus_forward_snr_db": -0.06620025312669404,
+      "forward_correlation": 0.11938860624214769,
+      "reverse_correlation": 0.11865866099156948
+    },
+    {
+      "center_hz": 5849500000,
+      "forward_db": -70.59830865475769,
+      "reverse_db": -71.17819079146827,
+      "reverse_minus_forward_db": -0.5798821367105802,
+      "reverse_minus_forward_snr_db": -0.001216772987783519,
+      "forward_correlation": 0.11537886496612357,
+      "reverse_correlation": 0.11673182121778514
+    },
+    {
+      "center_hz": 5851000000,
+      "forward_db": -71.2783812340509,
+      "reverse_db": -70.56021638185837,
+      "reverse_minus_forward_db": 0.7181648521925297,
+      "reverse_minus_forward_snr_db": -0.05034135365165261,
+      "forward_correlation": 0.11579553857786537,
+      "reverse_correlation": 0.11348213025505755
+    },
+    {
+      "center_hz": 5852500000,
+      "forward_db": -70.80026274443563,
+      "reverse_db": -71.32579318123491,
+      "reverse_minus_forward_db": -0.5255304367992863,
+      "reverse_minus_forward_snr_db": -0.023289427849671893,
+      "forward_correlation": 0.11289920660302633,
+      "reverse_correlation": 0.11313816262306177
+    },
+    {
+      "center_hz": 5854000000,
+      "forward_db": -71.4344906053938,
+      "reverse_db": -70.91264413374904,
+      "reverse_minus_forward_db": 0.5218464716447642,
+      "reverse_minus_forward_snr_db": -0.22344601058040006,
+      "forward_correlation": 0.11581091554278525,
+      "reverse_correlation": 0.10999531552726724
+    },
+    {
+      "center_hz": 5855500000,
+      "forward_db": -71.21702338928137,
+      "reverse_db": -71.58735067601837,
+      "reverse_minus_forward_db": -0.3703272867370089,
+      "reverse_minus_forward_snr_db": 0.07180207967687706,
+      "forward_correlation": 0.10875155267548339,
+      "reverse_correlation": 0.10918890744466306
+    },
+    {
+      "center_hz": 5857000000,
+      "forward_db": -71.03397346571703,
+      "reverse_db": -71.16222934778344,
+      "reverse_minus_forward_db": -0.12825588206641214,
+      "reverse_minus_forward_snr_db": 0.1980201542966943,
+      "forward_correlation": 0.1067626114626417,
+      "reverse_correlation": 0.11059215803301076
+    },
+    {
+      "center_hz": 5858500000,
+      "forward_db": -71.68653499810615,
+      "reverse_db": -71.8394254526228,
+      "reverse_minus_forward_db": -0.15289045451665118,
+      "reverse_minus_forward_snr_db": 0.10202640818057974,
+      "forward_correlation": 0.10539169417679525,
+      "reverse_correlation": 0.10876098634075637
+    },
+    {
+      "center_hz": 5860000000,
+      "forward_db": -71.40865694734288,
+      "reverse_db": -71.41514046295815,
+      "reverse_minus_forward_db": -0.006483515615272495,
+      "reverse_minus_forward_snr_db": 0.0042708362595009,
+      "forward_correlation": 0.10167764807735424,
+      "reverse_correlation": 0.1021122336951004
+    },
+    {
+      "center_hz": 5861500000,
+      "forward_db": -71.96491797624091,
+      "reverse_db": -71.9369681668647,
+      "reverse_minus_forward_db": 0.027949809376210055,
+      "reverse_minus_forward_snr_db": -0.06563898653981647,
+      "forward_correlation": 0.10279510394205953,
+      "reverse_correlation": 0.1022121030474199
+    },
+    {
+      "center_hz": 5863000000,
+      "forward_db": -71.70143097807326,
+      "reverse_db": -72.53896271280156,
+      "reverse_minus_forward_db": -0.8375317347283016,
+      "reverse_minus_forward_snr_db": 0.21225525268207326,
+      "forward_correlation": 0.09844992352144884,
+      "reverse_correlation": 0.10332613611390509
+    },
+    {
+      "center_hz": 5864500000,
+      "forward_db": -72.28130026008118,
+      "reverse_db": -72.17166645726654,
+      "reverse_minus_forward_db": 0.10963380281464197,
+      "reverse_minus_forward_snr_db": 0.10923813813343862,
+      "forward_correlation": 0.09783391200798436,
+      "reverse_correlation": 0.09984290642741353
+    },
+    {
+      "center_hz": 5866000000,
+      "forward_db": -71.89254640201938,
+      "reverse_db": -71.98015039315868,
+      "reverse_minus_forward_db": -0.08760399113930362,
+      "reverse_minus_forward_snr_db": -0.013741817935476734,
+      "forward_correlation": 0.0947047521080212,
+      "reverse_correlation": 0.0950823129522071
+    },
+    {
+      "center_hz": 5867500000,
+      "forward_db": -72.59773751062922,
+      "reverse_db": -72.58569049010185,
+      "reverse_minus_forward_db": 0.012047020527361951,
+      "reverse_minus_forward_snr_db": 0.0783403631291735,
+      "forward_correlation": 0.09383420888375954,
+      "reverse_correlation": 0.09580943666858079
+    },
+    {
+      "center_hz": 5869000000,
+      "forward_db": -72.2439924351379,
+      "reverse_db": -72.19194001194577,
+      "reverse_minus_forward_db": 0.05205242319212289,
+      "reverse_minus_forward_snr_db": 0.004787148431754117,
+      "forward_correlation": 0.09372649470421962,
+      "reverse_correlation": 0.09306511200229772
+    },
+    {
+      "center_hz": 5870500000,
+      "forward_db": -73.16163885639078,
+      "reverse_db": -72.87489163624912,
+      "reverse_minus_forward_db": 0.2867472201416632,
+      "reverse_minus_forward_snr_db": -0.14971055924276538,
+      "forward_correlation": 0.09502292163948359,
+      "reverse_correlation": 0.09240574619321282
+    },
+    {
+      "center_hz": 5872000000,
+      "forward_db": -72.77803798715459,
+      "reverse_db": -72.41507304315004,
+      "reverse_minus_forward_db": 0.3629649440045455,
+      "reverse_minus_forward_snr_db": 0.1815581044270786,
+      "forward_correlation": 0.08957768136033323,
+      "reverse_correlation": 0.09378879003811878
+    }
+  ],
+  "anchors": [
+    {
+      "id": "start_5771500000_repeat1",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:31:26.952439+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -60.99962039735679
+    },
+    {
+      "id": "start_5771500000_repeat2",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:31:30.950545+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -60.507296548880156
+    },
+    {
+      "id": "start_5771500000_repeat3",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:31:34.845118+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -61.15979329114309
+    },
+    {
+      "id": "start_5771500000_atten48",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:31:38.784660+00:00",
+      "tx_attenuation_db": 48,
+      "power_db": -63.7069089153433
+    },
+    {
+      "id": "start_5853100000_repeat1",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:31:44.108964+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -71.41238452861765
+    },
+    {
+      "id": "start_5853100000_repeat2",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:31:48.009003+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -70.81725582425103
+    },
+    {
+      "id": "start_5853100000_repeat3",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:31:51.871116+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -71.38098441535935
+    },
+    {
+      "id": "start_5853100000_atten48",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:31:55.805084+00:00",
+      "tx_attenuation_db": 48,
+      "power_db": -73.78419248918618
+    },
+    {
+      "id": "middle_5771500000_repeat1",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:39:03.508767+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -61.40014758752399
+    },
+    {
+      "id": "middle_5771500000_repeat2",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:39:08.239038+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -60.83481821538541
+    },
+    {
+      "id": "middle_5771500000_repeat3",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:39:12.900920+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -61.33446496300556
+    },
+    {
+      "id": "middle_5853100000_repeat1",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:39:18.886800+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -70.82999480185401
+    },
+    {
+      "id": "middle_5853100000_repeat2",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:39:23.458900+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -71.21826548860199
+    },
+    {
+      "id": "middle_5853100000_repeat3",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:39:27.975313+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -70.89597017763629
+    },
+    {
+      "id": "end_5771500000_repeat1",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:47:36.031702+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -61.10477996903914
+    },
+    {
+      "id": "end_5771500000_repeat2",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:47:41.106902+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -60.60644717539922
+    },
+    {
+      "id": "end_5771500000_repeat3",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:47:46.195221+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -61.33901781347413
+    },
+    {
+      "id": "end_5771500000_atten48",
+      "center_hz": 5771499996,
+      "started_utc": "2026-09-05T23:47:51.242353+00:00",
+      "tx_attenuation_db": 48,
+      "power_db": -63.81226830573242
+    },
+    {
+      "id": "end_5853100000_repeat1",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:47:58.084177+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -70.69229841565078
+    },
+    {
+      "id": "end_5853100000_repeat2",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:48:03.179033+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -71.12869533665918
+    },
+    {
+      "id": "end_5853100000_repeat3",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:48:08.233428+00:00",
+      "tx_attenuation_db": 45,
+      "power_db": -70.69577973079417
+    },
+    {
+      "id": "end_5853100000_atten48",
+      "center_hz": 5853099998,
+      "started_utc": "2026-09-05T23:48:13.368982+00:00",
+      "tx_attenuation_db": 48,
+      "power_db": -74.11585185935967
+    }
+  ],
+  "attenuation_controls": [
+    {
+      "stage": "start",
+      "center_hz": 5771500000,
+      "measured_change_db": -2.8180055028832953,
+      "expected_change_db": -3.0,
+      "error_db": 0.18199449711670468
+    },
+    {
+      "stage": "start",
+      "center_hz": 5853100000,
+      "measured_change_db": -2.580650899776842,
+      "expected_change_db": -3.0,
+      "error_db": 0.4193491002231582
+    },
+    {
+      "stage": "end",
+      "center_hz": 5771500000,
+      "measured_change_db": -2.7955199864282534,
+      "expected_change_db": -3.0,
+      "error_db": 0.2044800135717466
+    },
+    {
+      "stage": "end",
+      "center_hz": 5853100000,
+      "measured_change_db": -3.2769273649916215,
+      "expected_change_db": -3.0,
+      "error_db": -0.2769273649916215
+    }
+  ],
+  "tx_off_controls": [
+    {
+      "id": "start_5771500000_off",
+      "correlation": 0.008687081307402103
+    },
+    {
+      "id": "start_5853100000_off",
+      "correlation": 0.008752256706968956
+    },
+    {
+      "id": "middle_5771500000_off",
+      "correlation": 0.008905760194070585
+    },
+    {
+      "id": "middle_5853100000_off",
+      "correlation": 0.008517728812745321
+    },
+    {
+      "id": "end_5771500000_off",
+      "correlation": 0.00932348321899986
+    },
+    {
+      "id": "end_5853100000_off",
+      "correlation": 0.008564861166194664
+    }
+  ],
+  "overlap_diagnostics": [
+    {
+      "direction": "forward",
+      "first_center_hz": 5728000000,
+      "second_center_hz": 5729500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.595008496538661,
+      "phase_slope_rad_per_mhz": 0.009722207987906739,
+      "fractional_complex_residual_rms": 0.17522341613953502,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5729500000,
+      "second_center_hz": 5731000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6952403138019925,
+      "phase_slope_rad_per_mhz": -0.006018901770913116,
+      "fractional_complex_residual_rms": 0.17652669882592753,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5731000000,
+      "second_center_hz": 5732500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.48226718677869007,
+      "phase_slope_rad_per_mhz": -0.007732259449288929,
+      "fractional_complex_residual_rms": 0.1757585002207096,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5732500000,
+      "second_center_hz": 5734000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.36947724767709134,
+      "phase_slope_rad_per_mhz": 9.057638011754357e-05,
+      "fractional_complex_residual_rms": 0.15656270342193673,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5734000000,
+      "second_center_hz": 5735500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5494116868256831,
+      "phase_slope_rad_per_mhz": 0.006027389571907936,
+      "fractional_complex_residual_rms": 0.15803897242179984,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5735500000,
+      "second_center_hz": 5737000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.47816256168709304,
+      "phase_slope_rad_per_mhz": -0.00036730065563438043,
+      "fractional_complex_residual_rms": 0.1586596000419711,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5737000000,
+      "second_center_hz": 5738500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.513924336534812,
+      "phase_slope_rad_per_mhz": -0.0063638548767910265,
+      "fractional_complex_residual_rms": 0.16191523067113509,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5738500000,
+      "second_center_hz": 5740000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5610634408708514,
+      "phase_slope_rad_per_mhz": -0.004376760225614327,
+      "fractional_complex_residual_rms": 0.1655522995765964,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5740000000,
+      "second_center_hz": 5741500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.46785711799971885,
+      "phase_slope_rad_per_mhz": -0.00015578579439476283,
+      "fractional_complex_residual_rms": 0.16784764741925237,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5741500000,
+      "second_center_hz": 5743000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4385102191503565,
+      "phase_slope_rad_per_mhz": -0.0023261420226418712,
+      "fractional_complex_residual_rms": 0.17390482824004969,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5743000000,
+      "second_center_hz": 5744500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.7187441024627028,
+      "phase_slope_rad_per_mhz": -0.0017609002803288356,
+      "fractional_complex_residual_rms": 0.17792897566228463,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5744500000,
+      "second_center_hz": 5746000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.48808218166865147,
+      "phase_slope_rad_per_mhz": -0.0035963368691641724,
+      "fractional_complex_residual_rms": 0.16881344727040382,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5746000000,
+      "second_center_hz": 5747500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6800183819259791,
+      "phase_slope_rad_per_mhz": -0.007840116128573889,
+      "fractional_complex_residual_rms": 0.17088434816949502,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5747500000,
+      "second_center_hz": 5749000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5707099261495042,
+      "phase_slope_rad_per_mhz": -0.001307077544819906,
+      "fractional_complex_residual_rms": 0.172996043758582,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5749000000,
+      "second_center_hz": 5750500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5899252138673853,
+      "phase_slope_rad_per_mhz": -0.003255657559833835,
+      "fractional_complex_residual_rms": 0.16675533617176316,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5750500000,
+      "second_center_hz": 5752000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.626015273098428,
+      "phase_slope_rad_per_mhz": 0.011426638407262244,
+      "fractional_complex_residual_rms": 0.1757441954306909,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5752000000,
+      "second_center_hz": 5753500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5346866772312067,
+      "phase_slope_rad_per_mhz": -0.0029769003688243784,
+      "fractional_complex_residual_rms": 0.17926909275991598,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5753500000,
+      "second_center_hz": 5755000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5262573946184067,
+      "phase_slope_rad_per_mhz": 0.004943327118588661,
+      "fractional_complex_residual_rms": 0.1861330397603819,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5755000000,
+      "second_center_hz": 5756500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.2893144945491939,
+      "phase_slope_rad_per_mhz": 0.009762224186083484,
+      "fractional_complex_residual_rms": 0.18056552246946667,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5756500000,
+      "second_center_hz": 5758000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6089591311317606,
+      "phase_slope_rad_per_mhz": -0.001572757042284599,
+      "fractional_complex_residual_rms": 0.1719917185141416,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5758000000,
+      "second_center_hz": 5759500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.45312274968621447,
+      "phase_slope_rad_per_mhz": -0.0031213621721788874,
+      "fractional_complex_residual_rms": 0.16804144649973196,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5759500000,
+      "second_center_hz": 5761000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6117767856385824,
+      "phase_slope_rad_per_mhz": 0.0029504239953573996,
+      "fractional_complex_residual_rms": 0.16497829320999058,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5761000000,
+      "second_center_hz": 5762500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4960888139427454,
+      "phase_slope_rad_per_mhz": 0.012613144066233628,
+      "fractional_complex_residual_rms": 0.17011073052161965,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5762500000,
+      "second_center_hz": 5764000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5655733181080338,
+      "phase_slope_rad_per_mhz": -0.016129520902584998,
+      "fractional_complex_residual_rms": 0.17643817391666397,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5764000000,
+      "second_center_hz": 5765500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6270594584422591,
+      "phase_slope_rad_per_mhz": -0.0025721973885530483,
+      "fractional_complex_residual_rms": 0.184692435836184,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5765500000,
+      "second_center_hz": 5767000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5341173359830107,
+      "phase_slope_rad_per_mhz": 0.006233671487620241,
+      "fractional_complex_residual_rms": 0.1825014516837375,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5767000000,
+      "second_center_hz": 5768500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4626197577674316,
+      "phase_slope_rad_per_mhz": -0.0021984794097878,
+      "fractional_complex_residual_rms": 0.1829715770534865,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5768500000,
+      "second_center_hz": 5770000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.2974646765962462,
+      "phase_slope_rad_per_mhz": -0.001297780126751719,
+      "fractional_complex_residual_rms": 0.17763210045085462,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5770000000,
+      "second_center_hz": 5771500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5645689237987537,
+      "phase_slope_rad_per_mhz": -0.012259719610289627,
+      "fractional_complex_residual_rms": 0.17832180260410413,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5771500000,
+      "second_center_hz": 5773000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.44890954781790227,
+      "phase_slope_rad_per_mhz": 0.010800934889969605,
+      "fractional_complex_residual_rms": 0.17357074982493442,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5773000000,
+      "second_center_hz": 5774500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5374727113032565,
+      "phase_slope_rad_per_mhz": -0.0002380283085635633,
+      "fractional_complex_residual_rms": 0.1741350965618436,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5774500000,
+      "second_center_hz": 5776000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5268607567809533,
+      "phase_slope_rad_per_mhz": -0.0014762994154340879,
+      "fractional_complex_residual_rms": 0.17717685746237696,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5776000000,
+      "second_center_hz": 5777500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4818704943442656,
+      "phase_slope_rad_per_mhz": -0.00027922763885710204,
+      "fractional_complex_residual_rms": 0.18363570450643318,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5777500000,
+      "second_center_hz": 5779000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5084567491409312,
+      "phase_slope_rad_per_mhz": -0.007871647442626943,
+      "fractional_complex_residual_rms": 0.19199205884247553,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5779000000,
+      "second_center_hz": 5780500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5945769920341294,
+      "phase_slope_rad_per_mhz": -0.0025042779436518347,
+      "fractional_complex_residual_rms": 0.19620238802285075,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5780500000,
+      "second_center_hz": 5782000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.407755723877437,
+      "phase_slope_rad_per_mhz": 0.008435474196603244,
+      "fractional_complex_residual_rms": 0.18714780379917362,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5782000000,
+      "second_center_hz": 5783500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.7076005165944319,
+      "phase_slope_rad_per_mhz": 0.014120303768786755,
+      "fractional_complex_residual_rms": 0.1864605907836206,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5783500000,
+      "second_center_hz": 5785000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5233815714963721,
+      "phase_slope_rad_per_mhz": 0.015454035146550924,
+      "fractional_complex_residual_rms": 0.1903113908284399,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5785000000,
+      "second_center_hz": 5786500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.579022356919858,
+      "phase_slope_rad_per_mhz": 0.005092461757263625,
+      "fractional_complex_residual_rms": 0.19457797362210866,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5786500000,
+      "second_center_hz": 5788000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5719637516967183,
+      "phase_slope_rad_per_mhz": 0.011122557842750052,
+      "fractional_complex_residual_rms": 0.20181062543002606,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5788000000,
+      "second_center_hz": 5789500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5719251318004674,
+      "phase_slope_rad_per_mhz": 0.00883439782965996,
+      "fractional_complex_residual_rms": 0.20158221926981257,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5789500000,
+      "second_center_hz": 5791000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6079506477715356,
+      "phase_slope_rad_per_mhz": 0.001289567654993644,
+      "fractional_complex_residual_rms": 0.20750971675999316,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5791000000,
+      "second_center_hz": 5792500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6657395434080746,
+      "phase_slope_rad_per_mhz": -0.005936549795997111,
+      "fractional_complex_residual_rms": 0.20811635404287368,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5792500000,
+      "second_center_hz": 5794000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5106221657888351,
+      "phase_slope_rad_per_mhz": -0.006952455465440578,
+      "fractional_complex_residual_rms": 0.21586376486776784,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5794000000,
+      "second_center_hz": 5795500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.35525158985798216,
+      "phase_slope_rad_per_mhz": 0.002634521380068818,
+      "fractional_complex_residual_rms": 0.20038754638145742,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5795500000,
+      "second_center_hz": 5797000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6574174386085871,
+      "phase_slope_rad_per_mhz": 0.00014223717684878022,
+      "fractional_complex_residual_rms": 0.20173292032748527,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5797000000,
+      "second_center_hz": 5798500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5242960193166553,
+      "phase_slope_rad_per_mhz": 0.0040131749347275415,
+      "fractional_complex_residual_rms": 0.20072761221570296,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5798500000,
+      "second_center_hz": 5800000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4645728183686288,
+      "phase_slope_rad_per_mhz": 0.005897401768968059,
+      "fractional_complex_residual_rms": 0.20326710494375705,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5800000000,
+      "second_center_hz": 5801500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.46796394598029095,
+      "phase_slope_rad_per_mhz": 0.004279723226739223,
+      "fractional_complex_residual_rms": 0.21511456959443875,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5801500000,
+      "second_center_hz": 5803000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5486414755970125,
+      "phase_slope_rad_per_mhz": 0.002490639283848269,
+      "fractional_complex_residual_rms": 0.21505956988274424,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5803000000,
+      "second_center_hz": 5804500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.42999653950688693,
+      "phase_slope_rad_per_mhz": 0.011193897786013615,
+      "fractional_complex_residual_rms": 0.22186075185938062,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5804500000,
+      "second_center_hz": 5806000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.8259563613827169,
+      "phase_slope_rad_per_mhz": 0.010327518837806367,
+      "fractional_complex_residual_rms": 0.22972411060695666,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5806000000,
+      "second_center_hz": 5807500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4299555370788829,
+      "phase_slope_rad_per_mhz": -0.0014158076754515964,
+      "fractional_complex_residual_rms": 0.23236172834980848,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5807500000,
+      "second_center_hz": 5809000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6331052757260685,
+      "phase_slope_rad_per_mhz": 0.017707956287830232,
+      "fractional_complex_residual_rms": 0.22333411833672995,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5809000000,
+      "second_center_hz": 5810500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5352340733913276,
+      "phase_slope_rad_per_mhz": -0.009297561568118957,
+      "fractional_complex_residual_rms": 0.22726437521951112,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5810500000,
+      "second_center_hz": 5812000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.38923335294309835,
+      "phase_slope_rad_per_mhz": 0.013916657623655466,
+      "fractional_complex_residual_rms": 0.2224648907690575,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5812000000,
+      "second_center_hz": 5813500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4956983788066991,
+      "phase_slope_rad_per_mhz": 0.006371632725628628,
+      "fractional_complex_residual_rms": 0.23286153213863722,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5813500000,
+      "second_center_hz": 5815000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4352507240098079,
+      "phase_slope_rad_per_mhz": 0.017922458690510103,
+      "fractional_complex_residual_rms": 0.23878985175572748,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5815000000,
+      "second_center_hz": 5816500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6210946632903711,
+      "phase_slope_rad_per_mhz": 0.01572516845450919,
+      "fractional_complex_residual_rms": 0.2432235257406263,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5816500000,
+      "second_center_hz": 5818000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.31646515621083127,
+      "phase_slope_rad_per_mhz": 0.024235855238014654,
+      "fractional_complex_residual_rms": 0.24878523478233916,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5818000000,
+      "second_center_hz": 5819500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.7456678239453439,
+      "phase_slope_rad_per_mhz": 0.015398878201534882,
+      "fractional_complex_residual_rms": 0.24541107442220728,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5819500000,
+      "second_center_hz": 5821000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5230561743278708,
+      "phase_slope_rad_per_mhz": 0.017004477173626006,
+      "fractional_complex_residual_rms": 0.24832010772632632,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5821000000,
+      "second_center_hz": 5822500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6052832338532488,
+      "phase_slope_rad_per_mhz": -0.0042381837952876,
+      "fractional_complex_residual_rms": 0.24466277786467816,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5822500000,
+      "second_center_hz": 5824000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4781979604182248,
+      "phase_slope_rad_per_mhz": -0.008544639697583796,
+      "fractional_complex_residual_rms": 0.2564430520361877,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5824000000,
+      "second_center_hz": 5825500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6089570216436503,
+      "phase_slope_rad_per_mhz": 0.01421350047472941,
+      "fractional_complex_residual_rms": 0.25193925715300114,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5825500000,
+      "second_center_hz": 5827000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.620038341512367,
+      "phase_slope_rad_per_mhz": -0.025899240702772136,
+      "fractional_complex_residual_rms": 0.26318863931247305,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5827000000,
+      "second_center_hz": 5828500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5169182318686025,
+      "phase_slope_rad_per_mhz": 0.010445291005177958,
+      "fractional_complex_residual_rms": 0.26851434730561513,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5828500000,
+      "second_center_hz": 5830000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.33516644587231303,
+      "phase_slope_rad_per_mhz": -0.00013344501883732815,
+      "fractional_complex_residual_rms": 0.28156335576789715,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5830000000,
+      "second_center_hz": 5831500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.2657910539693448,
+      "phase_slope_rad_per_mhz": -0.017138723744825023,
+      "fractional_complex_residual_rms": 0.2728207410661256,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5831500000,
+      "second_center_hz": 5833000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5725560556163012,
+      "phase_slope_rad_per_mhz": -0.03283615306373074,
+      "fractional_complex_residual_rms": 0.27646619760695307,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5833000000,
+      "second_center_hz": 5834500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.33913666808427,
+      "phase_slope_rad_per_mhz": -0.002561722714959577,
+      "fractional_complex_residual_rms": 0.2802830015757501,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5834500000,
+      "second_center_hz": 5836000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5587673839235383,
+      "phase_slope_rad_per_mhz": -0.0032553175949344374,
+      "fractional_complex_residual_rms": 0.2880530823428127,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5836000000,
+      "second_center_hz": 5837500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5925081600074947,
+      "phase_slope_rad_per_mhz": 0.005484826511362857,
+      "fractional_complex_residual_rms": 0.28525222471265754,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5837500000,
+      "second_center_hz": 5839000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5941973705645593,
+      "phase_slope_rad_per_mhz": 0.027283255317270154,
+      "fractional_complex_residual_rms": 0.29457108831924145,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5839000000,
+      "second_center_hz": 5840500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4918283117385447,
+      "phase_slope_rad_per_mhz": -0.015130601740807355,
+      "fractional_complex_residual_rms": 0.29963775831255374,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5840500000,
+      "second_center_hz": 5842000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6336130983831973,
+      "phase_slope_rad_per_mhz": 0.013825712097925541,
+      "fractional_complex_residual_rms": 0.305934434574723,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5842000000,
+      "second_center_hz": 5843500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5216603965573764,
+      "phase_slope_rad_per_mhz": -0.007031930484455058,
+      "fractional_complex_residual_rms": 0.30691792421249453,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5843500000,
+      "second_center_hz": 5845000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.759149179432709,
+      "phase_slope_rad_per_mhz": -0.024026113611985436,
+      "fractional_complex_residual_rms": 0.3084837213440622,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5845000000,
+      "second_center_hz": 5846500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.545488387314834,
+      "phase_slope_rad_per_mhz": -0.02015891911615356,
+      "fractional_complex_residual_rms": 0.31885038445307184,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5846500000,
+      "second_center_hz": 5848000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.7152161745096086,
+      "phase_slope_rad_per_mhz": -0.013528134820324875,
+      "fractional_complex_residual_rms": 0.309483531467219,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5848000000,
+      "second_center_hz": 5849500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5421486369659247,
+      "phase_slope_rad_per_mhz": 0.01256889116055247,
+      "fractional_complex_residual_rms": 0.31601288768210645,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5849500000,
+      "second_center_hz": 5851000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6247432058313719,
+      "phase_slope_rad_per_mhz": 0.003966193710149583,
+      "fractional_complex_residual_rms": 0.32991957256262655,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5851000000,
+      "second_center_hz": 5852500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5794747807744842,
+      "phase_slope_rad_per_mhz": 0.019026405087722104,
+      "fractional_complex_residual_rms": 0.33858325329972455,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5852500000,
+      "second_center_hz": 5854000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.663648281656472,
+      "phase_slope_rad_per_mhz": 0.013675385475025904,
+      "fractional_complex_residual_rms": 0.3493163148723882,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5854000000,
+      "second_center_hz": 5855500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.2921307147828219,
+      "phase_slope_rad_per_mhz": 0.013180271571754044,
+      "fractional_complex_residual_rms": 0.34536194846091534,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5855500000,
+      "second_center_hz": 5857000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.34293144713485824,
+      "phase_slope_rad_per_mhz": -0.00947082252068016,
+      "fractional_complex_residual_rms": 0.34146248840423815,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5857000000,
+      "second_center_hz": 5858500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6622476352478743,
+      "phase_slope_rad_per_mhz": 0.4558828146839493,
+      "fractional_complex_residual_rms": 0.4465346371246245,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5858500000,
+      "second_center_hz": 5860000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.41697794474051925,
+      "phase_slope_rad_per_mhz": 0.014610796959432477,
+      "fractional_complex_residual_rms": 0.34329419957882606,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5860000000,
+      "second_center_hz": 5861500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.47315152841789004,
+      "phase_slope_rad_per_mhz": 0.011292530613718321,
+      "fractional_complex_residual_rms": 0.34115645024745844,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5861500000,
+      "second_center_hz": 5863000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4223645919748017,
+      "phase_slope_rad_per_mhz": 0.014508332875226364,
+      "fractional_complex_residual_rms": 0.3599373718001185,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5863000000,
+      "second_center_hz": 5864500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4305637657294662,
+      "phase_slope_rad_per_mhz": -0.020362886324811442,
+      "fractional_complex_residual_rms": 0.36255979626122603,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5864500000,
+      "second_center_hz": 5866000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4775800037786457,
+      "phase_slope_rad_per_mhz": 0.024054042705441505,
+      "fractional_complex_residual_rms": 0.38248927120781373,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5866000000,
+      "second_center_hz": 5867500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.712938253578846,
+      "phase_slope_rad_per_mhz": 0.009555280151359,
+      "fractional_complex_residual_rms": 0.3922766308292937,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5867500000,
+      "second_center_hz": 5869000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.37423637610608934,
+      "phase_slope_rad_per_mhz": 0.18620270217146392,
+      "fractional_complex_residual_rms": 0.40241741257077335,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5869000000,
+      "second_center_hz": 5870500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.8480579154826788,
+      "phase_slope_rad_per_mhz": -0.00413456142773098,
+      "fractional_complex_residual_rms": 0.38003512060875194,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "forward",
+      "first_center_hz": 5870500000,
+      "second_center_hz": 5872000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.46417756325172427,
+      "phase_slope_rad_per_mhz": 0.020870497461693133,
+      "fractional_complex_residual_rms": 0.38452896693416716,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5728000000,
+      "second_center_hz": 5729500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.48047230623822323,
+      "phase_slope_rad_per_mhz": 0.005156560746434291,
+      "fractional_complex_residual_rms": 0.1639153303001902,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5729500000,
+      "second_center_hz": 5731000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4503738961357289,
+      "phase_slope_rad_per_mhz": 0.008023725847234504,
+      "fractional_complex_residual_rms": 0.16041651011341443,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5731000000,
+      "second_center_hz": 5732500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5116594312347631,
+      "phase_slope_rad_per_mhz": 0.012300060205733604,
+      "fractional_complex_residual_rms": 0.16012964739306346,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5732500000,
+      "second_center_hz": 5734000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6170070106835773,
+      "phase_slope_rad_per_mhz": -0.014265894023846756,
+      "fractional_complex_residual_rms": 0.16073604526227112,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5734000000,
+      "second_center_hz": 5735500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.3983679529347769,
+      "phase_slope_rad_per_mhz": -0.005413746038120024,
+      "fractional_complex_residual_rms": 0.16261650233930788,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5735500000,
+      "second_center_hz": 5737000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.47200383603324736,
+      "phase_slope_rad_per_mhz": -0.00043992452009177814,
+      "fractional_complex_residual_rms": 0.16897367069774077,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5737000000,
+      "second_center_hz": 5738500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5934212004889687,
+      "phase_slope_rad_per_mhz": -0.008738975672192827,
+      "fractional_complex_residual_rms": 0.18507546659074348,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5738500000,
+      "second_center_hz": 5740000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.657047080820484,
+      "phase_slope_rad_per_mhz": 0.005395615996848956,
+      "fractional_complex_residual_rms": 0.17680870439306112,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5740000000,
+      "second_center_hz": 5741500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6560223264308682,
+      "phase_slope_rad_per_mhz": -0.0030989329521108567,
+      "fractional_complex_residual_rms": 0.1765723491899012,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5741500000,
+      "second_center_hz": 5743000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6641277709366973,
+      "phase_slope_rad_per_mhz": 0.008630400930017549,
+      "fractional_complex_residual_rms": 0.16830823723577956,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5743000000,
+      "second_center_hz": 5744500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.651080812026007,
+      "phase_slope_rad_per_mhz": 0.010684686435118012,
+      "fractional_complex_residual_rms": 0.17601515199900153,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5744500000,
+      "second_center_hz": 5746000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5869159153640571,
+      "phase_slope_rad_per_mhz": 0.0021130783726599385,
+      "fractional_complex_residual_rms": 0.1674951970613691,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5746000000,
+      "second_center_hz": 5747500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.7015806875935288,
+      "phase_slope_rad_per_mhz": 0.005426000518342467,
+      "fractional_complex_residual_rms": 0.17112884713333623,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5747500000,
+      "second_center_hz": 5749000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4528823025739601,
+      "phase_slope_rad_per_mhz": 0.003942947645232941,
+      "fractional_complex_residual_rms": 0.16958323688660376,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5749000000,
+      "second_center_hz": 5750500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6299119213288373,
+      "phase_slope_rad_per_mhz": 0.00046733249434203567,
+      "fractional_complex_residual_rms": 0.18276871922343693,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5750500000,
+      "second_center_hz": 5752000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.576357686575606,
+      "phase_slope_rad_per_mhz": 0.014360965834957428,
+      "fractional_complex_residual_rms": 0.17885062531989937,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5752000000,
+      "second_center_hz": 5753500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.44371223874291066,
+      "phase_slope_rad_per_mhz": 0.0006527668120509688,
+      "fractional_complex_residual_rms": 0.17396861461843155,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5753500000,
+      "second_center_hz": 5755000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5327228215064468,
+      "phase_slope_rad_per_mhz": 0.0016984014414223282,
+      "fractional_complex_residual_rms": 0.1691518279676219,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5755000000,
+      "second_center_hz": 5756500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5012817549751898,
+      "phase_slope_rad_per_mhz": -0.0052817613052356,
+      "fractional_complex_residual_rms": 0.1688985984449154,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5756500000,
+      "second_center_hz": 5758000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4934530554273794,
+      "phase_slope_rad_per_mhz": 0.0029367324133043296,
+      "fractional_complex_residual_rms": 0.16629152780145492,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5758000000,
+      "second_center_hz": 5759500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.535335711050126,
+      "phase_slope_rad_per_mhz": -0.005608904021952083,
+      "fractional_complex_residual_rms": 0.17048912457025686,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5759500000,
+      "second_center_hz": 5761000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.3593861051397882,
+      "phase_slope_rad_per_mhz": 0.0097596114688515,
+      "fractional_complex_residual_rms": 0.17348596598338575,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5761000000,
+      "second_center_hz": 5762500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5351323348682764,
+      "phase_slope_rad_per_mhz": 0.006247001220705433,
+      "fractional_complex_residual_rms": 0.18750660658995896,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5762500000,
+      "second_center_hz": 5764000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6311327680889711,
+      "phase_slope_rad_per_mhz": 0.006393484228063196,
+      "fractional_complex_residual_rms": 0.19218457555785798,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5764000000,
+      "second_center_hz": 5765500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6533933860291261,
+      "phase_slope_rad_per_mhz": 0.01476754818177472,
+      "fractional_complex_residual_rms": 0.1844905165037784,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5765500000,
+      "second_center_hz": 5767000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5495210646810984,
+      "phase_slope_rad_per_mhz": 0.0018976401989285146,
+      "fractional_complex_residual_rms": 0.18674301728974055,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5767000000,
+      "second_center_hz": 5768500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5903816425726517,
+      "phase_slope_rad_per_mhz": -0.0018990619423827266,
+      "fractional_complex_residual_rms": 0.17536860358064396,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5768500000,
+      "second_center_hz": 5770000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.625050184057842,
+      "phase_slope_rad_per_mhz": 0.002812396421809458,
+      "fractional_complex_residual_rms": 0.18044495647669925,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5770000000,
+      "second_center_hz": 5771500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5556433536242005,
+      "phase_slope_rad_per_mhz": 0.0015917515129707236,
+      "fractional_complex_residual_rms": 0.17502829349668236,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5771500000,
+      "second_center_hz": 5773000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.7159231511804414,
+      "phase_slope_rad_per_mhz": -0.008226195187179541,
+      "fractional_complex_residual_rms": 0.18398826010384864,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5773000000,
+      "second_center_hz": 5774500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4443801537248679,
+      "phase_slope_rad_per_mhz": -0.002458326824886882,
+      "fractional_complex_residual_rms": 0.18058534897141507,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5774500000,
+      "second_center_hz": 5776000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5814280708000396,
+      "phase_slope_rad_per_mhz": -0.012910870956855003,
+      "fractional_complex_residual_rms": 0.19057819405741322,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5776000000,
+      "second_center_hz": 5777500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5123006240421293,
+      "phase_slope_rad_per_mhz": -0.006570379661908027,
+      "fractional_complex_residual_rms": 0.18908519306852944,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5777500000,
+      "second_center_hz": 5779000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.319732809224775,
+      "phase_slope_rad_per_mhz": 0.001562520483744305,
+      "fractional_complex_residual_rms": 0.18205946903797665,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5779000000,
+      "second_center_hz": 5780500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4728333631569078,
+      "phase_slope_rad_per_mhz": 0.008173797450384076,
+      "fractional_complex_residual_rms": 0.1848391241358188,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5780500000,
+      "second_center_hz": 5782000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4692495313543071,
+      "phase_slope_rad_per_mhz": 0.012590480716883479,
+      "fractional_complex_residual_rms": 0.18553016653904653,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5782000000,
+      "second_center_hz": 5783500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4435064177156989,
+      "phase_slope_rad_per_mhz": 0.005893877428522707,
+      "fractional_complex_residual_rms": 0.18648205275822302,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5783500000,
+      "second_center_hz": 5785000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5179636362201349,
+      "phase_slope_rad_per_mhz": -0.0011894338906156261,
+      "fractional_complex_residual_rms": 0.18461447250202867,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5785000000,
+      "second_center_hz": 5786500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4306990052240848,
+      "phase_slope_rad_per_mhz": 0.0021808200354907154,
+      "fractional_complex_residual_rms": 0.19200008345072297,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5786500000,
+      "second_center_hz": 5788000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4251594723626883,
+      "phase_slope_rad_per_mhz": 0.014249785078682931,
+      "fractional_complex_residual_rms": 0.20338155819098205,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5788000000,
+      "second_center_hz": 5789500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5777861201882964,
+      "phase_slope_rad_per_mhz": 0.007535813302117338,
+      "fractional_complex_residual_rms": 0.2154303189611106,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5789500000,
+      "second_center_hz": 5791000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6103888000136155,
+      "phase_slope_rad_per_mhz": -0.0013628695391085285,
+      "fractional_complex_residual_rms": 0.2007073257767741,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5791000000,
+      "second_center_hz": 5792500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.49165239353189344,
+      "phase_slope_rad_per_mhz": -0.02231936935240321,
+      "fractional_complex_residual_rms": 0.1994289984576219,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5792500000,
+      "second_center_hz": 5794000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6483729590150961,
+      "phase_slope_rad_per_mhz": 0.0004012422491704769,
+      "fractional_complex_residual_rms": 0.19677914410436342,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5794000000,
+      "second_center_hz": 5795500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6338908770091488,
+      "phase_slope_rad_per_mhz": -0.0018300451745987376,
+      "fractional_complex_residual_rms": 0.20749888862694485,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5795500000,
+      "second_center_hz": 5797000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5290198293781078,
+      "phase_slope_rad_per_mhz": 0.00041721603576975856,
+      "fractional_complex_residual_rms": 0.1994020109462481,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5797000000,
+      "second_center_hz": 5798500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6755078382772578,
+      "phase_slope_rad_per_mhz": -0.004889232462183833,
+      "fractional_complex_residual_rms": 0.20776933068974543,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5798500000,
+      "second_center_hz": 5800000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.3720252839902877,
+      "phase_slope_rad_per_mhz": -0.002169559762101397,
+      "fractional_complex_residual_rms": 0.20435310494384912,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5800000000,
+      "second_center_hz": 5801500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4877235545941544,
+      "phase_slope_rad_per_mhz": -0.004804359267492488,
+      "fractional_complex_residual_rms": 0.2139435977827718,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5801500000,
+      "second_center_hz": 5803000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.569238364883721,
+      "phase_slope_rad_per_mhz": -0.010981292265992572,
+      "fractional_complex_residual_rms": 0.2185966434489266,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5803000000,
+      "second_center_hz": 5804500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4826686341081176,
+      "phase_slope_rad_per_mhz": -0.0025001399781978168,
+      "fractional_complex_residual_rms": 0.20965244819161793,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5804500000,
+      "second_center_hz": 5806000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.61296065865237,
+      "phase_slope_rad_per_mhz": 0.01613381957533781,
+      "fractional_complex_residual_rms": 0.22239143607301945,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5806000000,
+      "second_center_hz": 5807500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4459348450703529,
+      "phase_slope_rad_per_mhz": -0.011141577760085503,
+      "fractional_complex_residual_rms": 0.21593124198058875,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5807500000,
+      "second_center_hz": 5809000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4636329151971166,
+      "phase_slope_rad_per_mhz": 0.0025094754506058328,
+      "fractional_complex_residual_rms": 0.21612621034200966,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5809000000,
+      "second_center_hz": 5810500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5118108817355004,
+      "phase_slope_rad_per_mhz": -0.009983874365030974,
+      "fractional_complex_residual_rms": 0.2189183603854478,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5810500000,
+      "second_center_hz": 5812000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.340298848360942,
+      "phase_slope_rad_per_mhz": -0.01061294612251544,
+      "fractional_complex_residual_rms": 0.22933629888594945,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5812000000,
+      "second_center_hz": 5813500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.503861220041235,
+      "phase_slope_rad_per_mhz": 0.015282731885295407,
+      "fractional_complex_residual_rms": 0.23625623478284002,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5813500000,
+      "second_center_hz": 5815000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5638658598986699,
+      "phase_slope_rad_per_mhz": 0.014822983615412828,
+      "fractional_complex_residual_rms": 0.24934370249002438,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5815000000,
+      "second_center_hz": 5816500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5854856610563781,
+      "phase_slope_rad_per_mhz": 0.002763012920166076,
+      "fractional_complex_residual_rms": 0.245535068441992,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5816500000,
+      "second_center_hz": 5818000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5806345449076015,
+      "phase_slope_rad_per_mhz": -0.006948757698098931,
+      "fractional_complex_residual_rms": 0.24368015901536072,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5818000000,
+      "second_center_hz": 5819500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6500058213462944,
+      "phase_slope_rad_per_mhz": 0.02167604680686944,
+      "fractional_complex_residual_rms": 0.23680248468274592,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5819500000,
+      "second_center_hz": 5821000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6655839427509592,
+      "phase_slope_rad_per_mhz": 0.010903135546084465,
+      "fractional_complex_residual_rms": 0.24465092633374202,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5821000000,
+      "second_center_hz": 5822500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4698160297382767,
+      "phase_slope_rad_per_mhz": -0.015445976914794749,
+      "fractional_complex_residual_rms": 0.24866588425963287,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5822500000,
+      "second_center_hz": 5824000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.468544198476206,
+      "phase_slope_rad_per_mhz": 0.011798201376565544,
+      "fractional_complex_residual_rms": 0.25721991597399657,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5824000000,
+      "second_center_hz": 5825500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.26164521225147686,
+      "phase_slope_rad_per_mhz": -0.017899106805036067,
+      "fractional_complex_residual_rms": 0.2601439466786921,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5825500000,
+      "second_center_hz": 5827000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6402168746550356,
+      "phase_slope_rad_per_mhz": 0.02565263300515045,
+      "fractional_complex_residual_rms": 0.26776021469793454,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5827000000,
+      "second_center_hz": 5828500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5390848358495004,
+      "phase_slope_rad_per_mhz": 0.01005511375876895,
+      "fractional_complex_residual_rms": 0.27307218235815595,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5828500000,
+      "second_center_hz": 5830000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.7011576539902115,
+      "phase_slope_rad_per_mhz": -0.025186357650408258,
+      "fractional_complex_residual_rms": 0.27093397922321616,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5830000000,
+      "second_center_hz": 5831500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6799714016060314,
+      "phase_slope_rad_per_mhz": -0.01163709449597052,
+      "fractional_complex_residual_rms": 0.27493860018163935,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5831500000,
+      "second_center_hz": 5833000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.645356726682228,
+      "phase_slope_rad_per_mhz": -0.015481269556590542,
+      "fractional_complex_residual_rms": 0.2697891319291018,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5833000000,
+      "second_center_hz": 5834500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5676984315855537,
+      "phase_slope_rad_per_mhz": -0.005905976333070287,
+      "fractional_complex_residual_rms": 0.2798918800857743,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5834500000,
+      "second_center_hz": 5836000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5113155490797626,
+      "phase_slope_rad_per_mhz": 0.019254700788721605,
+      "fractional_complex_residual_rms": 0.286153182587076,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5836000000,
+      "second_center_hz": 5837500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.6695419613836306,
+      "phase_slope_rad_per_mhz": 0.009760727225711757,
+      "fractional_complex_residual_rms": 0.2924501453810468,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5837500000,
+      "second_center_hz": 5839000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4974439715207751,
+      "phase_slope_rad_per_mhz": 0.006591672698316045,
+      "fractional_complex_residual_rms": 0.2990642848161154,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5839000000,
+      "second_center_hz": 5840500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.32978461445284224,
+      "phase_slope_rad_per_mhz": -0.015525315757791246,
+      "fractional_complex_residual_rms": 0.3048952933807118,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5840500000,
+      "second_center_hz": 5842000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4394520142898905,
+      "phase_slope_rad_per_mhz": -0.03305620867998978,
+      "fractional_complex_residual_rms": 0.2992477001881337,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5842000000,
+      "second_center_hz": 5843500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5442124349373088,
+      "phase_slope_rad_per_mhz": 0.002532310322865258,
+      "fractional_complex_residual_rms": 0.29660647104909993,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5843500000,
+      "second_center_hz": 5845000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5322033432852958,
+      "phase_slope_rad_per_mhz": -0.005630213484304292,
+      "fractional_complex_residual_rms": 0.3157554537205136,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5845000000,
+      "second_center_hz": 5846500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.42423388603004164,
+      "phase_slope_rad_per_mhz": -0.011664993735201376,
+      "fractional_complex_residual_rms": 0.31545804444945064,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5846500000,
+      "second_center_hz": 5848000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4314025957777934,
+      "phase_slope_rad_per_mhz": 0.013726299028935022,
+      "fractional_complex_residual_rms": 0.31569394819497437,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5848000000,
+      "second_center_hz": 5849500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5685480720661134,
+      "phase_slope_rad_per_mhz": -0.014552480658809238,
+      "fractional_complex_residual_rms": 0.3148793957362428,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5849500000,
+      "second_center_hz": 5851000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.7182669791034382,
+      "phase_slope_rad_per_mhz": -0.0025670348170032374,
+      "fractional_complex_residual_rms": 0.3336000901032064,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5851000000,
+      "second_center_hz": 5852500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6683304034897817,
+      "phase_slope_rad_per_mhz": 0.010541051372777605,
+      "fractional_complex_residual_rms": 0.3331353404685429,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5852500000,
+      "second_center_hz": 5854000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.47501789076728484,
+      "phase_slope_rad_per_mhz": -0.002074072799651826,
+      "fractional_complex_residual_rms": 0.3469102906743276,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5854000000,
+      "second_center_hz": 5855500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.6348806421375497,
+      "phase_slope_rad_per_mhz": -0.035155970727862265,
+      "fractional_complex_residual_rms": 0.3407617861849021,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5855500000,
+      "second_center_hz": 5857000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5029914229726212,
+      "phase_slope_rad_per_mhz": -0.02351050820920858,
+      "fractional_complex_residual_rms": 0.33891829345179225,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5857000000,
+      "second_center_hz": 5858500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5923686702880114,
+      "phase_slope_rad_per_mhz": -0.022575025428080035,
+      "fractional_complex_residual_rms": 0.3503327565957819,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5858500000,
+      "second_center_hz": 5860000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.5958424806231025,
+      "phase_slope_rad_per_mhz": -0.021521527323063797,
+      "fractional_complex_residual_rms": 0.35277352997981093,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5860000000,
+      "second_center_hz": 5861500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.4794923984302656,
+      "phase_slope_rad_per_mhz": -0.028102767316826916,
+      "fractional_complex_residual_rms": 0.35973943886808996,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5861500000,
+      "second_center_hz": 5863000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5314769348497047,
+      "phase_slope_rad_per_mhz": -0.03483153342359667,
+      "fractional_complex_residual_rms": 0.36765982937168984,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5863000000,
+      "second_center_hz": 5864500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.48777873451041576,
+      "phase_slope_rad_per_mhz": -0.029886561015432866,
+      "fractional_complex_residual_rms": 0.37640191657752375,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5864500000,
+      "second_center_hz": 5866000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.2782983640010333,
+      "phase_slope_rad_per_mhz": -0.0069122919511849165,
+      "fractional_complex_residual_rms": 0.36884372458419956,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5866000000,
+      "second_center_hz": 5867500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5756461553603586,
+      "phase_slope_rad_per_mhz": -0.0014914424334020262,
+      "fractional_complex_residual_rms": 0.3754439368987908,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5867500000,
+      "second_center_hz": 5869000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.4794418447897145,
+      "phase_slope_rad_per_mhz": -0.015246431543548006,
+      "fractional_complex_residual_rms": 0.36605031243689584,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5869000000,
+      "second_center_hz": 5870500000,
+      "shared_bins": 1391,
+      "gain_ratio_db": 0.5757479011172641,
+      "phase_slope_rad_per_mhz": -0.010810303814740524,
+      "fractional_complex_residual_rms": 0.39457189540457516,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    },
+    {
+      "direction": "reverse",
+      "first_center_hz": 5870500000,
+      "second_center_hz": 5872000000,
+      "shared_bins": 1391,
+      "gain_ratio_db": -0.521687546794153,
+      "phase_slope_rad_per_mhz": 1.151458698128306,
+      "fractional_complex_residual_rms": 0.7496922690254701,
+      "note": "Scale, common phase and linear phase fitted; small residual alone does not validate absolute range or global stitching."
+    }
+  ],
+  "review_source_sha256": "e1e11c47b7331a99f76aa6ebd600e72fefc3dab4988dc01c1e3aada66859c9c6",
+  "evidence_rule_source_sha256": "011c5201b146636b2953f725cf1273e9c9e46545405ad257506b98eb871c4647"
+}

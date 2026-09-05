@@ -1,0 +1,89 @@
+{
+  "schema": "rfmapping.held-controls-review/v1",
+  "run_id": "2026-09-05T234818Z_position-03",
+  "verified_utc": "2026-09-05T23:49:37.740672+00:00",
+  "issues": [],
+  "passed": true,
+  "raw_bytes_verified": 150994944,
+  "required_centers_hz": [
+    5771500000,
+    5800000000,
+    5853100000
+  ],
+  "deviations": [],
+  "position_id": "position-03",
+  "parent_position_run": "2026-09-05T232905Z_position-03",
+  "results_sha256_lf_utf8": "bda0ab5e2735ef81619ebe9a206f6d1034c9e5f38ac955ef06200c696eceaf21",
+  "held_summaries": [
+    {
+      "center_hz": 5771500000,
+      "burst_count": 7,
+      "mean_db": -60.52884703612375,
+      "between_burst_sd_db": 0.07362413742602983,
+      "min_max_db": [
+        -60.627146971015065,
+        -60.44147850357052
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5771500000_initial",
+        "held_5771500000_repeat1",
+        "held_5771500000_repeat2",
+        "held_5771500000_repeat3",
+        "held_5771500000_repeat4",
+        "held_5771500000_repeat5",
+        "held_5771500000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5771500000_final_off"
+      ]
+    },
+    {
+      "center_hz": 5800000000,
+      "burst_count": 7,
+      "mean_db": -64.69227780267151,
+      "between_burst_sd_db": 0.07022135512804303,
+      "min_max_db": [
+        -64.80347099473776,
+        -64.594335617869
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5800000000_initial",
+        "held_5800000000_repeat1",
+        "held_5800000000_repeat2",
+        "held_5800000000_repeat3",
+        "held_5800000000_repeat4",
+        "held_5800000000_repeat5",
+        "held_5800000000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5800000000_final_off"
+      ]
+    },
+    {
+      "center_hz": 5853100000,
+      "burst_count": 7,
+      "mean_db": -70.79082186357098,
+      "between_burst_sd_db": 0.05355412407158031,
+      "min_max_db": [
+        -70.85500165968813,
+        -70.71259155543935
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5853100000_initial",
+        "held_5853100000_repeat1",
+        "held_5853100000_repeat2",
+        "held_5853100000_repeat3",
+        "held_5853100000_repeat4",
+        "held_5853100000_repeat5",
+        "held_5853100000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5853100000_final_off"
+      ]
+    }
+  ],
+  "verification_source_sha256": "81472a617e563e3cf428a3f33340b11d6a1822ea038d76fbac633aca0d2a44fd"
+}

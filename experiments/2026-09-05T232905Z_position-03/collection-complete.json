@@ -1,0 +1,8 @@
+{
+  "recorded_utc": "2026-09-05T23:50:01.278858+00:00",
+  "event": "final_position_collection_complete",
+  "message": "Spot 3 is complete and verified. TX is muted, confirmed by a separate device readback. You can move freely now; no fourth spot is needed.",
+  "actual_subsequent_movement": "Not observed or asserted",
+  "final_state_check": "experiments/2026-09-05T232905Z_position-03/final-state-check.json",
+  "bundle": "experiments/2026-09-05T232905Z_position-03/bundle.json"
+}

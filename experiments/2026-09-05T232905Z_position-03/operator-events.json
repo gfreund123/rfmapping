@@ -1,0 +1,37 @@
+{
+  "recorded_utc": "2026-09-05T23:30:38.874538+00:00",
+  "events": [
+    {
+      "event": "third_and_final_placement",
+      "user_text": "ok go for the third and final spot - roughly 30-60 degree from spot 1 (imagine turning spot 1 counter clock wise) - go!",
+      "relative_orientation": {
+        "reference_position": "position-01",
+        "reported_rotation_interval_degrees": [
+          30,
+          60
+        ],
+        "direction": "counterclockwise",
+        "axis": "Not otherwise specified; operator described imagining spot 1 turning counterclockwise.",
+        "source": "Operator estimate",
+        "interpretation": "Approximate interval, not calibrated heading or a probability distribution."
+      }
+    },
+    {
+      "event": "capture_instruction",
+      "instruction": "Keep the setup fixed for the full capture and verification; this is the final planned position."
+    },
+    {
+      "recorded_utc": "2026-09-05T23:50:01.278858+00:00",
+      "event": "final_position_collection_complete",
+      "message": "Spot 3 is complete and verified. TX is muted, confirmed by a separate device readback. You can move freely now; no fourth spot is needed.",
+      "actual_subsequent_movement": "Not observed or asserted",
+      "final_state_check": "experiments/2026-09-05T232905Z_position-03/final-state-check.json",
+      "bundle": "experiments/2026-09-05T232905Z_position-03/bundle.json"
+    }
+  ],
+  "coordinates_m": null,
+  "height_m": null,
+  "antenna_spacing_m": null,
+  "operator_during_capture": "Instructed to keep equipment fixed; exact posture and movement not independently recorded.",
+  "blind_inference_preference": "Earlier user explicitly withheld placement/height ground truth and requested inference from RF."
+}

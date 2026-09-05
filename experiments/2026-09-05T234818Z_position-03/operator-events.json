@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-09-05T23:50:01.278858+00:00",
+  "position_id": "position-03",
+  "parent_position_run": "2026-09-05T232905Z_position-03",
+  "parent_annotations": "experiments/2026-09-05T232905Z_position-03/operator-events.json",
+  "operator_during_capture": "No further movement report received; actual pose not independently measured."
+}

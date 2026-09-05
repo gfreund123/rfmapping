@@ -1,6 +1,6 @@
 {
   "schema": "rfmapping.positions/v1",
-  "updated_utc": "2026-09-05T23:19:55.380973+00:00",
+  "updated_utc": "2026-09-05T23:50:01.278858+00:00",
   "coordinate_system": null,
   "positions": [
     {
@@ -47,8 +47,36 @@
       "operator_metadata": "experiments/2026-09-05T225813Z_position-02/operator-events.json",
       "move_cue": "experiments/2026-09-05T225813Z_position-02/move-cue.json",
       "geometry_inference": "Unknown; user supplied no position/height ground truth and requested blind RF inference."
+    },
+    {
+      "position_id": "position-03",
+      "description": "Third and final operator-chosen spot",
+      "coordinates_m": null,
+      "height_m": null,
+      "orientation_degrees": null,
+      "relative_orientation": {
+        "reference_position": "position-01",
+        "reported_rotation_interval_degrees": [
+          30,
+          60
+        ],
+        "direction": "counterclockwise",
+        "axis": "Not otherwise specified; operator described imagining spot 1 turning counterclockwise.",
+        "source": "Operator estimate",
+        "interpretation": "Approximate interval, not calibrated heading or a probability distribution."
+      },
+      "antenna_spacing_m": null,
+      "status": "capture-verified-final-collection-complete",
+      "experiment_id": "EXP-2026-09-06-006",
+      "main_run": "2026-09-05T232905Z_position-03",
+      "controls_runs": [
+        "2026-09-05T234818Z_position-03"
+      ],
+      "operator_metadata": "experiments/2026-09-05T232905Z_position-03/operator-events.json",
+      "geometry_inference": "Unknown; no position/height ground truth requested or supplied.",
+      "collection_complete": "experiments/2026-09-05T232905Z_position-03/collection-complete.json"
     }
   ],
-  "next_position_id": "position-03",
-  "next_state": "Await operator placement at spot 3; TX muted."
+  "next_position_id": null,
+  "next_state": "All three requested placements collected and verified. Physical collection complete; no additional position planned."
 }

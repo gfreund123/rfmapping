@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-09-05T23:51:40.713930+00:00",
+  "command": "python -m unittest discover -s tests -v",
+  "tests_run": 35,
+  "result": "passed",
+  "duration_seconds": 9.393,
+  "hardware_access": false,
+  "test_source_sha256": {
+    "test_channel_features.py": "4360a28fca9f9370898043abd78ff446b7bc247fa8fb88818c3b3a5491080486",
+    "test_compare_positions.py": "4f7bc4691e258987ed245b43c67bc50239bad66587e5e5a1534da91fb08f39e9",
+    "test_fringe_diagnostic.py": "bdc6ef5cce4555957a7df536a7321e17a780cf4d1c8849e25c17b261e2b74ed9",
+    "test_held_coverage.py": "72bf22b65af4ff5c7a160ba8553f4b620bc34a99ecf78e0d32f1a550466bebe5",
+    "test_metadata_retry.py": "7139620cbaa4271a5a0ef6621658ba4ba5015944e5af7fe9829fce6e2a7cc855",
+    "test_metrics.py": "de713b3dfbe9d3b24ba6cde8374e91927ab6a10bd3739148805d31af9b5e9d59",
+    "test_overlap.py": "020297ec9c00a1e4e3210ebaf78590d114b9bc10d4f1f5f3001f6b2ed360fa84",
+    "test_overlap_closure.py": "c55c0e961a352e244a774366aa07c33ad6282f86efb42855459a8e1f087de4fc",
+    "test_phase_shape.py": "034e374934fe8a583df7a428376ed00699488d9dd1984bb645cfac8197ccbb99",
+    "test_pilot.py": "d79897d55655e06ada6294e513c47e74453afc76fb986ca403745e1dfb22e896",
+    "test_position_dsp.py": "3e82f35c18e7195f93d6c01b1fee9e2d78b2f34e6e9ee6d41daf554395f43074",
+    "test_position_guards.py": "ae0a32b4a802eef76786ea290e010094cb4d256016bddae1036a93a5799e8b7e",
+    "test_prbs.py": "9be860dd493640b0ab9a84eb8ea31e42dba5606b3e5ffe8a012d7294f53fabc4"
+  },
+  "qualification": "Passing numerical tests includes correctly preserving the known false-positive fringe counterexample; it does not validate a physical echo or room model."
+}

@@ -51,6 +51,32 @@ noise and estimator bias. It does not identify the cause by itself.
 
 ## What a future blind inference must resolve
 
+### Empirical correction checked at another placement
+
+`phase_shape_diagnostic.py` estimates one cubic phase coefficient in baseband
+offset from position 1's median signed triangle closure. The exact overlap
+estimator applied to a synthetic cubic phase response gives its scaling. The
+coefficient is then fixed for the other placements; no physical channel file is
+modified. A known-truth direct-plus-echo numerical control verifies removal of a
+specified cubic impairment while preserving the simulated echo response.
+
+The fitted coefficient is approximately -0.04412 radians per MHz cubed. It reduces
+position 1's median absolute phase closure from 6.188 to 0.241 degrees and the
+held-out position 2's from 6.124 to 0.273 degrees. This supports a repeatable
+measurement contribution but does not identify its physical source. The 95th
+percentiles of equivalent fit-delay closure remain 20.48 and 22.29 ns. These are
+consistency residuals, not room echoes or calibrated uncertainty bounds.
+[Two-position correction check](../reports/phase-shape-validation/phase-shape.json).
+
+The unchanged coefficient also reduces the final position 3's median absolute
+phase closure from 6.211 to 0.268 degrees. Its 95th-percentile fit-delay closure
+remains 22.27 ns. Several individual high-frequency fits have much larger
+residuals, retained in the full results. No uncertainty threshold was calibrated
+to convert these discrepancies into distance errors.
+[All-three-position check](../reports/phase-shape-three-positions/phase-shape.json).
+
+### Remaining requirements
+
 - Test reproducibility of spectral structure across independent sweeps and spots.
 - Test whether a shared instrument-response model explains overlap discrepancies
   on data withheld from fitting; retain model residuals and sensitivity.

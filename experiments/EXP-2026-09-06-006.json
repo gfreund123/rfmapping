@@ -1,0 +1,266 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-06-006",
+  "status": "completed",
+  "title": "Third and final RF placement, approximately 30-60 degrees counterclockwise from spot 1",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "position_id": "position-03",
+  "local_dates": [
+    "2026-09-06"
+  ],
+  "timezone": "Asia/Jerusalem",
+  "main_run": "2026-09-05T232905Z_position-03",
+  "goal": "Complete the third and final raw RF acquisition bundle; compare all positions and assess what blind room inference is supported.",
+  "hypothesis": "The final placement may yield a distinct repeatable RF response; echo-delay interpretations must survive nuisance-response and repeatability checks.",
+  "ground_truth": {
+    "position": "Operator reports third and final spot",
+    "relative_orientation": {
+      "reference_position": "position-01",
+      "reported_rotation_interval_degrees": [
+        30,
+        60
+      ],
+      "direction": "counterclockwise",
+      "axis": "Not otherwise specified; operator described imagining spot 1 turning counterclockwise.",
+      "source": "Operator estimate",
+      "interpretation": "Approximate interval, not calibrated heading or a probability distribution."
+    },
+    "coordinates_m": null,
+    "height_m": null,
+    "pilot": "Saved deterministic waveforms and exact source hashes"
+  },
+  "protocol": "docs/position-protocol.md",
+  "receive_only": false,
+  "environment": "Indoor room; computer connected; exact new placement, router distance and operator posture unknown.",
+  "rf_chain": "Pluto and supplied TX/RX antennas, no added amplifier reported.",
+  "calibration_state": "No calibrated radio/antenna gain, EIRP, absolute delay or cross-tuning phase.",
+  "authorization_and_limits": "Existing user-authorized low-power lab operation. Fresh passive scans and per-burst guards; exclude cellular, GNSS and observed occupied intervals. Same power, duty and bounded-burst limits as prior spots.",
+  "storage_budget_bytes_per_acquisition_stage": 3221225472,
+  "success_criteria": [
+    "Complete all non-excluded sweep pairs and required reference trains.",
+    "Verify raw/source hashes, sample integrity, pilot evidence and negative controls.",
+    "Verify final TX mute and restored RX settings.",
+    "Retain unknown geometry and reported orientation uncertainty; do not invent a floor plan from unsupported estimates."
+  ],
+  "uncertainties": [
+    "No ground-truth location or height.",
+    "Orientation only approximately known.",
+    "Position, orientation, operator state and instrument response can all affect the data."
+  ],
+  "failures": [],
+  "next_test": "Physical collection is complete. Any further inference can work offline on the retained complex samples; no fourth position requested.",
+  "completed_utc": "2026-09-05T23:51:40.699373+00:00",
+  "run_ids": [
+    "2026-09-05T232905Z_position-03",
+    "2026-09-05T234818Z_position-03"
+  ],
+  "held_control_runs": [
+    "2026-09-05T234818Z_position-03"
+  ],
+  "raw_capture_bytes_verified": 2690646016,
+  "results": {
+    "rf_bursts": 240,
+    "raw_file_count": 812,
+    "paired_frequency_centers": 97,
+    "commanded_unmute_seconds": 92.30952460030676,
+    "main_sweep_repeatability": {
+      "forward_reverse_median_abs_difference_db": 0.3051587768359951,
+      "forward_reverse_p95_abs_difference_db": 0.7589891024938736,
+      "forward_reverse_median_abs_snr_difference_db": 0.0766692803933822,
+      "forward_reverse_p95_abs_snr_difference_db": 0.19530736221415346
+    },
+    "held_reference_trains": [
+      {
+        "center_hz": 5771500000,
+        "burst_count": 7,
+        "mean_db": -60.52884703612375,
+        "between_burst_sd_db": 0.07362413742602983,
+        "min_max_db": [
+          -60.627146971015065,
+          -60.44147850357052
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5771500000_initial",
+          "held_5771500000_repeat1",
+          "held_5771500000_repeat2",
+          "held_5771500000_repeat3",
+          "held_5771500000_repeat4",
+          "held_5771500000_repeat5",
+          "held_5771500000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5771500000_final_off"
+        ]
+      },
+      {
+        "center_hz": 5800000000,
+        "burst_count": 7,
+        "mean_db": -64.69227780267151,
+        "between_burst_sd_db": 0.07022135512804303,
+        "min_max_db": [
+          -64.80347099473776,
+          -64.594335617869
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5800000000_initial",
+          "held_5800000000_repeat1",
+          "held_5800000000_repeat2",
+          "held_5800000000_repeat3",
+          "held_5800000000_repeat4",
+          "held_5800000000_repeat5",
+          "held_5800000000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5800000000_final_off"
+        ]
+      },
+      {
+        "center_hz": 5853100000,
+        "burst_count": 7,
+        "mean_db": -70.79082186357098,
+        "between_burst_sd_db": 0.05355412407158031,
+        "min_max_db": [
+          -70.85500165968813,
+          -70.71259155543935
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5853100000_initial",
+          "held_5853100000_repeat1",
+          "held_5853100000_repeat2",
+          "held_5853100000_repeat3",
+          "held_5853100000_repeat4",
+          "held_5853100000_repeat5",
+          "held_5853100000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5853100000_final_off"
+        ]
+      }
+    ],
+    "final_tx_mute_verified": true,
+    "acquisition_ready_to_move": true,
+    "mapping_ready": false,
+    "all_three_positions": {
+      "total_rf_bursts_including_retained_partial_controls": 722,
+      "total_verified_raw_files": 2441,
+      "total_verified_raw_bytes": 8086618112,
+      "all_final_mutes_verified": true,
+      "room_geometry_status": "not identified"
+    },
+    "phase_shape_correction": {
+      "input": {
+        "run_id": "2026-09-05T232905Z_position-03",
+        "position_id": "position-03",
+        "results_relative_path": "experiments/2026-09-05T232905Z_position-03/results.json",
+        "results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe",
+        "review_sha256_lf_utf8": "59f79a39121baf5642ed9ceef617e2e4823ae7b0d4923923b644f880f25669ea",
+        "bundle_sha256_lf_utf8": "4beeb33b9eb7a448650663f27b83a8efdcdaf1a7dbb3889a1e965df9269c3c0a",
+        "position_note": "Third and final operator-chosen spot. SDR rotated approximately 30-60 degrees counterclockwise relative to spot 1, as described by imagining spot 1 turning counterclockwise. Location and height withheld for blind RF inference; antenna geometry unmeasured.",
+        "warnings": [
+          "95th percentile forward/reverse power change exceeds 0.5 dB."
+        ],
+        "operator_metadata": {
+          "recorded_utc": "2026-09-05T23:30:38.874538+00:00",
+          "events": [
+            {
+              "event": "third_and_final_placement",
+              "user_text": "ok go for the third and final spot - roughly 30-60 degree from spot 1 (imagine turning spot 1 counter clock wise) - go!",
+              "relative_orientation": {
+                "reference_position": "position-01",
+                "reported_rotation_interval_degrees": [
+                  30,
+                  60
+                ],
+                "direction": "counterclockwise",
+                "axis": "Not otherwise specified; operator described imagining spot 1 turning counterclockwise.",
+                "source": "Operator estimate",
+                "interpretation": "Approximate interval, not calibrated heading or a probability distribution."
+              }
+            },
+            {
+              "event": "capture_instruction",
+              "instruction": "Keep the setup fixed for the full capture and verification; this is the final planned position."
+            },
+            {
+              "recorded_utc": "2026-09-05T23:50:01.278858+00:00",
+              "event": "final_position_collection_complete",
+              "message": "Spot 3 is complete and verified. TX is muted, confirmed by a separate device readback. You can move freely now; no fourth spot is needed.",
+              "actual_subsequent_movement": "Not observed or asserted",
+              "final_state_check": "experiments/2026-09-05T232905Z_position-03/final-state-check.json",
+              "bundle": "experiments/2026-09-05T232905Z_position-03/bundle.json"
+            }
+          ],
+          "coordinates_m": null,
+          "height_m": null,
+          "antenna_spacing_m": null,
+          "operator_during_capture": "Instructed to keep equipment fixed; exact posture and movement not independently recorded.",
+          "blind_inference_preference": "Earlier user explicitly withheld placement/height ground truth and requested inference from RF."
+        },
+        "operator_metadata_sha256_lf_utf8": "85b682d12d26604144ccedad74bc260675c4060d54281149f037bd33e69f5e1a"
+      },
+      "role": "held-out placement",
+      "before": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 6.2111348267800315,
+          "p95_absolute": 7.030707895896712,
+          "max_absolute": 32.60056902847913
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 5.059131940847934,
+          "p95_absolute": 22.356414966118766,
+          "max_absolute": 229.73205938998535
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.06193143524666585,
+          "p95_absolute": 0.2643475462832655,
+          "max_absolute": 0.5124153648126946
+        }
+      },
+      "after": {
+        "wrapped_phase_closure_deg": {
+          "median_absolute": 0.26825202993666447,
+          "p95_absolute": 1.249677711390282,
+          "max_absolute": 28.32405950300369
+        },
+        "equivalent_fit_delay_closure_ns": {
+          "median_absolute": 5.141798341833399,
+          "p95_absolute": 22.273731762231037,
+          "max_absolute": 229.8141056849913
+        },
+        "gain_closure_db": {
+          "median_absolute": 0.06182565835514457,
+          "p95_absolute": 0.26446381972617616,
+          "max_absolute": 0.5123526330071061
+        }
+      }
+    },
+    "fringe_stability_screen_passed": false,
+    "fringe_method_specificity_validated": false
+  },
+  "warnings": [
+    "95th percentile forward/reverse power change exceeds 0.5 dB."
+  ],
+  "warning_disposition": "Sweep variation is retained as measured uncertainty. Complete coverage, raw/source integrity and pilot/negative-control evidence passed. Passing acquisition checks does not certify mapping precision.",
+  "metadata_anomalies": [],
+  "verification": {
+    "bundle": "experiments/2026-09-05T232905Z_position-03/bundle.json",
+    "independent_final_device_readback": "experiments/2026-09-05T232905Z_position-03/final-state-check.json",
+    "unit_tests": 35,
+    "unit_test_result": "passed",
+    "command": "python -m unittest discover -s tests -v",
+    "test_duration_seconds": 9.393,
+    "plots": "Final spot capture quality and three-position overview rendered and visually inspected."
+  },
+  "inference_validation_deviation": "The initial expectation that the smooth no-echo synthetic control would fail the ripple stability screen did not hold. This counterexample was retained, documented and used to disqualify the screen as an echo detector; it was not hidden by tuning thresholds.",
+  "reports": {
+    "bundle": "reports/2026-09-05T232905Z_position-03/bundle.md",
+    "all_three": "reports/three-position-experiment/report.md",
+    "phase_correction": "reports/phase-shape-three-positions/phase-shape.json",
+    "magnitude_method": "docs/magnitude-inference.md"
+  }
+}

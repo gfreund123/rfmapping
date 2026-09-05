@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-09-05T23:49:46.459595+00:00",
+  "receive_only_state_readback": true,
+  "no_buffers_or_waveforms_started": true,
+  "final_tx_mute_verified": true,
+  "settings": {
+    "rx_lo_hz": 2400000000,
+    "sample_rate_hz": 30719999,
+    "stream_sample_rate_hz": 30719999,
+    "rf_bandwidth_hz": 18000000,
+    "gain_mode": "slow_attack",
+    "gain_db": 71.0,
+    "fir_enabled": "0",
+    "port": "A_BALANCED",
+    "tx_lo_powerdown": "1",
+    "tx_attenuation_setting_db": -89.75
+  },
+  "bist": {
+    "bist_prbs": "0",
+    "bist_tone": "0",
+    "loopback": "0"
+  }
+}

@@ -2,9 +2,35 @@
 
 Reproducible experiments with one ADALM-PlutoSDR and its supplied TX/RX antennas.
 The objective is to investigate which room properties can be inferred from RF
-measurements, starting at one fixed desk position and later adding known positions.
+measurements, starting at one fixed desk position and adding two blind placements.
 
-## Latest: position 2 complete; blind placement comparison saved
+## Latest: all three positions collected and verified
+
+[Read the three-position report](reports/three-position-experiment/report.md).
+
+- All three spots have both 97-center frequency sweeps and all three reference
+  trains. The bundles retain 722 pilot bursts and 2,441 raw captures: **8.09 GB**
+  of verified raw capture data, including two partial-control bursts at spot 1.
+- The final spot completed in about 21 minutes. TX mute and restored RX settings
+  were verified before releasing the operator. Physical collection is complete.
+- Locations and heights remain unknown. Spot 3 was reported 30–60 degrees
+  counterclockwise from spot 1; spot 2 was reported roughly 140–220 degrees rotated.
+- A phase correction fitted at spot 1 reduced the median overlap inconsistency
+  at both other spots from about 6.2 to 0.27 degrees. Absolute delay is still
+  uncalibrated, and some individual overlap fits have large residuals.
+- The power-ripple method recovers a simulated echo but also accepts a smooth
+  no-echo control. That failure is preserved: **no wall ranges, placement
+  coordinates or room map are validated**.
+- All 35 numerical and acquisition-control tests pass. Raw complex samples stay
+  local; public metadata, hashes, source snapshots and reports are committed.
+
+![All three measured RF responses](reports/three-position-experiment/overview.png)
+
+[Final spot bundle](reports/2026-09-05T232905Z_position-03/bundle.md) ·
+[Phase correction check](reports/phase-shape-three-positions/phase-shape.json) ·
+[Power inference and failed control](docs/magnitude-inference.md).
+
+## Position 2 complete; blind placement comparison saved
 
 [Read the position 2 bundle](reports/2026-09-05T225813Z_position-02/bundle.md)
 and [the comparison with position 1](reports/positions-01-02/report.md).
@@ -24,7 +50,7 @@ and [the comparison with position 1](reports/positions-01-02/report.md).
 
 ![Comparison of two placements](reports/positions-01-02/comparison.png)
 
-## Position 1 ready for relocation
+## Position 1 complete
 
 [Read the complete position bundle](reports/2026-09-05T221649Z_position-01/bundle.md)
 and [the reusable collection protocol](docs/position-protocol.md).
@@ -41,7 +67,7 @@ and [the reusable collection protocol](docs/position-protocol.md).
   a single-command per-position workflow are implemented. All 25 tests pass.
 - TX was muted and RX restored before the position 2 move cue.
 
-At the next settled position, the authorized measurement runs with:
+The reusable collection command used for position 2 was:
 
 ```powershell
 python scripts/collect_position.py --position-id position-02 --note "Position and antenna geometry description" --execute
@@ -145,8 +171,8 @@ not expected overflow at deliberately excessive rates.
 - `tests/`: signal processing, exclusion guards, recovery and coverage checks.
 - `reports/`: generated scientific plots and interpretations.
 
-The next experiment repeats the saved profile at another position, preserving
-antenna geometry and recording approximate placement. A quiet receive trace is not sufficient evidence
+All three requested placements are complete; no fourth position is planned.
+Further models can use the saved raw data offline. A quiet receive trace is not sufficient evidence
 that a transmit frequency is suitable. The user's exclusions of cellular, GNSS
 and occupied spectrum continue to apply.
 
