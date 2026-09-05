@@ -1,0 +1,79 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-06-002",
+  "status": "completed",
+  "title": "Position 1 spectrum, sample-integrity and duplex preflight",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "position_id": "desk-1",
+  "local_dates": [
+    "2026-09-05",
+    "2026-09-06"
+  ],
+  "timezone": "Asia/Jerusalem",
+  "goal": "Establish sample ordering, observed spectral activity, coded-pilot detectability and timing behavior before attempting room inference.",
+  "receive_only": false,
+  "ground_truth": {
+    "prbs": "Documented RX-internal 16-bit PRBS; analog path bypassed",
+    "pilot": "Saved deterministic 4096-sample waveform",
+    "room_geometry": null
+  },
+  "environment": "Attached stock TX/RX antennas on desk near computer, a few feet from router; operator nearby and may move. No measured antenna geometry or motion timestamps.",
+  "protocol": [
+    "RX-internal PRBS at 5/7/5 MS/s",
+    "Three 2.4/5.8 GHz passive sweeps with lower-gain repeats on clipping",
+    "Ten-second candidate-window observations",
+    "Fresh RX guard and TX-off baseline",
+    "Seven highly attenuated coded-pilot bursts at 5771.5 MHz",
+    "Independent TX-off negative control and mute verification"
+  ],
+  "success_criteria": [
+    "PRBS sequence valid at 5 MS/s and controlled loss detected at 7 MS/s",
+    "Reject intermittently active candidate on longer listen",
+    "Detect known pilot with no clipping or overflow within bounded RF bursts",
+    "Final RX settings restored; TX and BIST disabled"
+  ],
+  "raw_capture_bytes_verified": 1350565888,
+  "storage_budget_bytes": 2147483648,
+  "run_ids": [
+    "2026-09-05T205624Z_rx-prbs",
+    "2026-09-05T205753Z_survey",
+    "2026-09-05T210028Z_monitor",
+    "2026-09-05T210328Z_duplex-calibration",
+    "2026-09-05T210345Z_duplex-calibration",
+    "2026-09-05T210519Z_tx-off-control"
+  ],
+  "code_identity": "Exact source snapshots and SHA-256 in each run",
+  "results": {
+    "prbs_validated_5msps_samples": 33554432,
+    "prbs_7msps_skips": 3,
+    "main_sweep_dwells": 234,
+    "lower_gain_repeats": 2,
+    "fixed_monitor_centers_mhz": [
+      5771.5,
+      5853.1,
+      2475.5
+    ],
+    "pilot_center_mhz": 5771.5,
+    "rf_bursts": 7,
+    "detected_repeats_at_45db_attenuation": 4,
+    "commanded_unmute_seconds": 2.7068484999908833,
+    "final_tx_mute_verified": true
+  },
+  "failures": [
+    "One software attempt failed before TX unmute: libiio Buffer.write required bytearray. Fixed and retained.",
+    "Two 2.4 GHz sweep captures clipped at gain 40 dB; repeats at gain 20 dB did not clip.",
+    "7 MS/s deliberate overload produced three buffer-boundary PRBS skips."
+  ],
+  "uncertainties": [
+    "Finite spectrum observation and uncalibrated antenna/receiver response",
+    "Actual radiated power and emissions unmeasured",
+    "PRBS errors spanning exactly a whole period may be invisible",
+    "Pilot includes direct coupling and unresolved multipath",
+    "Capture timing offsets arbitrary across restarts",
+    "Phase coherence across retunes and absolute hardware delay uncalibrated",
+    "No bearing observability from one fixed ordinary antenna pair"
+  ],
+  "next_test": "Reference-aligned channel measurement with a known scene change; do not infer a room outline from these preflight results."
+}

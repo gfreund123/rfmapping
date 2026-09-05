@@ -4,7 +4,26 @@ Reproducible experiments with one ADALM-PlutoSDR and its supplied TX/RX antennas
 The objective is to investigate which room properties can be inferred from RF
 measurements, starting at one fixed desk position and later adding known positions.
 
-## Position 1: device check completed
+## Latest: position 1 preflight completed
+
+[Read the spectrum, sample-integrity and duplex report](reports/2026-09-06-preflight/report.md).
+
+- RX-internal PRBS checked 33.6 million samples at 5 MS/s without a sequence error;
+  the 7 MS/s overload control detected three buffer-boundary skips.
+- Repeated passive sweeps found strong 2.4 GHz activity. A seemingly quiet
+  2475.5 MHz interval showed bursts on a longer listen and was excluded.
+- The monitored 5771.5 and 5853.1 MHz windows showed no comparable excess activity
+  during the finite observations. That is not proof of permanent vacancy.
+- Seven highly attenuated pilot bursts at 5771.5 MHz used about 2.7 seconds of
+  commanded RF-on time. Four repeats at 45 dB TX attenuation produced clear
+  matches, without clipping or FIFO overflow. TX is muted again.
+- Timing offsets changed after stream restarts. Each subsequent measurement needs
+  a reference; the pilot's 1.8 MHz span cannot resolve room-scale reflections.
+
+The nearby computer, router and possibly moving operator are recorded as part of
+the setup. No room geometry has been inferred from these preflight measurements.
+
+## Initial device check (5 September 2026)
 
 [Read the measured report](reports/2026-09-05-device-check/report.md).
 
@@ -19,7 +38,8 @@ measurements, starting at one fixed desk position and later adding known positio
   out-of-format samples were observed. This does not certify analog linearity or
   perfect sample continuity.
 - RX settings were restored. TX remains muted: oscillator powered down, attenuation
-  at −89.75 dB, DDS disabled and zeroed. No transmit waveform was generated.
+  at −89.75 dB, DDS disabled and zeroed. No transmit waveform was generated during
+  this initial receive-only stage.
 
 ![Characterization overview](reports/2026-09-05-device-check/overview.png)
 
@@ -56,15 +76,30 @@ not expected overflow at deliberately excessive rates.
 
 - `experiments/`: sanitized observations, manifests and exact capture source.
 - `data/local/`: ignored raw IQ, SigMF sidecars and private context/serial records.
-- `scripts/`: capture and offline analysis; no TX implementation exists yet.
+- `scripts/`: receive capture, internal PRBS, offline analysis and a bounded RF
+  calibration script specific to the surveyed 5771.5 MHz window.
 - `tests/`: synthetic numerical checks for sample rails and PSD/power scaling.
 - `reports/`: generated scientific plots and interpretations.
 
-The next experimental questions are usable spectrum at this position, TX/RX
-leakage and synchronization, and repeatability of a known scene change. A quiet
-receive trace is not sufficient evidence that a transmit frequency is suitable.
-Transmission remains a separate experimental stage, subject to the user's
-exclusion of cellular, GNSS and occupied spectrum.
+The next experimental question is repeatability of a known scene change with a
+timing reference in each capture. A quiet receive trace is not sufficient evidence
+that a transmit frequency is suitable. The user's exclusions of cellular, GNSS
+and occupied spectrum continue to apply.
+
+Additional receive-only checks can be reproduced with:
+
+```powershell
+python scripts/check_prbs.py
+python scripts/survey_spectrum.py
+python scripts/survey_spectrum.py --monitor 5771.5 5853.1 2475.5
+python scripts/verify_tx_off.py
+```
+
+`check_duplex.py` transmits short cyclic-pilot bursts at the fixed 5771.5 MHz
+center after a fresh receive guard check. It enforces at least 45 dB hardware
+attenuation, digital backoff, a separate-context mute timer and final cleanup.
+It was used under the user's laboratory authorization; its recorded settings do
+not constitute a radiated-power calibration or general frequency authorization.
 
 Several separated quiet frequency intervals cannot automatically be combined into
 one coherent wideband measurement. Retuning phase, timing, hardware response and

@@ -1,0 +1,1 @@
+This attempt stopped before TX LO unmute. The libiio 0.25 Python binding requires a writable bytearray for Buffer.write; immutable bytes raised TypeError. No RF burst was started. The final TX mute was verified. The corrected script uses bytearray and retains this failed attempt for provenance.
