@@ -1,0 +1,77 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-05-001",
+  "title": "Position 1 device and receive-path characterization",
+  "status": "completed",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "position_id": "desk-1",
+  "goal": "Determine receiver settings, host capture limits and basic sample integrity before RF room-mapping experiments.",
+  "hypothesis": "The extended configuration accepts wide RX settings, but the USB host path imposes a lower continuous throughput ceiling.",
+  "created_utc": "2026-09-05T20:49:23.415843+00:00",
+  "completed_utc": "2026-09-05T20:51:05.393301+00:00",
+  "timezone": "Asia/Jerusalem",
+  "receive_only": true,
+  "ground_truth": null,
+  "environment": {
+    "indoors": true,
+    "placement": "On desk, per user",
+    "antennas": "Standard supplied TX and RX antennas attached, per user",
+    "operator": "Seated near antennas; may move or leave. Movement timing and positions not logged.",
+    "antenna_spacing_m": null,
+    "antenna_orientation": null,
+    "room_dimensions_m": null,
+    "weather": "Not collected; indoor experiment",
+    "power": "USB data connection observed; complete power wiring not independently inspected"
+  },
+  "protocol": [
+    "Read live IIO device identity, ranges and initial state.",
+    "Power down TX LO, maximize TX attenuation, zero/disable DDS; verify before and after captures.",
+    "Smoke-test 2.5 MS/s RX.",
+    "Capture six sample rates from 2.5 to 61.44 MS/s; measure delivery and sticky RX FIFO overflow.",
+    "Check manual RX gain settings 20/40/60 dB qualitatively with ambient input.",
+    "Repeat 2.5 MS/s for approximately ten seconds.",
+    "Check 5/6/7 MS/s throughput boundary; repeat 5 MS/s for 13.4 seconds.",
+    "Restore initial RX settings, retain TX mute and verify raw-data hashes."
+  ],
+  "storage_budget_bytes": 2147483648,
+  "raw_bytes": 864026624,
+  "run_ids": [
+    "2026-09-05T204923Z_smoke",
+    "2026-09-05T204934Z_full",
+    "2026-09-05T205028Z_threshold"
+  ],
+  "code_provenance": "Exact capture source snapshots stored beside each run, matching script_sha256. Analysis source is versioned in Git.",
+  "result": {
+    "conditions_completed": 14,
+    "buffers_received": 824,
+    "complex_samples_received": 216006656,
+    "digital_rail_hits": 0,
+    "out_of_format_components": 0,
+    "conservative_host_rate_sps": 5000000,
+    "short_pass_rate_sps": 6000000,
+    "first_tested_overflow_rate_sps": 7000000,
+    "rx_settings_restored": true,
+    "tx_mute_verified": true
+  },
+  "failures": [
+    "RX FIFO overflow at 7, 10, 20, 30.72 and 61.44 MS/s; these captures must not be treated as continuous."
+  ],
+  "suspected_causes": [
+    "Host transport pipeline saturates around 6.45 MS/s. The individual contributions of USB, RNDIS, device CPU and host are not isolated."
+  ],
+  "uncertainties": [
+    "Sample continuity not certified by a known test sequence or hardware timestamps.",
+    "Reference source and absolute clock accuracy unverified.",
+    "Actual analog filter response, noise figure and gain accuracy uncalibrated.",
+    "Ambient radio traffic and operator motion are uncontrolled.",
+    "One fixed pair has no independent bearing observation."
+  ],
+  "next_tests": [
+    "Receive-only spectrum occupancy survey at position 1.",
+    "A controlled source or RX-internal test sequence to validate continuity more strongly if needed.",
+    "TX/RX timing and leakage calibration only in a suitable transmit interval, respecting the user exclusions.",
+    "A known target displacement before interpreting measured changes as geometry."
+  ]
+}
