@@ -1,0 +1,306 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-06-004",
+  "status": "completed-with-recorded-deviations",
+  "title": "Position 1 full RF acquisition bundle before relocation",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "position_id": "position-01",
+  "position_alias": "desk-1",
+  "local_dates": [
+    "2026-09-06"
+  ],
+  "timezone": "Asia/Jerusalem",
+  "goal": "Preserve useful per-position RF samples, uncertainty controls and source provenance before relocating the equipment.",
+  "hypothesis": "Local frequency-response features may repeat at a spot and differ at other spots; assess instrumental variability before assigning changes to room geometry.",
+  "ground_truth": {
+    "waveforms": "Deterministic saved TX sample arrays",
+    "position": "Original desk location; user confirmed fixed equipment during main run",
+    "operator": "User confirmed stayed in place during main run",
+    "coordinates_m": null,
+    "height_m": null,
+    "antenna_geometry": null
+  },
+  "receive_only": false,
+  "environment": "Stock TX/RX antennas; Pluto near computer and router. Operator nearby.",
+  "calibration_state": "Uncalibrated radio/antenna transfer, EIRP, delay and bearing. Independent capture phase/timing per tuning; no global coherence assumed.",
+  "authorization_and_limits": [
+    "TX confined to candidate windows wholly inside 5725-5875 MHz.",
+    "Cellular, GNSS and observed occupied intervals excluded.",
+    "Hardware settings and finite receive checks do not calibrate EIRP or establish permanent vacancy.",
+    "No phase coherence across retunes or positions assumed.",
+    "No floor plan or calibrated ranges claimed from acquisition alone."
+  ],
+  "protocol": "docs/position-protocol.md",
+  "main_plan": {
+    "position_id": "position-01",
+    "asset_id": "RFL-SDR-001",
+    "center_count": 97,
+    "centers_hz": [
+      5728000000,
+      5729500000,
+      5731000000,
+      5732500000,
+      5734000000,
+      5735500000,
+      5737000000,
+      5738500000,
+      5740000000,
+      5741500000,
+      5743000000,
+      5744500000,
+      5746000000,
+      5747500000,
+      5749000000,
+      5750500000,
+      5752000000,
+      5753500000,
+      5755000000,
+      5756500000,
+      5758000000,
+      5759500000,
+      5761000000,
+      5762500000,
+      5764000000,
+      5765500000,
+      5767000000,
+      5768500000,
+      5770000000,
+      5771500000,
+      5773000000,
+      5774500000,
+      5776000000,
+      5777500000,
+      5779000000,
+      5780500000,
+      5782000000,
+      5783500000,
+      5785000000,
+      5786500000,
+      5788000000,
+      5789500000,
+      5791000000,
+      5792500000,
+      5794000000,
+      5795500000,
+      5797000000,
+      5798500000,
+      5800000000,
+      5801500000,
+      5803000000,
+      5804500000,
+      5806000000,
+      5807500000,
+      5809000000,
+      5810500000,
+      5812000000,
+      5813500000,
+      5815000000,
+      5816500000,
+      5818000000,
+      5819500000,
+      5821000000,
+      5822500000,
+      5824000000,
+      5825500000,
+      5827000000,
+      5828500000,
+      5830000000,
+      5831500000,
+      5833000000,
+      5834500000,
+      5836000000,
+      5837500000,
+      5839000000,
+      5840500000,
+      5842000000,
+      5843500000,
+      5845000000,
+      5846500000,
+      5848000000,
+      5849500000,
+      5851000000,
+      5852500000,
+      5854000000,
+      5855500000,
+      5857000000,
+      5858500000,
+      5860000000,
+      5861500000,
+      5863000000,
+      5864500000,
+      5866000000,
+      5867500000,
+      5869000000,
+      5870500000,
+      5872000000
+    ],
+    "pilot_nominal_span_hz": 3600000,
+    "step_hz": 1500000,
+    "sample_rate_hz": 5000000,
+    "rx_tx_bandwidth_hz": 4000000,
+    "rx_gain_db": 40,
+    "minimum_tx_attenuation_db": 45,
+    "per_burst_watchdog_seconds": 0.8,
+    "maximum_rf_bursts": 240,
+    "maximum_total_commanded_unmute_seconds": 115.0,
+    "storage_budget_bytes": 3221225472,
+    "settling_seconds": 15,
+    "receive_guard": {
+      "centers_relative_to_tx_hz": [
+        -600000,
+        600000
+      ],
+      "rf_bandwidth_hz": 3000000,
+      "usable_offsets_hz": [
+        -1450000,
+        1450000
+      ],
+      "blocks_per_center": 2,
+      "reason": "Avoid measured receiver-edge noise rise; overlapping guards cover each other's RX DC gap and the full pilot span."
+    },
+    "steps": [
+      "RX-only 2.4 GHz context at gain 20 dB",
+      "RX-only 5.8 GHz survey offset from TX centers; reject observed occupied intervals",
+      "Legacy narrow pilot, two wideband anchors and attenuation controls",
+      "Ascending overlapping sweep; fresh RX guard before every RF burst",
+      "Repeated anchors and descending overlapping sweep",
+      "Final anchors, TX-off controls, restore and mute verification"
+    ],
+    "constraints": [
+      "TX confined to candidate windows wholly inside 5725-5875 MHz.",
+      "Cellular, GNSS and observed occupied intervals excluded.",
+      "Hardware settings and finite receive checks do not calibrate EIRP or establish permanent vacancy.",
+      "No phase coherence across retunes or positions assumed.",
+      "No floor plan or calibrated ranges claimed from acquisition alone."
+    ]
+  },
+  "run_ids": [
+    "2026-09-05T220806Z_position-01",
+    "2026-09-05T221129Z_guard-check",
+    "2026-09-05T221257Z_position-01",
+    "2026-09-05T221649Z_position-01",
+    "2026-09-05T223528Z_position-01",
+    "2026-09-05T223912Z_position-01",
+    "2026-09-05T224014Z_tx-off-control"
+  ],
+  "main_run": "2026-09-05T221649Z_position-01",
+  "held_control_runs": [
+    "2026-09-05T223528Z_position-01",
+    "2026-09-05T223912Z_position-01"
+  ],
+  "final_receive_only_check": "2026-09-05T224014Z_tx-off-control",
+  "raw_storage": "data/local/ (ignored; includes failed attempts and reused survey provenance)",
+  "primary_and_held_raw_bytes_verified": 2705326080,
+  "results": {
+    "paired_frequency_centers": 97,
+    "rf_bursts_including_partial_controls": 242,
+    "commanded_unmute_seconds": 92.97592190009891,
+    "main_and_held_raw_files": 817,
+    "complete_held_reference_trains": [
+      {
+        "center_hz": 5771500000,
+        "burst_count": 7,
+        "mean_db": -62.32081148582758,
+        "between_burst_sd_db": 0.014795893496373098,
+        "min_max_db": [
+          -62.34229823433595,
+          -62.29468551233984
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5771500000_initial",
+          "held_5771500000_repeat1",
+          "held_5771500000_repeat2",
+          "held_5771500000_repeat3",
+          "held_5771500000_repeat4",
+          "held_5771500000_repeat5",
+          "held_5771500000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5771500000_final_off"
+        ]
+      },
+      {
+        "center_hz": 5800000000,
+        "burst_count": 7,
+        "mean_db": -65.22184959157462,
+        "between_burst_sd_db": 0.04345850050554912,
+        "min_max_db": [
+          -65.28644690416677,
+          -65.16697985086
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5800000000_initial",
+          "held_5800000000_repeat1",
+          "held_5800000000_repeat2",
+          "held_5800000000_repeat3",
+          "held_5800000000_repeat4",
+          "held_5800000000_repeat5",
+          "held_5800000000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5800000000_final_off"
+        ]
+      },
+      {
+        "center_hz": 5853100000,
+        "burst_count": 7,
+        "mean_db": -71.31749281240238,
+        "between_burst_sd_db": 0.04902139203897868,
+        "min_max_db": [
+          -71.37682288008989,
+          -71.25915466567646
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5853100000_initial",
+          "held_5853100000_repeat1",
+          "held_5853100000_repeat2",
+          "held_5853100000_repeat3",
+          "held_5853100000_repeat4",
+          "held_5853100000_repeat5",
+          "held_5853100000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5853100000_final_off"
+        ]
+      }
+    ],
+    "forward_reverse_p95_abs_power_difference_db": 0.6701724006215896,
+    "final_tx_mute_verified": true,
+    "acquisition_ready_to_move": true,
+    "mapping_ready": false
+  },
+  "deviations": [
+    "Initial activity guard included a receiver-edge rise; first pass transmitted nothing. RX-only diagnostic and offset guard redesign retained.",
+    "Buffer API mismatch stopped the second attempt before RF. Its recent complete passive survey was reused with hashes and fresh per-burst guards.",
+    "Windows metadata replacement lock stopped the first held-control run. Seven completed 5771.5 MHz bursts accepted; two partial 5800 MHz bursts retained; missing complete trains recollected at the same spot.",
+    "Averaged weak-pilot evidence rule added after observing weaker upper-frequency response; original conservative flags retained and synthetic noise/weak-pilot cases tested.",
+    "Metadata lock error has its absolute user directory redacted publicly; exact original saved locally."
+  ],
+  "uncertainties": [
+    "No measured pose/position/antenna geometry.",
+    "Finite receive checks do not prove permanent spectrum vacancy.",
+    "Swept radio/antenna response includes unresolved direct coupling and multipath.",
+    "Retuned power varies more than held-frequency controls; time-scale differences confound attribution.",
+    "Overlap phase mismatch and nuisance timing prevent a validated coherent wideband range estimate."
+  ],
+  "verification": {
+    "main_review": "experiments/2026-09-05T221649Z_position-01/review.json",
+    "bundle": "experiments/2026-09-05T221649Z_position-01/bundle.json",
+    "unit_tests": 25,
+    "unit_test_result": "passed",
+    "tests_include": [
+      "known multipath and carrier/timing offsets",
+      "weak averaged pilot versus noise",
+      "guard coverage and occupied-spectrum rejection",
+      "Windows sharing-lock recovery",
+      "complete held-train coverage"
+    ]
+  },
+  "warning_disposition": "Retained >0.5 dB sweep-repeatability warning. Held controls establish lower short-term variation but do not correct or isolate the cause. Raw capture quality and coverage support leaving this spot; geometry inference remains unvalidated.",
+  "next_test": "Repeat the same complete bundle at position 2 after operator placement and settling, recording approximate pose and position when available."
+}

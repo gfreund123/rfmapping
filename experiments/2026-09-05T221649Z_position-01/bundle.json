@@ -1,0 +1,98 @@
+{
+  "schema": "rfmapping.position-bundle/v1",
+  "position_id": "position-01",
+  "reviewed_utc": "2026-09-05T22:41:51.401817+00:00",
+  "main_run": "2026-09-05T221649Z_position-01",
+  "controls_runs": [
+    "2026-09-05T223528Z_position-01",
+    "2026-09-05T223912Z_position-01"
+  ],
+  "main_review": "experiments/2026-09-05T221649Z_position-01/review.json",
+  "control_reviews": [
+    "experiments/2026-09-05T223528Z_position-01/verification.json",
+    "experiments/2026-09-05T223912Z_position-01/verification.json"
+  ],
+  "acquisition_ready_to_move": true,
+  "main_blockers": [],
+  "main_warnings": [
+    "95th percentile forward/reverse power change exceeds 0.5 dB."
+  ],
+  "control_issues": [],
+  "deviations": [
+    "Stopped on metadata replacement; only the explicitly selected complete trains are accepted. Original partial acquisition remains stopped."
+  ],
+  "raw_bytes_verified": 2705326080,
+  "held_summaries": [
+    {
+      "center_hz": 5771500000,
+      "burst_count": 7,
+      "mean_db": -62.32081148582758,
+      "between_burst_sd_db": 0.014795893496373098,
+      "min_max_db": [
+        -62.34229823433595,
+        -62.29468551233984
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5771500000_initial",
+        "held_5771500000_repeat1",
+        "held_5771500000_repeat2",
+        "held_5771500000_repeat3",
+        "held_5771500000_repeat4",
+        "held_5771500000_repeat5",
+        "held_5771500000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5771500000_final_off"
+      ]
+    },
+    {
+      "center_hz": 5800000000,
+      "burst_count": 7,
+      "mean_db": -65.22184959157462,
+      "between_burst_sd_db": 0.04345850050554912,
+      "min_max_db": [
+        -65.28644690416677,
+        -65.16697985086
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5800000000_initial",
+        "held_5800000000_repeat1",
+        "held_5800000000_repeat2",
+        "held_5800000000_repeat3",
+        "held_5800000000_repeat4",
+        "held_5800000000_repeat5",
+        "held_5800000000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5800000000_final_off"
+      ]
+    },
+    {
+      "center_hz": 5853100000,
+      "burst_count": 7,
+      "mean_db": -71.31749281240238,
+      "between_burst_sd_db": 0.04902139203897868,
+      "min_max_db": [
+        -71.37682288008989,
+        -71.25915466567646
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5853100000_initial",
+        "held_5853100000_repeat1",
+        "held_5853100000_repeat2",
+        "held_5853100000_repeat3",
+        "held_5853100000_repeat4",
+        "held_5853100000_repeat5",
+        "held_5853100000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5853100000_final_off"
+      ]
+    }
+  ],
+  "mapping_ready": false,
+  "bundle_source_sha256": "81472a617e563e3cf428a3f33340b11d6a1822ea038d76fbac633aca0d2a44fd"
+}

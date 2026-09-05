@@ -1,0 +1,8 @@
+{
+  "schema": "rfmapping.run-annotation/v1",
+  "outcome": "Complete passive survey; first TX buffer check failed before push or RF unmute.",
+  "reason": "Installed pylibiio Buffer exposes byte length through len(buffer), not buffer.nbytes.",
+  "repair": "Use len(buffer) and add a muted allocation/write check before the survey.",
+  "followup_run": "2026-09-05T221649Z_position-01",
+  "survey_reuse": "Original passive files are referenced by the followup run; all fresh pre-TX guards are still repeated."
+}

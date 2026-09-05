@@ -1,0 +1,43 @@
+{
+  "schema": "rfmapping.held-controls-review/v1",
+  "run_id": "2026-09-05T223528Z_position-01",
+  "verified_utc": "2026-09-05T22:41:50.956478+00:00",
+  "issues": [],
+  "passed": true,
+  "raw_bytes_verified": 65011712,
+  "required_centers_hz": [
+    5771500000
+  ],
+  "deviations": [
+    "Stopped on metadata replacement; only the explicitly selected complete trains are accepted. Original partial acquisition remains stopped."
+  ],
+  "position_id": "position-01",
+  "parent_position_run": "2026-09-05T221649Z_position-01",
+  "results_sha256_lf_utf8": "ca6035a417fb7e4c64ad918ca250d961d2e16c0a172c4254a99adad6cae59008",
+  "held_summaries": [
+    {
+      "center_hz": 5771500000,
+      "burst_count": 7,
+      "mean_db": -62.32081148582758,
+      "between_burst_sd_db": 0.014795893496373098,
+      "min_max_db": [
+        -62.34229823433595,
+        -62.29468551233984
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5771500000_initial",
+        "held_5771500000_repeat1",
+        "held_5771500000_repeat2",
+        "held_5771500000_repeat3",
+        "held_5771500000_repeat4",
+        "held_5771500000_repeat5",
+        "held_5771500000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5771500000_final_off"
+      ]
+    }
+  ],
+  "verification_source_sha256": "81472a617e563e3cf428a3f33340b11d6a1822ea038d76fbac633aca0d2a44fd"
+}

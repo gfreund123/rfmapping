@@ -4,7 +4,34 @@ Reproducible experiments with one ADALM-PlutoSDR and its supplied TX/RX antennas
 The objective is to investigate which room properties can be inferred from RF
 measurements, starting at one fixed desk position and later adding known positions.
 
-## Latest: position 1 departure and return test
+## Latest: position 1 ready for relocation
+
+[Read the complete position bundle](reports/2026-09-05T221649Z_position-01/bundle.md)
+and [the reusable collection protocol](docs/position-protocol.md).
+
+- Both sweeps cover all 97 planned frequency centers, with raw complex samples,
+  channel estimates, passive context, reference repeats and TX-off controls saved.
+- All three reference trains have seven completed bursts. Their fixed-frequency
+  power standard deviations were 0.015, 0.043 and 0.049 dB.
+- The bundle contains 242 RF bursts, including two retained partial-control
+  bursts. About 2.71 GB of raw capture data passed hash and integrity checks.
+- Retuned measurements vary more than held-frequency measurements. This limits
+  interpretation of small scene changes; no room geometry has been inferred.
+- Windows metadata-lock recovery, exclusion guards, raw-data verification and
+  a single-command per-position workflow are implemented. All 25 tests pass.
+- TX was muted and RX restored before the position 2 move cue.
+
+At the next settled position, the authorized measurement runs with:
+
+```powershell
+python scripts/collect_position.py --position-id position-02 --note "Position and antenna geometry description" --execute
+```
+
+Without `--execute`, this command only prints the plan. Raw samples and device
+identity remain local under ignored `data/local/`; the repository contains
+sanitized metadata, exact source snapshots and reports.
+
+## Position 1 departure and return test
 
 [Read the scene-change report](reports/2026-09-06-scene-change/report.md).
 
@@ -93,14 +120,13 @@ not expected overflow at deliberately excessive rates.
 
 - `experiments/`: sanitized observations, manifests and exact capture source.
 - `data/local/`: ignored raw IQ, SigMF sidecars and private context/serial records.
-- `scripts/`: receive capture, internal PRBS, offline analysis and a bounded RF
-  calibration script specific to the surveyed 5771.5 MHz window.
-- `tests/`: synthetic numerical checks for sample rails and PSD/power scaling.
+- `scripts/`: receive capture, internal PRBS, guarded per-position RF acquisition,
+  fixed-frequency controls and offline verification.
+- `tests/`: signal processing, exclusion guards, recovery and coverage checks.
 - `reports/`: generated scientific plots and interpretations.
 
-The next experimental question is repeatability across several departure/return
-cycles with marked posture and interleaved seated-to-seated controls. A quiet
-receive trace is not sufficient evidence
+The next experiment repeats the saved profile at another position, preserving
+antenna geometry and recording approximate placement. A quiet receive trace is not sufficient evidence
 that a transmit frequency is suitable. The user's exclusions of cellular, GNSS
 and occupied spectrum continue to apply.
 

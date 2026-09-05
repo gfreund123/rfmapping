@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-09-05T22:40:12.780139+00:00",
+  "deviation": "Windows file sharing lock interrupted the second reference train after nine RF bursts; cleanup verified TX mute and RX restoration. Seven 5771.5 MHz bursts and their final TX-off control are complete. The two 5800 MHz bursts remain partial; a fresh complete train was collected separately.",
+  "public_redaction": "Absolute user directory removed from error message; exact original results preserved locally.",
+  "original_results_local_path": "data/local/2026-09-05T223528Z_position-01/results.original.json",
+  "original_results_sha256": "25ff3bc7e74344143cc48d5a5ea1abf65f0b1c6e3a6eff6ee2e246b7b1cd315c",
+  "replacement_controls_run": "2026-09-05T223912Z_position-01",
+  "operator_state": "Equipment unchanged; no move cue given."
+}

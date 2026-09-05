@@ -1,0 +1,7 @@
+{
+  "schema": "rfmapping.run-annotation/v1",
+  "outcome": "All RF jobs skipped; no RF burst transmitted.",
+  "reason": "The +/-1.95 MHz activity mask included a repeatable baseband-edge rise. Offset/bandwidth checks were then collected without transmission.",
+  "followup_run": "2026-09-05T221129Z_guard-check",
+  "interpretation": "These rejection intervals must not be treated as established external occupied spectrum; the receiver-edge contribution was not separated in this attempt."
+}

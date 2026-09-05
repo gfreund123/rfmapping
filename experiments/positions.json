@@ -1,0 +1,27 @@
+{
+  "schema": "rfmapping.positions/v1",
+  "updated_utc": "2026-09-05T22:43:13.367363+00:00",
+  "coordinate_system": null,
+  "positions": [
+    {
+      "position_id": "position-01",
+      "alias": "desk-1",
+      "description": "Original desk, near computer and router",
+      "coordinates_m": null,
+      "height_m": null,
+      "orientation_degrees": null,
+      "antenna_spacing_m": null,
+      "status": "capture-verified-move-cue-given",
+      "experiment_id": "EXP-2026-09-06-004",
+      "main_run": "2026-09-05T221649Z_position-01",
+      "controls_runs": [
+        "2026-09-05T223528Z_position-01",
+        "2026-09-05T223912Z_position-01"
+      ],
+      "operator_metadata": "experiments/2026-09-05T221649Z_position-01/operator-events.json",
+      "move_cue": "experiments/2026-09-05T221649Z_position-01/move-cue.json"
+    }
+  ],
+  "next_position_id": "position-02",
+  "next_state": "Await operator confirmation that the relocated equipment is settled."
+}

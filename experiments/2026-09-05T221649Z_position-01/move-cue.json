@@ -1,0 +1,7 @@
+{
+  "event": "move_cue",
+  "recorded_utc": "2026-09-05T22:43:13.367363+00:00",
+  "cue": "Position 1 verified. Move the setup while preserving relative antenna geometry; place on a stable support.",
+  "timestamp_precision": "Logged shortly after the assistant cue; exact physical movement time unknown.",
+  "tx_state": "Mute verified after final receive-only check; no further RF planned at position 1."
+}

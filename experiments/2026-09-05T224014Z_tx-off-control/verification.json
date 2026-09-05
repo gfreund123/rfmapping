@@ -1,0 +1,8 @@
+{
+  "verified_utc": "2026-09-05T22:41:51.468888+00:00",
+  "passed": true,
+  "raw_bytes_verified": 4194304,
+  "raw_and_source_hashes_verified": true,
+  "final_tx_mute_verified": true,
+  "results_sha256_lf_utf8": "e484606352ccc56e0b3987d9c9cedf454a61047c3e52498ef8874929551bbc30"
+}

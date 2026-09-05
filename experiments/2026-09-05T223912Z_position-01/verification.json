@@ -1,0 +1,65 @@
+{
+  "schema": "rfmapping.held-controls-review/v1",
+  "run_id": "2026-09-05T223912Z_position-01",
+  "verified_utc": "2026-09-05T22:41:51.261673+00:00",
+  "issues": [],
+  "passed": true,
+  "raw_bytes_verified": 100663296,
+  "required_centers_hz": [
+    5800000000,
+    5853100000
+  ],
+  "deviations": [],
+  "position_id": "position-01",
+  "parent_position_run": "2026-09-05T221649Z_position-01",
+  "results_sha256_lf_utf8": "ff99b558d6a2838f7e309edf44f7ed69683a3ffc243a6de84be8e4f48e3d946f",
+  "held_summaries": [
+    {
+      "center_hz": 5800000000,
+      "burst_count": 7,
+      "mean_db": -65.22184959157462,
+      "between_burst_sd_db": 0.04345850050554912,
+      "min_max_db": [
+        -65.28644690416677,
+        -65.16697985086
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5800000000_initial",
+        "held_5800000000_repeat1",
+        "held_5800000000_repeat2",
+        "held_5800000000_repeat3",
+        "held_5800000000_repeat4",
+        "held_5800000000_repeat5",
+        "held_5800000000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5800000000_final_off"
+      ]
+    },
+    {
+      "center_hz": 5853100000,
+      "burst_count": 7,
+      "mean_db": -71.31749281240238,
+      "between_burst_sd_db": 0.04902139203897868,
+      "min_max_db": [
+        -71.37682288008989,
+        -71.25915466567646
+      ],
+      "complete_train": true,
+      "pilot_ids": [
+        "held_5853100000_initial",
+        "held_5853100000_repeat1",
+        "held_5853100000_repeat2",
+        "held_5853100000_repeat3",
+        "held_5853100000_repeat4",
+        "held_5853100000_repeat5",
+        "held_5853100000_repeat6"
+      ],
+      "final_off_ids": [
+        "held_5853100000_final_off"
+      ]
+    }
+  ],
+  "verification_source_sha256": "81472a617e563e3cf428a3f33340b11d6a1822ea038d76fbac633aca0d2a44fd"
+}

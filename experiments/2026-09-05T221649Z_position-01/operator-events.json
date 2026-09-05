@@ -1,0 +1,12 @@
+{
+  "schema": "rfmapping.operator-events/v1",
+  "events": [
+    {
+      "recorded_utc": "2026-09-05T22:26:43.881295+00:00",
+      "event": "operator_motion_confirmation",
+      "reply": "Equipment fixed; I stayed in place",
+      "scope": "During the main multi-frequency position-01 capture. Annotation time, not a measured physical movement timestamp."
+    }
+  ],
+  "position_coordinates": "Not supplied; geometric-reference question remains unanswered."
+}
