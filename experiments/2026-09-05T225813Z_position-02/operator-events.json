@@ -1,0 +1,45 @@
+{
+  "recorded_utc": "2026-09-05T22:59:07.519115+00:00",
+  "events": [
+    {
+      "event": "placement_report",
+      "user_text": "youre in spot number 2, the sdr is roughly 140-220 degrees rotated around. cant gurantee more.",
+      "relative_orientation": {
+        "reference_position": "position-01",
+        "reported_rotation_interval_degrees": [
+          140,
+          220
+        ],
+        "source": "Operator estimate",
+        "axis_and_direction": null,
+        "interpretation": "Approximate interval, not a calibrated heading or probability distribution."
+      }
+    },
+    {
+      "event": "capture_instruction",
+      "instruction": "Keep setup fixed for the complete capture bundle and wait for a verified move cue."
+    },
+    {
+      "event": "blind_inference_preference",
+      "recorded_utc": "2026-09-05T22:59:25.973688+00:00",
+      "user_text": "thats for you to figure out :)",
+      "interpretation": "No position/height ground truth supplied. Treat these as unknown latent quantities; do not fill them with assumed coordinates. Operator position during capture also remains unspecified."
+    },
+    {
+      "event": "capture_completed_and_move_cue",
+      "recorded_utc": "2026-09-05T23:19:55.355823+00:00",
+      "completed_rf_bursts_main": 219,
+      "completed_rf_bursts_held_controls": 21,
+      "capture_review_passed": true,
+      "independent_final_tx_mute_verified": true,
+      "instruction": "Spot 2 is complete and verified. TX muted; operator may move to spot 3.",
+      "actual_movement_time": "Unknown; cue permits movement, does not assert it occurred."
+    }
+  ],
+  "coordinates_m": null,
+  "height_m": null,
+  "antenna_spacing_m": null,
+  "antenna_relative_angles": "Not explicitly confirmed after relocation.",
+  "operator_during_capture": "No further equipment or operator movement reported before the move cue; exact posture/presence not independently confirmed.",
+  "geometry_status_note": "User requests blind inference; no further placement measurements requested. Generic geometry placeholders in capture metadata remain unknown."
+}

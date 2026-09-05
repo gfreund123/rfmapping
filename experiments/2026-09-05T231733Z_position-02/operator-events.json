@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-09-05T23:19:55.360506+00:00",
+  "same_position_as_main_run": "2026-09-05T225813Z_position-02",
+  "placement_metadata": "experiments/2026-09-05T225813Z_position-02/operator-events.json",
+  "movement_status": "No move cue before completion; operator instructed to keep setup fixed, no intervening movement reported."
+}

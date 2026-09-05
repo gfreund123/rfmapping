@@ -111,3 +111,20 @@ is a diagnostic of consistency after fitting nuisance scale, phase and timing.
 A low fitting residual is not independent proof of coherent wideband ranging.
 Radio/antenna response, direct coupling, unresolved multipath, operator pose and
 position uncertainty must be handled in later inference.
+
+After verification, write the complete bundle summary without accessing the radio:
+
+```powershell
+python scripts/report_position_bundle.py experiments/RUN_ID/results.json
+```
+
+`compare_positions.py FIRST_RESULTS SECOND_RESULTS --out REPORT_DIRECTORY`
+compares common centers only after both bundles are verified. It retains overall
+level change, median-removed spectral differences and observed repeat envelopes.
+The envelopes are descriptive, not confidence intervals. Unknown coordinates and
+large orientation changes stay explicit.
+
+`overlap_closure.py RESULTS --out REPORT_DIRECTORY` checks three-window phase,
+gain and nuisance-slope consistency using saved complex responses. Its fitted
+delay discrepancies are not propagation delays. See
+[phase inference notes](phase-inference-notes.md) for the rationale and limitations.

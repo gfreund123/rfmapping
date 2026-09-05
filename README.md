@@ -4,7 +4,27 @@ Reproducible experiments with one ADALM-PlutoSDR and its supplied TX/RX antennas
 The objective is to investigate which room properties can be inferred from RF
 measurements, starting at one fixed desk position and later adding known positions.
 
-## Latest: position 1 ready for relocation
+## Latest: position 2 complete; blind placement comparison saved
+
+[Read the position 2 bundle](reports/2026-09-05T225813Z_position-02/bundle.md)
+and [the comparison with position 1](reports/positions-01-02/report.md).
+
+- All 97 frequency centers were captured in both directions, followed by all
+  three seven-burst reference trains: 240 pilot bursts and 812 raw captures.
+- About 2.69 GB of raw capture data passed verification. TX was muted and RX
+  restored; a separate final device readback confirmed the mute before relocation.
+- The operator reported roughly 140–220 degrees of SDR rotation. Position and
+  height were not supplied, by request, and remain unknown for blind inference.
+- The median power difference from position 1 was +1.423 dB. The change varies
+  across frequency; it cannot be attributed solely to location.
+- Within-position sweep differences remain significant: 0.323 dB median absolute
+  difference and 0.903 dB at the 95th percentile. Raw values and warnings remain.
+- All 30 tests pass. New offline tools compare placements, summarize bundles and
+  test three-window phase consistency. No room geometry has been validated.
+
+![Comparison of two placements](reports/positions-01-02/comparison.png)
+
+## Position 1 ready for relocation
 
 [Read the complete position bundle](reports/2026-09-05T221649Z_position-01/bundle.md)
 and [the reusable collection protocol](docs/position-protocol.md).

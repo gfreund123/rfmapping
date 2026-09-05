@@ -1,6 +1,6 @@
 {
   "schema": "rfmapping.positions/v1",
-  "updated_utc": "2026-09-05T22:43:13.367363+00:00",
+  "updated_utc": "2026-09-05T23:19:55.380973+00:00",
   "coordinate_system": null,
   "positions": [
     {
@@ -20,8 +20,35 @@
       ],
       "operator_metadata": "experiments/2026-09-05T221649Z_position-01/operator-events.json",
       "move_cue": "experiments/2026-09-05T221649Z_position-01/move-cue.json"
+    },
+    {
+      "position_id": "position-02",
+      "description": "New operator-chosen spot; substantial approximate SDR rotation from spot 1",
+      "coordinates_m": null,
+      "height_m": null,
+      "orientation_degrees": null,
+      "relative_orientation": {
+        "reference_position": "position-01",
+        "reported_rotation_interval_degrees": [
+          140,
+          220
+        ],
+        "source": "Operator estimate",
+        "axis_and_direction": null,
+        "interpretation": "Approximate interval, not a calibrated heading or probability distribution."
+      },
+      "antenna_spacing_m": null,
+      "status": "capture-verified-move-cue-given",
+      "experiment_id": "EXP-2026-09-06-005",
+      "main_run": "2026-09-05T225813Z_position-02",
+      "controls_runs": [
+        "2026-09-05T231733Z_position-02"
+      ],
+      "operator_metadata": "experiments/2026-09-05T225813Z_position-02/operator-events.json",
+      "move_cue": "experiments/2026-09-05T225813Z_position-02/move-cue.json",
+      "geometry_inference": "Unknown; user supplied no position/height ground truth and requested blind RF inference."
     }
   ],
-  "next_position_id": "position-02",
-  "next_state": "Await operator confirmation that the relocated equipment is settled."
+  "next_position_id": "position-03",
+  "next_state": "Await operator placement at spot 3; TX muted."
 }

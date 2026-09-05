@@ -1,0 +1,214 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-06-005",
+  "status": "completed",
+  "title": "Position 2 full RF bundle with uncertain rotation relative to position 1",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "position_id": "position-02",
+  "local_dates": [
+    "2026-09-06"
+  ],
+  "timezone": "Asia/Jerusalem",
+  "main_run": "2026-09-05T225813Z_position-02",
+  "goal": "Capture the complete per-position raw RF bundle before any further move, then compare descriptive measurements with position 1.",
+  "hypothesis": "The new combined position and orientation may change the recorded frequency response; distinguish observed differences from within-position variability without attributing them solely to location.",
+  "ground_truth": {
+    "position": "Operator confirms spot 2",
+    "relative_orientation": {
+      "reference_position": "position-01",
+      "reported_rotation_interval_degrees": [
+        140,
+        220
+      ],
+      "source": "Operator estimate",
+      "axis_and_direction": null,
+      "interpretation": "Approximate interval, not a calibrated heading or probability distribution."
+    },
+    "coordinates_m": null,
+    "height_m": null,
+    "pilot": "Saved deterministic waveforms; exact source and sample hashes in run record",
+    "location_and_height": "Withheld/not supplied; user requests RF-based inference."
+  },
+  "protocol": "docs/position-protocol.md",
+  "receive_only": false,
+  "environment": "Indoor room; computer present; router nearby at original setup. Exact new distances and operator pose pending.",
+  "rf_chain": "Single Pluto and stock TX/RX antennas, no added amplifier reported; relative antenna geometry after move unconfirmed.",
+  "calibration_state": "No calibrated gain, radiated power, delay, bearing or retune phase coherence.",
+  "authorization_and_limits": "Existing user-authorized low-power laboratory experiment. Repeat fresh passive surveys at new spot; exclude cellular, GNSS and observed occupied intervals. Same bounded pilot profile and attenuation limits as position 1.",
+  "storage_budget_bytes_per_acquisition_stage": 3221225472,
+  "success_criteria": [
+    "Complete and verify all non-excluded sweep pairs and all three reference trains before moving.",
+    "Preserve raw data, exact acquisition source, settings, quality flags and any deviations.",
+    "Verify final TX mute and RX restoration.",
+    "Record orientation uncertainty explicitly in cross-position interpretation."
+  ],
+  "uncertainties": [
+    "Relative rotation only known approximately within reported 140-220 degree interval, with unspecified axis/direction.",
+    "No measured placement coordinates or height.",
+    "Combined position, orientation, operator and instrument effects; no position-only attribution."
+  ],
+  "failures": [],
+  "next_test": "Continue at spot 3. Preserve unknown geometry for blind inference and compare multiple recorded states.",
+  "run_ids": [
+    "2026-09-05T225813Z_position-02",
+    "2026-09-05T231733Z_position-02"
+  ],
+  "held_control_runs": [
+    "2026-09-05T231733Z_position-02"
+  ],
+  "raw_capture_bytes_verified": 2690646016,
+  "results": {
+    "rf_bursts": 240,
+    "paired_frequency_centers": 97,
+    "raw_file_count": 812,
+    "main_sweep_repeatability": {
+      "forward_reverse_median_abs_difference_db": 0.3232086650646693,
+      "forward_reverse_p95_abs_difference_db": 0.9026140475556794,
+      "forward_reverse_median_abs_snr_difference_db": 0.11927423642465773,
+      "forward_reverse_p95_abs_snr_difference_db": 0.32576809696068265
+    },
+    "held_reference_trains": [
+      {
+        "center_hz": 5771500000,
+        "burst_count": 7,
+        "mean_db": -60.460146134660114,
+        "between_burst_sd_db": 0.03878466432410096,
+        "min_max_db": [
+          -60.511265807060326,
+          -60.409379987325345
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5771500000_initial",
+          "held_5771500000_repeat1",
+          "held_5771500000_repeat2",
+          "held_5771500000_repeat3",
+          "held_5771500000_repeat4",
+          "held_5771500000_repeat5",
+          "held_5771500000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5771500000_final_off"
+        ]
+      },
+      {
+        "center_hz": 5800000000,
+        "burst_count": 7,
+        "mean_db": -64.31600595304273,
+        "between_burst_sd_db": 0.0877210026363064,
+        "min_max_db": [
+          -64.47555298755579,
+          -64.21138828576674
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5800000000_initial",
+          "held_5800000000_repeat1",
+          "held_5800000000_repeat2",
+          "held_5800000000_repeat3",
+          "held_5800000000_repeat4",
+          "held_5800000000_repeat5",
+          "held_5800000000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5800000000_final_off"
+        ]
+      },
+      {
+        "center_hz": 5853100000,
+        "burst_count": 7,
+        "mean_db": -70.78953914482256,
+        "between_burst_sd_db": 0.04083012293192653,
+        "min_max_db": [
+          -70.86257005072784,
+          -70.74322697872648
+        ],
+        "complete_train": true,
+        "pilot_ids": [
+          "held_5853100000_initial",
+          "held_5853100000_repeat1",
+          "held_5853100000_repeat2",
+          "held_5853100000_repeat3",
+          "held_5853100000_repeat4",
+          "held_5853100000_repeat5",
+          "held_5853100000_repeat6"
+        ],
+        "final_off_ids": [
+          "held_5853100000_final_off"
+        ]
+      }
+    ],
+    "final_tx_mute_verified": true,
+    "acquisition_ready_to_move": true,
+    "mapping_ready": false,
+    "commanded_unmute_seconds": 91.99007230013376,
+    "comparison_with_position_01": {
+      "power_db": {
+        "median_second_minus_first_db": 1.4231860477439398,
+        "range_second_minus_first_db": [
+          -0.926943054580903,
+          2.8750590878422173
+        ],
+        "rms_after_removing_median_db": 1.0614917239480997,
+        "p95_absolute_after_removing_median_db": 1.880741951758338
+      },
+      "signal_to_averaging_noise_db": {
+        "median_second_minus_first_db": 1.4563966125849568,
+        "range_second_minus_first_db": [
+          -0.4535567203203108,
+          2.315496452839838
+        ],
+        "rms_after_removing_median_db": 0.9896207361370086,
+        "p95_absolute_after_removing_median_db": 1.8158051552387107
+      }
+    },
+    "overlap_closure_summary": {
+      "wrapped_phase_closure_deg": {
+        "median_absolute": 6.12408402044627,
+        "p95_absolute": 6.895669680957386,
+        "max_absolute": 7.243886306609522
+      },
+      "equivalent_fit_delay_closure_ns": {
+        "median_absolute": 3.632193150604098,
+        "p95_absolute": 22.209848711135454,
+        "max_absolute": 57.957415043219235
+      },
+      "gain_closure_db": {
+        "median_absolute": 0.060676064219765624,
+        "p95_absolute": 0.23811717993476997,
+        "max_absolute": 0.38382549392755944
+      }
+    }
+  },
+  "warnings": [
+    "95th percentile forward/reverse power change exceeds 0.5 dB."
+  ],
+  "warning_disposition": "Retuned power variation remains measured uncertainty. All raw/source/integrity and required coverage checks passed; complete held-reference trains retained. Warning does not justify interpreting small changes as geometric effects.",
+  "verification": {
+    "bundle": "experiments/2026-09-05T225813Z_position-02/bundle.json",
+    "independent_final_device_readback": "experiments/2026-09-05T225813Z_position-02/final-state-check.json",
+    "unit_tests": 30,
+    "unit_test_result": "passed",
+    "main_and_comparison_plots": "Rendered and visually inspected"
+  },
+  "metadata_anomalies": [
+    {
+      "id": "forward_5749000000",
+      "temperature_readback_c": 17.544,
+      "started_utc": "2026-09-05T23:02:03.092694+00:00"
+    },
+    {
+      "id": "forward_5780500000",
+      "temperature_readback_c": 16.667,
+      "started_utc": "2026-09-05T23:03:32.937259+00:00"
+    }
+  ],
+  "metadata_anomaly_interpretation": "Two low chip-temperature readbacks are retained and flagged. No temperature correction or sensor-fault diagnosis is inferred.",
+  "reports": {
+    "bundle": "reports/2026-09-05T225813Z_position-02/bundle.md",
+    "comparison": "reports/positions-01-02/report.md",
+    "phase_notes": "docs/phase-inference-notes.md"
+  }
+}

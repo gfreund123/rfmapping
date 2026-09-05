@@ -1,0 +1,10 @@
+{
+  "event": "capture_completed_and_move_cue",
+  "recorded_utc": "2026-09-05T23:19:55.355823+00:00",
+  "completed_rf_bursts_main": 219,
+  "completed_rf_bursts_held_controls": 21,
+  "capture_review_passed": true,
+  "independent_final_tx_mute_verified": true,
+  "instruction": "Spot 2 is complete and verified. TX muted; operator may move to spot 3.",
+  "actual_movement_time": "Unknown; cue permits movement, does not assert it occurred."
+}

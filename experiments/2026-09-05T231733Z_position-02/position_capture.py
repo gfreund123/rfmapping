@@ -79,7 +79,7 @@ class Session:
                      'waveforms':{k:s for k,(_,s) in self.waveforms.items()},
                      'position_note':args.note,'operator_note':args.operator_note,
                      'geometry':{'coordinates_m':None,'height_m':None,'orientation_degrees':None,
-                                 'antenna_spacing_m':None,'status':'Not supplied. Unknown geometry is not filled in during acquisition.'},
+                                 'antenna_spacing_m':None,'status':'Await operator metadata; never inferred from missing values.'},
                      'hypothesis':'Frequency-dependent channel features may repeat within a spot and change across spots; geometry needs additional calibration and position constraints.',
                      'ground_truth':'Known transmitted waveform; device position and antenna geometry are not yet measured.',
                      'records':[],'jobs':[],'hot_intervals_hz':[],'excluded_centers':[]}

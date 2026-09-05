@@ -37,7 +37,6 @@ def collect_controls(args):
     summaries=[];s.result['held_summaries']=summaries
     try:
         s.open_radio()
-        s.result['status']='recording';s.save()
         for lo in centers:
             first=s.probe(f'held_{lo}_initial',lo)
             if first is None:continue
