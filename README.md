@@ -4,7 +4,24 @@ Reproducible experiments with one ADALM-PlutoSDR and its supplied TX/RX antennas
 The objective is to investigate which room properties can be inferred from RF
 measurements, starting at one fixed desk position and later adding known positions.
 
-## Latest: position 1 preflight completed
+## Latest: position 1 departure and return test
+
+[Read the scene-change report](reports/2026-09-06-scene-change/report.md).
+
+- Eight pilot bursts in each condition: seated baseline, instructed departure
+  interval, then returned to the seat. Equipment remained at the same desk position.
+- Transfer rose 0.101 dB during the departure interval, about 2.35% in pilot power.
+  After returning it remained 0.074 dB above baseline, recovering only 27% of the shift.
+- The operator reported a different lean after returning. This pose mismatch,
+  incomplete recovery and unmeasured drift make the presence effect inconclusive.
+- All 24 bursts completed without recorded clipping or FIFO overflow. Total
+  commanded TX-unmute time was 9.15 seconds; TX was muted and RX settings restored.
+- Raw IQ, exact acquisition sources, hashes, timing and the posture deviation are
+  preserved. No wall ranges, bearings or floor plan have been inferred.
+
+![Departure and return measurements](reports/2026-09-06-scene-change/overview.png)
+
+## Position 1 preflight
 
 [Read the spectrum, sample-integrity and duplex report](reports/2026-09-06-preflight/report.md).
 
@@ -81,8 +98,9 @@ not expected overflow at deliberately excessive rates.
 - `tests/`: synthetic numerical checks for sample rails and PSD/power scaling.
 - `reports/`: generated scientific plots and interpretations.
 
-The next experimental question is repeatability of a known scene change with a
-timing reference in each capture. A quiet receive trace is not sufficient evidence
+The next experimental question is repeatability across several departure/return
+cycles with marked posture and interleaved seated-to-seated controls. A quiet
+receive trace is not sufficient evidence
 that a transmit frequency is suitable. The user's exclusions of cellular, GNSS
 and occupied spectrum continue to apply.
 
@@ -100,6 +118,12 @@ center after a fresh receive guard check. It enforces at least 45 dB hardware
 attenuation, digital backoff, a separate-context mute timer and final cleanup.
 It was used under the user's laboratory authorization; its recorded settings do
 not constitute a radiated-power calibration or general frequency authorization.
+
+`scene_change.py` uses the same fixed pilot and bounded bursts for three stages,
+muting TX while it waits for `B` and `C` on stdin. A controller command starts a
+stage; human replies and cue timing must be logged separately. The script stops
+and restores settings on EOF, unexpected input or a five-minute input timeout.
+`report_scene.py` analyzes the saved results without accessing the SDR.
 
 Several separated quiet frequency intervals cannot automatically be combined into
 one coherent wideband measurement. Retuning phase, timing, hardware response and

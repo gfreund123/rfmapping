@@ -1,0 +1,91 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-06-003",
+  "status": "completed",
+  "title": "Position 1 departure and return; return posture differed",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "position_id": "desk-1",
+  "local_dates": [
+    "2026-09-06"
+  ],
+  "timezone": "Asia/Jerusalem",
+  "goal": "Measure whether a controlled operator departure and return produces a repeatable channel-amplitude change at one fixed Pluto position.",
+  "hypothesis": "The operator leaving the room may alter amplitude transfer beyond repeated-burst variability; return toward the first response would support a scene-related effect.",
+  "ground_truth": {
+    "pilot": "Saved deterministic 4096-sample waveform",
+    "presence": "Operator-directed departure; timed B capture, user-confirmed return before C",
+    "return_pose": "Operator subsequently reported a slightly different lean",
+    "room_geometry": null
+  },
+  "receive_only": false,
+  "environment": "Pluto and stock antennas fixed near computer/router; operator controls chair/body position. No measured antenna geometry, exact displacement or bearing.",
+  "rf_chain": "Stock TX/RX antennas attached directly to the fixed desk Pluto; no added amplifier. Antenna spacing, orientation and calibrated gains unmeasured.",
+  "calibration_state": "No calibrated RF gain, path delay, EIRP or absolute phase. Capture delay/common phase treated as nuisance parameters; amplitude retained.",
+  "clock_state": "Existing Pluto clock configuration retained, no external reference configured; readback sample rate 4999999 samples/s.",
+  "protocol": {
+    "stages": [
+      "A: original seated position",
+      "B: operator outside room; chair/device/final door position unchanged",
+      "C: returned and settled at original seated position"
+    ],
+    "bursts_per_stage": 8,
+    "tx_attenuation_db": 45,
+    "pilot_span_hz": 1800000,
+    "center_hz": 5771500000,
+    "sample_rate_hz": 5000000,
+    "rx_gain_db": 40,
+    "rx_tx_bandwidth_hz": 2400000,
+    "samples_per_burst": 1048576,
+    "burst_mute_watchdog_s": 0.8,
+    "maximum_planned_rf_bursts": 24,
+    "operator_input_timeout_s": 300,
+    "storage_budget_bytes": 536870912,
+    "analysis": "Compare absolute digital transfer amplitude and frequency-dependent amplitude shape; account for timing and carrier-phase nuisance independently per burst. No conversion to range."
+  },
+  "operator_notes": "experiments/2026-09-05T212740Z_scene-aba/operator-events.json",
+  "success_criteria": [
+    "Describe B change relative to burst variability and check C return. One A/B/A cycle is exploratory; without a return or if change is within repeat variability, attribution is inconclusive.",
+    "No clipping, FIFO overflow or watchdog expiry; final TX muted and RX restored"
+  ],
+  "authorization_and_limits": "User-authorized low-power laboratory operation, excluding cellular, GNSS and occupied spectrum. Only the previously surveyed 5771.5 MHz window was used with fresh receive-only guards, 45 dB hardware attenuation, digital backoff and a 0.8-second per-burst mute timer. Finite listening does not establish permanent vacancy; radiated power was not calibrated.",
+  "storage_budget_bytes": 536870912,
+  "raw_capture_bytes_verified": 163577856,
+  "raw_capture_directory": "data/local/2026-09-05T212740Z_scene-aba",
+  "run_ids": [
+    "2026-09-05T212740Z_scene-aba"
+  ],
+  "code_identity": "Exact capture source snapshots and SHA-256 in run record; offline feature replay and hashes verified.",
+  "results": {
+    "rf_bursts": 24,
+    "commanded_unmute_seconds": 9.149303700003657,
+    "b_minus_a_db": 0.10082467769900205,
+    "c_minus_a_db": 0.07406542926081272,
+    "return_recovery_fraction": 0.26540375877099576,
+    "final_tx_mute_verified": true,
+    "interpretation": "Inconclusive presence effect: return posture differed, and C did not recover the A baseline. No room geometry inferred."
+  },
+  "failures": [
+    "Return condition did not reproduce baseline pose: operator reported a different lean.",
+    "Return did not recover original amplitude baseline.",
+    "Capture metadata overstates operator confirmation for the timed B stage; corrected in a separate operator-events annotation while preserving originals."
+  ],
+  "suspected_causes": [
+    "Changed posture may affect the measured channel.",
+    "Unmeasured hardware/calibration drift and ambient changes may contribute. No cause isolated."
+  ],
+  "uncertainties": [
+    "One nonrandomized cycle with technical burst repeats",
+    "No independent occupancy, pose or door-position sensor",
+    "Unequal waiting intervals between conditions",
+    "Same RX LO/gain rewritten for each guard; internal calibration continuity not measured",
+    "Uncalibrated direct coupling plus unresolved multipath",
+    "No measured range or bearing from this fixed antenna pair"
+  ],
+  "remedies": [
+    "Repeat multiple cycles with marked posture and matching timings.",
+    "Interleave seated-to-seated controls to characterize drift without a departure."
+  ],
+  "next_test": "Matched-pose controlled repeats before interpreting a presence effect; room geometry requires additional measurements or constraints."
+}

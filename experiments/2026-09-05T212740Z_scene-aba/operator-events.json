@@ -1,0 +1,31 @@
+{
+  "schema": "rfmapping.operator-events/v1",
+  "events": [
+    {
+      "utc": "2026-09-05T21:28:40.163245+00:00",
+      "event": "departure_cue",
+      "instruction": "Leave now, stay outside for 30 seconds, return to same seated position and report back. Capture B is scheduled after a 10-second departure allowance.",
+      "operator_ready_confirmation": true
+    },
+    {
+      "event": "return_confirmation",
+      "operator_reply": "im now back in the seat",
+      "reply_received_before_utc": "2026-09-05T21:32:37.341393+00:00",
+      "time_basis": "Upper bound from subsequent controller C command; exact user-message time was not logged."
+    },
+    {
+      "event": "return_pose_deviation",
+      "operator_reply": "i was leaning slightly differently i should say",
+      "recorded_utc": "2026-09-05T21:34:50.981567+00:00",
+      "time_basis": "Annotation time, after C collection; not a physical movement timestamp."
+    }
+  ],
+  "stage_b_observation": "Collection scheduled within the instructed 30-second absence, following operator readiness and a departure cue. There was no live outside-room confirmation or independent presence sensor. Exact absence times were not measured.",
+  "stage_c_observation": {
+    "seat_return_confirmed": true,
+    "pose_matched_to_a": false,
+    "operator_report": "Slightly different lean",
+    "consequence": "C is not a matched-pose repeat of A; the presence/absence effect is inconclusive."
+  },
+  "capture_metadata_correction": "The original results operator_commands meaning and raw SigMF descriptions overstate operator confirmation for stage B. B was a controller-timed stage after a departure cue; C followed a return confirmation. Original capture records, source snapshots and raw sidecars remain unchanged; this annotation corrects their interpretation."
+}

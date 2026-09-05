@@ -1,0 +1,17 @@
+{
+  "schema": "rfmapping.scene-verification/v1",
+  "verified_utc": "2026-09-05T21:37:17.565584+00:00",
+  "run_id": "2026-09-05T212740Z_scene-aba",
+  "source_snapshots_verified": 5,
+  "raw_capture_files_verified": 27,
+  "raw_capture_bytes_verified": 163577856,
+  "pilot_bytes_verified": 16384,
+  "burst_features_replayed": 24,
+  "maximum_transfer_replay_error_db": 0.0,
+  "numpy_version": "2.5.1",
+  "verification_source_sha256": "e7fa3b51a7751df1d65da0ae009977d7866612de9264844bc22aba6a6f31dca2",
+  "operator_annotation_sha256_lf_utf8": "6fe381878b82afa80e512755820dbc4fbe8ae8ca8d2f9b55f7c785d9e6c315ad",
+  "capture_results_sha256_lf_utf8": "c0fa6d0c9835cfc434fba7b0e25954e7bd94d5bf26c2919c284500883b0cb880",
+  "text_hash_convention": "UTF-8 after universal-newline normalization to LF; capture source and raw hashes use original bytes.",
+  "result": "passed"
+}

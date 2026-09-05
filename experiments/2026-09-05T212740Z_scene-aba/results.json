@@ -1,0 +1,4268 @@
+{
+  "schema": "rfmapping.scene-aba/v1",
+  "run_id": "2026-09-05T212740Z_scene-aba",
+  "started_utc": "2026-09-05T21:27:40.114831+00:00",
+  "asset_id": "RFL-SDR-001",
+  "position_id": "desk-1",
+  "receive_only": false,
+  "source_sha256": {
+    "scene_change.py": "e7af2d6e6b68d7eae26fcee68146ccc03f9614e7f882233ef15c022401f73b19",
+    "channel_features.py": "439d13fce013826f74dbf814597d1f1e0fefa070f96969333ad84cc88d19db66",
+    "check_duplex.py": "9fdf1add2e14ab0fde04cff3d11d1d7fb725f3a8146ef5ebc6d82994b4fe97eb",
+    "characterize_rx.py": "b13e84f2e429eb698a12e6bffe7142d74e2a06fa17783feab9283e2089933841",
+    "survey_spectrum.py": "52d9c7e14f0c7b3ca7c250c639c40db62484b6a08f8ff625dbbae27c805b6268"
+  },
+  "pilot_sha256": "b6d2800f9ac81372fd815e9e2c8f0dabef53b91f08e098cd0fdf6c11a38f6078",
+  "hypothesis": "The operator leaving the room may alter amplitude transfer beyond repeated-burst variability; return toward the first response would support a scene-related effect.",
+  "protocol": {
+    "stages": [
+      "A: original seated position",
+      "B: operator outside room; chair/device/final door position unchanged",
+      "C: returned and settled at original seated position"
+    ],
+    "bursts_per_stage": 8,
+    "tx_attenuation_db": 45,
+    "pilot_span_hz": 1800000,
+    "center_hz": 5771500000,
+    "sample_rate_hz": 5000000,
+    "rx_gain_db": 40,
+    "rx_tx_bandwidth_hz": 2400000,
+    "samples_per_burst": 1048576,
+    "burst_mute_watchdog_s": 0.8,
+    "maximum_planned_rf_bursts": 24,
+    "operator_input_timeout_s": 300,
+    "storage_budget_bytes": 536870912,
+    "analysis": "Compare absolute digital transfer amplitude and frequency-dependent amplitude shape; account for timing and carrier-phase nuisance independently per burst. No conversion to range."
+  },
+  "criteria": "Describe B change relative to burst variability and check C return. One A/B/A cycle is exploratory; without a return or if change is within repeat variability, attribution is inconclusive.",
+  "environment": "Pluto and stock antennas fixed near computer/router; operator controls chair/body position. No measured antenna geometry, exact displacement or bearing.",
+  "stages": [
+    {
+      "phase": "A",
+      "started_utc": "2026-09-05T21:27:42.634142+00:00",
+      "cases": [
+        {
+          "id": "A_burst1",
+          "started_utc": "2026-09-05T21:27:44.527950+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3782041000085883,
+          "features": {
+            "median_correlation": 0.35416254811407444,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1360,
+            "period_count": 256,
+            "phase_slope_hz": -0.009694315737541329,
+            "phase_residual_rms_deg": 1.0926247118293833,
+            "digital_transfer_power_db": -61.83852330398192,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.175783156184934
+              ],
+              [
+                -750000,
+                -61.97289114771165
+              ],
+              [
+                -650000,
+                -61.853819698127744
+              ],
+              [
+                -550000,
+                -61.838507721595306
+              ],
+              [
+                -450000,
+                -61.68582262564612
+              ],
+              [
+                -350000,
+                -61.64081874553747
+              ],
+              [
+                -250000,
+                -61.63229154416363
+              ],
+              [
+                -150000,
+                -61.52313219448349
+              ],
+              [
+                150000,
+                -61.652592165138735
+              ],
+              [
+                250000,
+                -61.70055188630917
+              ],
+              [
+                350000,
+                -61.78405269238212
+              ],
+              [
+                450000,
+                -61.7951016478746
+              ],
+              [
+                550000,
+                -61.81243138437479
+              ],
+              [
+                650000,
+                -61.98798039410691
+              ],
+              [
+                750000,
+                -62.0947149674807
+              ],
+              [
+                850000,
+                -62.35060472758807
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.83451209165439,
+              -61.873774903133445,
+              -61.825664703704525,
+              -61.81811515188236
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025561852819975155,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -22,
+              -19
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.05536937713623047,
+              0.045416831970214844
+            ],
+            "rms_dbfs": -50.685432764076296,
+            "dc_power_dbfs": -89.12673224171598,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.00885772705078125
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst1.sigmf-data",
+          "sha256": "223d7fd313e0af0c5aa839a9bfd49bf31736b4789f16268f068ceb5311ad37ea",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:45.144396+00:00"
+        },
+        {
+          "id": "A_burst2",
+          "started_utc": "2026-09-05T21:27:45.448799+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.37139420000312384,
+          "features": {
+            "median_correlation": 0.3536493047972108,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1823,
+            "period_count": 256,
+            "phase_slope_hz": 0.007201593487550365,
+            "phase_residual_rms_deg": 1.0597363553615586,
+            "digital_transfer_power_db": -61.870098325638445,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.22171644606904
+              ],
+              [
+                -750000,
+                -62.07710151157265
+              ],
+              [
+                -650000,
+                -61.940486014584295
+              ],
+              [
+                -550000,
+                -61.79242656469643
+              ],
+              [
+                -450000,
+                -61.721021964253275
+              ],
+              [
+                -350000,
+                -61.70728585541553
+              ],
+              [
+                -250000,
+                -61.63214149243377
+              ],
+              [
+                -150000,
+                -61.63123249033973
+              ],
+              [
+                150000,
+                -61.66329652380565
+              ],
+              [
+                250000,
+                -61.66700251377591
+              ],
+              [
+                350000,
+                -61.70462671713959
+              ],
+              [
+                450000,
+                -61.86455043753719
+              ],
+              [
+                550000,
+                -61.88871692664876
+              ],
+              [
+                650000,
+                -61.98484724515542
+              ],
+              [
+                750000,
+                -62.12576959020316
+              ],
+              [
+                850000,
+                -62.39022420708423
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.85881957019299,
+              -61.88443553373994,
+              -61.83841243543469,
+              -61.89886204809203
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025757393002212078,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -19
+            ],
+            "max_iq": [
+              20,
+              19
+            ],
+            "mean_iq": [
+              0.10465526580810547,
+              0.04633140563964844
+            ],
+            "rms_dbfs": -50.70831898716611,
+            "dc_power_dbfs": -85.05411026753642,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008657455444335938
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst2.sigmf-data",
+          "sha256": "adb4f58f63760a0182495f3f4d6d0f5052b9f3ce34000b9b8ea3d92f21aaa718",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:46.058620+00:00"
+        },
+        {
+          "id": "A_burst3",
+          "started_utc": "2026-09-05T21:27:46.362475+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38369970000348985,
+          "features": {
+            "median_correlation": 0.3555260691161209,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 580,
+            "period_count": 256,
+            "phase_slope_hz": -0.0032048456215332853,
+            "phase_residual_rms_deg": 1.0550041708286177,
+            "digital_transfer_power_db": -61.87390978102328,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.24121478818965
+              ],
+              [
+                -750000,
+                -62.0454219818669
+              ],
+              [
+                -650000,
+                -61.834811678892734
+              ],
+              [
+                -550000,
+                -61.80348107406441
+              ],
+              [
+                -450000,
+                -61.70818823135701
+              ],
+              [
+                -350000,
+                -61.69461533243123
+              ],
+              [
+                -250000,
+                -61.64998333809748
+              ],
+              [
+                -150000,
+                -61.62712242261095
+              ],
+              [
+                150000,
+                -61.69530740433808
+              ],
+              [
+                250000,
+                -61.71015617266796
+              ],
+              [
+                350000,
+                -61.75235689394853
+              ],
+              [
+                450000,
+                -61.81623742544582
+              ],
+              [
+                550000,
+                -61.912215678446294
+              ],
+              [
+                650000,
+                -62.048524034452555
+              ],
+              [
+                750000,
+                -62.14182418784599
+              ],
+              [
+                850000,
+                -62.390487454799306
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.858711333150566,
+              -61.88067208305984,
+              -61.89117279924857,
+              -61.8664488724223
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025811833325417644,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.1035318374633789,
+              0.08323001861572266
+            ],
+            "rms_dbfs": -50.75887472174873,
+            "dc_power_dbfs": -83.76011725595531,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008821487426757812
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst3.sigmf-data",
+          "sha256": "a33162467d586413e33d3957d072b9b16d9d3d045ef75d1e8aa632351c8bb8bb",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:46.998982+00:00"
+        },
+        {
+          "id": "A_burst4",
+          "started_utc": "2026-09-05T21:27:47.302596+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38190100000065286,
+          "features": {
+            "median_correlation": 0.3548351918651538,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 775,
+            "period_count": 256,
+            "phase_slope_hz": -0.0049329905718022,
+            "phase_residual_rms_deg": 1.1326033953916226,
+            "digital_transfer_power_db": -61.89459807232788,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.23390725492288
+              ],
+              [
+                -750000,
+                -62.036892697885754
+              ],
+              [
+                -650000,
+                -61.88874867877595
+              ],
+              [
+                -550000,
+                -61.789312812353934
+              ],
+              [
+                -450000,
+                -61.73247806966139
+              ],
+              [
+                -350000,
+                -61.71149970688803
+              ],
+              [
+                -250000,
+                -61.72345155596432
+              ],
+              [
+                -150000,
+                -61.65828483753583
+              ],
+              [
+                150000,
+                -61.67570676419398
+              ],
+              [
+                250000,
+                -61.692546279959295
+              ],
+              [
+                350000,
+                -61.780466066748225
+              ],
+              [
+                450000,
+                -61.837070775031876
+              ],
+              [
+                550000,
+                -61.94248212126026
+              ],
+              [
+                650000,
+                -62.006115705295
+              ],
+              [
+                750000,
+                -62.19357872968263
+              ],
+              [
+                850000,
+                -62.51013518943054
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.89239310935651,
+              -61.879101389040976,
+              -61.90793020812287,
+              -61.90173317853124
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025928153439578857,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -18
+            ],
+            "max_iq": [
+              19,
+              19
+            ],
+            "mean_iq": [
+              0.08423805236816406,
+              0.0652780532836914
+            ],
+            "rms_dbfs": -50.75491301408558,
+            "dc_power_dbfs": -85.67385812315229,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.00923919677734375
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst4.sigmf-data",
+          "sha256": "33adc72e07f9af1c09c0f2583009c4dbc7ea9f32685c7153400409dbbce123ae",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:47.942017+00:00"
+        },
+        {
+          "id": "A_burst5",
+          "started_utc": "2026-09-05T21:27:48.256132+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3721363999939058,
+          "features": {
+            "median_correlation": 0.3549960931247628,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 3611,
+            "period_count": 256,
+            "phase_slope_hz": 0.0032314438899587773,
+            "phase_residual_rms_deg": 1.122557272236244,
+            "digital_transfer_power_db": -61.86475006869937,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.21332453851729
+              ],
+              [
+                -750000,
+                -62.020285813350014
+              ],
+              [
+                -650000,
+                -61.86851858794803
+              ],
+              [
+                -550000,
+                -61.76265747004048
+              ],
+              [
+                -450000,
+                -61.71508423725416
+              ],
+              [
+                -350000,
+                -61.641099630129546
+              ],
+              [
+                -250000,
+                -61.605660505202636
+              ],
+              [
+                -150000,
+                -61.657527213297016
+              ],
+              [
+                150000,
+                -61.69903663953902
+              ],
+              [
+                250000,
+                -61.656786431772026
+              ],
+              [
+                350000,
+                -61.738510684319046
+              ],
+              [
+                450000,
+                -61.789651614121226
+              ],
+              [
+                550000,
+                -61.9237698668342
+              ],
+              [
+                650000,
+                -62.05979258392326
+              ],
+              [
+                750000,
+                -62.16013250929968
+              ],
+              [
+                850000,
+                -62.422790802636015
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.88268153895913,
+              -61.85276481615895,
+              -61.87859469891187,
+              -61.84057094218534
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002571007098447276,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -22,
+              -17
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.06950187683105469,
+              0.04724311828613281
+            ],
+            "rms_dbfs": -50.739288481889496,
+            "dc_power_dbfs": -87.73706172100582,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009228706359863281
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst5.sigmf-data",
+          "sha256": "0c2d849dc777d15cc7cae0827cf9e57d60be7e69a4d185a8109e1289c288fcdb",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:48.886375+00:00"
+        },
+        {
+          "id": "A_burst6",
+          "started_utc": "2026-09-05T21:27:49.190973+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.381863800008432,
+          "features": {
+            "median_correlation": 0.3543108895419176,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 3320,
+            "period_count": 256,
+            "phase_slope_hz": 0.0009484461363440327,
+            "phase_residual_rms_deg": 1.1380645305784012,
+            "digital_transfer_power_db": -61.879691852752224,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.17804749351578
+              ],
+              [
+                -750000,
+                -62.033311660627
+              ],
+              [
+                -650000,
+                -61.933658838831775
+              ],
+              [
+                -550000,
+                -61.82452624636406
+              ],
+              [
+                -450000,
+                -61.77813691480716
+              ],
+              [
+                -350000,
+                -61.7091465001092
+              ],
+              [
+                -250000,
+                -61.650068872841274
+              ],
+              [
+                -150000,
+                -61.62599065237312
+              ],
+              [
+                150000,
+                -61.66576085509771
+              ],
+              [
+                250000,
+                -61.682546794617366
+              ],
+              [
+                350000,
+                -61.723959473786536
+              ],
+              [
+                450000,
+                -61.88907902110933
+              ],
+              [
+                550000,
+                -61.89651227590665
+              ],
+              [
+                650000,
+                -62.03024164591065
+              ],
+              [
+                750000,
+                -62.16401493996132
+              ],
+              [
+                850000,
+                -62.373248472956035
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.85376600938526,
+              -61.88244415115052,
+              -61.87309809136151,
+              -61.91140721115244
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025786586475778413,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -22,
+              -18
+            ],
+            "max_iq": [
+              20,
+              19
+            ],
+            "mean_iq": [
+              0.06259727478027344,
+              0.04967498779296875
+            ],
+            "rms_dbfs": -50.754107432250976,
+            "dc_power_dbfs": -88.17429411131896,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009394645690917969
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst6.sigmf-data",
+          "sha256": "047bd3aa4fa1230b4c4d33e7684a1a2bae5594538ef06ff503761a6eee43658d",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:49.852227+00:00"
+        },
+        {
+          "id": "A_burst7",
+          "started_utc": "2026-09-05T21:27:50.157660+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3781837999995332,
+          "features": {
+            "median_correlation": 0.3528138208881991,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 986,
+            "period_count": 256,
+            "phase_slope_hz": 0.00264252893397327,
+            "phase_residual_rms_deg": 1.158093632063373,
+            "digital_transfer_power_db": -61.88327298813963,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.18949983574197
+              ],
+              [
+                -750000,
+                -62.049209244316756
+              ],
+              [
+                -650000,
+                -61.93547521787777
+              ],
+              [
+                -550000,
+                -61.73205761551727
+              ],
+              [
+                -450000,
+                -61.72183779571324
+              ],
+              [
+                -350000,
+                -61.71746332134579
+              ],
+              [
+                -250000,
+                -61.64620795269653
+              ],
+              [
+                -150000,
+                -61.688962266045515
+              ],
+              [
+                150000,
+                -61.651002981999824
+              ],
+              [
+                250000,
+                -61.7542086319321
+              ],
+              [
+                350000,
+                -61.67390019330241
+              ],
+              [
+                450000,
+                -61.869085458135714
+              ],
+              [
+                550000,
+                -61.958860923668134
+              ],
+              [
+                650000,
+                -62.02866160869853
+              ],
+              [
+                750000,
+                -62.19089885630159
+              ],
+              [
+                850000,
+                -62.41761422386936
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.85987726307453,
+              -61.87607654778233,
+              -61.91566497273566,
+              -61.881185786658214
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025656104628921225,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.0128936767578125,
+              0.06392478942871094
+            ],
+            "rms_dbfs": -50.70275429889396,
+            "dc_power_dbfs": -89.94002754986346,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.00864410400390625
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst7.sigmf-data",
+          "sha256": "36072dc3426883383832806c51b614a3b5b0a75f8dc52e254d18fd8e7f1a3cdd",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:50.775303+00:00"
+        },
+        {
+          "id": "A_burst8",
+          "started_utc": "2026-09-05T21:27:51.090000+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3829371999891009,
+          "features": {
+            "median_correlation": 0.3531884085525762,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1404,
+            "period_count": 256,
+            "phase_slope_hz": 0.010957505083031857,
+            "phase_residual_rms_deg": 1.1179667229368861,
+            "digital_transfer_power_db": -61.873551736983856,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.202586549256786
+              ],
+              [
+                -750000,
+                -61.99656156303962
+              ],
+              [
+                -650000,
+                -61.8949854224001
+              ],
+              [
+                -550000,
+                -61.73313503306366
+              ],
+              [
+                -450000,
+                -61.713782651786886
+              ],
+              [
+                -350000,
+                -61.69385984188054
+              ],
+              [
+                -250000,
+                -61.68591083979443
+              ],
+              [
+                -150000,
+                -61.61934543604251
+              ],
+              [
+                150000,
+                -61.648364968321296
+              ],
+              [
+                250000,
+                -61.72705864471999
+              ],
+              [
+                350000,
+                -61.71291590535688
+              ],
+              [
+                450000,
+                -61.85190092010089
+              ],
+              [
+                550000,
+                -61.97603002468527
+              ],
+              [
+                650000,
+                -62.05040784388557
+              ],
+              [
+                750000,
+                -62.19159941528541
+              ],
+              [
+                850000,
+                -62.36775733642102
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.871034804104454,
+              -61.85203446713843,
+              -61.89047645113995,
+              -61.88018652215916
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002576103551852474,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -17
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.05250835418701172,
+              0.05267047882080078
+            ],
+            "rms_dbfs": -50.68759071096398,
+            "dc_power_dbfs": -88.79832172660285,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008760452270507812
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_burst8.sigmf-data",
+          "sha256": "eb3d6c9e9df4441bae779db107bc3a80c2018f7ccd75f92d280cf5f8d815f636",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:27:51.723840+00:00"
+        }
+      ],
+      "receive_guard": {
+        "id": "A_receive_guard",
+        "started_utc": "2026-09-05T21:27:42.713567+00:00",
+        "ended_utc": "2026-09-05T21:27:43.969372+00:00",
+        "lo_hz": 5771499996,
+        "sample_rate_hz": 4999999,
+        "gain_db": 40.0,
+        "rf_bandwidth_hz": 2400000,
+        "buffer_samples": 262144,
+        "blocks": 20,
+        "host_elapsed_s": 1.0467353999993065,
+        "observed_sample_time_s": 1.048576209715242,
+        "ui_status_end": 0,
+        "fifo_overflow_observed": false,
+        "raw_bytes": 20971520,
+        "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/A_receive_guard.sigmf-data",
+        "sha256": "2a801a25f56559b90192c566599c7b8eea533f7427950d204b968a8d68857798",
+        "iq_metrics": {
+          "sample_count": 5242880,
+          "min_iq": [
+            -20,
+            -18
+          ],
+          "max_iq": [
+            22,
+            18
+          ],
+          "mean_iq": [
+            0.06305923461914062,
+            0.05415687561035156
+          ],
+          "rms_dbfs": -51.3438189800638,
+          "dc_power_dbfs": -87.83217416368993,
+          "rail_component_count": 0,
+          "outside_12bit_count": 0,
+          "zero_pair_fraction": 0.010603523254394532
+        },
+        "spectrum_columns": [
+          "offset_hz",
+          "mean_dbfs_per_hz",
+          "median_dbfs_per_hz",
+          "max_1p6384ms_dbfs_per_hz"
+        ],
+        "spectrum_50khz_bins": [
+          [
+            -1475000.0,
+            -123.1979931963018,
+            -123.2485568077129,
+            -121.60811660076686
+          ],
+          [
+            -1425000.0,
+            -123.5406411128885,
+            -123.59450044998233,
+            -121.33012015078087
+          ],
+          [
+            -1375000.0,
+            -123.90850114448695,
+            -123.91113329084148,
+            -122.19115728598723
+          ],
+          [
+            -1325000.0,
+            -124.08058963852466,
+            -124.11527153771958,
+            -122.22420466500346
+          ],
+          [
+            -1275000.0,
+            -124.3126832337788,
+            -124.3410473593059,
+            -122.25566640379576
+          ],
+          [
+            -1225000.0,
+            -124.3544064762711,
+            -124.36943670245495,
+            -122.66513479503332
+          ],
+          [
+            -1175000.0,
+            -124.38416948291675,
+            -124.40245912919094,
+            -122.31791683013137
+          ],
+          [
+            -1125000.0,
+            -124.31361971092355,
+            -124.32811551879487,
+            -122.22040160315792
+          ],
+          [
+            -1075000.0,
+            -124.20163869518919,
+            -124.26432810114184,
+            -121.87097534181346
+          ],
+          [
+            -1025000.0,
+            -124.15104077189567,
+            -124.19616271748566,
+            -122.3079887840473
+          ],
+          [
+            -975000.0,
+            -124.06022535120785,
+            -124.08994845583538,
+            -122.10731573948081
+          ],
+          [
+            -925000.0,
+            -124.00176951315466,
+            -124.03856888905638,
+            -122.29420699166636
+          ],
+          [
+            -875000.0,
+            -123.9448733832404,
+            -123.97256533914987,
+            -122.23580831352052
+          ],
+          [
+            -825000.0,
+            -123.80168401598596,
+            -123.82457035172672,
+            -121.84901212816706
+          ],
+          [
+            -775000.0,
+            -123.74678072417836,
+            -123.79380797065842,
+            -121.75506580853659
+          ],
+          [
+            -725000.0,
+            -123.66635968580793,
+            -123.70048128430682,
+            -121.7619755123801
+          ],
+          [
+            -675000.0,
+            -123.57486577444985,
+            -123.60030218159558,
+            -121.71115786549989
+          ],
+          [
+            -625000.0,
+            -123.54215568359871,
+            -123.57996591955553,
+            -121.63598657568392
+          ],
+          [
+            -575000.0,
+            -123.4128369453348,
+            -123.45836861830016,
+            -121.61398185106471
+          ],
+          [
+            -525000.0,
+            -123.34348959833784,
+            -123.32702484738886,
+            -121.6637417115836
+          ],
+          [
+            -475000.0,
+            -123.27266012497374,
+            -123.31691873383465,
+            -121.65445045502108
+          ],
+          [
+            -425000.0,
+            -123.20174459538174,
+            -123.23738379344418,
+            -121.34770149177767
+          ],
+          [
+            -375000.0,
+            -123.0608060363389,
+            -123.11090131648342,
+            -121.0727445782387
+          ],
+          [
+            -325000.0,
+            -122.98829187287089,
+            -123.00624816056273,
+            -121.3561010764943
+          ],
+          [
+            -275000.0,
+            -122.85780776885163,
+            -122.878885530761,
+            -120.99984462602235
+          ],
+          [
+            -225000.0,
+            -122.61522476807232,
+            -122.67136048536726,
+            -120.8843933043872
+          ],
+          [
+            -175000.0,
+            -122.28168605118071,
+            -122.32245444189019,
+            -120.43423266364506
+          ],
+          [
+            -125000.0,
+            -121.80570952249467,
+            -121.85527450489175,
+            -119.90787216105872
+          ],
+          [
+            -75000.0,
+            -120.82085082580241,
+            -120.89022947685177,
+            -118.97002916340755
+          ],
+          [
+            -25000.0,
+            -115.11999884420204,
+            -115.28004492180025,
+            -111.83800661546965
+          ],
+          [
+            25000.0,
+            -112.50910034169964,
+            -112.86051074834782,
+            -107.6684732520568
+          ],
+          [
+            75000.0,
+            -120.86081203426215,
+            -120.88754002328271,
+            -119.20660602380624
+          ],
+          [
+            125000.0,
+            -121.82078539663884,
+            -121.8676781373525,
+            -120.12623840186868
+          ],
+          [
+            175000.0,
+            -122.34373858265384,
+            -122.38926716133074,
+            -119.97306072283061
+          ],
+          [
+            225000.0,
+            -122.62993232423305,
+            -122.67102036712565,
+            -120.83776585487031
+          ],
+          [
+            275000.0,
+            -122.85449499839721,
+            -122.88455352569513,
+            -121.24832919808401
+          ],
+          [
+            325000.0,
+            -122.97744933099806,
+            -123.00871024081631,
+            -121.2204990423104
+          ],
+          [
+            375000.0,
+            -123.11401718619248,
+            -123.16728970904418,
+            -121.13937860342249
+          ],
+          [
+            425000.0,
+            -123.20803952715372,
+            -123.27071563368834,
+            -121.11089508763747
+          ],
+          [
+            475000.0,
+            -123.25274490465557,
+            -123.28560676740247,
+            -121.60811740492545
+          ],
+          [
+            525000.0,
+            -123.37379739493942,
+            -123.4206371496475,
+            -121.81458263893254
+          ],
+          [
+            575000.0,
+            -123.42350677992198,
+            -123.41632779387552,
+            -121.33062344238199
+          ],
+          [
+            625000.0,
+            -123.50070606246193,
+            -123.54835912906867,
+            -121.83036428580462
+          ],
+          [
+            675000.0,
+            -123.5492690374613,
+            -123.58767949377535,
+            -121.56956187213936
+          ],
+          [
+            725000.0,
+            -123.63245834992908,
+            -123.69226676558463,
+            -121.76219928672856
+          ],
+          [
+            775000.0,
+            -123.81313518222325,
+            -123.8467040786445,
+            -121.9107255253736
+          ],
+          [
+            825000.0,
+            -123.81170958264421,
+            -123.86049639587151,
+            -121.75312542865761
+          ],
+          [
+            875000.0,
+            -123.92495749100107,
+            -123.94591414197535,
+            -121.91903735479673
+          ],
+          [
+            925000.0,
+            -124.00794520936905,
+            -124.07881876331261,
+            -122.01838685103085
+          ],
+          [
+            975000.0,
+            -124.12988385120718,
+            -124.20818179475393,
+            -122.36034423851841
+          ],
+          [
+            1025000.0,
+            -124.1994019567084,
+            -124.2722447772252,
+            -122.22669400689227
+          ],
+          [
+            1075000.0,
+            -124.22177552314176,
+            -124.25282850566335,
+            -122.17236165095872
+          ],
+          [
+            1125000.0,
+            -124.30028008142821,
+            -124.2970577684578,
+            -122.19382603927548
+          ],
+          [
+            1175000.0,
+            -124.33491105594948,
+            -124.37251635048364,
+            -122.77363145827889
+          ],
+          [
+            1225000.0,
+            -124.31335646890071,
+            -124.35047833095295,
+            -122.13490406213752
+          ],
+          [
+            1275000.0,
+            -124.20953535447148,
+            -124.23049260510828,
+            -122.39497603664105
+          ],
+          [
+            1325000.0,
+            -124.10846802649121,
+            -124.15549662186115,
+            -122.3073862072939
+          ],
+          [
+            1375000.0,
+            -123.91668071555401,
+            -123.93247362204903,
+            -122.11972121457079
+          ],
+          [
+            1425000.0,
+            -123.61636244858516,
+            -123.65737527756184,
+            -121.75890518978463
+          ],
+          [
+            1475000.0,
+            -123.18939310143125,
+            -123.23974510529384,
+            -121.57773926233112
+          ]
+        ]
+      },
+      "guard_max_excess_db": 4.6137935432578985,
+      "ended_utc": "2026-09-05T21:27:52.029150+00:00",
+      "end_state": {
+        "rx_lo_hz": 5771499996,
+        "sample_rate_hz": 4999999,
+        "stream_sample_rate_hz": 4999999,
+        "rf_bandwidth_hz": 2400000,
+        "gain_mode": "manual",
+        "gain_db": 40.0,
+        "fir_enabled": "0",
+        "port": "A_BALANCED",
+        "tx_lo_powerdown": "1",
+        "tx_attenuation_setting_db": -89.75
+      }
+    },
+    {
+      "phase": "B",
+      "started_utc": "2026-09-05T21:28:58.612273+00:00",
+      "cases": [
+        {
+          "id": "B_burst1",
+          "started_utc": "2026-09-05T21:29:00.471056+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3873296000092523,
+          "features": {
+            "median_correlation": 0.35886205840082896,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 3063,
+            "period_count": 256,
+            "phase_slope_hz": 0.004780586350901905,
+            "phase_residual_rms_deg": 1.1296858327156032,
+            "digital_transfer_power_db": -61.75978553854157,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.09221475745237
+              ],
+              [
+                -750000,
+                -61.89168835192922
+              ],
+              [
+                -650000,
+                -61.849972979004235
+              ],
+              [
+                -550000,
+                -61.73603907977224
+              ],
+              [
+                -450000,
+                -61.5815198305704
+              ],
+              [
+                -350000,
+                -61.527225124793894
+              ],
+              [
+                -250000,
+                -61.51725059714706
+              ],
+              [
+                -150000,
+                -61.57428987548688
+              ],
+              [
+                150000,
+                -61.52775594745941
+              ],
+              [
+                250000,
+                -61.58529661991916
+              ],
+              [
+                350000,
+                -61.652623779093545
+              ],
+              [
+                450000,
+                -61.686199476895645
+              ],
+              [
+                550000,
+                -61.74284751863951
+              ],
+              [
+                650000,
+                -61.92392783499295
+              ],
+              [
+                750000,
+                -62.09780528097875
+              ],
+              [
+                850000,
+                -62.26194373615995
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.760440901483875,
+              -61.733550362272666,
+              -61.77461084879881,
+              -61.772085632945604
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002523208696132126,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.028374671936035156,
+              0.09128284454345703
+            ],
+            "rms_dbfs": -50.715979110468226,
+            "dc_power_dbfs": -86.61823973065877,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.00926971435546875
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst1.sigmf-data",
+          "sha256": "40cb05b7115223b926d350d5b63b4f745632e9de230d947f17561e9fb80b0174",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:01.142984+00:00"
+        },
+        {
+          "id": "B_burst2",
+          "started_utc": "2026-09-05T21:29:01.454695+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3901845000073081,
+          "features": {
+            "median_correlation": 0.3573057377898663,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 222,
+            "period_count": 256,
+            "phase_slope_hz": -0.00310622243592278,
+            "phase_residual_rms_deg": 1.061082238546022,
+            "digital_transfer_power_db": -61.764929108936755,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.12671045638098
+              ],
+              [
+                -750000,
+                -61.88489216281227
+              ],
+              [
+                -650000,
+                -61.77658228602845
+              ],
+              [
+                -550000,
+                -61.71056974098992
+              ],
+              [
+                -450000,
+                -61.65495667938842
+              ],
+              [
+                -350000,
+                -61.57357324817701
+              ],
+              [
+                -250000,
+                -61.53232924489526
+              ],
+              [
+                -150000,
+                -61.55117999291187
+              ],
+              [
+                150000,
+                -61.565318316952464
+              ],
+              [
+                250000,
+                -61.50032788553135
+              ],
+              [
+                350000,
+                -61.614576217980954
+              ],
+              [
+                450000,
+                -61.74017323560242
+              ],
+              [
+                550000,
+                -61.83579405073836
+              ],
+              [
+                650000,
+                -61.880076039551525
+              ],
+              [
+                750000,
+                -62.09372861151678
+              ],
+              [
+                850000,
+                -62.29273382622636
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.74748006324501,
+              -61.77664285253734,
+              -61.757362839573204,
+              -61.77693321674158
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002523981239235937,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -19
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.0815572738647461,
+              0.08335304260253906
+            ],
+            "rms_dbfs": -50.684215011758184,
+            "dc_power_dbfs": -84.89142755212214,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009298324584960938
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst2.sigmf-data",
+          "sha256": "178debde815d75e68c068fe80a36a5f9f1788b30b438a8d00c0baf71bad2b717",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:02.076096+00:00"
+        },
+        {
+          "id": "B_burst3",
+          "started_utc": "2026-09-05T21:29:02.389478+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3779565000004368,
+          "features": {
+            "median_correlation": 0.3575893250432587,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 3139,
+            "period_count": 256,
+            "phase_slope_hz": 0.0011475768163210637,
+            "phase_residual_rms_deg": 1.0832533092497547,
+            "digital_transfer_power_db": -61.76772641226989,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.064907007587294
+              ],
+              [
+                -750000,
+                -61.94033227988516
+              ],
+              [
+                -650000,
+                -61.81373438333744
+              ],
+              [
+                -550000,
+                -61.663700255544285
+              ],
+              [
+                -450000,
+                -61.60875859383678
+              ],
+              [
+                -350000,
+                -61.56826940267428
+              ],
+              [
+                -250000,
+                -61.55310319618836
+              ],
+              [
+                -150000,
+                -61.547952542519646
+              ],
+              [
+                150000,
+                -61.565263183325314
+              ],
+              [
+                250000,
+                -61.5474256742226
+              ],
+              [
+                350000,
+                -61.70895942327761
+              ],
+              [
+                450000,
+                -61.716500538096845
+              ],
+              [
+                550000,
+                -61.81989414733585
+              ],
+              [
+                650000,
+                -61.92756266806113
+              ],
+              [
+                750000,
+                -62.0351429675462
+              ],
+              [
+                850000,
+                -62.28800339301117
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.73462917699041,
+              -61.760664224527744,
+              -61.78765797283772,
+              -61.78601866255826
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002526090404613427,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.101165771484375,
+              0.1210775375366211
+            ],
+            "rms_dbfs": -50.707001720398566,
+            "dc_power_dbfs": -82.26560275019331,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009335517883300781
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst3.sigmf-data",
+          "sha256": "21e0561cebab79d1948f5afeb3c1cdc2d1e3dd0b204b48c594270c584f213b2d",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:03.020461+00:00"
+        },
+        {
+          "id": "B_burst4",
+          "started_utc": "2026-09-05T21:29:03.338496+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38014470000052825,
+          "features": {
+            "median_correlation": 0.35762695865385896,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 927,
+            "period_count": 256,
+            "phase_slope_hz": 9.275753658306384e-05,
+            "phase_residual_rms_deg": 1.0897131265764606,
+            "digital_transfer_power_db": -61.77248567484167,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.14781957500243
+              ],
+              [
+                -750000,
+                -61.93448595497698
+              ],
+              [
+                -650000,
+                -61.71362702725637
+              ],
+              [
+                -550000,
+                -61.71529489785189
+              ],
+              [
+                -450000,
+                -61.60785986951908
+              ],
+              [
+                -350000,
+                -61.642379601754264
+              ],
+              [
+                -250000,
+                -61.51395234315595
+              ],
+              [
+                -150000,
+                -61.5692178672299
+              ],
+              [
+                150000,
+                -61.521087331628664
+              ],
+              [
+                250000,
+                -61.54694219489584
+              ],
+              [
+                350000,
+                -61.651141275885095
+              ],
+              [
+                450000,
+                -61.71826834332861
+              ],
+              [
+                550000,
+                -61.79701444295549
+              ],
+              [
+                650000,
+                -61.972586278238325
+              ],
+              [
+                750000,
+                -62.10660656946263
+              ],
+              [
+                850000,
+                -62.30244905421847
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.75806248545097,
+              -61.79439970829936,
+              -61.76493239300288,
+              -61.77479441119694
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025261407962577508,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -20
+            ],
+            "max_iq": [
+              21,
+              18
+            ],
+            "mean_iq": [
+              0.0751028060913086,
+              0.048636436462402344
+            ],
+            "rms_dbfs": -50.709840721867636,
+            "dc_power_dbfs": -87.19247875524702,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.0091552734375
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst4.sigmf-data",
+          "sha256": "e844c206c6c71afbc3b0300bf295a88b638703e180513ed844120f84d95f2340",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:03.964411+00:00"
+        },
+        {
+          "id": "B_burst5",
+          "started_utc": "2026-09-05T21:29:04.276257+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.37642610000330023,
+          "features": {
+            "median_correlation": 0.35682188233424705,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 2263,
+            "period_count": 256,
+            "phase_slope_hz": -0.008021441086870874,
+            "phase_residual_rms_deg": 1.1288415125307152,
+            "digital_transfer_power_db": -61.77351555376604,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.10155948639874
+              ],
+              [
+                -750000,
+                -61.946061372244934
+              ],
+              [
+                -650000,
+                -61.78050968765276
+              ],
+              [
+                -550000,
+                -61.74556025956106
+              ],
+              [
+                -450000,
+                -61.57940721430969
+              ],
+              [
+                -350000,
+                -61.573961035733916
+              ],
+              [
+                -250000,
+                -61.54739953620943
+              ],
+              [
+                -150000,
+                -61.52921025493738
+              ],
+              [
+                150000,
+                -61.54995903038166
+              ],
+              [
+                250000,
+                -61.576712329720195
+              ],
+              [
+                350000,
+                -61.63082960464013
+              ],
+              [
+                450000,
+                -61.718966126588874
+              ],
+              [
+                550000,
+                -61.844698118835986
+              ],
+              [
+                650000,
+                -61.91488638664377
+              ],
+              [
+                750000,
+                -62.09319192347216
+              ],
+              [
+                850000,
+                -62.34430046768402
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.75754630444399,
+              -61.76813378369313,
+              -61.780160692002006,
+              -61.78552531311138
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025251981125017082,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -17
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.04947662353515625,
+              0.08337688446044922
+            ],
+            "rms_dbfs": -50.69323422017174,
+            "dc_power_dbfs": -86.49548631266046,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008879661560058594
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst5.sigmf-data",
+          "sha256": "251b501b2112a819b26c3d4735e1e05089bbd1fbc35f605a9a21e342937f3f99",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:04.904981+00:00"
+        },
+        {
+          "id": "B_burst6",
+          "started_utc": "2026-09-05T21:29:05.210662+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38901650000480004,
+          "features": {
+            "median_correlation": 0.35577346474782,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1366,
+            "period_count": 256,
+            "phase_slope_hz": 0.000610069499449967,
+            "phase_residual_rms_deg": 1.156920763731534,
+            "digital_transfer_power_db": -61.78608586280553,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.11274434133091
+              ],
+              [
+                -750000,
+                -61.95001185775552
+              ],
+              [
+                -650000,
+                -61.83520927664554
+              ],
+              [
+                -550000,
+                -61.66426178555177
+              ],
+              [
+                -450000,
+                -61.68441647106316
+              ],
+              [
+                -350000,
+                -61.654576792195506
+              ],
+              [
+                -250000,
+                -61.48618617408978
+              ],
+              [
+                -150000,
+                -61.568302799822106
+              ],
+              [
+                150000,
+                -61.587794748133334
+              ],
+              [
+                250000,
+                -61.640373422250356
+              ],
+              [
+                350000,
+                -61.7191410407947
+              ],
+              [
+                450000,
+                -61.73761089575814
+              ],
+              [
+                550000,
+                -61.78122538668759
+              ],
+              [
+                650000,
+                -61.9071728477065
+              ],
+              [
+                750000,
+                -62.0536036218002
+              ],
+              [
+                850000,
+                -62.27529661908322
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.78578747679936,
+              -61.746695318559325,
+              -61.82047896611862,
+              -61.792875044547245
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.00252251018949081,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              21,
+              18
+            ],
+            "mean_iq": [
+              0.07470035552978516,
+              0.10606002807617188
+            ],
+            "rms_dbfs": -50.69340149225749,
+            "dc_power_dbfs": -83.9660488006473,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008647918701171875
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst6.sigmf-data",
+          "sha256": "1c4ad6f5984123afecad4886e44fabdf4dbea41e41dd2bc1fa77ea459a8ee0b5",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:05.847130+00:00"
+        },
+        {
+          "id": "B_burst7",
+          "started_utc": "2026-09-05T21:29:06.157125+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.37150999999721535,
+          "features": {
+            "median_correlation": 0.357785670050342,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 2619,
+            "period_count": 256,
+            "phase_slope_hz": 0.011448087890855729,
+            "phase_residual_rms_deg": 1.0543478731664644,
+            "digital_transfer_power_db": -61.77190678490974,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.14497086786716
+              ],
+              [
+                -750000,
+                -61.893793452259175
+              ],
+              [
+                -650000,
+                -61.771930218848965
+              ],
+              [
+                -550000,
+                -61.60721607892856
+              ],
+              [
+                -450000,
+                -61.67172946793145
+              ],
+              [
+                -350000,
+                -61.627417644255885
+              ],
+              [
+                -250000,
+                -61.59974444628041
+              ],
+              [
+                -150000,
+                -61.56287066325261
+              ],
+              [
+                150000,
+                -61.53322973310699
+              ],
+              [
+                250000,
+                -61.599447543263
+              ],
+              [
+                350000,
+                -61.637685612180455
+              ],
+              [
+                450000,
+                -61.759491705261446
+              ],
+              [
+                550000,
+                -61.83485179394347
+              ],
+              [
+                650000,
+                -61.903697894635826
+              ],
+              [
+                750000,
+                -62.03909356174897
+              ],
+              [
+                850000,
+                -62.24337404881413
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.73005304257333,
+              -61.78338901704986,
+              -61.79870360568014,
+              -61.77904581184823
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025219720986602062,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -17
+            ],
+            "max_iq": [
+              22,
+              19
+            ],
+            "mean_iq": [
+              0.03795051574707031,
+              0.08631706237792969
+            ],
+            "rms_dbfs": -50.710645227979796,
+            "dc_power_dbfs": -86.73715307263565,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009197235107421875
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst7.sigmf-data",
+          "sha256": "e8851476536607ce538aa47454099c306ba082c1071837d28552b01d8fa38317",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:06.796971+00:00"
+        },
+        {
+          "id": "B_burst8",
+          "started_utc": "2026-09-05T21:29:07.104521+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38106639999023173,
+          "features": {
+            "median_correlation": 0.357511405888027,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 3095,
+            "period_count": 256,
+            "phase_slope_hz": -0.0025571602460361907,
+            "phase_residual_rms_deg": 1.073635093308747,
+            "digital_transfer_power_db": -61.775363771883356,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.16918014641125
+              ],
+              [
+                -750000,
+                -61.93810485545937
+              ],
+              [
+                -650000,
+                -61.76831068870538
+              ],
+              [
+                -550000,
+                -61.72665800683883
+              ],
+              [
+                -450000,
+                -61.65897045731601
+              ],
+              [
+                -350000,
+                -61.575819188569284
+              ],
+              [
+                -250000,
+                -61.5772696268122
+              ],
+              [
+                -150000,
+                -61.529768978903114
+              ],
+              [
+                150000,
+                -61.503313028795716
+              ],
+              [
+                250000,
+                -61.58984420122061
+              ],
+              [
+                350000,
+                -61.65688998738413
+              ],
+              [
+                450000,
+                -61.707272796936785
+              ],
+              [
+                550000,
+                -61.8035908934166
+              ],
+              [
+                650000,
+                -61.93719133975583
+              ],
+              [
+                750000,
+                -62.10428541582809
+              ],
+              [
+                850000,
+                -62.25333094725475
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.763323824599006,
+              -61.78363843525954,
+              -61.78365658978478,
+              -61.77582748078898
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025217119427760662,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -18
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.024550437927246094,
+              0.07610511779785156
+            ],
+            "rms_dbfs": -50.70526433899036,
+            "dc_power_dbfs": -88.1683884974065,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008741378784179688
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_burst8.sigmf-data",
+          "sha256": "14ff0cf649a2e19d1531771b72de5bf2fb842a749fd38102814d135027ba5852",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:29:07.729932+00:00"
+        }
+      ],
+      "receive_guard": {
+        "id": "B_receive_guard",
+        "started_utc": "2026-09-05T21:28:58.692374+00:00",
+        "ended_utc": "2026-09-05T21:28:59.949534+00:00",
+        "lo_hz": 5771499996,
+        "sample_rate_hz": 4999999,
+        "gain_db": 40.0,
+        "rf_bandwidth_hz": 2400000,
+        "buffer_samples": 262144,
+        "blocks": 20,
+        "host_elapsed_s": 1.0467242000013357,
+        "observed_sample_time_s": 1.048576209715242,
+        "ui_status_end": 0,
+        "fifo_overflow_observed": false,
+        "raw_bytes": 20971520,
+        "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/B_receive_guard.sigmf-data",
+        "sha256": "7d0e029df1ad5e8f795fce0cfe34d7600fad8f3f0906cb132437f0bd24363aba",
+        "iq_metrics": {
+          "sample_count": 5242880,
+          "min_iq": [
+            -23,
+            -17
+          ],
+          "max_iq": [
+            21,
+            18
+          ],
+          "mean_iq": [
+            0.06232585906982422,
+            0.06170177459716797
+          ],
+          "rms_dbfs": -51.34283305806966,
+          "dc_power_dbfs": -87.36641988745406,
+          "rail_component_count": 0,
+          "outside_12bit_count": 0,
+          "zero_pair_fraction": 0.010605239868164062
+        },
+        "spectrum_columns": [
+          "offset_hz",
+          "mean_dbfs_per_hz",
+          "median_dbfs_per_hz",
+          "max_1p6384ms_dbfs_per_hz"
+        ],
+        "spectrum_50khz_bins": [
+          [
+            -1475000.0,
+            -123.21004647152989,
+            -123.24736697732286,
+            -121.26244064750554
+          ],
+          [
+            -1425000.0,
+            -123.55927409739803,
+            -123.59439463727952,
+            -121.72123888824834
+          ],
+          [
+            -1375000.0,
+            -123.92419926215172,
+            -123.93517061935799,
+            -122.29720198447951
+          ],
+          [
+            -1325000.0,
+            -124.1014801827631,
+            -124.1413409713479,
+            -122.50762892708667
+          ],
+          [
+            -1275000.0,
+            -124.30991945263649,
+            -124.35548259727761,
+            -122.2191361856157
+          ],
+          [
+            -1225000.0,
+            -124.26672113844597,
+            -124.28430687107245,
+            -122.84015787183651
+          ],
+          [
+            -1175000.0,
+            -124.39534340456714,
+            -124.397861251373,
+            -122.5461056852407
+          ],
+          [
+            -1125000.0,
+            -124.26793962558209,
+            -124.31019906567454,
+            -122.29085317857034
+          ],
+          [
+            -1075000.0,
+            -124.26566494568246,
+            -124.28583875538983,
+            -122.39026008036834
+          ],
+          [
+            -1025000.0,
+            -124.13152092093128,
+            -124.1604583201185,
+            -122.49956794023791
+          ],
+          [
+            -975000.0,
+            -124.04725606831606,
+            -124.07849089390913,
+            -121.7152114081826
+          ],
+          [
+            -925000.0,
+            -123.99037974449705,
+            -124.03373441886417,
+            -122.12940204499459
+          ],
+          [
+            -875000.0,
+            -123.87610044177822,
+            -123.9280853838986,
+            -121.58251835930838
+          ],
+          [
+            -825000.0,
+            -123.81016646419958,
+            -123.83211772325858,
+            -121.96080612648635
+          ],
+          [
+            -775000.0,
+            -123.73967161497663,
+            -123.7996568712573,
+            -121.67862318558744
+          ],
+          [
+            -725000.0,
+            -123.69880778735174,
+            -123.73722924790519,
+            -122.03128980984272
+          ],
+          [
+            -675000.0,
+            -123.56438012990729,
+            -123.59505204893944,
+            -121.58582412093267
+          ],
+          [
+            -625000.0,
+            -123.54405508165031,
+            -123.6176545508367,
+            -121.73921531446888
+          ],
+          [
+            -575000.0,
+            -123.44573234540482,
+            -123.48523196040914,
+            -121.68190383582905
+          ],
+          [
+            -525000.0,
+            -123.37723246436232,
+            -123.40769764747989,
+            -121.27025358568453
+          ],
+          [
+            -475000.0,
+            -123.26699483392275,
+            -123.35233570642872,
+            -121.3960313952316
+          ],
+          [
+            -425000.0,
+            -123.18745466863776,
+            -123.22430401568795,
+            -121.21663804520493
+          ],
+          [
+            -375000.0,
+            -123.06093942015907,
+            -123.08496960366126,
+            -121.14987716373568
+          ],
+          [
+            -325000.0,
+            -122.96793586055296,
+            -122.98902415002604,
+            -121.14079049336246
+          ],
+          [
+            -275000.0,
+            -122.82076194741944,
+            -122.83451114305109,
+            -120.89150389592268
+          ],
+          [
+            -225000.0,
+            -122.58060889804162,
+            -122.58899460664952,
+            -120.86910407126048
+          ],
+          [
+            -175000.0,
+            -122.27811839059483,
+            -122.30723464438383,
+            -120.60841460617101
+          ],
+          [
+            -125000.0,
+            -121.85951302677834,
+            -121.91339360122356,
+            -120.15200237405315
+          ],
+          [
+            -75000.0,
+            -120.82924878428162,
+            -120.87593255258585,
+            -119.09321565493512
+          ],
+          [
+            -25000.0,
+            -115.04162807640287,
+            -115.19881723027083,
+            -111.6608151381581
+          ],
+          [
+            25000.0,
+            -112.5245740579158,
+            -112.83510175913783,
+            -108.51007333608712
+          ],
+          [
+            75000.0,
+            -120.82368148988616,
+            -120.85213110060809,
+            -119.03544812928527
+          ],
+          [
+            125000.0,
+            -121.8440192118181,
+            -121.84360743728061,
+            -120.05528749230822
+          ],
+          [
+            175000.0,
+            -122.30414391980197,
+            -122.36333476156732,
+            -120.42487570621232
+          ],
+          [
+            225000.0,
+            -122.64939607928338,
+            -122.68110093205244,
+            -120.72776130298044
+          ],
+          [
+            275000.0,
+            -122.80750889604695,
+            -122.86186557386385,
+            -121.08800264934779
+          ],
+          [
+            325000.0,
+            -122.95299859111108,
+            -123.01845519054916,
+            -121.37416690790991
+          ],
+          [
+            375000.0,
+            -123.04002950800837,
+            -123.08920685008229,
+            -121.36291716386809
+          ],
+          [
+            425000.0,
+            -123.2170586509726,
+            -123.2698048720699,
+            -121.43967666682101
+          ],
+          [
+            475000.0,
+            -123.32952226551755,
+            -123.36543694851882,
+            -121.4353882810016
+          ],
+          [
+            525000.0,
+            -123.3831059309933,
+            -123.41081708375773,
+            -121.4321326601422
+          ],
+          [
+            575000.0,
+            -123.43152238706497,
+            -123.46070663638397,
+            -121.44014710624188
+          ],
+          [
+            625000.0,
+            -123.48772834190623,
+            -123.51436287458057,
+            -121.41363260717566
+          ],
+          [
+            675000.0,
+            -123.60932333501171,
+            -123.64514004302686,
+            -121.96272504551786
+          ],
+          [
+            725000.0,
+            -123.66309745570302,
+            -123.69964272917828,
+            -121.51984273068145
+          ],
+          [
+            775000.0,
+            -123.76910568131748,
+            -123.83751677421824,
+            -121.8437510945707
+          ],
+          [
+            825000.0,
+            -123.82008499839927,
+            -123.84715771279738,
+            -122.05585581219191
+          ],
+          [
+            875000.0,
+            -123.91826075514336,
+            -123.96439453275669,
+            -121.88663457237433
+          ],
+          [
+            925000.0,
+            -124.03683929158882,
+            -124.04470483346208,
+            -121.93775928239339
+          ],
+          [
+            975000.0,
+            -124.0558706404999,
+            -124.09348074649954,
+            -121.88491603069818
+          ],
+          [
+            1025000.0,
+            -124.16014523069039,
+            -124.19820626013326,
+            -122.47401501111997
+          ],
+          [
+            1075000.0,
+            -124.24232824193831,
+            -124.29916418880813,
+            -122.08434775391567
+          ],
+          [
+            1125000.0,
+            -124.3599468790533,
+            -124.34696057417271,
+            -122.51846391330263
+          ],
+          [
+            1175000.0,
+            -124.34493241089041,
+            -124.40489173966638,
+            -122.23712175358315
+          ],
+          [
+            1225000.0,
+            -124.30485139688108,
+            -124.3396564807312,
+            -122.05605209071528
+          ],
+          [
+            1275000.0,
+            -124.25975305536014,
+            -124.32809029326997,
+            -122.33674709898033
+          ],
+          [
+            1325000.0,
+            -124.14338012650184,
+            -124.19263286543405,
+            -122.3766657329559
+          ],
+          [
+            1375000.0,
+            -123.90730503858676,
+            -123.93494712516683,
+            -121.53558120786772
+          ],
+          [
+            1425000.0,
+            -123.58042347159704,
+            -123.65094007271638,
+            -121.94021127024244
+          ],
+          [
+            1475000.0,
+            -123.19311526576222,
+            -123.23488568326701,
+            -121.6631739907683
+          ]
+        ]
+      },
+      "guard_max_excess_db": 4.570905170602799,
+      "ended_utc": "2026-09-05T21:29:08.037138+00:00",
+      "end_state": {
+        "rx_lo_hz": 5771499996,
+        "sample_rate_hz": 4999999,
+        "stream_sample_rate_hz": 4999999,
+        "rf_bandwidth_hz": 2400000,
+        "gain_mode": "manual",
+        "gain_db": 40.0,
+        "fir_enabled": "0",
+        "port": "A_BALANCED",
+        "tx_lo_powerdown": "1",
+        "tx_attenuation_setting_db": -89.75
+      }
+    },
+    {
+      "phase": "C",
+      "started_utc": "2026-09-05T21:32:37.341393+00:00",
+      "cases": [
+        {
+          "id": "C_burst1",
+          "started_utc": "2026-09-05T21:32:39.297888+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38033119999454357,
+          "features": {
+            "median_correlation": 0.3572770517683346,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 2594,
+            "period_count": 256,
+            "phase_slope_hz": 0.0023844215170725678,
+            "phase_residual_rms_deg": 1.055269164087836,
+            "digital_transfer_power_db": -61.788384630735464,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.1169136879988
+              ],
+              [
+                -750000,
+                -61.92828905673261
+              ],
+              [
+                -650000,
+                -61.82103904735954
+              ],
+              [
+                -550000,
+                -61.68607858031764
+              ],
+              [
+                -450000,
+                -61.6497320987953
+              ],
+              [
+                -350000,
+                -61.59145288414025
+              ],
+              [
+                -250000,
+                -61.57788856944045
+              ],
+              [
+                -150000,
+                -61.595715581739164
+              ],
+              [
+                150000,
+                -61.59698531092215
+              ],
+              [
+                250000,
+                -61.602062524241774
+              ],
+              [
+                350000,
+                -61.69625351645831
+              ],
+              [
+                450000,
+                -61.70117512073127
+              ],
+              [
+                550000,
+                -61.792166670264486
+              ],
+              [
+                650000,
+                -61.917720970719905
+              ],
+              [
+                750000,
+                -62.11331690174801
+              ],
+              [
+                850000,
+                -62.313853013484234
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.78988160256931,
+              -61.77722282363658,
+              -61.78993082868789,
+              -61.797623555610016
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025348766450125947,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -17
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.08648681640625,
+              0.09472942352294922
+            ],
+            "rms_dbfs": -50.71275023161217,
+            "dc_power_dbfs": -84.06398096056272,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009297370910644531
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst1.sigmf-data",
+          "sha256": "32834d696f3e0b6a762eaef2d2b93fcded015329de0eaa15c716b03574469bbd",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:39.970180+00:00"
+        },
+        {
+          "id": "C_burst2",
+          "started_utc": "2026-09-05T21:32:40.277066+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38144629998714663,
+          "features": {
+            "median_correlation": 0.3571635506379861,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 2319,
+            "period_count": 256,
+            "phase_slope_hz": 0.007689668346255675,
+            "phase_residual_rms_deg": 1.0750077356182886,
+            "digital_transfer_power_db": -61.79615043615282,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.14660216793686
+              ],
+              [
+                -750000,
+                -61.98105984509253
+              ],
+              [
+                -650000,
+                -61.79700015830087
+              ],
+              [
+                -550000,
+                -61.761770507368425
+              ],
+              [
+                -450000,
+                -61.68503992831266
+              ],
+              [
+                -350000,
+                -61.59014307121801
+              ],
+              [
+                -250000,
+                -61.55577158067732
+              ],
+              [
+                -150000,
+                -61.51770060242156
+              ],
+              [
+                150000,
+                -61.61343285131372
+              ],
+              [
+                250000,
+                -61.637352623235685
+              ],
+              [
+                350000,
+                -61.68650259590606
+              ],
+              [
+                450000,
+                -61.700983661352986
+              ],
+              [
+                550000,
+                -61.81359958842766
+              ],
+              [
+                650000,
+                -61.95643964069078
+              ],
+              [
+                750000,
+                -62.10284038747177
+              ],
+              [
+                850000,
+                -62.281168572736036
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.780772947499436,
+              -61.80965623108828,
+              -61.81034537269752,
+              -61.782772738716325
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025416598435624993,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -22,
+              -19
+            ],
+            "max_iq": [
+              20,
+              18
+            ],
+            "mean_iq": [
+              0.03628253936767578,
+              0.02933502197265625
+            ],
+            "rms_dbfs": -50.71583157662949,
+            "dc_power_dbfs": -92.84808223022425,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009258270263671875
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst2.sigmf-data",
+          "sha256": "690d07b79483cd18340aaeabf1c806cc5e0411a78105c841d37e3b213d492eda",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:40.932723+00:00"
+        },
+        {
+          "id": "C_burst3",
+          "started_utc": "2026-09-05T21:32:41.239811+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3823661000060383,
+          "features": {
+            "median_correlation": 0.3555668217200716,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1539,
+            "period_count": 256,
+            "phase_slope_hz": -0.0039495370248026265,
+            "phase_residual_rms_deg": 1.143494188587468,
+            "digital_transfer_power_db": -61.79873671789273,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.173998598532194
+              ],
+              [
+                -750000,
+                -61.92720673453771
+              ],
+              [
+                -650000,
+                -61.79991622008163
+              ],
+              [
+                -550000,
+                -61.706914056742846
+              ],
+              [
+                -450000,
+                -61.66518890061514
+              ],
+              [
+                -350000,
+                -61.59369788752357
+              ],
+              [
+                -250000,
+                -61.559727894117096
+              ],
+              [
+                -150000,
+                -61.52180005161661
+              ],
+              [
+                150000,
+                -61.58821409780685
+              ],
+              [
+                250000,
+                -61.71494004419272
+              ],
+              [
+                350000,
+                -61.60230913784781
+              ],
+              [
+                450000,
+                -61.71708196271632
+              ],
+              [
+                550000,
+                -61.842465559558434
+              ],
+              [
+                650000,
+                -61.995311474281195
+              ],
+              [
+                750000,
+                -62.10909943306224
+              ],
+              [
+                850000,
+                -62.365363280975494
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.789293287831335,
+              -61.83254638914241,
+              -61.78603969133388,
+              -61.78682209998139
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025475649110778655,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -22,
+              -20
+            ],
+            "max_iq": [
+              24,
+              20
+            ],
+            "mean_iq": [
+              0.09262943267822266,
+              0.03882026672363281
+            ],
+            "rms_dbfs": -50.679346259493805,
+            "dc_power_dbfs": -86.1888820055479,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009272575378417969
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst3.sigmf-data",
+          "sha256": "0e688c728c9a5b9041c17100b5be90e332f1f2e48a01f3d07811e9bdbdff218c",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:41.893217+00:00"
+        },
+        {
+          "id": "C_burst4",
+          "started_utc": "2026-09-05T21:32:42.202001+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38979899999685585,
+          "features": {
+            "median_correlation": 0.358746657829912,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 3102,
+            "period_count": 256,
+            "phase_slope_hz": -0.0058500236726596756,
+            "phase_residual_rms_deg": 1.0272973837854908,
+            "digital_transfer_power_db": -61.79252785021869,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.119545575746216
+              ],
+              [
+                -750000,
+                -61.985479453678934
+              ],
+              [
+                -650000,
+                -61.79979792108845
+              ],
+              [
+                -550000,
+                -61.71937118082812
+              ],
+              [
+                -450000,
+                -61.655404703709216
+              ],
+              [
+                -350000,
+                -61.58668706262642
+              ],
+              [
+                -250000,
+                -61.57979193007548
+              ],
+              [
+                -150000,
+                -61.62335343142735
+              ],
+              [
+                150000,
+                -61.6195352045305
+              ],
+              [
+                250000,
+                -61.61344128802321
+              ],
+              [
+                350000,
+                -61.6498711857566
+              ],
+              [
+                450000,
+                -61.72610504457663
+              ],
+              [
+                550000,
+                -61.79793784698363
+              ],
+              [
+                650000,
+                -61.954034119873064
+              ],
+              [
+                750000,
+                -62.06458753682856
+              ],
+              [
+                850000,
+                -62.264288929671764
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.771331766877225,
+              -61.784770043636556,
+              -61.82259643682414,
+              -61.79042866793986
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.00254274818129149,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -17
+            ],
+            "max_iq": [
+              20,
+              21
+            ],
+            "mean_iq": [
+              0.04123497009277344,
+              0.037441253662109375
+            ],
+            "rms_dbfs": -50.75235087276336,
+            "dc_power_dbfs": -91.30994278181278,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.0092620849609375
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst4.sigmf-data",
+          "sha256": "e2d6bd0a1c1dbe9a6d71fb4f8afe1c17b4e364647fbb071cc1dbf8f5500cbb0d",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:42.867227+00:00"
+        },
+        {
+          "id": "C_burst5",
+          "started_utc": "2026-09-05T21:32:43.174234+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.3822929000016302,
+          "features": {
+            "median_correlation": 0.3571475876827728,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1367,
+            "period_count": 256,
+            "phase_slope_hz": -0.0002401830240930371,
+            "phase_residual_rms_deg": 1.1477765102561657,
+            "digital_transfer_power_db": -61.801115797057975,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.12277382825042
+              ],
+              [
+                -750000,
+                -61.96390177442381
+              ],
+              [
+                -650000,
+                -61.86455197724701
+              ],
+              [
+                -550000,
+                -61.70753503348068
+              ],
+              [
+                -450000,
+                -61.59497177154978
+              ],
+              [
+                -350000,
+                -61.605526044655804
+              ],
+              [
+                -250000,
+                -61.53600576490169
+              ],
+              [
+                -150000,
+                -61.62161514598813
+              ],
+              [
+                150000,
+                -61.6072464282744
+              ],
+              [
+                250000,
+                -61.68880111549573
+              ],
+              [
+                350000,
+                -61.68640137267711
+              ],
+              [
+                450000,
+                -61.75197712790681
+              ],
+              [
+                550000,
+                -61.83369140936294
+              ],
+              [
+                650000,
+                -61.938143432522246
+              ],
+              [
+                750000,
+                -62.1092171070083
+              ],
+              [
+                850000,
+                -62.267876415018684
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.79116830220363,
+              -61.80119977421423,
+              -61.82297664927715,
+              -61.7920728137491
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002541735969495769,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.012734413146972656,
+              0.0851755142211914
+            ],
+            "rms_dbfs": -50.74056943935726,
+            "dc_power_dbfs": -87.52429663982619,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009234428405761719
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst5.sigmf-data",
+          "sha256": "fc929ddbb38a64dc3144dc26480a0a507a4d7f0e1d501f1086823574f18e831e",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:43.810335+00:00"
+        },
+        {
+          "id": "C_burst6",
+          "started_utc": "2026-09-05T21:32:44.118687+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.38550520001444966,
+          "features": {
+            "median_correlation": 0.35555934828175206,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 2808,
+            "period_count": 256,
+            "phase_slope_hz": -0.006563519570043097,
+            "phase_residual_rms_deg": 1.1346397400884571,
+            "digital_transfer_power_db": -61.81642793985933,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.15141165517305
+              ],
+              [
+                -750000,
+                -61.98187446321906
+              ],
+              [
+                -650000,
+                -61.83190947516901
+              ],
+              [
+                -550000,
+                -61.72084487898496
+              ],
+              [
+                -450000,
+                -61.635627433555484
+              ],
+              [
+                -350000,
+                -61.67762361129945
+              ],
+              [
+                -250000,
+                -61.549225104340124
+              ],
+              [
+                -150000,
+                -61.56438783934763
+              ],
+              [
+                150000,
+                -61.653196256899356
+              ],
+              [
+                250000,
+                -61.64955135977571
+              ],
+              [
+                350000,
+                -61.67625763634046
+              ],
+              [
+                450000,
+                -61.786715796406575
+              ],
+              [
+                550000,
+                -61.814334343402486
+              ],
+              [
+                650000,
+                -62.03924350520957
+              ],
+              [
+                750000,
+                -62.11865508495505
+              ],
+              [
+                850000,
+                -62.301426075958304
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.794936080069306,
+              -61.84666855251888,
+              -61.79972307924171,
+              -61.824910928541364
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.0025486549363784943,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -20,
+              -17
+            ],
+            "max_iq": [
+              21,
+              19
+            ],
+            "mean_iq": [
+              0.046905517578125,
+              0.0707101821899414
+            ],
+            "rms_dbfs": -50.708960448024236,
+            "dc_power_dbfs": -87.65323943207414,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009004592895507812
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst6.sigmf-data",
+          "sha256": "6f56620b3706332fef7b3c5d2c06c4a851e1cb6541d4961e8dd1af9de96babdb",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:44.745757+00:00"
+        },
+        {
+          "id": "C_burst7",
+          "started_utc": "2026-09-05T21:32:45.052910+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.39291639998555183,
+          "features": {
+            "median_correlation": 0.35568931563577005,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 2695,
+            "period_count": 256,
+            "phase_slope_hz": -0.007465795399293015,
+            "phase_residual_rms_deg": 1.0155763883818114,
+            "digital_transfer_power_db": -61.813904255868295,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.14316407627904
+              ],
+              [
+                -750000,
+                -62.0070491898506
+              ],
+              [
+                -650000,
+                -61.824560177447665
+              ],
+              [
+                -550000,
+                -61.72158698185778
+              ],
+              [
+                -450000,
+                -61.63815519540783
+              ],
+              [
+                -350000,
+                -61.56825294500588
+              ],
+              [
+                -250000,
+                -61.55363742027137
+              ],
+              [
+                -150000,
+                -61.584525881910764
+              ],
+              [
+                150000,
+                -61.63321733394214
+              ],
+              [
+                250000,
+                -61.66228468819743
+              ],
+              [
+                350000,
+                -61.667911472670845
+              ],
+              [
+                450000,
+                -61.74215616283257
+              ],
+              [
+                550000,
+                -61.91273904650974
+              ],
+              [
+                650000,
+                -61.973776053969026
+              ],
+              [
+                750000,
+                -62.13477445516607
+              ],
+              [
+                850000,
+                -62.35431632193455
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.83028617490616,
+              -61.803279656584024,
+              -61.80534404092501,
+              -61.813909889813985
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002546928509612192,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -23,
+              -20
+            ],
+            "max_iq": [
+              22,
+              19
+            ],
+            "mean_iq": [
+              0.08649158477783203,
+              0.04091644287109375
+            ],
+            "rms_dbfs": -50.70859495019616,
+            "dc_power_dbfs": -86.61003949951656,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.008546829223632812
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst7.sigmf-data",
+          "sha256": "e5cb156a9b4c292b050963fd349d1b12861704350a8336aa149f54ecec64d465",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:45.725787+00:00"
+        },
+        {
+          "id": "C_burst8",
+          "started_utc": "2026-09-05T21:32:46.033481+00:00",
+          "tx_attenuation_db": 45,
+          "commanded_unmute_s": 0.37069209999754094,
+          "features": {
+            "median_correlation": 0.35653093171813766,
+            "pilot_detected": true,
+            "conjugate_rx": false,
+            "alignment_lag_samples": 1984,
+            "period_count": 256,
+            "phase_slope_hz": -0.004759148394980696,
+            "phase_residual_rms_deg": 1.12776409339842,
+            "digital_transfer_power_db": -61.778625067674724,
+            "frequency_bin_columns": [
+              "offset_hz",
+              "digital_transfer_power_db"
+            ],
+            "frequency_bins": [
+              [
+                -850000,
+                -62.14670437732202
+              ],
+              [
+                -750000,
+                -61.95701182182773
+              ],
+              [
+                -650000,
+                -61.796633470473154
+              ],
+              [
+                -550000,
+                -61.65358162644522
+              ],
+              [
+                -450000,
+                -61.59935368210753
+              ],
+              [
+                -350000,
+                -61.554893691277705
+              ],
+              [
+                -250000,
+                -61.50130336467437
+              ],
+              [
+                -150000,
+                -61.585355373753856
+              ],
+              [
+                150000,
+                -61.66723658749341
+              ],
+              [
+                250000,
+                -61.56422743805267
+              ],
+              [
+                350000,
+                -61.66626760929531
+              ],
+              [
+                450000,
+                -61.72786522466186
+              ],
+              [
+                550000,
+                -61.7790239763505
+              ],
+              [
+                650000,
+                -61.944540300779856
+              ],
+              [
+                750000,
+                -62.09056634292229
+              ],
+              [
+                850000,
+                -62.32241780556958
+              ]
+            ],
+            "quarter_burst_transfer_db": [
+              -61.77915625259325,
+              -61.769201637199124,
+              -61.7719080223106,
+              -61.790330512171394
+            ],
+            "mean_estimator_noise_to_signal_ratio": 0.002537100019674501,
+            "interpretation": "Fixed-setting digital amplitude transfer only. Not calibrated path loss, geometric range or absolute carrier phase."
+          },
+          "iq_metrics": {
+            "sample_count": 1048576,
+            "min_iq": [
+              -21,
+              -18
+            ],
+            "max_iq": [
+              20,
+              19
+            ],
+            "mean_iq": [
+              0.032924652099609375,
+              0.06265449523925781
+            ],
+            "rms_dbfs": -50.69224821033551,
+            "dc_power_dbfs": -89.22855251431943,
+            "rail_component_count": 0,
+            "outside_12bit_count": 0,
+            "zero_pair_fraction": 0.009424209594726562
+          },
+          "fifo_overflow_observed": false,
+          "watchdog_fired": false,
+          "watchdog_errors": [],
+          "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_burst8.sigmf-data",
+          "sha256": "cf9fadb700590ad6a04bb7322985d54d3404eb4cc3d4479b1cef1bf0b600eb45",
+          "raw_bytes": 4194304,
+          "ended_utc": "2026-09-05T21:32:46.712857+00:00"
+        }
+      ],
+      "receive_guard": {
+        "id": "C_receive_guard",
+        "started_utc": "2026-09-05T21:32:37.423477+00:00",
+        "ended_utc": "2026-09-05T21:32:38.746907+00:00",
+        "lo_hz": 5771499996,
+        "sample_rate_hz": 4999999,
+        "gain_db": 40.0,
+        "rf_bandwidth_hz": 2400000,
+        "buffer_samples": 262144,
+        "blocks": 20,
+        "host_elapsed_s": 1.0472650000010617,
+        "observed_sample_time_s": 1.048576209715242,
+        "ui_status_end": 0,
+        "fifo_overflow_observed": false,
+        "raw_bytes": 20971520,
+        "raw_relative_path": "data/local/2026-09-05T212740Z_scene-aba/C_receive_guard.sigmf-data",
+        "sha256": "79306b8e395d1f935b3ee71450857225ad06bf836b6ad7b7456c9d05adce103e",
+        "iq_metrics": {
+          "sample_count": 5242880,
+          "min_iq": [
+            -20,
+            -17
+          ],
+          "max_iq": [
+            20,
+            18
+          ],
+          "mean_iq": [
+            0.05802173614501953,
+            0.06541824340820312
+          ],
+          "rms_dbfs": -51.351760553399686,
+          "dc_power_dbfs": -87.3922172376796,
+          "rail_component_count": 0,
+          "outside_12bit_count": 0,
+          "zero_pair_fraction": 0.010724258422851563
+        },
+        "spectrum_columns": [
+          "offset_hz",
+          "mean_dbfs_per_hz",
+          "median_dbfs_per_hz",
+          "max_1p6384ms_dbfs_per_hz"
+        ],
+        "spectrum_50khz_bins": [
+          [
+            -1475000.0,
+            -123.2201286380901,
+            -123.25314351998243,
+            -121.50052971958632
+          ],
+          [
+            -1425000.0,
+            -123.61720872193641,
+            -123.667388679839,
+            -121.9644782638924
+          ],
+          [
+            -1375000.0,
+            -123.90433827087588,
+            -123.91029660797919,
+            -121.95393069316358
+          ],
+          [
+            -1325000.0,
+            -124.16667063159595,
+            -124.20319191351723,
+            -122.14261528191118
+          ],
+          [
+            -1275000.0,
+            -124.20343805918162,
+            -124.25136742704369,
+            -122.22989678345628
+          ],
+          [
+            -1225000.0,
+            -124.35225327596976,
+            -124.39429226969521,
+            -122.72395942953166
+          ],
+          [
+            -1175000.0,
+            -124.32204143991416,
+            -124.35883295190405,
+            -122.0981213079562
+          ],
+          [
+            -1125000.0,
+            -124.32793549097207,
+            -124.373212805995,
+            -122.52895249216307
+          ],
+          [
+            -1075000.0,
+            -124.29282645320174,
+            -124.30005166889327,
+            -122.0447826650879
+          ],
+          [
+            -1025000.0,
+            -124.2082522375755,
+            -124.25926991691405,
+            -122.25506440930832
+          ],
+          [
+            -975000.0,
+            -124.09953645651186,
+            -124.11631010751003,
+            -122.31981059825146
+          ],
+          [
+            -925000.0,
+            -124.01493056631635,
+            -124.0406195414917,
+            -122.30985379543114
+          ],
+          [
+            -875000.0,
+            -123.8657035264772,
+            -123.89942542731288,
+            -121.86325294602221
+          ],
+          [
+            -825000.0,
+            -123.82667239109601,
+            -123.89052577476872,
+            -122.02031785627292
+          ],
+          [
+            -775000.0,
+            -123.74548258053827,
+            -123.7676687067232,
+            -121.97267536181684
+          ],
+          [
+            -725000.0,
+            -123.63306072665065,
+            -123.67719553022243,
+            -121.57557086827312
+          ],
+          [
+            -675000.0,
+            -123.5347215587825,
+            -123.56314249947474,
+            -121.46954181564047
+          ],
+          [
+            -625000.0,
+            -123.48325521675108,
+            -123.49507522073581,
+            -121.48550848338353
+          ],
+          [
+            -575000.0,
+            -123.43768277437071,
+            -123.47489515463904,
+            -121.51920865143671
+          ],
+          [
+            -525000.0,
+            -123.3450020429965,
+            -123.37334297354774,
+            -121.50356809177259
+          ],
+          [
+            -475000.0,
+            -123.24520052479119,
+            -123.29141189480835,
+            -121.56686207916195
+          ],
+          [
+            -425000.0,
+            -123.20311206835115,
+            -123.22888068877134,
+            -121.03040890725575
+          ],
+          [
+            -375000.0,
+            -123.08046771799233,
+            -123.12360530581267,
+            -120.96521983816086
+          ],
+          [
+            -325000.0,
+            -123.00646577325927,
+            -123.04456773667752,
+            -120.83148361178955
+          ],
+          [
+            -275000.0,
+            -122.79377976124225,
+            -122.84984639580406,
+            -120.70925614582836
+          ],
+          [
+            -225000.0,
+            -122.62997997408402,
+            -122.68926651410185,
+            -120.49109646958166
+          ],
+          [
+            -175000.0,
+            -122.30410882635182,
+            -122.30942700736466,
+            -120.43957879127976
+          ],
+          [
+            -125000.0,
+            -121.82602146109856,
+            -121.87362754602799,
+            -120.39750237497398
+          ],
+          [
+            -75000.0,
+            -120.84761317284203,
+            -120.89504398706133,
+            -118.7787511315062
+          ],
+          [
+            -25000.0,
+            -115.1064929189184,
+            -115.26020608272718,
+            -112.11327833123251
+          ],
+          [
+            25000.0,
+            -112.56335167390148,
+            -112.86836160230393,
+            -107.93218604074727
+          ],
+          [
+            75000.0,
+            -120.78770027920874,
+            -120.82984262218135,
+            -118.28247825305684
+          ],
+          [
+            125000.0,
+            -121.77551619615744,
+            -121.81358222016014,
+            -119.67408845349021
+          ],
+          [
+            175000.0,
+            -122.34795112312702,
+            -122.37426070257615,
+            -120.44674924988321
+          ],
+          [
+            225000.0,
+            -122.71059105327873,
+            -122.72319622701511,
+            -120.82680817955493
+          ],
+          [
+            275000.0,
+            -122.79255555547259,
+            -122.82370360254095,
+            -121.20021004270704
+          ],
+          [
+            325000.0,
+            -122.98915931517556,
+            -123.0153749619352,
+            -120.84061216354365
+          ],
+          [
+            375000.0,
+            -123.11898126021487,
+            -123.15440008039042,
+            -121.31894634483203
+          ],
+          [
+            425000.0,
+            -123.1960987362907,
+            -123.23766491070461,
+            -121.32848074576097
+          ],
+          [
+            475000.0,
+            -123.23748914071771,
+            -123.28400399398805,
+            -121.34200458145864
+          ],
+          [
+            525000.0,
+            -123.34052727231054,
+            -123.37162228966577,
+            -121.83123344022471
+          ],
+          [
+            575000.0,
+            -123.4369817738459,
+            -123.48945856763187,
+            -121.68065807305688
+          ],
+          [
+            625000.0,
+            -123.49183284657401,
+            -123.49755895748906,
+            -121.83710918728677
+          ],
+          [
+            675000.0,
+            -123.58152859864154,
+            -123.62713592016985,
+            -121.7518012237889
+          ],
+          [
+            725000.0,
+            -123.6674247805084,
+            -123.71202607095395,
+            -121.61042328402033
+          ],
+          [
+            775000.0,
+            -123.6842289820474,
+            -123.75143754940196,
+            -122.04804555318222
+          ],
+          [
+            825000.0,
+            -123.7999841191804,
+            -123.82582641273635,
+            -122.10020105091802
+          ],
+          [
+            875000.0,
+            -123.92566908437041,
+            -124.00531294159329,
+            -121.58524368685163
+          ],
+          [
+            925000.0,
+            -123.9589787769867,
+            -123.99916713333991,
+            -122.03102921773288
+          ],
+          [
+            975000.0,
+            -124.09463178277134,
+            -124.17101238082648,
+            -122.32973458092522
+          ],
+          [
+            1025000.0,
+            -124.17332446776112,
+            -124.20826772647446,
+            -122.28873978747211
+          ],
+          [
+            1075000.0,
+            -124.22766471598808,
+            -124.28977885755327,
+            -122.40546831518856
+          ],
+          [
+            1125000.0,
+            -124.32370037226084,
+            -124.34668951632926,
+            -122.73956298180524
+          ],
+          [
+            1175000.0,
+            -124.35201181155847,
+            -124.3908770690721,
+            -122.29334927689123
+          ],
+          [
+            1225000.0,
+            -124.35502343151722,
+            -124.39196218313151,
+            -122.78534625080097
+          ],
+          [
+            1275000.0,
+            -124.28619861502894,
+            -124.32447398872362,
+            -122.47257959242638
+          ],
+          [
+            1325000.0,
+            -124.15568698705763,
+            -124.18104661009272,
+            -122.27091325464659
+          ],
+          [
+            1375000.0,
+            -123.87729498252183,
+            -123.9242308545996,
+            -121.93334460807414
+          ],
+          [
+            1425000.0,
+            -123.57813008168927,
+            -123.62743217231892,
+            -121.74527534204529
+          ],
+          [
+            1475000.0,
+            -123.21597288100645,
+            -123.20612934344148,
+            -121.1454257290143
+          ]
+        ]
+      },
+      "guard_max_excess_db": 5.247872475425055,
+      "ended_utc": "2026-09-05T21:32:47.020719+00:00",
+      "end_state": {
+        "rx_lo_hz": 5771499996,
+        "sample_rate_hz": 4999999,
+        "stream_sample_rate_hz": 4999999,
+        "rf_bandwidth_hz": 2400000,
+        "gain_mode": "manual",
+        "gain_db": 40.0,
+        "fir_enabled": "0",
+        "port": "A_BALANCED",
+        "tx_lo_powerdown": "1",
+        "tx_attenuation_setting_db": -89.75
+      }
+    }
+  ],
+  "operator_commands": [
+    {
+      "command": "B",
+      "received_utc": "2026-09-05T21:28:58.612273+00:00",
+      "meaning": "Assistant relayed operator confirmation that the required position is settled."
+    },
+    {
+      "command": "C",
+      "received_utc": "2026-09-05T21:32:37.341393+00:00",
+      "meaning": "Assistant relayed operator confirmation that the required position is settled."
+    }
+  ],
+  "initial_rx": {
+    "rx_lo_hz": 2400000000,
+    "sample_rate_hz": 30719999,
+    "stream_sample_rate_hz": 30719999,
+    "rf_bandwidth_hz": 18000000,
+    "gain_mode": "slow_attack",
+    "gain_db": 71.0,
+    "fir_enabled": "0",
+    "port": "A_BALANCED",
+    "tx_lo_powerdown": "1",
+    "tx_attenuation_setting_db": -89.75
+  },
+  "status": "completed",
+  "restore_errors": [],
+  "final_rx": {
+    "rx_lo_hz": 2400000000,
+    "sample_rate_hz": 30719999,
+    "stream_sample_rate_hz": 30719999,
+    "rf_bandwidth_hz": 18000000,
+    "gain_mode": "slow_attack",
+    "gain_db": 71.0,
+    "fir_enabled": "0",
+    "port": "A_BALANCED",
+    "tx_lo_powerdown": "1",
+    "tx_attenuation_setting_db": -89.75
+  },
+  "final_bist": {
+    "bist_prbs": "0",
+    "bist_tone": "0",
+    "loopback": "0"
+  },
+  "final_tx_mute_verified": true,
+  "ended_utc": "2026-09-05T21:32:47.900030+00:00"
+}
