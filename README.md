@@ -4,7 +4,24 @@ Reproducible experiments with one ADALM-PlutoSDR and its supplied TX/RX antennas
 The objective is to investigate which room properties can be inferred from RF
 measurements, starting at one fixed desk position and adding two blind placements.
 
-## Latest: all three positions collected and verified
+## Latest: deep offline reconstruction and inference tests
+
+[Read the deep analysis](reports/deep-analysis/report.md).
+
+- Mirror-component correction and an empirically supported timing constraint
+  allow independent sweeps to agree to **1.5–1.9% in complex response** after
+  overall scale, phase and delay alignment.
+- The pass analyzed 582 sweep pilots and 117 reference bursts, recomputed 18
+  captures from raw IQ, and tested smoothing order, capture quarters and windows.
+- Known 20–100 ns echoes injected into measured channels survive reconstruction.
+  A roughly 5–8 ns feature in comparisons with spot 1 remains a hypothesis:
+  a smooth model without an echo predicts comparably well.
+- All 43 tests pass. Original raw data remain unchanged. **Room geometry is
+  still unvalidated.** This analysis made no SDR connection or transmission.
+
+![Deep RF analysis](reports/deep-analysis/overview.png)
+
+## All three positions collected and verified
 
 [Read the three-position report](reports/three-position-experiment/report.md).
 
@@ -21,7 +38,7 @@ measurements, starting at one fixed desk position and adding two blind placement
 - The power-ripple method recovers a simulated echo but also accepts a smooth
   no-echo control. That failure is preserved: **no wall ranges, placement
   coordinates or room map are validated**.
-- All 35 numerical and acquisition-control tests pass. Raw complex samples stay
+- The collection checkpoint passed 35 numerical and acquisition-control tests. Raw complex samples stay
   local; public metadata, hashes, source snapshots and reports are committed.
 
 ![All three measured RF responses](reports/three-position-experiment/overview.png)

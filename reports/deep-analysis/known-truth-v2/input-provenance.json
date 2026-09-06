@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-09-06T00:25:48.090540+00:00",
+  "metadata_binding_added_after_analysis": true,
+  "analysis_result_sha256_lf_utf8": "5f58b83bac2a0514874ef3e8a1f4f6c29f87320ed24ab858056665fa4e7f193d",
+  "reference_results": "experiments/2026-09-05T232905Z_position-03/results.json",
+  "reference_results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe",
+  "baseband_model": "reports/deep-analysis/stitch-fixed-degree8/stitch.json",
+  "baseband_model_sha256_lf_utf8": "0d47f765a3c57eed1f8438fe451d64d965ecabff943ba45076c308db50a0aaf2",
+  "purpose": "Explicit input binding supplements the original validation output. Its exact analysis source remains archived unchanged beside validation.json. The current reusable script records these bindings directly."
+}

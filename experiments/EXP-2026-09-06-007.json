@@ -1,0 +1,251 @@
+{
+  "schema": "rfmapping.experiment/v1",
+  "experiment_id": "EXP-2026-09-06-007",
+  "status": "completed",
+  "title": "Deep offline inference from three RF placements",
+  "asset_ids": [
+    "RFL-SDR-001"
+  ],
+  "created_utc": "2026-09-06T00:07:06.982630+00:00",
+  "receive_only": true,
+  "hardware_access": false,
+  "input_runs": [
+    "2026-09-05T221649Z_position-01",
+    "2026-09-05T225813Z_position-02",
+    "2026-09-05T232905Z_position-03"
+  ],
+  "goal": "Attempt room-relevant echo inference from saved complex samples by correcting nuisance response and combining overlapping frequency windows.",
+  "ground_truth": "Deterministic pilot samples; physical locations and wall geometry remain unknown. Synthetic controls include specified mirror distortion, null signals, arbitrary per-window timing/phase/gain and known 35/85 ns echoes.",
+  "protocol": [
+    "Recompute selected channels from hashed original IQ and compare independent capture halves.",
+    "Identify the known waveform mirror component using held-out bins.",
+    "Fit a shared smooth baseband response on spot 1 forward only; apply unchanged to all sweeps.",
+    "Reconstruct overlapping complex windows and test repeatability, model order, subcapture consistency and phase gauge sensitivity.",
+    "Compare differential responses across placements to cancel common instrument response where justified."
+  ],
+  "success_criteria": [
+    "Retain raw/source provenance and all failed analysis attempts.",
+    "Recover specified synthetic echoes and avoid large false image components in null controls.",
+    "Only interpret physical echoes that survive independent repeats and nuisance-model sensitivity."
+  ],
+  "uncertainties": [
+    "Unknown common radio and antenna response.",
+    "Unknown per-window phase/timing/gain, and a common quadratic phase ambiguity.",
+    "Unknown placement geometry and operator state."
+  ],
+  "failures": [
+    "Initial reconstruction grid coverage failure; boundary rounding alone did not resolve the final notch hole. Both failed attempts retained; blending extent corrected without extrapolating beyond captured pilot support."
+  ],
+  "raw_data_policy": "No original data are overwritten. Derived complex reconstructions are saved locally with source and output hashes.",
+  "room_geometry_validated": false,
+  "completed_utc": "2026-09-06T00:26:42.368887+00:00",
+  "experiment_kind": "offline saved-data analysis",
+  "hypothesis": "Known-pilot mirror correction and approximate common fractional timing permit repeatable overlap reconstruction; interpretable echoes must survive independent repeats and nuisance-model sensitivity.",
+  "input_results_sha256_lf_utf8": {
+    "2026-09-05T221649Z_position-01": "fd1ef16e5ddc4ed1813f7af2a0139a3967e6c3c62fff3298768131eb625817a0",
+    "2026-09-05T225813Z_position-02": "00c068d41e83dae03da501a5a2aa84c8a9bc67874d6c8070af0ed39d04b14d75",
+    "2026-09-05T232905Z_position-03": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe"
+  },
+  "environment": "Offline analysis on the Windows capture host. Original three indoor placements and orientation uncertainties are inherited unchanged.",
+  "rf_chain": "Original single Pluto and supplied TX/RX antennas; no hardware access or additional RF in this pass.",
+  "calibration_state": "Shared baseband curvature estimated on position 1 forward only. Absolute propagation delay, bearing, radio response and geometry remain uncalibrated.",
+  "authorization_and_limits": "User explicitly requested a deeper pass on saved data. All operations used local files; no SDR connection or RF transmission.",
+  "derived_storage_budget_bytes": 134217728,
+  "derived_complex_file_count": 48,
+  "derived_complex_bytes": 2682850,
+  "results": {
+    "sweep_pilots_analyzed": 582,
+    "reference_pilots_analyzed": 117,
+    "raw_captures_recomputed": 18,
+    "maximum_raw_recompute_error": 0.0,
+    "median_independent_half_phase_rms_deg": 0.567460693979769,
+    "repeatability": [
+      {
+        "position_id": "position-01",
+        "free_timing_repeat_error": 0.47863994901052676,
+        "fixed_timing_repeat_error": 0.01849271201393665
+      },
+      {
+        "position_id": "position-02",
+        "free_timing_repeat_error": 0.26581973215086463,
+        "fixed_timing_repeat_error": 0.018939694208847176
+      },
+      {
+        "position_id": "position-03",
+        "free_timing_repeat_error": 0.9240009204344662,
+        "fixed_timing_repeat_error": 0.0147969744280986
+      }
+    ],
+    "short_delay_hypothesis": "A roughly 5-8 ns term fits the change from spot 1 under restricted smooth-background models. A smooth cubic complex-log response with no explicit echo term predicts comparably; the delay is not identified independently of that model.",
+    "room_geometry_validated": false,
+    "echo_injection": {
+      "cases": 24,
+      "longer_delay_cases_resolved": 16,
+      "longer_delay_cases_tested": 16,
+      "delays_ns": [
+        20,
+        35,
+        60,
+        100
+      ],
+      "voltage_amplitudes": [
+        0.03,
+        0.1
+      ],
+      "shorter_delay_cases_with_no_separate_peak": 8,
+      "shorter_delays_ns": [
+        5,
+        10
+      ],
+      "qualification": "Known-truth algorithm sensitivity, not a calibrated detection limit."
+    },
+    "synthetic_control_scenarios": 6,
+    "synthetic_reconstructions": 36,
+    "timing_filter_ablation": {
+      "fixed": [
+        {
+          "position_id": "position-01",
+          "complex_relative_rmse": 0.01849271201393665,
+          "removed_relative_delay_ns": -0.07227336774270911,
+          "complex_scale_real_imag": [
+            0.9998202163763055,
+            0.0041898123594133665
+          ]
+        },
+        {
+          "position_id": "position-02",
+          "complex_relative_rmse": 0.018939694208847176,
+          "removed_relative_delay_ns": -0.05767252937320824,
+          "complex_scale_real_imag": [
+            0.999818360303548,
+            -0.002129409119895065
+          ]
+        },
+        {
+          "position_id": "position-03",
+          "complex_relative_rmse": 0.0147969744280986,
+          "removed_relative_delay_ns": -0.059716874102648136,
+          "complex_scale_real_imag": [
+            0.9998888544810054,
+            0.001824344385494181
+          ]
+        }
+      ],
+      "free": [
+        {
+          "position_id": "position-01",
+          "complex_relative_rmse": 0.47863994901052676,
+          "removed_relative_delay_ns": 1.4540102791526788,
+          "complex_scale_real_imag": [
+            0.8618589971772941,
+            -0.16763910103478272
+          ]
+        },
+        {
+          "position_id": "position-02",
+          "complex_relative_rmse": 0.26581973215086463,
+          "removed_relative_delay_ns": 2.7171245226352037,
+          "complex_scale_real_imag": [
+            0.9590632501468759,
+            -0.09766039226295273
+          ]
+        },
+        {
+          "position_id": "position-03",
+          "complex_relative_rmse": 0.9240009204344662,
+          "removed_relative_delay_ns": -9.10707433930747,
+          "complex_scale_real_imag": [
+            0.2963661855702301,
+            0.241638951923754
+          ]
+        }
+      ],
+      "fixed_median": [
+        {
+          "position_id": "position-01",
+          "complex_relative_rmse": 0.018470035449058946,
+          "removed_relative_delay_ns": -0.07227345888617787,
+          "complex_scale_real_imag": [
+            0.9998201747955066,
+            0.004298355777908029
+          ]
+        },
+        {
+          "position_id": "position-02",
+          "complex_relative_rmse": 0.018592858996463124,
+          "removed_relative_delay_ns": -0.05767270400494146,
+          "complex_scale_real_imag": [
+            0.9998248020353367,
+            -0.00216121015596623
+          ]
+        },
+        {
+          "position_id": "position-03",
+          "complex_relative_rmse": 0.014960846165021241,
+          "removed_relative_delay_ns": -0.059716783615414444,
+          "complex_scale_real_imag": [
+            0.999886354403791,
+            0.0018577833897884756
+          ]
+        }
+      ],
+      "free_median": [
+        {
+          "position_id": "position-01",
+          "complex_relative_rmse": 0.4758471989282868,
+          "removed_relative_delay_ns": 1.4540102159116075,
+          "complex_scale_real_imag": [
+            0.8625198545473644,
+            -0.1721306009508379
+          ]
+        },
+        {
+          "position_id": "position-02",
+          "complex_relative_rmse": 0.26494772645980175,
+          "removed_relative_delay_ns": 2.7171244737074036,
+          "complex_scale_real_imag": [
+            0.9590445074466151,
+            -0.10018151017159053
+          ]
+        },
+        {
+          "position_id": "position-03",
+          "complex_relative_rmse": 0.9224519739188524,
+          "removed_relative_delay_ns": -9.107074259503381,
+          "complex_scale_real_imag": [
+            0.29458887477101164,
+            0.24959918003543433
+          ]
+        }
+      ]
+    }
+  },
+  "software": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.0",
+    "pylibiio": "0.25"
+  },
+  "verification": {
+    "unit_test_command": "python -m unittest discover -s tests -v",
+    "unit_tests": 43,
+    "unit_test_result": "passed",
+    "unit_test_duration_seconds": 4.327,
+    "report_generation": "passed",
+    "overview_visual_review": "passed",
+    "publication_integrity_record": "reports/deep-analysis/publication-integrity.json"
+  },
+  "failures_and_revisions": [
+    "Two grid-coverage failures retained before fixing notch coverage with real LO rounding.",
+    "Unrestricted per-window timing amplifies slope noise; its unstable reconstructions remain as a sensitivity result.",
+    "Initial injection display shortlist excluded the central 12 ns; injection-v2 instead tests actual short-delay secondary maxima and confirms the same 16/24 resolution result.",
+    "Known-truth-v2 widens the analytic truth grid at the endpoints; original controls are retained. Explicit immutable-input bindings were added in separate provenance supplements.",
+    "The candidate short-delay interpretation is not unique: smooth cubic complex-log models predict comparably, so no room geometry is assigned."
+  ],
+  "remedies": "Use the tested common-timing model for descriptive effective-channel reconstruction; retain independent repeats, shared calibration assumptions, window/model sensitivity and known-truth controls. Preserve uncertain geometry rather than invent coordinates.",
+  "reports": {
+    "main": "reports/deep-analysis/report.md",
+    "summary": "reports/deep-analysis/summary.json",
+    "overview": "reports/deep-analysis/overview.png"
+  }
+}

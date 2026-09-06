@@ -1,0 +1,2330 @@
+{
+  "schema": "rfmapping.deep-reference-controls/v1",
+  "created_utc": "2026-09-06T00:16:50.580236+00:00",
+  "hardware_access": false,
+  "inputs": [
+    {
+      "run_id": "2026-09-05T221649Z_position-01",
+      "results_sha256_lf_utf8": "fd1ef16e5ddc4ed1813f7af2a0139a3967e6c3c62fff3298768131eb625817a0"
+    },
+    {
+      "run_id": "2026-09-05T223528Z_position-01",
+      "results_sha256_lf_utf8": "ca6035a417fb7e4c64ad918ca250d961d2e16c0a172c4254a99adad6cae59008"
+    },
+    {
+      "run_id": "2026-09-05T223912Z_position-01",
+      "results_sha256_lf_utf8": "ff99b558d6a2838f7e309edf44f7ed69683a3ffc243a6de84be8e4f48e3d946f"
+    },
+    {
+      "run_id": "2026-09-05T225813Z_position-02",
+      "results_sha256_lf_utf8": "00c068d41e83dae03da501a5a2aa84c8a9bc67874d6c8070af0ed39d04b14d75"
+    },
+    {
+      "run_id": "2026-09-05T231733Z_position-02",
+      "results_sha256_lf_utf8": "ec38c68099166bd8563d2aef9da787c34da332b9287ce6d94affe6e1b7263e5a"
+    },
+    {
+      "run_id": "2026-09-05T232905Z_position-03",
+      "results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe"
+    },
+    {
+      "run_id": "2026-09-05T234818Z_position-03",
+      "results_sha256_lf_utf8": "bda0ab5e2735ef81619ebe9a206f6d1034c9e5f38ac955ef06200c696eceaf21"
+    }
+  ],
+  "rows": [
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "start_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "b251339162d3a2f63eba3c79b872cd500d808a3e7ba22ac8882fa724c53346f7",
+      "local_phase_slope_equivalent_delay_ns": -75.48445254516847,
+      "phase_coefficients": [
+        0.008990149827522265,
+        0.4742828031522972,
+        -0.011840900153741072,
+        -0.035224404171535904,
+        0.004365707842525394,
+        -0.002223370684883069
+      ],
+      "direct_power_db": -62.76644343776236
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "start_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "2edf85b6946f437ed22dd21c5007fccccfc311e9b05123363c3e7904dd69e6ac",
+      "local_phase_slope_equivalent_delay_ns": -75.48578349885187,
+      "phase_coefficients": [
+        0.0027211578640900886,
+        0.47429116578092534,
+        0.0089444350671852,
+        -0.03713107777915676,
+        -0.003833499649676588,
+        -0.002258372766907235
+      ],
+      "direct_power_db": -62.40486701864127
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "start_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "97d7fc975fcdc495681d624191476bab8b3483536b8ae42249a4ddb5a394e444",
+      "local_phase_slope_equivalent_delay_ns": -74.67281780554475,
+      "phase_coefficients": [
+        0.006601021433381319,
+        0.46918315168149705,
+        -0.010034075166342018,
+        -0.03104632995524213,
+        0.004807362768695558,
+        -0.00386103961445785
+      ],
+      "direct_power_db": -63.14666290581452
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "start_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "54ffa676ac55ea9415c01566ad48885acdd32851028044ab6fb36806beab1ea0",
+      "local_phase_slope_equivalent_delay_ns": -74.67931616166297,
+      "phase_coefficients": [
+        -0.0008921284642232912,
+        0.4692239820571798,
+        0.01653471698368781,
+        -0.007830056742460982,
+        -0.006417819651462338,
+        -0.012238179810117392
+      ],
+      "direct_power_db": -70.57880158904376
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "start_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "387a23a1754507da5aebe48922f87bbded4ae542f562457deafa04a11ab60dd7",
+      "local_phase_slope_equivalent_delay_ns": -74.19208743198239,
+      "phase_coefficients": [
+        0.002545671958062509,
+        0.466162633661615,
+        0.009133491058174178,
+        -0.022569471005820133,
+        -0.004754450341139072,
+        -0.004410595809051607
+      ],
+      "direct_power_db": -71.22391421507459
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "start_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "b974178c3f99ae25fdf6c7a594ec0fdc7312d6cce8cdee975aa2f27e4c7f1e9b",
+      "local_phase_slope_equivalent_delay_ns": -78.0636520955271,
+      "phase_coefficients": [
+        0.0010291299422075255,
+        0.4904883918713948,
+        0.008936672690092648,
+        -0.046262569938842465,
+        -0.0022074108561066608,
+        0.00087902144727698
+      ],
+      "direct_power_db": -70.64567518079586
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "middle_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "307a57d2478ebda8082a5aadaa8254dcecd9b13166209d985d4d358e00caf557",
+      "local_phase_slope_equivalent_delay_ns": -75.73403014033644,
+      "phase_coefficients": [
+        0.0014866322749774714,
+        0.4758509454312579,
+        0.003882634588449673,
+        -0.03996602656297582,
+        -0.0006952612559003856,
+        -0.001105383429388038
+      ],
+      "direct_power_db": -62.41384221887994
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "middle_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "79d810eac43c04697b861a30e49f7e745d34e84f5534eaa08c0eb9d54074f5b9",
+      "local_phase_slope_equivalent_delay_ns": -75.58237839666148,
+      "phase_coefficients": [
+        0.0018963911429077532,
+        0.4748980894235912,
+        0.007872259157851967,
+        -0.03487754242754909,
+        -0.0025952366509865606,
+        -0.002071249322516209
+      ],
+      "direct_power_db": -62.04427976024561
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "middle_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "a877cb0681fcbebd57750730841597e888c394bf24daf546d996f27ecca705f4",
+      "local_phase_slope_equivalent_delay_ns": -75.15843652893751,
+      "phase_coefficients": [
+        0.006628470416125959,
+        0.47223438410920965,
+        -0.0084986880619962,
+        -0.03603087740701534,
+        0.0032852150199309455,
+        -0.002699035049419745
+      ],
+      "direct_power_db": -62.56462111660377
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "middle_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "859f40b00aba812d91c4cf14aec996d5e7c83f3ee82b4406e213036cf2b6a174",
+      "local_phase_slope_equivalent_delay_ns": -75.29445667051354,
+      "phase_coefficients": [
+        0.0032185079973346084,
+        0.4730890238642407,
+        0.016291469150099283,
+        -0.02973189359921993,
+        -0.007900178830408734,
+        -0.004590447443290075
+      ],
+      "direct_power_db": -70.59356055666993
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "middle_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "ab0fd374695e8c12d01d32d639abbef984726fbfafd39310b03de866bc462eff",
+      "local_phase_slope_equivalent_delay_ns": -76.95950812275248,
+      "phase_coefficients": [
+        -0.0011552584820810974,
+        0.4835508506846464,
+        0.028954058570998406,
+        -0.030239203714977042,
+        -0.011903991489673818,
+        -0.005689227074331677
+      ],
+      "direct_power_db": -71.10051962058313
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "middle_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "ac97e571aea6d945bbbba0691df3b3e14dbfeabffcb1a9edfe46133b74943bcc",
+      "local_phase_slope_equivalent_delay_ns": -75.55329598449346,
+      "phase_coefficients": [
+        0.00814086727399893,
+        0.4747153592387598,
+        0.0052562971575430915,
+        -0.023862366486406175,
+        -0.003449287492523971,
+        -0.006672279704506615
+      ],
+      "direct_power_db": -70.55752880627989
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "end_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "a954c6bd084330bef0ba4526692f5345b778b06ddcb01b49b34199a4fa2c026b",
+      "local_phase_slope_equivalent_delay_ns": -76.44069041981714,
+      "phase_coefficients": [
+        0.004082932068929291,
+        0.4802910229164585,
+        0.0044138667859305435,
+        -0.04217003045238925,
+        -0.0017994850293166055,
+        -0.0008458243051521588
+      ],
+      "direct_power_db": -63.00353326172726
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "end_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "139cd1da3237666c10d2ddae89c0f0a87f8f612a9e6ee0db056937764b8f43be",
+      "local_phase_slope_equivalent_delay_ns": -76.43108098011346,
+      "phase_coefficients": [
+        0.00862248051416316,
+        0.480230645026102,
+        -0.008499557810913888,
+        -0.040808537872719396,
+        0.002854483102569258,
+        -0.0014188751135698926
+      ],
+      "direct_power_db": -62.5258593241403
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "end_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "224d5b1c55a237f1650b5119f027c188fb629eb45076ed3951deecefae4580bd",
+      "local_phase_slope_equivalent_delay_ns": -77.18827676718014,
+      "phase_coefficients": [
+        0.003265945332172322,
+        0.48498824647005767,
+        -0.0016107672317733014,
+        -0.04941957455329254,
+        0.0019148318316206444,
+        0.001725451642893666
+      ],
+      "direct_power_db": -62.24438153514377
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "end_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "c799d0aedcef8601359416c1fa58f5a9ef59d718c82495334154b4141433d8e8",
+      "local_phase_slope_equivalent_delay_ns": -76.68221449399617,
+      "phase_coefficients": [
+        0.011151883363129975,
+        0.48180856343067024,
+        0.002725401655744822,
+        -0.03229283861555828,
+        -0.004071109119581922,
+        -0.005168258901811781
+      ],
+      "direct_power_db": -70.85242586063859
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "end_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "44886deac971e1cc23c94536a26fab1a258b52da0e5a93dc04092ab0d3427190",
+      "local_phase_slope_equivalent_delay_ns": -73.5855884054713,
+      "phase_coefficients": [
+        0.006789755599416677,
+        0.46235188788942183,
+        -0.0031399013981215133,
+        -0.00987428350360897,
+        0.0020144416445278543,
+        -0.010453789450862824
+      ],
+      "direct_power_db": -71.4481352311694
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T221649Z_position-01",
+      "id": "end_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "efc590e9bf5e18a99f7e134ab862d9ccea0105b4781c78363db42b3534de95a9",
+      "local_phase_slope_equivalent_delay_ns": -75.0665723068307,
+      "phase_coefficients": [
+        0.0024476270371224986,
+        0.4716571841786127,
+        0.021975480286582583,
+        -0.01333940309544408,
+        -0.009893238093045388,
+        -0.01020470811026913
+      ],
+      "direct_power_db": -70.82086837667339
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_initial",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "7c91a573fc9ba66e04483355d6d11b4a3e274d156f0c365777f660722415ff79",
+      "local_phase_slope_equivalent_delay_ns": -74.80310524435066,
+      "phase_coefficients": [
+        0.010847887643689755,
+        0.4700017718027123,
+        -0.01184057371554199,
+        -0.025377334026837763,
+        0.003957379867722583,
+        -0.0049902320996776574
+      ],
+      "direct_power_db": -62.337241482399534
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "36035fdb8a10ee892e2dfa71357d83bd0e7b00fa65976b40064af703a490070f",
+      "local_phase_slope_equivalent_delay_ns": -76.35261485334173,
+      "phase_coefficients": [
+        0.005755449359741182,
+        0.47973762781125856,
+        -0.005652513187907081,
+        -0.03895857763006105,
+        0.0022340444255588483,
+        -0.0015369523479748296
+      ],
+      "direct_power_db": -62.31874512041843
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "3c456129afddd37bb4d023fcddf85de404d83a1928640da248b32a6b059ada7e",
+      "local_phase_slope_equivalent_delay_ns": -74.74123071608962,
+      "phase_coefficients": [
+        0.003966230930851619,
+        0.46961300267585393,
+        0.0015433326349418835,
+        -0.028421433667117496,
+        -0.00032643679604319235,
+        -0.0041152778422425115
+      ],
+      "direct_power_db": -62.30258413361248
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "3648f4517dabad4e96832a37fd7b99160bd29edc1d49dfb976ca333c5f6cf0c4",
+      "local_phase_slope_equivalent_delay_ns": -75.70044949520661,
+      "phase_coefficients": [
+        0.008725957521318781,
+        0.47563995201517256,
+        -0.0027449102483854608,
+        -0.03606301467674781,
+        -0.0004667593638914126,
+        -0.0019807822065910988
+      ],
+      "direct_power_db": -62.32251949349997
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "3845130a76b20137c19533e09feeb720ca515af436102ee23d8735e4e3c0aa17",
+      "local_phase_slope_equivalent_delay_ns": -75.6255505364483,
+      "phase_coefficients": [
+        0.0038311994685277834,
+        0.4751693479779792,
+        0.0006173044156882657,
+        -0.030800881813514078,
+        -8.599475144410268e-05,
+        -0.005020427921422253
+      ],
+      "direct_power_db": -62.33037944659855
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "e7e72267c68a2a1ff046e20652215a536d26895292c9b11f51cec121251bc2d8",
+      "local_phase_slope_equivalent_delay_ns": -76.405767709096,
+      "phase_coefficients": [
+        0.003899046134973957,
+        0.48007159705356844,
+        0.0025133849269134024,
+        -0.0435037051391482,
+        -0.0006591660891495136,
+        0.0010340082513149353
+      ],
+      "direct_power_db": -62.329997736433064
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223528Z_position-01",
+      "id": "held_5771500000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "f6f76396b956471efa81d76fd847a7fcd789979e261b3c16de9e22c05980480d",
+      "local_phase_slope_equivalent_delay_ns": -75.70158720321342,
+      "phase_coefficients": [
+        0.0005524110667645082,
+        0.47564710044540476,
+        0.011991189041376077,
+        -0.034770338322547355,
+        -0.004873536309077361,
+        -0.002774009105716911
+      ],
+      "direct_power_db": -62.34454910731863
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_initial",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "6d74f6258545453083fc42a4317ac494845e4adc962eaa68e4f3f80f7895f009",
+      "local_phase_slope_equivalent_delay_ns": -78.77612802427817,
+      "phase_coefficients": [
+        0.00564479174112665,
+        0.4949650101586426,
+        0.007785133588668973,
+        -0.0521845952667182,
+        -0.004664763080023386,
+        0.0015702314912594618
+      ],
+      "direct_power_db": -65.17547592340746
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "61efbf13694289ccdb3ab584d707d20e2be3d8921553895685569b45cb775b08",
+      "local_phase_slope_equivalent_delay_ns": -77.77034393578232,
+      "phase_coefficients": [
+        0.009923972522779812,
+        0.4886454823516105,
+        -0.004468700654599541,
+        -0.042885846203304066,
+        0.0008463010724136095,
+        -0.0009068786852244428
+      ],
+      "direct_power_db": -65.18638882825172
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "e1a828c5eea8aa7403925a7abd8576d4098d7527b1d1809ca9e2bbe4bce52c9a",
+      "local_phase_slope_equivalent_delay_ns": -73.96275033128498,
+      "phase_coefficients": [
+        0.0021401444789674595,
+        0.46472166616012184,
+        0.0020819976382332674,
+        -0.01835541173250451,
+        0.0007302161248372606,
+        -0.006265116793943097
+      ],
+      "direct_power_db": -65.20111729407239
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "9f91a51c4f2dac2a2d12a1daad28d08202ec19af5a219886e47ac6f4bf7e66f5",
+      "local_phase_slope_equivalent_delay_ns": -76.74432967204991,
+      "phase_coefficients": [
+        0.0030857040027383155,
+        0.4821988446047704,
+        0.004857189084844922,
+        -0.042506906742013476,
+        -0.0012048091675379781,
+        0.0007277990361879142
+      ],
+      "direct_power_db": -65.22233103895053
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "56be3105845e0014d1570de87fe6f09bb7b5b00388a8baa237767c1c72c9f980",
+      "local_phase_slope_equivalent_delay_ns": -75.06056023946816,
+      "phase_coefficients": [
+        0.00614684404267145,
+        0.47161940924529466,
+        -0.001226807062448692,
+        -0.020928156618498676,
+        0.0007002061120770847,
+        -0.006611070630152304
+      ],
+      "direct_power_db": -65.23350409218513
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "fd385e6c5ac40c2de98a4bce4113f41b97dcdfeb9e25b0fdf8ac3659b3bb56e6",
+      "local_phase_slope_equivalent_delay_ns": -77.09882268369766,
+      "phase_coefficients": [
+        0.00851448407738871,
+        0.4844261898870534,
+        -0.0002764981164125815,
+        -0.043603798339560774,
+        -0.0010778237693201346,
+        -0.00026362897288053077
+      ],
+      "direct_power_db": -65.26584828308802
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5800000000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "3760400ac3d24d7ad89b6e16ede818d240176dd7bb56fa6ffa4d303da17dba93",
+      "local_phase_slope_equivalent_delay_ns": -75.11921524346978,
+      "phase_coefficients": [
+        0.0031722286764565896,
+        0.47198794950463013,
+        -0.006926086332701477,
+        -0.030837378714426884,
+        0.004443114234640053,
+        -0.002774066784503209
+      ],
+      "direct_power_db": -65.2872136377238
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_initial",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "2980d6195c5fc20d3b9009ab8e2cae65888f9999f102555bd847a42c2f2e6a88",
+      "local_phase_slope_equivalent_delay_ns": -74.82138189490249,
+      "phase_coefficients": [
+        0.0033349860088423703,
+        0.47011660738492406,
+        0.018007218669489546,
+        -0.016005547201517815,
+        -0.01068520252570498,
+        -0.008298432826558448
+      ],
+      "direct_power_db": -71.38574008850433
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "8c31e9f705582ede7e8cab79665ed681fe2eaa510745fbb7e48fd8a10aed520e",
+      "local_phase_slope_equivalent_delay_ns": -74.51096146384164,
+      "phase_coefficients": [
+        0.0025743129078783906,
+        0.4681661782934341,
+        0.006743550492293399,
+        -0.010792400781738749,
+        -0.0034843199510632464,
+        -0.010844908435277653
+      ],
+      "direct_power_db": -71.2806785954521
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "d3718d83bf13b342572a93aa4dfbf264e20480e0a9945525c6b7737fd3c797af",
+      "local_phase_slope_equivalent_delay_ns": -75.9030485952867,
+      "phase_coefficients": [
+        0.013259679790517705,
+        0.4769129197040436,
+        -0.009702422897220921,
+        -0.028785645166121032,
+        0.0021971505506961594,
+        -0.00518329810434029
+      ],
+      "direct_power_db": -71.39108025915664
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "e48a824ac62cf5d2695ddb2ca20836b7138065dc310280d0648a9c867ea50c62",
+      "local_phase_slope_equivalent_delay_ns": -78.0925566695515,
+      "phase_coefficients": [
+        0.008872166036020566,
+        0.4906700046662152,
+        -0.01036631656090004,
+        -0.037219633547507194,
+        0.004207600346973311,
+        -0.0027116353792447424
+      ],
+      "direct_power_db": -71.30063401557513
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "7745a4ba3b87eaae84336e40d86e014fa908b87c3214a3935ed0e66b4a2808b6",
+      "local_phase_slope_equivalent_delay_ns": -79.06006649617375,
+      "phase_coefficients": [
+        0.014641639779553137,
+        0.4967490481934,
+        -0.02088637190184734,
+        -0.06860166638393586,
+        0.006465093496692508,
+        0.008364874577471156
+      ],
+      "direct_power_db": -71.32403794583247
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "56b99acb20edd105d5ce62bb4d02dd432e1a40e33dd1dcfab31a00beac62eff6",
+      "local_phase_slope_equivalent_delay_ns": -72.27740798323426,
+      "phase_coefficients": [
+        0.010018848535651898,
+        0.45413234788128204,
+        -0.017814774148020324,
+        0.0101848361942597,
+        0.005943334183171162,
+        -0.018301232406009536
+      ],
+      "direct_power_db": -71.25814448001086
+    },
+    {
+      "position_id": "position-01",
+      "run_id": "2026-09-05T223912Z_position-01",
+      "id": "held_5853100000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "632a907868042445ea6f3b67ac354c99a8fcb80c8d79413d8c7f318322496b60",
+      "local_phase_slope_equivalent_delay_ns": -78.15980482782585,
+      "phase_coefficients": [
+        -0.004252596023626399,
+        0.49109253730621943,
+        0.021742432895020637,
+        -0.04535565020968237,
+        -0.008159538534451234,
+        -0.00044005987502314554
+      ],
+      "direct_power_db": -71.34737963993064
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "start_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "0dce84a13632efe1c55ad5f645091d908528af35e03113851d72e0289972dd2b",
+      "local_phase_slope_equivalent_delay_ns": -76.54864103650185,
+      "phase_coefficients": [
+        0.0052192369370963965,
+        0.4809692966451127,
+        0.0009009533012884846,
+        -0.038750518861556754,
+        -0.0004266336721957781,
+        -0.002881931018729499
+      ],
+      "direct_power_db": -60.64605825863378
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "start_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "1077824e175cae2dffc5eafd618ffa6c75b36ade8ca232f316dd1c94014f95bc",
+      "local_phase_slope_equivalent_delay_ns": -75.92750589859236,
+      "phase_coefficients": [
+        0.005667644441064533,
+        0.4770665894728269,
+        -0.0007301496198472056,
+        -0.04507480739934203,
+        0.0001343418722890413,
+        0.0006266031799315708
+      ],
+      "direct_power_db": -60.231426710221015
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "start_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "7199ec1583030824133de78c471aa3b735068d402e585abd49220a6e32d891b3",
+      "local_phase_slope_equivalent_delay_ns": -75.02771020829934,
+      "phase_coefficients": [
+        0.005410147746321246,
+        0.47141300641211425,
+        0.0044735443758155136,
+        -0.03630164464963849,
+        -0.0025217743510658783,
+        -0.0019701042833984504
+      ],
+      "direct_power_db": -60.94823604930565
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "start_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "a8be2f5630b717f4ee78d37ccd0cea04cc9b8bbf0bbf763325d9ecbd8022e565",
+      "local_phase_slope_equivalent_delay_ns": -79.27769460971334,
+      "phase_coefficients": [
+        0.0028357843154136037,
+        0.4981164459588211,
+        -0.008953208523654261,
+        -0.05180912326195949,
+        0.005959089089833753,
+        0.001895918710057744
+      ],
+      "direct_power_db": -70.705331340919
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "start_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "ad8c6241c1ff73515aedd00e4fc2c9d526156d599f69052f248e3eb68aa40625",
+      "local_phase_slope_equivalent_delay_ns": -75.47673529071693,
+      "phase_coefficients": [
+        0.009484410765317882,
+        0.47423431421251555,
+        -0.009271103249976459,
+        -0.013756103646307732,
+        0.003505922724634877,
+        -0.01060694982291009
+      ],
+      "direct_power_db": -71.20186967586598
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "start_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "c976438a715841d3f073675e4a3bc696cb0abbfce3c58248fceb8e06792334ca",
+      "local_phase_slope_equivalent_delay_ns": -81.0907695339564,
+      "phase_coefficients": [
+        0.0029827478559358274,
+        0.5095083316836408,
+        0.0017114422881636113,
+        -0.07003851508768982,
+        0.00046763839836498784,
+        0.007297559207573956
+      ],
+      "direct_power_db": -70.74807929604032
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "middle_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "ba873dcf5986faaca328214ecdbdf7b8aff90353ef10d2d317b45ca45036be57",
+      "local_phase_slope_equivalent_delay_ns": -77.36498967924476,
+      "phase_coefficients": [
+        0.0070532683721550495,
+        0.486098566442731,
+        -0.003987601179525952,
+        -0.049711879375083895,
+        0.0017270316628245355,
+        0.0015311218289304365
+      ],
+      "direct_power_db": -60.55886958162319
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "middle_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "0ae8ed17fa608682297f786047426528887557270e0d826911febfbedb71bcf2",
+      "local_phase_slope_equivalent_delay_ns": -74.88518696578244,
+      "phase_coefficients": [
+        0.008057568243530834,
+        0.4705175064688004,
+        -0.0038812763149015726,
+        -0.030724909507820537,
+        0.0004993209845479217,
+        -0.004582704761039669
+      ],
+      "direct_power_db": -61.18190540479895
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "middle_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "1e594f9a15246335cb0d5f708703883050c643369889bd0a9e16c5efead589ce",
+      "local_phase_slope_equivalent_delay_ns": -75.24554892717335,
+      "phase_coefficients": [
+        0.004183054644034094,
+        0.4727817274498783,
+        0.003228276642216709,
+        -0.03247224231053397,
+        -0.0009106188356021363,
+        -0.003195454378090667
+      ],
+      "direct_power_db": -60.68877255712768
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "middle_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "2f78391a5b7e6564bcfcb071c9af78fef60a44648ac23b872b9e695546d8d463",
+      "local_phase_slope_equivalent_delay_ns": -77.83703861126057,
+      "phase_coefficients": [
+        0.008016043253603918,
+        0.48906453735664257,
+        0.014755010016851498,
+        -0.024577098124288977,
+        -0.00961046724593364,
+        -0.009263438454503505
+      ],
+      "direct_power_db": -70.85939095036628
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "middle_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "fd7008ea704be6be116f79d04b517cb0d497304b7015e22621e12f9bcda52084",
+      "local_phase_slope_equivalent_delay_ns": -79.10908715409148,
+      "phase_coefficients": [
+        0.008289464192050126,
+        0.49705705407097694,
+        -0.0019873363517635715,
+        -0.057614512038968974,
+        0.0011818304507120875,
+        0.005352547921757803
+      ],
+      "direct_power_db": -71.47323245426213
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "middle_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "91db6699e01ca64750e75cb36d252fd21837ff774cbf2287fa7a9094d060c76c",
+      "local_phase_slope_equivalent_delay_ns": -78.69414799206663,
+      "phase_coefficients": [
+        4.5034093147925696e-05,
+        0.494449914424769,
+        0.020646447219584942,
+        -0.04100401707935733,
+        -0.00929791886762348,
+        -0.0020031286512129597
+      ],
+      "direct_power_db": -70.9491581530829
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "end_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "dff53821b71c5ddb6e5898aeeb0b46893d3a92e2d72d96bc7e6f09f3836d323a",
+      "local_phase_slope_equivalent_delay_ns": -76.51897411818359,
+      "phase_coefficients": [
+        0.00427033716226368,
+        0.48078289389982615,
+        0.0016620423345996003,
+        -0.04650266263869187,
+        -0.00020328939586945101,
+        0.0006036315418159976
+      ],
+      "direct_power_db": -61.210278729883434
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "end_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "abd1391bf5215aa942fb7e6c669694eeb5b2a01e6b1060bb021adfb3075e7e08",
+      "local_phase_slope_equivalent_delay_ns": -76.22347908752832,
+      "phase_coefficients": [
+        0.0044252703665043904,
+        0.4789262438648684,
+        0.0018889174427294377,
+        -0.03924652219413936,
+        -0.00045622057507537357,
+        -0.0015251666829338077
+      ],
+      "direct_power_db": -60.59201048410656
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "end_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "636dce37a8cb5ee5396455cbfb2fdc7dd8cd539fcacb303f8d0ed49f51473393",
+      "local_phase_slope_equivalent_delay_ns": -76.1481248933311,
+      "phase_coefficients": [
+        0.0029505141733386234,
+        0.47845277949905407,
+        0.007254441581609258,
+        -0.040761702466977724,
+        -0.0028100960176326234,
+        -0.0017221863846991795
+      ],
+      "direct_power_db": -61.15953305695911
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "end_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "473aa3b5d175618b6506741e7c6041f51c2c4c8863166ff5c8e9f080c7459eb1",
+      "local_phase_slope_equivalent_delay_ns": -80.53231661825444,
+      "phase_coefficients": [
+        -0.0027218664177782333,
+        0.5059994685289507,
+        0.023309754829206157,
+        -0.04416367255139422,
+        -0.006508915332123332,
+        -0.0018879070982582413
+      ],
+      "direct_power_db": -71.49073254659464
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "end_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "593f7451ed943599c999e9d4f3be5b21a16a3070ebbaba3f942b7c41db1d9400",
+      "local_phase_slope_equivalent_delay_ns": -82.86586628045782,
+      "phase_coefficients": [
+        0.006273887756004352,
+        0.5206615934800809,
+        -0.009749114822368713,
+        -0.09162540636737514,
+        0.005342034776927681,
+        0.014828015737501907
+      ],
+      "direct_power_db": -70.97186568276719
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T225813Z_position-02",
+      "id": "end_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "602172530f2a3f5da232435cdd6ad6e0aa602db7a9bd897eca2f269b66dc2494",
+      "local_phase_slope_equivalent_delay_ns": -77.83010500890266,
+      "phase_coefficients": [
+        0.0070238359728044325,
+        0.4890209722481816,
+        -0.006321064571305272,
+        -0.03769412784821408,
+        0.0036338019299767123,
+        -0.0013902385659880561
+      ],
+      "direct_power_db": -70.6582321752058
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_initial",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "60f7e7089b2e4244783b6b892ba16a8541f29fa09471d269a79390fdeecce241",
+      "local_phase_slope_equivalent_delay_ns": -74.18791603542023,
+      "phase_coefficients": [
+        0.006595201088652692,
+        0.46613642400402516,
+        0.0001047838273772785,
+        -0.027310935380042554,
+        -0.00047782938867438595,
+        -0.005106447744467382
+      ],
+      "direct_power_db": -60.41499832259546
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "3be3b9377291e966e04e7f5f50870a47f168b31a0f6eca5cd35fa293c9cb2bb3",
+      "local_phase_slope_equivalent_delay_ns": -75.72732648389564,
+      "phase_coefficients": [
+        0.006513470553934969,
+        0.47580882511560463,
+        -0.002286188544612589,
+        -0.04123199166962763,
+        0.0011760783840528489,
+        -0.0008876594586572176
+      ],
+      "direct_power_db": -60.42110259681393
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "8bd9717fdcbfd5529d37920441b87880efb8c42c8ef4f361a8ec464855c3b355",
+      "local_phase_slope_equivalent_delay_ns": -74.95827954146765,
+      "phase_coefficients": [
+        0.006088850525781867,
+        0.47097676066640976,
+        -0.0020625863461752616,
+        -0.03077252536864284,
+        0.0010340950453311207,
+        -0.004027357538025998
+      ],
+      "direct_power_db": -60.44269526442931
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "406c2d65f0856c98d4983090597dce69a36b21764228d99a4a916eac187563ba",
+      "local_phase_slope_equivalent_delay_ns": -75.03808408197023,
+      "phase_coefficients": [
+        0.0050109814411374845,
+        0.4714781873827417,
+        0.0007254550804976198,
+        -0.03350732756763805,
+        -0.0002562765796653593,
+        -0.0031679958377124773
+      ],
+      "direct_power_db": -60.46974014490468
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "f470b6d6da0b145f9a8ecbe1d76795bdca14a41cc51093c2912fcb7ed3e15ca3",
+      "local_phase_slope_equivalent_delay_ns": -75.39515450088714,
+      "phase_coefficients": [
+        0.005907902850949377,
+        0.473721726992509,
+        -0.0020772307983983863,
+        -0.040898706237790836,
+        0.0008955694369084942,
+        -0.0010487863017630123
+      ],
+      "direct_power_db": -60.483373770168605
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "50a4f7fe007fec1c1da59f9e1a9a26884f770ddfcd52c90b19a7f37b270a2a06",
+      "local_phase_slope_equivalent_delay_ns": -75.13209312800775,
+      "phase_coefficients": [
+        0.004948430693536866,
+        0.47206886363954664,
+        -0.0008041143541225373,
+        -0.03584137109871753,
+        0.0006869665839354642,
+        -0.0024520659591923412
+      ],
+      "direct_power_db": -60.49495194627926
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5771500000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "f728cdf2f05cbdfa70fdca1dd604796e2425cfabb8610d507093deea5ef0f9a6",
+      "local_phase_slope_equivalent_delay_ns": -74.55367415289169,
+      "phase_coefficients": [
+        0.008296020150211324,
+        0.46843455003370355,
+        -0.004673358704686768,
+        -0.032119366824010155,
+        0.00146730667405886,
+        -0.003872069297036221
+      ],
+      "direct_power_db": -60.51248051431323
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_initial",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "be8847fd4debcff290f1475fb3c0f15e918bd7dfaf7e6b70e1fe0a7cd81aa93f",
+      "local_phase_slope_equivalent_delay_ns": -78.03408303300705,
+      "phase_coefficients": [
+        0.007843658339268129,
+        0.49030260397222175,
+        -0.0017757223600147467,
+        -0.05135117945492461,
+        0.00012684076890013497,
+        0.0021337924083194224
+      ],
+      "direct_power_db": -64.50010513662706
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "c443c1d3cc5e40fdc39823676fc5053b3d680a17c20cd001e448ba8663fc14c7",
+      "local_phase_slope_equivalent_delay_ns": -76.30442131040574,
+      "phase_coefficients": [
+        0.005405596955617919,
+        0.47943481885038225,
+        -0.0037332996557188193,
+        -0.03785428006372407,
+        0.0024078663827487748,
+        -0.0016452167280825252
+      ],
+      "direct_power_db": -64.39353948981864
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "b4fdeb53961318e5c235e10b1afa2237d8db0c1221d1d2447743928e231f6af4",
+      "local_phase_slope_equivalent_delay_ns": -76.62879655188716,
+      "phase_coefficients": [
+        0.007784135875850238,
+        0.4814729286016712,
+        9.203138732410949e-05,
+        -0.03369659681882375,
+        -0.00013418432410457838,
+        -0.003321562033420416
+      ],
+      "direct_power_db": -64.34520799083215
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "288a235e9913ab9790c2a02e6af6278ec797f5e0dcd20265e7810b4c7bb93ba4",
+      "local_phase_slope_equivalent_delay_ns": -75.15738486737415,
+      "phase_coefficients": [
+        0.007867900062331592,
+        0.4722277763247266,
+        -0.0019313297880544367,
+        -0.03129629243013095,
+        -6.213103844027454e-06,
+        -0.0032382396761292515
+      ],
+      "direct_power_db": -64.31472570331226
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "3a182c9aa515539d46923c53424df9ff9c13e4d8cf64c15d9564e1ccc01a8aee",
+      "local_phase_slope_equivalent_delay_ns": -76.42781900970233,
+      "phase_coefficients": [
+        0.006590939660825701,
+        0.48021014946154233,
+        0.003949439133201513,
+        -0.03883055882238342,
+        -0.0014956238599413243,
+        -0.0018512937402963853
+      ],
+      "direct_power_db": -64.27936325458722
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "fe40c533b4b5b6b08e0ae1372ffa2ab08edf7baba6879a73752eea21805d8150",
+      "local_phase_slope_equivalent_delay_ns": -76.93397509658831,
+      "phase_coefficients": [
+        0.0079518860765561,
+        0.4833904219498038,
+        -0.006835545764270697,
+        -0.041650769382102944,
+        0.0026046325283455274,
+        -0.0015510081671381716
+      ],
+      "direct_power_db": -64.26896201420715
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5800000000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "866e2069e40db4e2be49a4fe736d2621aca2958fdf75fec9c60b8ff4401b070d",
+      "local_phase_slope_equivalent_delay_ns": -76.38613315204738,
+      "phase_coefficients": [
+        0.003573554435154358,
+        0.47994822949320765,
+        0.0026634475829734466,
+        -0.032093639430920265,
+        -0.00011010738877801151,
+        -0.004292506713366118
+      ],
+      "direct_power_db": -64.22011288550186
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_initial",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "8ed297efbf20a234886281346961cd4d05cb6b9c6fa9bf603df7bfa46f089f79",
+      "local_phase_slope_equivalent_delay_ns": -79.01350942412128,
+      "phase_coefficients": [
+        0.01455616088973625,
+        0.4964565214823346,
+        -0.007567190691101421,
+        -0.04259327982382324,
+        -0.00016634205982943317,
+        -0.0025894669796696257
+      ],
+      "direct_power_db": -70.81227328244948
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "03c3a514552c4078e2286783e05d306392bec43636f7a7af4b121b32687b7c7d",
+      "local_phase_slope_equivalent_delay_ns": -76.71217108633503,
+      "phase_coefficients": [
+        0.006859510129608625,
+        0.481996786251507,
+        -0.02239527202312681,
+        -0.036652811370004056,
+        0.010749594071752336,
+        -0.0009129843514154231
+      ],
+      "direct_power_db": -70.74036757378572
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "0f8a29db4d7ae0e3d0d08ab1a49fe94b94687ec04ba6fee6e4f24498fcdec479",
+      "local_phase_slope_equivalent_delay_ns": -74.11827114769711,
+      "phase_coefficients": [
+        0.011580133432669948,
+        0.4656988322687632,
+        -0.00796723441485702,
+        -0.004973067359263064,
+        0.002241663028962751,
+        -0.010677044571951639
+      ],
+      "direct_power_db": -70.75757200634628
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "b16e6d131e84384ce2c2491c184203dfcbc89d14c783d3042746b3f741b46ca1",
+      "local_phase_slope_equivalent_delay_ns": -75.17582986283611,
+      "phase_coefficients": [
+        0.013230711523024104,
+        0.4723436696492042,
+        -0.02847762680462712,
+        -0.019388638023200882,
+        0.011506091591864496,
+        -0.005257444011717327
+      ],
+      "direct_power_db": -70.807700871946
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "436c89260c4af38991cc1f8a9b73868fa428039c3b0628da26792facd3ad5e12",
+      "local_phase_slope_equivalent_delay_ns": -79.33147270878949,
+      "phase_coefficients": [
+        0.001923281460350056,
+        0.4984543437207844,
+        0.01317658838652757,
+        -0.045530753797415335,
+        -0.005252737149582796,
+        -0.0008175017787218753
+      ],
+      "direct_power_db": -70.77154449077959
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "c7220ad1da02138364fa0d8c7b1eda69289546bb7b127a729c123873412aaacc",
+      "local_phase_slope_equivalent_delay_ns": -78.2313946323075,
+      "phase_coefficients": [
+        0.01186026784054757,
+        0.4915423493138824,
+        -0.012061499153852875,
+        -0.043477739558100505,
+        0.004483070680515763,
+        0.0004976215253348934
+      ],
+      "direct_power_db": -70.86396580382302
+    },
+    {
+      "position_id": "position-02",
+      "run_id": "2026-09-05T231733Z_position-02",
+      "id": "held_5853100000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "5251e34bdfc5d5ca74dcf73895a968000704a51b82e5cd18783c51a23eadec2e",
+      "local_phase_slope_equivalent_delay_ns": -78.55293241920691,
+      "phase_coefficients": [
+        0.014556979382719146,
+        0.4935626308122319,
+        -0.02260032089647291,
+        -0.04694270517103392,
+        0.009194795393902003,
+        0.001275251061603186
+      ],
+      "direct_power_db": -70.78389407512391
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "start_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "ad66d9e60b1ae4ec9507a29e638e4f558143307080c72c316dd18b496ea43807",
+      "local_phase_slope_equivalent_delay_ns": -76.58058414132472,
+      "phase_coefficients": [
+        0.007098248312690014,
+        0.48117000109200153,
+        -0.005110435022748336,
+        -0.04867374549124189,
+        0.002152172581027909,
+        0.0005672245378418075
+      ],
+      "direct_power_db": -61.01296147453101
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "start_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "086186fb39aa186c60e5e7a0247b645eddaba7efbf62674a65aa7aa4685cff8e",
+      "local_phase_slope_equivalent_delay_ns": -75.97053790801509,
+      "phase_coefficients": [
+        0.007149833696264956,
+        0.4773369675621702,
+        -0.006960335327439596,
+        -0.038922438746496105,
+        0.0031860397086955513,
+        -0.0015979363877284014
+      ],
+      "direct_power_db": -60.53076090272682
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "start_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "e979e9bcfec4a6b1ba1039379f07621d9826d975b9afac67948f5a96dcdcd73d",
+      "local_phase_slope_equivalent_delay_ns": -75.00367957060499,
+      "phase_coefficients": [
+        0.006551426630449699,
+        0.4712620174624309,
+        0.002694083564954581,
+        -0.03487110060823067,
+        -0.002100087658844199,
+        -0.0032052051090076757
+      ],
+      "direct_power_db": -61.173877769612716
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "start_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "c0506b9b49b15cc15a1cd9230f4f7f8dccac9839a0a9153ded43bff293a6d52b",
+      "local_phase_slope_equivalent_delay_ns": -77.47446834299413,
+      "phase_coefficients": [
+        0.0002534276211797106,
+        0.48678644117425063,
+        0.017224863106248402,
+        -0.031546921470119116,
+        -0.006531361198510948,
+        -0.004209165805398476
+      ],
+      "direct_power_db": -71.4151775781727
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "start_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "3b771c0de381519b88256aed200a979e2b76fe9d026328b0b9f5e1e5b6304f2d",
+      "local_phase_slope_equivalent_delay_ns": -77.35434814003999,
+      "phase_coefficients": [
+        0.01303072608145223,
+        0.48603170367995374,
+        -0.01174736012654784,
+        -0.030077994377547667,
+        0.003706548367812957,
+        -0.005355547056692166
+      ],
+      "direct_power_db": -70.82049580407086
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "start_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "257a5283e07ad5c436fee89201ad8fb8c2a41aa9af6c1c05d20bcdd3c4b672f0",
+      "local_phase_slope_equivalent_delay_ns": -77.27364441649935,
+      "phase_coefficients": [
+        0.002006796968988864,
+        0.4855246272299686,
+        0.011028003981576199,
+        -0.04543502528733509,
+        -0.0043846270678227365,
+        0.0015706991381058174
+      ],
+      "direct_power_db": -71.39872224814746
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "middle_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "f2dbdab3260217f16b864896c752b4fcaaa501dc907217cd2dacafced1789cfe",
+      "local_phase_slope_equivalent_delay_ns": -76.1782526014586,
+      "phase_coefficients": [
+        0.005027165320231668,
+        0.4786420774720997,
+        -0.0004622252415179465,
+        -0.037118841502057756,
+        8.626507188692436e-06,
+        -0.003198561462496686
+      ],
+      "direct_power_db": -61.42148041552407
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "middle_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "db23c543cbceb7b8d9abe7a1aeca426459f03a29eee82581b0bab041cbaef10c",
+      "local_phase_slope_equivalent_delay_ns": -76.72295492935262,
+      "phase_coefficients": [
+        0.006688311251907029,
+        0.48206454313551,
+        -0.0014897159004164486,
+        -0.04911476054256522,
+        0.00040591919892142195,
+        0.0013454701180823504
+      ],
+      "direct_power_db": -60.83606350862243
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "middle_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "2e15480e5c33b5f6fd73afbd57759f31335aecb388ae60d02fd7f6931f8d0c38",
+      "local_phase_slope_equivalent_delay_ns": -75.46613521311791,
+      "phase_coefficients": [
+        0.005810289485103414,
+        0.4741677119606904,
+        -0.003267347156384654,
+        -0.047513927150005034,
+        0.0015277553361843176,
+        0.0007248853445858996
+      ],
+      "direct_power_db": -61.35752613237736
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "middle_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "8e68d4f108c6bdd6a16d47bd766fe5491df9c5d9596a32b190c138198c04f645",
+      "local_phase_slope_equivalent_delay_ns": -76.50791099716258,
+      "phase_coefficients": [
+        0.018682576473084602,
+        0.48071338226037547,
+        -0.028197727401379814,
+        -0.03442129894425424,
+        0.008260439134397753,
+        -0.0031167217449452767
+      ],
+      "direct_power_db": -70.8424602859502
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "middle_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "05a07e5a8c4b579366144cc09c6c0ad9c66097f996ddf9688d9f972af05bcc77",
+      "local_phase_slope_equivalent_delay_ns": -75.48778192448039,
+      "phase_coefficients": [
+        0.003068837195008426,
+        0.47430372225947187,
+        0.005095804791785702,
+        -0.023678877836057082,
+        -0.0016170717678550993,
+        -0.003876756806665864
+      ],
+      "direct_power_db": -71.23940793353161
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "middle_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "f7419ed2977a366a4d80e0e6f722ded3725e66e15911f9ef7f4ddf67c4c533d6",
+      "local_phase_slope_equivalent_delay_ns": -81.09786459133616,
+      "phase_coefficients": [
+        -0.0019089857930196137,
+        0.509552911243923,
+        0.017402049340025486,
+        -0.08191904374347471,
+        -0.006471006737539993,
+        0.01194647817542409
+      ],
+      "direct_power_db": -70.90494521913185
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "end_5771500000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "c8a1763367fd366f4bf31babee9a06f981385bb726b0963205adf44d86be4629",
+      "local_phase_slope_equivalent_delay_ns": -74.5210336409997,
+      "phase_coefficients": [
+        0.0068906480978048815,
+        0.46822946364896495,
+        -0.0042197942378993675,
+        -0.032373185422314626,
+        0.0011766548497352434,
+        -0.003291424341956617
+      ],
+      "direct_power_db": -61.1181939507481
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "end_5771500000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "e65d55dfdf84f0bd4bae135b83ec942dd056c9d776d0398f7327c4cce2dcdfdc",
+      "local_phase_slope_equivalent_delay_ns": -75.24570003693282,
+      "phase_coefficients": [
+        0.0015387712571067887,
+        0.47278267690049874,
+        0.011110318205674468,
+        -0.03202349829599594,
+        -0.0036374923017929686,
+        -0.0035501024122097384
+      ],
+      "direct_power_db": -60.62755277738035
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "end_5771500000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "3fc9c55d9cca006d673a365adef72b9a171a1b92f1b1db6efa34d1656348b38d",
+      "local_phase_slope_equivalent_delay_ns": -76.62156882835191,
+      "phase_coefficients": [
+        0.007274581221198372,
+        0.4814275154753501,
+        -0.007493862438145874,
+        -0.046109942423207186,
+        0.0034639278535926465,
+        0.0005418817666210968
+      ],
+      "direct_power_db": -61.36613578017674
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "end_5853100000_repeat1",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "9e39e303aead5ce2d03cc167818117f674614c28c6c0c1e630bb205f31130819",
+      "local_phase_slope_equivalent_delay_ns": -76.96094249533155,
+      "phase_coefficients": [
+        0.0055816628547028695,
+        0.4835598631133602,
+        -0.005484271914601495,
+        -0.03965613623007167,
+        0.001553960821995415,
+        -0.0016343533163624185
+      ],
+      "direct_power_db": -70.70237833683413
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "end_5853100000_repeat2",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "599f2efe366ce370a4c8a439c785195af2ac0bd3eb51fe8a60e768614bef24d8",
+      "local_phase_slope_equivalent_delay_ns": -77.8352175355714,
+      "phase_coefficients": [
+        0.0025267001263585068,
+        0.4890530952006292,
+        0.01261543236479445,
+        -0.0367291250257587,
+        -0.004019620230809769,
+        -0.0025625796719474024
+      ],
+      "direct_power_db": -71.12465894888825
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T232905Z_position-03",
+      "id": "end_5853100000_repeat3",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "4701ab5b2ea4bb69fa3393ca1eaa3f667189c5730f36c82a4474e7d024cf0367",
+      "local_phase_slope_equivalent_delay_ns": -77.50909301210126,
+      "phase_coefficients": [
+        0.00626675139001152,
+        0.4870039943864506,
+        0.0011614074742434476,
+        -0.033674675624456224,
+        -0.002198163700378089,
+        -0.004036522095021534
+      ],
+      "direct_power_db": -70.69955033349957
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_initial",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "c1c7d7b830007f0765cb4b1cb28389eb08dcc6e6a115e439cf324f211f01f96c",
+      "local_phase_slope_equivalent_delay_ns": -75.54142548046381,
+      "phase_coefficients": [
+        0.003083544559816561,
+        0.47464077466225185,
+        0.0022694173784564967,
+        -0.03770668781798683,
+        -0.0001910720447053472,
+        -0.0017922571462099994
+      ],
+      "direct_power_db": -60.47171464595913
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "bd89841539dbb66ea0c945baaa2e3d55f6b1634b17455fee1e01e0f8a18f1e68",
+      "local_phase_slope_equivalent_delay_ns": -74.95985867635522,
+      "phase_coefficients": [
+        0.00793499155025084,
+        0.4709866826635334,
+        0.0006428296464765575,
+        -0.03285847475967036,
+        -0.001127263945941373,
+        -0.003034024965077416
+      ],
+      "direct_power_db": -60.45160797397081
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "f78254ec78bc31c0e5243210530df82fb602ee40e720ad36166c4f1d4aab97e5",
+      "local_phase_slope_equivalent_delay_ns": -75.11104578674338,
+      "phase_coefficients": [
+        0.005764623128539465,
+        0.47193661929415914,
+        0.003670470763835961,
+        -0.03378387584451788,
+        -0.0022229054086570065,
+        -0.003089257683621781
+      ],
+      "direct_power_db": -60.47466018931023
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "00d2ed1fba77e4e827416c8864339ed137194b1216c126e66838fdfdfcae583b",
+      "local_phase_slope_equivalent_delay_ns": -76.80136233639617,
+      "phase_coefficients": [
+        0.0050233752949358015,
+        0.4825571914034201,
+        -0.0008754235764142,
+        -0.04514944196550217,
+        0.0009261184939235805,
+        4.3326821481939674e-05
+      ],
+      "direct_power_db": -60.554135342469564
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "c7ab562733b0cd593d6eb5a41d8de67b2679929cc8ef0b48df01eecf03113da9",
+      "local_phase_slope_equivalent_delay_ns": -75.9977854066745,
+      "phase_coefficients": [
+        0.0036575307525662294,
+        0.4775081686454044,
+        0.0008916595368156454,
+        -0.033023453649376075,
+        9.591045595439546e-05,
+        -0.0043523242073373394
+      ],
+      "direct_power_db": -60.584805424949394
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "bcebf5731f40a4e29d29f519d0fd18d645ae9970b857994efa020920a15b24a8",
+      "local_phase_slope_equivalent_delay_ns": -75.15307746325554,
+      "phase_coefficients": [
+        0.00462789385408315,
+        0.47220071210645653,
+        0.0005113958223729038,
+        -0.035128572547447105,
+        0.00014568127958445174,
+        -0.002320461372478788
+      ],
+      "direct_power_db": -60.594553625437506
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5771500000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "source_channel_sha256": "e50a673cd04b38d95d8e8bd679fe397e66b30afc90e67a1f48a1181f7514e27f",
+      "local_phase_slope_equivalent_delay_ns": -76.26584064495597,
+      "phase_coefficients": [
+        0.00314290981393845,
+        0.479192409380087,
+        0.0012704140488732434,
+        -0.040486131975119966,
+        0.00011850280012658665,
+        -0.0013539512027200338
+      ],
+      "direct_power_db": -60.63255524503366
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_initial",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "36047692e45eebff8d36b0f847c28f1aceceec2121547ab22bc90f4883e0ae2e",
+      "local_phase_slope_equivalent_delay_ns": -76.35843539046661,
+      "phase_coefficients": [
+        0.007389521277773203,
+        0.47977419932460147,
+        -0.0016835672823139773,
+        -0.03905152319177187,
+        0.0009658280368181348,
+        -0.0011858516194755513
+      ],
+      "direct_power_db": -64.82043073730938
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "5bf30d8790338076bd2130a2fb501ebc139502ea09790c36dc65cf4fb95b2b2d",
+      "local_phase_slope_equivalent_delay_ns": -77.5928769660921,
+      "phase_coefficients": [
+        0.007203458472236231,
+        0.4875304244951433,
+        -0.006773273976572507,
+        -0.040323623799645714,
+        0.0035275414299430733,
+        -0.001868011668840944
+      ],
+      "direct_power_db": -64.75702816291536
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "2d8382b305e3d9b34231990184a07d9ae6ff82979ece7aed1092221b0e473e66",
+      "local_phase_slope_equivalent_delay_ns": -76.5035408147647,
+      "phase_coefficients": [
+        0.005631573020713369,
+        0.48068592359454343,
+        0.004736479199784909,
+        -0.038717432811880795,
+        -0.0019098051050992027,
+        -0.0021996748917180796
+      ],
+      "direct_power_db": -64.71852784108816
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "44d09d09bb21b2a2e62f2489a522a7e6b19d23e79ce72fd7aedeb7c7e6bffc8f",
+      "local_phase_slope_equivalent_delay_ns": -76.71377457577563,
+      "phase_coefficients": [
+        0.010838121368195197,
+        0.4820068612728004,
+        -0.005397056369184855,
+        -0.035476587071468266,
+        0.0005377429703852911,
+        -0.0030423232818424036
+      ],
+      "direct_power_db": -64.71569611968155
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "d36e348897f53a42b2d4962cc35a6f1ae0436e7df2ed3529cf3fd3ab09ed2116",
+      "local_phase_slope_equivalent_delay_ns": -75.80299861806483,
+      "phase_coefficients": [
+        0.007315756576032115,
+        0.47628428715717946,
+        -0.008129616697831937,
+        -0.034258366487979815,
+        0.00425496571754091,
+        -0.0023243969921350593
+      ],
+      "direct_power_db": -64.69025564322207
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "244c87347d52a5bfce0d17fbc92174f34a9055762447fd9e8754273912db7c52",
+      "local_phase_slope_equivalent_delay_ns": -75.25726751089931,
+      "phase_coefficients": [
+        0.008119958490182207,
+        0.4728553574829662,
+        -0.0020331890056012117,
+        -0.02655073737298078,
+        0.0007185937225150075,
+        -0.005247539179536213
+      ],
+      "direct_power_db": -64.63350461199477
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5800000000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "source_channel_sha256": "6ffb3618ad38df6314b108c19662355f3877d28245cbcd700ce2fce72e377562",
+      "local_phase_slope_equivalent_delay_ns": -76.4479058996554,
+      "phase_coefficients": [
+        0.004243474973447081,
+        0.4803363591133624,
+        -0.004382394987735796,
+        -0.04086130532459164,
+        0.0035372944588912087,
+        -0.00038475049745963127
+      ],
+      "direct_power_db": -64.60636693973619
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_initial",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "e08b6425d1ce5f9053ed08358f3cecdaae935cc08ae3fa23ab7b376c0a45cdda",
+      "local_phase_slope_equivalent_delay_ns": -78.08033612559127,
+      "phase_coefficients": [
+        0.000280524660347609,
+        0.49059322072395856,
+        0.023966517357083616,
+        -0.039555873943673006,
+        -0.009910978030616777,
+        -0.003328347883976477
+      ],
+      "direct_power_db": -70.80394462859458
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_repeat1",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "c3cf1863e3d37d3c88c464f4e23c94757f06bfed74517794ccf4140aeed493a2",
+      "local_phase_slope_equivalent_delay_ns": -75.30321587051411,
+      "phase_coefficients": [
+        0.014598619909069105,
+        0.47314405954098687,
+        -0.029965406463889937,
+        -0.03242129292917409,
+        0.010864918324731875,
+        -0.0032535840972474465
+      ],
+      "direct_power_db": -70.75666038172993
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_repeat2",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "102802303839da51a771b631d6e139e36bdcba547b2de2ebb3baa9d00991fb5c",
+      "local_phase_slope_equivalent_delay_ns": -76.13711274121349,
+      "phase_coefficients": [
+        0.0010149972370462985,
+        0.47838358810666826,
+        0.006637039055263148,
+        -0.03476239919176714,
+        -0.0013011086993692975,
+        -0.002300695582119194
+      ],
+      "direct_power_db": -70.71607146051223
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_repeat3",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "81e0c5c311b50c880fb9b5b5bc8d00b629848dd0c8501fe7742b7585ab26c092",
+      "local_phase_slope_equivalent_delay_ns": -78.27308880701332,
+      "phase_coefficients": [
+        0.002877499349375269,
+        0.49180432153978904,
+        0.012385100730526746,
+        -0.04920210024996312,
+        -0.00649779216572193,
+        5.498942830950689e-05
+      ],
+      "direct_power_db": -70.86544614762391
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_repeat4",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "5b43f50dac95f591f7cde78c1d335c209216fa557e5bde4f4747ba2f208478d6",
+      "local_phase_slope_equivalent_delay_ns": -77.20278735191474,
+      "phase_coefficients": [
+        0.002250917840859368,
+        0.4850794191628607,
+        0.004855475555553662,
+        -0.026462871695546016,
+        -0.0025857964701189633,
+        -0.006070560008965848
+      ],
+      "direct_power_db": -70.78936458764667
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_repeat5",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "6e05f6232aa528df82da1a28770ff505ea4b3d6edfb36e533b76c62eae23e3f2",
+      "local_phase_slope_equivalent_delay_ns": -75.60393753227773,
+      "phase_coefficients": [
+        -0.00998324125491908,
+        0.47503354946773074,
+        0.025142137029209373,
+        -0.023464828405634488,
+        -0.0063524977476687354,
+        -0.0070457920979492454
+      ],
+      "direct_power_db": -70.81604701732653
+    },
+    {
+      "position_id": "position-03",
+      "run_id": "2026-09-05T234818Z_position-03",
+      "id": "held_5853100000_repeat6",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "source_channel_sha256": "f09cf5d8d00ab49944407dd1fad76e2dce41728c6537bc81b4004348386d6e02",
+      "local_phase_slope_equivalent_delay_ns": -75.86110957869269,
+      "phase_coefficients": [
+        0.007732741179010428,
+        0.4766494090911825,
+        -0.006349124973848631,
+        -0.022504960150340782,
+        0.002244495533998428,
+        -0.007316829528613655
+      ],
+      "direct_power_db": -70.85858324511416
+    }
+  ],
+  "groups": [
+    {
+      "position_id": "position-01",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -75.61861510824949,
+      "within_group_sd_ns": 0.6591476678424175,
+      "min_max_ns": [
+        -76.405767709096,
+        -74.74123071608962
+      ]
+    },
+    {
+      "position_id": "position-01",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -76.36173573286158,
+      "within_group_sd_ns": 1.7075903240984354,
+      "min_max_ns": [
+        -78.77612802427817,
+        -73.96275033128498
+      ]
+    },
+    {
+      "position_id": "position-01",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -76.1178897044023,
+      "within_group_sd_ns": 2.4421213009647014,
+      "min_max_ns": [
+        -79.06006649617375,
+        -72.27740798323426
+      ]
+    },
+    {
+      "position_id": "position-01",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "count": 9,
+      "mean_local_phase_slope_delay_ns": -75.79754967584569,
+      "within_group_sd_ns": 0.76388501591938,
+      "min_max_ns": [
+        -77.18827676718014,
+        -74.67281780554475
+      ]
+    },
+    {
+      "position_id": "position-01",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "count": 9,
+      "mean_local_phase_slope_delay_ns": -75.56407685258112,
+      "within_group_sd_ns": 1.4293893643171027,
+      "min_max_ns": [
+        -78.0636520955271,
+        -73.5855884054713
+      ]
+    },
+    {
+      "position_id": "position-02",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -74.99893256064863,
+      "within_group_sd_ns": 0.510631901587152,
+      "min_max_ns": [
+        -75.72732648389564,
+        -74.18791603542023
+      ]
+    },
+    {
+      "position_id": "position-02",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -76.55323043157317,
+      "within_group_sd_ns": 0.8561095635763247,
+      "min_max_ns": [
+        -78.03408303300705,
+        -75.15738486737415
+      ]
+    },
+    {
+      "position_id": "position-02",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -77.30508304018477,
+      "within_group_sd_ns": 2.0199501129629103,
+      "min_max_ns": [
+        -79.33147270878949,
+        -74.11827114769711
+      ]
+    },
+    {
+      "position_id": "position-02",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "count": 9,
+      "mean_local_phase_slope_delay_ns": -75.9877956460708,
+      "within_group_sd_ns": 0.8113791248047375,
+      "min_max_ns": [
+        -77.36498967924476,
+        -74.88518696578244
+      ]
+    },
+    {
+      "position_id": "position-02",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "count": 9,
+      "mean_local_phase_slope_delay_ns": -79.1904178999356,
+      "within_group_sd_ns": 2.1405311904793134,
+      "min_max_ns": [
+        -82.86586628045782,
+        -75.47673529071693
+      ]
+    },
+    {
+      "position_id": "position-03",
+      "kind": "held-reference",
+      "center_hz": 5771500000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -75.69005654212067,
+      "within_group_sd_ns": 0.6880049729939961,
+      "min_max_ns": [
+        -76.80136233639617,
+        -74.95985867635522
+      ]
+    },
+    {
+      "position_id": "position-03",
+      "kind": "held-reference",
+      "center_hz": 5800000000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -76.38239996795981,
+      "within_group_sd_ns": 0.7298667797082243,
+      "min_max_ns": [
+        -77.5928769660921,
+        -75.25726751089931
+      ]
+    },
+    {
+      "position_id": "position-03",
+      "kind": "held-reference",
+      "center_hz": 5853100000,
+      "count": 7,
+      "mean_local_phase_slope_delay_ns": -76.63736971531675,
+      "within_group_sd_ns": 1.2095599413485254,
+      "min_max_ns": [
+        -78.27308880701332,
+        -75.30321587051411
+      ]
+    },
+    {
+      "position_id": "position-03",
+      "kind": "retuned-reference",
+      "center_hz": 5771500000,
+      "count": 9,
+      "mean_local_phase_slope_delay_ns": -75.81227187446204,
+      "within_group_sd_ns": 0.7902160211123426,
+      "min_max_ns": [
+        -76.72295492935262,
+        -74.5210336409997
+      ]
+    },
+    {
+      "position_id": "position-03",
+      "kind": "retuned-reference",
+      "center_hz": 5853100000,
+      "count": 9,
+      "mean_local_phase_slope_delay_ns": -77.50014127283521,
+      "within_group_sd_ns": 1.5188001540414808,
+      "min_max_ns": [
+        -81.09786459133616,
+        -75.48778192448039
+      ]
+    }
+  ],
+  "source_sha256": {
+    "deep_reference_controls.py": "c38b68eb023c28f30e319cd65938764a5767b129522f344009897851422e3754",
+    "deep_channel.py": "49d203e19b81911c8cb5ddf4348a18210ad27f4ceeaef531f5595154a4d8c893"
+  },
+  "qualification": "These are polynomial phase-slope equivalents including radio and acquisition delays, not wall ranges. Their within-center variation tests approximate fractional-timing stability. Noise and filter recalibration both contribute. Partial/incomplete held trains are excluded using verified train IDs."
+}

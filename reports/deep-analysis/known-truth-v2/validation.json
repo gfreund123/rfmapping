@@ -1,0 +1,1406 @@
+{
+  "schema": "rfmapping.deep-reconstruction-validation/v1",
+  "created_utc": "2026-09-06T00:19:47.413522+00:00",
+  "hardware_access": false,
+  "noise_reference_run": "2026-09-05T232905Z_position-03",
+  "cases": [
+    {
+      "seed": 9062040,
+      "independent_window_timing_jitter_sd_ns": 0.0,
+      "echoes_present": false,
+      "specified_echoes": [],
+      "reconstructions": [
+        {
+          "position": 1,
+          "direction": "forward",
+          "response_error": 0.01751734303108553,
+          "peaks": [
+            {
+              "relative_delay_ns": 22.88818359375,
+              "relative_power_db": -40.72294889650577
+            },
+            {
+              "relative_delay_ns": -24.4140625,
+              "relative_power_db": -41.88342288435078
+            },
+            {
+              "relative_delay_ns": 30.21240234375,
+              "relative_power_db": -45.26024542124881
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 1,
+          "direction": "reverse",
+          "response_error": 0.015416895574563817,
+          "peaks": [
+            {
+              "relative_delay_ns": 28.991699218750004,
+              "relative_power_db": -44.74500352789403
+            },
+            {
+              "relative_delay_ns": -30.21240234375,
+              "relative_power_db": -46.27408881052715
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 2,
+          "direction": "forward",
+          "response_error": 0.011281961552767993,
+          "peaks": [
+            {
+              "relative_delay_ns": -23.193359375,
+              "relative_power_db": -39.962113714947655
+            },
+            {
+              "relative_delay_ns": -30.21240234375,
+              "relative_power_db": -46.9591697177976
+            },
+            {
+              "relative_delay_ns": 32.34863281250001,
+              "relative_power_db": -49.9701816942797
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 32.34863281250001,
+                "relative_power_db": -49.9701816942797
+              }
+            ],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 2,
+          "direction": "reverse",
+          "response_error": 0.011585497016925284,
+          "peaks": [
+            {
+              "relative_delay_ns": -29.907226562500007,
+              "relative_power_db": -45.78330696366432
+            },
+            {
+              "relative_delay_ns": 30.517578125,
+              "relative_power_db": -47.26541666220471
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 3,
+          "direction": "forward",
+          "response_error": 0.009559937960762599,
+          "peaks": [
+            {
+              "relative_delay_ns": -36.92626953125001,
+              "relative_power_db": -49.66220914619018
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 3,
+          "direction": "reverse",
+          "response_error": 0.01174633655166704,
+          "peaks": [
+            {
+              "relative_delay_ns": 29.60205078125,
+              "relative_power_db": -44.83649967787856
+            },
+            {
+              "relative_delay_ns": -29.60205078125,
+              "relative_power_db": -45.17200616782635
+            },
+            {
+              "relative_delay_ns": 36.62109375,
+              "relative_power_db": -48.72919424450189
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 36.62109375,
+                "relative_power_db": -48.72919424450189
+              }
+            ],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        }
+      ]
+    },
+    {
+      "seed": 9062041,
+      "independent_window_timing_jitter_sd_ns": 0.0,
+      "echoes_present": true,
+      "specified_echoes": [
+        {
+          "delay_ns": 35,
+          "voltage": 0.05,
+          "phase_rad": 0.4
+        },
+        {
+          "delay_ns": 80,
+          "voltage": 0.03,
+          "phase_rad": -0.6
+        }
+      ],
+      "reconstructions": [
+        {
+          "position": 1,
+          "direction": "forward",
+          "response_error": 0.01432009890365594,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.538382643744647
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.323481874030627
+            },
+            {
+              "relative_delay_ns": -23.193359375,
+              "relative_power_db": -39.56743293645016
+            },
+            {
+              "relative_delay_ns": -30.517578125,
+              "relative_power_db": -45.009393161880595
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.538382643744647
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.323481874030627
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 1,
+          "direction": "reverse",
+          "response_error": 0.010118908521829275,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.561238360997738
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.559251426992304
+            },
+            {
+              "relative_delay_ns": -30.21240234375,
+              "relative_power_db": -48.93893020904222
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.561238360997738
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.559251426992304
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 2,
+          "direction": "forward",
+          "response_error": 0.0201381194966967,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.63407850754384
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.751417286458313
+            },
+            {
+              "relative_delay_ns": -29.907226562500007,
+              "relative_power_db": -44.032833489121835
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.63407850754384
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.751417286458313
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 2,
+          "direction": "reverse",
+          "response_error": 0.010688203595870523,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.816861792392046
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.29529016560766
+            },
+            {
+              "relative_delay_ns": -22.88818359375,
+              "relative_power_db": -39.52169559835803
+            },
+            {
+              "relative_delay_ns": -30.82275390625,
+              "relative_power_db": -46.987638127101334
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.816861792392046
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.29529016560766
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 3,
+          "direction": "forward",
+          "response_error": 0.013914717715951505,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.504374639471866
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.301853626307977
+            },
+            {
+              "relative_delay_ns": -29.907226562500007,
+              "relative_power_db": -48.31547579480794
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.504374639471866
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.301853626307977
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 3,
+          "direction": "reverse",
+          "response_error": 0.01961588380228823,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.478980821541985
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.65710424373446
+            },
+            {
+              "relative_delay_ns": -23.498535156250004,
+              "relative_power_db": -40.855660551480646
+            },
+            {
+              "relative_delay_ns": -42.72460937500001,
+              "relative_power_db": -49.42932665376139
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.478980821541985
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.65710424373446
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        }
+      ]
+    },
+    {
+      "seed": 9062045,
+      "independent_window_timing_jitter_sd_ns": 0.5,
+      "echoes_present": false,
+      "specified_echoes": [],
+      "reconstructions": [
+        {
+          "position": 1,
+          "direction": "forward",
+          "response_error": 0.013725406260202307,
+          "peaks": [
+            {
+              "relative_delay_ns": 22.583007812500004,
+              "relative_power_db": -35.91357418649225
+            },
+            {
+              "relative_delay_ns": -43.64013671875,
+              "relative_power_db": -47.41662398936604
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 1,
+          "direction": "reverse",
+          "response_error": 0.011471182164522765,
+          "peaks": [
+            {
+              "relative_delay_ns": -22.88818359375,
+              "relative_power_db": -37.70529361699048
+            },
+            {
+              "relative_delay_ns": 31.433105468750004,
+              "relative_power_db": -43.109692633416884
+            },
+            {
+              "relative_delay_ns": -37.841796875,
+              "relative_power_db": -46.23698275598311
+            },
+            {
+              "relative_delay_ns": -62.25585937500001,
+              "relative_power_db": -49.641374930333946
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 2,
+          "direction": "forward",
+          "response_error": 0.01789933278263782,
+          "peaks": [
+            {
+              "relative_delay_ns": -22.583007812500004,
+              "relative_power_db": -36.472030466992734
+            },
+            {
+              "relative_delay_ns": 30.21240234375,
+              "relative_power_db": -42.00788451301921
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 2,
+          "direction": "reverse",
+          "response_error": 0.02368527670328144,
+          "peaks": [
+            {
+              "relative_delay_ns": 23.193359375,
+              "relative_power_db": -40.66956998412717
+            },
+            {
+              "relative_delay_ns": -30.21240234375,
+              "relative_power_db": -44.48949832561097
+            },
+            {
+              "relative_delay_ns": -43.3349609375,
+              "relative_power_db": -46.93390461338658
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 3,
+          "direction": "forward",
+          "response_error": 0.01663925102421288,
+          "peaks": [
+            {
+              "relative_delay_ns": -23.193359375,
+              "relative_power_db": -40.94838218664507
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 3,
+          "direction": "reverse",
+          "response_error": 0.015600226437123417,
+          "peaks": [
+            {
+              "relative_delay_ns": 30.517578125,
+              "relative_power_db": -42.44924777148239
+            },
+            {
+              "relative_delay_ns": -37.53662109375001,
+              "relative_power_db": -46.98088501348405
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        }
+      ]
+    },
+    {
+      "seed": 9062046,
+      "independent_window_timing_jitter_sd_ns": 0.5,
+      "echoes_present": true,
+      "specified_echoes": [
+        {
+          "delay_ns": 35,
+          "voltage": 0.05,
+          "phase_rad": 0.4
+        },
+        {
+          "delay_ns": 80,
+          "voltage": 0.03,
+          "phase_rad": -0.6
+        }
+      ],
+      "reconstructions": [
+        {
+          "position": 1,
+          "direction": "forward",
+          "response_error": 0.017911449500192706,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.09521484375001,
+              "relative_power_db": -25.659250087720107
+            },
+            {
+              "relative_delay_ns": 79.65087890625001,
+              "relative_power_db": -30.156020151859522
+            },
+            {
+              "relative_delay_ns": -23.803710937500004,
+              "relative_power_db": -39.88829870867334
+            },
+            {
+              "relative_delay_ns": -36.62109375,
+              "relative_power_db": -48.72096921842463
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.09521484375001,
+                "relative_power_db": -25.659250087720107
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.65087890625001,
+                "relative_power_db": -30.156020151859522
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 1,
+          "direction": "reverse",
+          "response_error": 0.013368179481960283,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.934895234706378
+            },
+            {
+              "relative_delay_ns": -16.174316406250004,
+              "relative_power_db": -29.44390600262112
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.79885492645188
+            },
+            {
+              "relative_delay_ns": -35.70556640625,
+              "relative_power_db": -47.45856464464531
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.934895234706378
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.79885492645188
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 2,
+          "direction": "forward",
+          "response_error": 0.02165579053174824,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.954229747929567
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.94656642489392
+            },
+            {
+              "relative_delay_ns": -36.0107421875,
+              "relative_power_db": -46.57971556171815
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.954229747929567
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.94656642489392
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 2,
+          "direction": "reverse",
+          "response_error": 0.022404940061809785,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.54077777478828
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.509009935714978
+            },
+            {
+              "relative_delay_ns": -29.60205078125,
+              "relative_power_db": -49.22148440223769
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.54077777478828
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.509009935714978
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 3,
+          "direction": "forward",
+          "response_error": 0.016546891623821468,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.09521484375001,
+              "relative_power_db": -24.980601756076062
+            },
+            {
+              "relative_delay_ns": 80.26123046875001,
+              "relative_power_db": -30.183603761105353
+            },
+            {
+              "relative_delay_ns": -22.88818359375,
+              "relative_power_db": -39.44804325904201
+            },
+            {
+              "relative_delay_ns": -50.96435546875,
+              "relative_power_db": -47.288443530934714
+            },
+            {
+              "relative_delay_ns": 52.18505859375001,
+              "relative_power_db": -47.718994456983836
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.09521484375001,
+                "relative_power_db": -24.980601756076062
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 80.26123046875001,
+                "relative_power_db": -30.183603761105353
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 3,
+          "direction": "reverse",
+          "response_error": 0.011970597939294414,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -26.325868974329673
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.43355121255037
+            },
+            {
+              "relative_delay_ns": -23.803710937500004,
+              "relative_power_db": -39.38990664248438
+            },
+            {
+              "relative_delay_ns": -36.0107421875,
+              "relative_power_db": -45.71919564316039
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -26.325868974329673
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.43355121255037
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        }
+      ]
+    },
+    {
+      "seed": 9062060,
+      "independent_window_timing_jitter_sd_ns": 2.0,
+      "echoes_present": false,
+      "specified_echoes": [],
+      "reconstructions": [
+        {
+          "position": 1,
+          "direction": "forward",
+          "response_error": 0.04580258362365623,
+          "peaks": [
+            {
+              "relative_delay_ns": 16.174316406250004,
+              "relative_power_db": -29.521763399398935
+            },
+            {
+              "relative_delay_ns": -29.60205078125,
+              "relative_power_db": -42.62581501877034
+            },
+            {
+              "relative_delay_ns": 54.01611328125,
+              "relative_power_db": -42.81427368579851
+            },
+            {
+              "relative_delay_ns": -37.841796875,
+              "relative_power_db": -43.20291764950588
+            },
+            {
+              "relative_delay_ns": -53.10058593750001,
+              "relative_power_db": -43.644440365362826
+            },
+            {
+              "relative_delay_ns": 36.0107421875,
+              "relative_power_db": -44.19159052728574
+            },
+            {
+              "relative_delay_ns": 104.98046875000001,
+              "relative_power_db": -44.81273771567252
+            },
+            {
+              "relative_delay_ns": -108.0322265625,
+              "relative_power_db": -45.97166640853446
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 36.0107421875,
+                "relative_power_db": -44.19159052728574
+              }
+            ],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 1,
+          "direction": "reverse",
+          "response_error": 0.033822438613085266,
+          "peaks": [
+            {
+              "relative_delay_ns": -20.141601562500004,
+              "relative_power_db": -31.050742938530558
+            },
+            {
+              "relative_delay_ns": 25.329589843750004,
+              "relative_power_db": -38.19411521582387
+            },
+            {
+              "relative_delay_ns": 37.23144531250001,
+              "relative_power_db": -40.961350812721534
+            },
+            {
+              "relative_delay_ns": -31.738281250000004,
+              "relative_power_db": -42.9852362317549
+            },
+            {
+              "relative_delay_ns": 49.74365234375001,
+              "relative_power_db": -43.89003598103639
+            },
+            {
+              "relative_delay_ns": 64.08691406250001,
+              "relative_power_db": -44.634346217956576
+            },
+            {
+              "relative_delay_ns": -43.64013671875,
+              "relative_power_db": -44.78688226061812
+            },
+            {
+              "relative_delay_ns": -57.67822265625001,
+              "relative_power_db": -45.32268848060028
+            },
+            {
+              "relative_delay_ns": -81.787109375,
+              "relative_power_db": -46.31100634537219
+            },
+            {
+              "relative_delay_ns": 109.55810546875001,
+              "relative_power_db": -47.251851920738446
+            },
+            {
+              "relative_delay_ns": 81.787109375,
+              "relative_power_db": -48.009701980487314
+            },
+            {
+              "relative_delay_ns": -108.0322265625,
+              "relative_power_db": -48.22064896112643
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 37.23144531250001,
+                "relative_power_db": -40.961350812721534
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 81.787109375,
+                "relative_power_db": -48.009701980487314
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 2,
+          "direction": "forward",
+          "response_error": 0.03809622372855806,
+          "peaks": [
+            {
+              "relative_delay_ns": 22.583007812500004,
+              "relative_power_db": -30.7587450775749
+            },
+            {
+              "relative_delay_ns": -27.465820312500004,
+              "relative_power_db": -36.30802739338601
+            },
+            {
+              "relative_delay_ns": -44.55566406250001,
+              "relative_power_db": -42.50070179699708
+            },
+            {
+              "relative_delay_ns": 39.97802734375001,
+              "relative_power_db": -44.32025559578534
+            },
+            {
+              "relative_delay_ns": 48.52294921875,
+              "relative_power_db": -45.202250924232715
+            },
+            {
+              "relative_delay_ns": 67.138671875,
+              "relative_power_db": -45.74476446029741
+            },
+            {
+              "relative_delay_ns": -76.59912109375,
+              "relative_power_db": -46.48205696790531
+            },
+            {
+              "relative_delay_ns": -96.74072265625,
+              "relative_power_db": -49.2944853645416
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 2,
+          "direction": "reverse",
+          "response_error": 0.03782526307951947,
+          "peaks": [
+            {
+              "relative_delay_ns": 16.78466796875,
+              "relative_power_db": -25.939268130783134
+            },
+            {
+              "relative_delay_ns": -23.498535156250004,
+              "relative_power_db": -31.95937140653873
+            },
+            {
+              "relative_delay_ns": 31.127929687500004,
+              "relative_power_db": -39.19521529324461
+            },
+            {
+              "relative_delay_ns": -40.28320312500001,
+              "relative_power_db": -42.383529536836484
+            },
+            {
+              "relative_delay_ns": 55.54199218750001,
+              "relative_power_db": -44.854748142693516
+            },
+            {
+              "relative_delay_ns": -57.37304687500001,
+              "relative_power_db": -49.533248988004
+            },
+            {
+              "relative_delay_ns": 98.87695312500001,
+              "relative_power_db": -49.985130865686244
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 3,
+          "direction": "forward",
+          "response_error": 0.03309466313604427,
+          "peaks": [
+            {
+              "relative_delay_ns": -16.78466796875,
+              "relative_power_db": -25.89783601809758
+            },
+            {
+              "relative_delay_ns": 23.803710937500004,
+              "relative_power_db": -31.43219263165266
+            },
+            {
+              "relative_delay_ns": -29.60205078125,
+              "relative_power_db": -36.088868243098496
+            },
+            {
+              "relative_delay_ns": -41.80908203125001,
+              "relative_power_db": -39.27602755681075
+            },
+            {
+              "relative_delay_ns": 36.31591796875,
+              "relative_power_db": -39.33791266889475
+            },
+            {
+              "relative_delay_ns": -58.59375000000001,
+              "relative_power_db": -41.00394460752355
+            },
+            {
+              "relative_delay_ns": 63.47656250000001,
+              "relative_power_db": -41.91833261872374
+            },
+            {
+              "relative_delay_ns": -84.22851562500001,
+              "relative_power_db": -47.43794169892418
+            },
+            {
+              "relative_delay_ns": 88.19580078125,
+              "relative_power_db": -48.09406569899092
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 36.31591796875,
+                "relative_power_db": -39.33791266889475
+              }
+            ],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        },
+        {
+          "position": 3,
+          "direction": "reverse",
+          "response_error": 0.029000473294475138,
+          "peaks": [
+            {
+              "relative_delay_ns": -23.498535156250004,
+              "relative_power_db": -40.05722612859213
+            },
+            {
+              "relative_delay_ns": -30.517578125,
+              "relative_power_db": -41.85674059261313
+            },
+            {
+              "relative_delay_ns": 52.18505859375001,
+              "relative_power_db": -43.92241654221502
+            },
+            {
+              "relative_delay_ns": 41.50390625,
+              "relative_power_db": -44.139643562342556
+            },
+            {
+              "relative_delay_ns": 30.517578125,
+              "relative_power_db": -44.87821940796267
+            },
+            {
+              "relative_delay_ns": -116.57714843750001,
+              "relative_power_db": -47.19066948150875
+            },
+            {
+              "relative_delay_ns": 116.57714843750001,
+              "relative_power_db": -47.96246438267906
+            },
+            {
+              "relative_delay_ns": -74.76806640625001,
+              "relative_power_db": -48.596978024725104
+            },
+            {
+              "relative_delay_ns": -47.60742187500001,
+              "relative_power_db": -49.93962653429279
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [],
+            "80": []
+          },
+          "both_specified_echoes_resolved": null
+        }
+      ]
+    },
+    {
+      "seed": 9062061,
+      "independent_window_timing_jitter_sd_ns": 2.0,
+      "echoes_present": true,
+      "specified_echoes": [
+        {
+          "delay_ns": 35,
+          "voltage": 0.05,
+          "phase_rad": 0.4
+        },
+        {
+          "delay_ns": 80,
+          "voltage": 0.03,
+          "phase_rad": -0.6
+        }
+      ],
+      "reconstructions": [
+        {
+          "position": 1,
+          "direction": "forward",
+          "response_error": 0.061707810673897745,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.400390625,
+              "relative_power_db": -25.595789660009135
+            },
+            {
+              "relative_delay_ns": -16.479492187500004,
+              "relative_power_db": -25.660390216962526
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.385422974574546
+            },
+            {
+              "relative_delay_ns": -45.47119140625001,
+              "relative_power_db": -44.683865194410316
+            },
+            {
+              "relative_delay_ns": -68.359375,
+              "relative_power_db": -47.56682554007212
+            },
+            {
+              "relative_delay_ns": -58.59375000000001,
+              "relative_power_db": -48.803071581890265
+            },
+            {
+              "relative_delay_ns": -82.3974609375,
+              "relative_power_db": -49.991419078550706
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.400390625,
+                "relative_power_db": -25.595789660009135
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.385422974574546
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 1,
+          "direction": "reverse",
+          "response_error": 0.04595754422117371,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.70556640625,
+              "relative_power_db": -25.452423955574375
+            },
+            {
+              "relative_delay_ns": 79.65087890625001,
+              "relative_power_db": -29.78988896513757
+            },
+            {
+              "relative_delay_ns": -44.25048828125001,
+              "relative_power_db": -39.7467139535988
+            },
+            {
+              "relative_delay_ns": -26.85546875,
+              "relative_power_db": -40.06570587400019
+            },
+            {
+              "relative_delay_ns": -68.35937500000001,
+              "relative_power_db": -43.92399009800837
+            },
+            {
+              "relative_delay_ns": -91.85791015625,
+              "relative_power_db": -45.22915686449241
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.70556640625,
+                "relative_power_db": -25.452423955574375
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.65087890625001,
+                "relative_power_db": -29.78988896513757
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 2,
+          "direction": "forward",
+          "response_error": 0.040936537092879755,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.70556640625,
+              "relative_power_db": -25.433061302013545
+            },
+            {
+              "relative_delay_ns": 80.26123046875001,
+              "relative_power_db": -29.55799747946355
+            },
+            {
+              "relative_delay_ns": -16.174316406250004,
+              "relative_power_db": -30.54062401107787
+            },
+            {
+              "relative_delay_ns": -43.02978515625,
+              "relative_power_db": -38.54698349084092
+            },
+            {
+              "relative_delay_ns": -86.669921875,
+              "relative_power_db": -46.32613735714397
+            },
+            {
+              "relative_delay_ns": 59.2041015625,
+              "relative_power_db": -48.685387257255215
+            },
+            {
+              "relative_delay_ns": -60.11962890625,
+              "relative_power_db": -49.50541082822683
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.70556640625,
+                "relative_power_db": -25.433061302013545
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 80.26123046875001,
+                "relative_power_db": -29.55799747946355
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 2,
+          "direction": "reverse",
+          "response_error": 0.03808365647305096,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.09521484375001,
+              "relative_power_db": -24.592810200840603
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.058767433522462
+            },
+            {
+              "relative_delay_ns": -25.024414062500004,
+              "relative_power_db": -37.14225340959213
+            },
+            {
+              "relative_delay_ns": -61.03515625,
+              "relative_power_db": -43.37767385954911
+            },
+            {
+              "relative_delay_ns": -47.91259765625001,
+              "relative_power_db": -45.63468371487478
+            },
+            {
+              "relative_delay_ns": 49.13330078125,
+              "relative_power_db": -46.74677323687402
+            },
+            {
+              "relative_delay_ns": 61.34033203125,
+              "relative_power_db": -47.57569940223214
+            },
+            {
+              "relative_delay_ns": -88.50097656250001,
+              "relative_power_db": -47.78594882149116
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.09521484375001,
+                "relative_power_db": -24.592810200840603
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.058767433522462
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 3,
+          "direction": "forward",
+          "response_error": 0.03020156308276093,
+          "peaks": [
+            {
+              "relative_delay_ns": 36.0107421875,
+              "relative_power_db": -25.001042282004136
+            },
+            {
+              "relative_delay_ns": -16.174316406250004,
+              "relative_power_db": -29.04409827068025
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.139387706694947
+            },
+            {
+              "relative_delay_ns": -41.19873046875,
+              "relative_power_db": -39.04883793445589
+            },
+            {
+              "relative_delay_ns": -92.7734375,
+              "relative_power_db": -47.7474683483075
+            },
+            {
+              "relative_delay_ns": -70.80078125,
+              "relative_power_db": -48.890560830036705
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 36.0107421875,
+                "relative_power_db": -25.001042282004136
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.139387706694947
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        },
+        {
+          "position": 3,
+          "direction": "reverse",
+          "response_error": 0.03922386463771993,
+          "peaks": [
+            {
+              "relative_delay_ns": 35.09521484375001,
+              "relative_power_db": -26.355975031361062
+            },
+            {
+              "relative_delay_ns": 79.95605468750001,
+              "relative_power_db": -30.219153389228644
+            },
+            {
+              "relative_delay_ns": -16.4794921875,
+              "relative_power_db": -31.520556124541447
+            },
+            {
+              "relative_delay_ns": -29.907226562500007,
+              "relative_power_db": -35.3835821081079
+            },
+            {
+              "relative_delay_ns": -85.14404296875001,
+              "relative_power_db": -46.22986166286255
+            },
+            {
+              "relative_delay_ns": -98.57177734375,
+              "relative_power_db": -47.042467008624804
+            },
+            {
+              "relative_delay_ns": 50.04882812500001,
+              "relative_power_db": -47.641940450159225
+            },
+            {
+              "relative_delay_ns": -61.03515625,
+              "relative_power_db": -48.68377740450541
+            }
+          ],
+          "peaks_near_specified_test_delays": {
+            "35": [
+              {
+                "relative_delay_ns": 35.09521484375001,
+                "relative_power_db": -26.355975031361062
+              }
+            ],
+            "80": [
+              {
+                "relative_delay_ns": 79.95605468750001,
+                "relative_power_db": -30.219153389228644
+              }
+            ]
+          },
+          "both_specified_echoes_resolved": true
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "validate_deep_reconstruction.py": "93903e9b5d0cd0e3dcd0d17edb36ef601be4d7416f2784269ae4245539094891",
+    "deep_channel.py": "49d203e19b81911c8cb5ddf4348a18210ad27f4ceeaef531f5595154a4d8c893",
+    "deep_stitch.py": "329470d4b5dd103af9fb8fb81e4ddd1ce5276de54de04c7f17121eb55f63ebe2"
+  },
+  "truth": "Smooth complex log-polynomial RF response, supplied smooth baseband filter, optional specified two echoes, random constant phase/gain per window, specified independent timing jitter, a 5% voltage mirror term using the actual pilot code, and independent Gaussian noise scaled by measured per-bin channel-estimator variance.",
+  "limits": "Six seeded channel-domain scenarios test reconstruction sensitivity and noise/window artifacts. They do not model all hardware impairments, establish a statistical false-alarm rate or calibrate room-reflection detectability."
+}

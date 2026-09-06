@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-09-06T00:05:14.302284+00:00",
+  "status": "failed",
+  "stage": "reconstruction-grid coverage",
+  "error": "ValueError: Uncovered reconstruction frequencies",
+  "source_sha256": {
+    "deep_stitch.py": "f1ec983ff0c156b3494237d8fc681108280807fe005e637b0f75d933f3b3811e",
+    "run_deep_stitch.py": "984113877cd6c15f4fd6e9984426257956744c89ae7dd58cb9a7dd321f025845"
+  },
+  "hardware_access": false,
+  "raw_data_changed": false
+}

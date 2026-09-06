@@ -1,0 +1,800 @@
+{
+  "schema": "rfmapping.echo-injection/v1",
+  "created_utc": "2026-09-06T00:14:20.705020+00:00",
+  "hardware_access": false,
+  "run_id": "2026-09-05T232905Z_position-03",
+  "input_results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe",
+  "frozen_model_sha256_lf_utf8": "0d47f765a3c57eed1f8438fe451d64d965ecabff943ba45076c308db50a0aaf2",
+  "cases": [
+    {
+      "delay_ns": 5,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 1.7881762729652084e-06,
+        "removed_relative_delay_ns": 1.3254676012316059e-06,
+        "complex_scale_real_imag": [
+          0.9902240892952451,
+          -9.00822894061847e-08
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 38.4521484375,
+          "relative_power_db": -47.06940267228155
+        }
+      ]
+    },
+    {
+      "delay_ns": 5,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 2.964339209721818e-06,
+        "removed_relative_delay_ns": 4.466380340695611e-06,
+        "complex_scale_real_imag": [
+          0.9905197686412598,
+          -1.0232317763814097e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.94556019110797
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -48.99094036164033
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.32809528877584
+        }
+      ]
+    },
+    {
+      "delay_ns": 5,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 5.766557181844523e-06,
+        "removed_relative_delay_ns": 4.1363077326350445e-06,
+        "complex_scale_real_imag": [
+          0.9706419645683461,
+          -2.019343060213719e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 21.97265625,
+          "relative_power_db": -38.07450822708854
+        },
+        {
+          "relative_delay_ns": 38.14697265625,
+          "relative_power_db": -47.49092894018675
+        }
+      ]
+    },
+    {
+      "delay_ns": 5,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 1.0991607818830901e-05,
+        "removed_relative_delay_ns": 1.4254273432962334e-05,
+        "complex_scale_real_imag": [
+          0.9716470759206336,
+          -2.0862170457598946e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 28.991699218749993,
+          "relative_power_db": -44.06189731000495
+        },
+        {
+          "relative_delay_ns": -31.1279296875,
+          "relative_power_db": -45.322326834063055
+        },
+        {
+          "relative_delay_ns": -65.00244140625,
+          "relative_power_db": -49.308783102279676
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -49.58180342930142
+        }
+      ]
+    },
+    {
+      "delay_ns": 10,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 3.0661313629987596e-06,
+        "removed_relative_delay_ns": -3.2745801366938694e-06,
+        "complex_scale_real_imag": [
+          0.9931050231717955,
+          1.7506506803098446e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 21.057128906249993,
+          "relative_power_db": -34.73044769099063
+        },
+        {
+          "relative_delay_ns": 38.4521484375,
+          "relative_power_db": -46.58835084885421
+        }
+      ]
+    },
+    {
+      "delay_ns": 10,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 5.261806777861388e-06,
+        "removed_relative_delay_ns": 6.0283045004872855e-06,
+        "complex_scale_real_imag": [
+          0.9930736449307597,
+          -3.7711598889547776e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.74154146370986
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -48.45163857704549
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.28011548230938
+        }
+      ]
+    },
+    {
+      "delay_ns": 10,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 1.2034079152261743e-05,
+        "removed_relative_delay_ns": -1.0391350531049988e-05,
+        "complex_scale_real_imag": [
+          0.9804039762882247,
+          4.726927469544453e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 19.83642578125,
+          "relative_power_db": -31.039173491116312
+        },
+        {
+          "relative_delay_ns": 38.14697265625,
+          "relative_power_db": -45.86307561929118
+        }
+      ]
+    },
+    {
+      "delay_ns": 10,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": false,
+      "peaks_near_truth": [],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 1.8319986424539055e-05,
+        "removed_relative_delay_ns": 2.145509142138219e-05,
+        "complex_scale_real_imag": [
+          0.9802980230287509,
+          -1.3278336355634988e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 19.83642578125,
+          "relative_power_db": -32.336437848069075
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.63814008767204
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -47.75458509366559
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.1410927110889
+        }
+      ]
+    },
+    {
+      "delay_ns": 20,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 21.057128906249993,
+          "relative_power_db": -26.752817840097137
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 5.371057580531426e-06,
+        "removed_relative_delay_ns": -1.2258158005520301e-06,
+        "complex_scale_real_imag": [
+          0.9971558862802066,
+          2.053232772218858e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 21.057128906249993,
+          "relative_power_db": -26.752817840097137
+        },
+        {
+          "relative_delay_ns": 38.4521484375,
+          "relative_power_db": -47.964479215948195
+        }
+      ]
+    },
+    {
+      "delay_ns": 20,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 21.057128906249993,
+          "relative_power_db": -27.369073233423613
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 8.641312824226739e-06,
+        "removed_relative_delay_ns": -1.546164761374921e-05,
+        "complex_scale_real_imag": [
+          0.9972570848574193,
+          5.915134944573017e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 21.057128906249993,
+          "relative_power_db": -27.369073233423613
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.8676670402766
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.39584000051316
+        },
+        {
+          "relative_delay_ns": 39.06249999999999,
+          "relative_power_db": -49.9558252670209
+        }
+      ]
+    },
+    {
+      "delay_ns": 20,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 20.751953124999993,
+          "relative_power_db": -18.794910263795114
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 1.7802161647713708e-05,
+        "removed_relative_delay_ns": -2.7129791241451384e-06,
+        "complex_scale_real_imag": [
+          0.9940151935088867,
+          5.697926500777316e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 20.751953124999993,
+          "relative_power_db": -18.794910263795114
+        }
+      ]
+    },
+    {
+      "delay_ns": 20,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 20.751953124999993,
+          "relative_power_db": -19.051274736309352
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 2.303009996867774e-05,
+        "removed_relative_delay_ns": -5.51601606979532e-05,
+        "complex_scale_real_imag": [
+          0.9943535474780453,
+          1.7838981520013244e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 20.751953124999993,
+          "relative_power_db": -19.051274736309352
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -45.059357964086544
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.524652938981724
+        }
+      ]
+    },
+    {
+      "delay_ns": 35,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 35.70556640625,
+          "relative_power_db": -29.800754372905566
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 2.1931330707347158e-05,
+        "removed_relative_delay_ns": -3.610294587753193e-05,
+        "complex_scale_real_imag": [
+          0.9974698896373683,
+          4.899679009840152e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 35.70556640625,
+          "relative_power_db": -29.800754372905566
+        }
+      ]
+    },
+    {
+      "delay_ns": 35,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 35.400390625,
+          "relative_power_db": -29.891492664088005
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 9.907351795517798e-06,
+        "removed_relative_delay_ns": 3.402713710432501e-05,
+        "complex_scale_real_imag": [
+          0.9975105635960865,
+          -1.1443482574935104e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 35.400390625,
+          "relative_power_db": -29.891492664088005
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.89562242165222
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.29178977400192
+        }
+      ]
+    },
+    {
+      "delay_ns": 35,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 35.09521484375,
+          "relative_power_db": -19.81524726883136
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 7.615764304828642e-05,
+        "removed_relative_delay_ns": -0.00012090320218046529,
+        "complex_scale_real_imag": [
+          0.995064787653676,
+          1.4564045559232967e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 35.09521484375,
+          "relative_power_db": -19.81524726883136
+        }
+      ]
+    },
+    {
+      "delay_ns": 35,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 35.09521484375,
+          "relative_power_db": -19.837861343789253
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 3.294451357745922e-05,
+        "removed_relative_delay_ns": 0.00011507899158800653,
+        "complex_scale_real_imag": [
+          0.9952006904113455,
+          -3.5165736267326816e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 35.09521484375,
+          "relative_power_db": -19.837861343789253
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -45.15082940537516
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.17888484786569
+        }
+      ]
+    },
+    {
+      "delay_ns": 60,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -30.68284639092407
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 3.08481199543582e-05,
+        "removed_relative_delay_ns": 3.637403836336793e-05,
+        "complex_scale_real_imag": [
+          1.0000552126372606,
+          -2.155201982603331e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -30.68284639092407
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -46.456780899135765
+        }
+      ]
+    },
+    {
+      "delay_ns": 60,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -30.317427579867278
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 2.205917714334873e-05,
+        "removed_relative_delay_ns": -3.350362151824861e-05,
+        "complex_scale_real_imag": [
+          1.0000668531570704,
+          6.906020957455755e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -30.317427579867278
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.793377713403196
+        },
+        {
+          "relative_delay_ns": 39.36767578124999,
+          "relative_power_db": -47.85272897447857
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.31802432448521
+        }
+      ]
+    },
+    {
+      "delay_ns": 60,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -20.07381733307037
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 9.912101589982448e-05,
+        "removed_relative_delay_ns": 0.00011973612593440867,
+        "complex_scale_real_imag": [
+          1.0036772826218263,
+          -7.014957780577267e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -20.07381733307037
+        }
+      ]
+    },
+    {
+      "delay_ns": 60,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -19.9656963350728
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 7.400603196931947e-05,
+        "removed_relative_delay_ns": -0.00010884695366990385,
+        "complex_scale_real_imag": [
+          1.0037159452325468,
+          1.927733720775694e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 60.11962890625,
+          "relative_power_db": -19.9656963350728
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.806376064496945
+        },
+        {
+          "relative_delay_ns": 42.41943359375,
+          "relative_power_db": -45.11014671447417
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.26454895547628
+        }
+      ]
+    },
+    {
+      "delay_ns": 100,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -30.43379088782253
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 3.1080975687291696e-05,
+        "removed_relative_delay_ns": -8.997520133743727e-06,
+        "complex_scale_real_imag": [
+          1.0005505094092069,
+          -3.1857441429516917e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -30.43379088782253
+        },
+        {
+          "relative_delay_ns": 38.4521484375,
+          "relative_power_db": -46.84876633360402
+        }
+      ]
+    },
+    {
+      "delay_ns": 100,
+      "voltage_amplitude": 0.03,
+      "nominal_relative_power_db": -30.45757490560675,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -30.73030745458751
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 4.503576479713295e-05,
+        "removed_relative_delay_ns": 5.941702456750687e-05,
+        "complex_scale_real_imag": [
+          1.0005537504012343,
+          -4.0948309287811724e-06
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -30.73030745458751
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.800806056281736
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -48.83867813784225
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.3474195688339
+        }
+      ]
+    },
+    {
+      "delay_ns": 100,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "forward",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -19.99377935839511
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 0.00010069307264812702,
+        "removed_relative_delay_ns": -6.633634739469757e-05,
+        "complex_scale_real_imag": [
+          1.0053213744403129,
+          -4.527738734041737e-07
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -19.99377935839511
+        },
+        {
+          "relative_delay_ns": 38.4521484375,
+          "relative_power_db": -46.74249619958056
+        }
+      ]
+    },
+    {
+      "delay_ns": 100,
+      "voltage_amplitude": 0.1,
+      "nominal_relative_power_db": -20.0,
+      "phase_rad": 0.7,
+      "direction": "reverse",
+      "resolved_local_peak_near_truth": true,
+      "peaks_near_truth": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -20.082574750495546
+        }
+      ],
+      "known_injected_response_reconstruction": {
+        "complex_relative_rmse": 0.0001699939202978572,
+        "removed_relative_delay_ns": 0.00020336141696647046,
+        "complex_scale_real_imag": [
+          1.0053321187033024,
+          -1.3927209721929746e-05
+        ]
+      },
+      "strongest_secondary_peaks": [
+        {
+          "relative_delay_ns": 100.09765625,
+          "relative_power_db": -20.082574750495546
+        },
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.82986545263028
+        },
+        {
+          "relative_delay_ns": 38.75732421874999,
+          "relative_power_db": -49.07367144010263
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.36492877161457
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "deep_echo_injection.py": "9aa861e234ba3551bb9a1fbf49ad407db2d87e92778748c831f9b9afaa06bd1a",
+    "deep_channel.py": "49d203e19b81911c8cb5ddf4348a18210ad27f4ceeaef531f5595154a4d8c893",
+    "deep_stitch.py": "3819d3f5da247995469d4bfedb376f53710b7ba4c81d5a0129c3cfc3b139b1ef"
+  },
+  "interpretation": "A delayed copy is injected into each observed narrowband channel before smooth image decomposition and overlap reconstruction. The same measured residual/noise is retained. Resolved means a local FFT peak lies within half an inverse-bandwidth interval of the specified injected delay; this uses known truth and is not a blind detector or a calibrated experimental sensitivity bound."
+}

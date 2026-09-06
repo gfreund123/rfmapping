@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-09-06T00:07:06.937781+00:00",
+  "status": "failed",
+  "error": "ValueError: Uncovered reconstruction frequencies",
+  "cause": "The 1.6 MHz blending crop was narrower than 1.5 MHz LO spacing plus the 0.12 MHz notch. Real LO rounding left the final 5872.1 MHz grid point uncovered.",
+  "source_snapshot_note": "Snapshot reconstructed from the retained first-attempt source plus the exact preceding grid-rounding patch.",
+  "source_sha256": {
+    "deep_stitch.py": "3a6d9f8b6765438a0ab4191560c8b916dc3394df0e219bce09f998ba1d368da9",
+    "run_deep_stitch.py": "984113877cd6c15f4fd6e9984426257956744c89ae7dd58cb9a7dd321f025845"
+  },
+  "fix": "Use a 1.7 MHz blending edge within the measured 1.8 MHz pilot span; preserve the notch. Test actual negative LO readback offsets.",
+  "raw_data_changed": false,
+  "hardware_access": false
+}

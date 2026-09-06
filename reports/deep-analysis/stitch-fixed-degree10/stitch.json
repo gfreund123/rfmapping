@@ -1,0 +1,3537 @@
+{
+  "schema": "rfmapping.deep-stitch/v1",
+  "created_utc": "2026-09-06T00:10:30.199055+00:00",
+  "hardware_access": false,
+  "degree": 10,
+  "quarter": null,
+  "timing_model": "fixed",
+  "calibration_method": "overlap",
+  "training_run": "2026-09-05T221649Z_position-01",
+  "training_sweep": "forward",
+  "frozen_model_source": null,
+  "baseband_model": {
+    "phase_coefficients_rad_per_mhz_power": [
+      0.0,
+      0.0,
+      0.0001152366247181465,
+      -0.03418785160044499,
+      -9.70852509781378e-05,
+      -0.0031879079934708215
+    ],
+    "log_amplitude_coefficients_per_mhz_power": [
+      0.0,
+      0.0,
+      -0.08070272891358392,
+      0.0023659696827157198,
+      0.054898890838211596,
+      -0.0007598977927675528,
+      -0.020208156203051945
+    ],
+    "training_windows": 97,
+    "calibration_method": "Adjacent overlap ratios, constant gain/phase removed, common fractional timing assumed.",
+    "assumption": "Within each training sweep the physical channel is stationary and integer alignment leaves a common fractional sample timing. Independent timing errors or scene changes can bias the estimated response."
+  },
+  "inputs": [
+    {
+      "run_id": "2026-09-05T221649Z_position-01",
+      "results_sha256_lf_utf8": "fd1ef16e5ddc4ed1813f7af2a0139a3967e6c3c62fff3298768131eb625817a0"
+    },
+    {
+      "run_id": "2026-09-05T225813Z_position-02",
+      "results_sha256_lf_utf8": "00c068d41e83dae03da501a5a2aa84c8a9bc67874d6c8070af0ed39d04b14d75"
+    },
+    {
+      "run_id": "2026-09-05T232905Z_position-03",
+      "results_sha256_lf_utf8": "314aa3a7bbc3b48795a8acb9aab757a53bb2256d2287b32edc35b82110227afe"
+    }
+  ],
+  "source_sha256": {
+    "deep_channel.py": "49d203e19b81911c8cb5ddf4348a18210ad27f4ceeaef531f5595154a4d8c893",
+    "deep_stitch.py": "3819d3f5da247995469d4bfedb376f53710b7ba4c81d5a0129c3cfc3b139b1ef",
+    "run_deep_stitch.py": "453282dcc9bfd564c8ebe43afbf08d871784ab2977e77d34029cfa07bbc8eabd"
+  },
+  "runs": [
+    {
+      "run_id": "2026-09-05T221649Z_position-01",
+      "position_id": "position-01",
+      "direction": "forward",
+      "reconstructed_file": {
+        "raw_relative_path": "data/local/deep-analysis/stitch-fixed-degree10/position-01-forward.npz",
+        "sha256": "40427edb4ac3950827d8e12a7417f6175d432696a8404f6c6cce007333516b17"
+      },
+      "baseband_phase_quadratic_delta": 0,
+      "peaks": [
+        {
+          "relative_delay_ns": 23.193359374999993,
+          "relative_power_db": -37.14775561270801
+        },
+        {
+          "relative_delay_ns": -30.517578125000014,
+          "relative_power_db": -42.0561562257995
+        },
+        {
+          "relative_delay_ns": 43.94531249999999,
+          "relative_power_db": -48.93466964179646
+        },
+        {
+          "relative_delay_ns": -49.133300781250014,
+          "relative_power_db": -49.33202599343065
+        }
+      ],
+      "profile_peak_before_recentering_ns": -75.98876953125,
+      "closure": [
+        {
+          "middle_center_hz": 5729500000,
+          "phase_deg": 0.14256406019898432,
+          "fit_delay_ns": 0.04908201122815402
+        },
+        {
+          "middle_center_hz": 5730999998,
+          "phase_deg": -0.033899473696301335,
+          "fit_delay_ns": 10.021725336349803
+        },
+        {
+          "middle_center_hz": 5732500002,
+          "phase_deg": 0.35676531627356645,
+          "fit_delay_ns": 14.228341218779404
+        },
+        {
+          "middle_center_hz": 5734000000,
+          "phase_deg": 0.2687541023121775,
+          "fit_delay_ns": -1.3431304191523907
+        },
+        {
+          "middle_center_hz": 5735499998,
+          "phase_deg": -0.31287783228306626,
+          "fit_delay_ns": -1.682701693173514
+        },
+        {
+          "middle_center_hz": 5737000000,
+          "phase_deg": -0.02010002569810554,
+          "fit_delay_ns": 0.4078506313947318
+        },
+        {
+          "middle_center_hz": 5738499998,
+          "phase_deg": 0.8305046854398582,
+          "fit_delay_ns": -0.3673357324595308
+        },
+        {
+          "middle_center_hz": 5740000000,
+          "phase_deg": 0.4096932675770067,
+          "fit_delay_ns": 0.7433624962241707
+        },
+        {
+          "middle_center_hz": 5741499998,
+          "phase_deg": -0.3590856089687552,
+          "fit_delay_ns": -8.379638077958385
+        },
+        {
+          "middle_center_hz": 5743000002,
+          "phase_deg": 0.22325536376890073,
+          "fit_delay_ns": -7.881195891768276
+        },
+        {
+          "middle_center_hz": 5744500000,
+          "phase_deg": 0.47448141424183304,
+          "fit_delay_ns": -3.128456893489993
+        },
+        {
+          "middle_center_hz": 5745999998,
+          "phase_deg": 0.11502418141719656,
+          "fit_delay_ns": 7.885749135169313
+        },
+        {
+          "middle_center_hz": 5747500000,
+          "phase_deg": -0.02651865021782432,
+          "fit_delay_ns": -1.9544215282747555
+        },
+        {
+          "middle_center_hz": 5748999998,
+          "phase_deg": -0.05556065992466234,
+          "fit_delay_ns": 6.665791808294825
+        },
+        {
+          "middle_center_hz": 5750500000,
+          "phase_deg": 0.3354981625098452,
+          "fit_delay_ns": 7.917383944351246
+        },
+        {
+          "middle_center_hz": 5751999998,
+          "phase_deg": 0.09362695731418036,
+          "fit_delay_ns": 8.216832010343348
+        },
+        {
+          "middle_center_hz": 5753499996,
+          "phase_deg": 0.1981230024186294,
+          "fit_delay_ns": 12.482688044945437
+        },
+        {
+          "middle_center_hz": 5755000000,
+          "phase_deg": -0.12595599192867468,
+          "fit_delay_ns": -15.548276869382157
+        },
+        {
+          "middle_center_hz": 5756499998,
+          "phase_deg": 0.13886382979749204,
+          "fit_delay_ns": 3.4777331820304833
+        },
+        {
+          "middle_center_hz": 5758000000,
+          "phase_deg": 0.4765433445270242,
+          "fit_delay_ns": 8.032922297611153
+        },
+        {
+          "middle_center_hz": 5759499998,
+          "phase_deg": -0.04974306769683266,
+          "fit_delay_ns": -1.736391071875989
+        },
+        {
+          "middle_center_hz": 5761000002,
+          "phase_deg": 0.9187334023703027,
+          "fit_delay_ns": 0.4537080950873684
+        },
+        {
+          "middle_center_hz": 5762500000,
+          "phase_deg": -0.3495966283866251,
+          "fit_delay_ns": -1.883766124812349
+        },
+        {
+          "middle_center_hz": 5763999998,
+          "phase_deg": 0.2560946304863895,
+          "fit_delay_ns": -4.910797093761598
+        },
+        {
+          "middle_center_hz": 5765500000,
+          "phase_deg": -0.25402250118469233,
+          "fit_delay_ns": 4.997689437030391
+        },
+        {
+          "middle_center_hz": 5766999998,
+          "phase_deg": -0.8169630070987577,
+          "fit_delay_ns": 0.6357546920196895
+        },
+        {
+          "middle_center_hz": 5768500000,
+          "phase_deg": -1.0448515359526178,
+          "fit_delay_ns": 15.98264601854852
+        },
+        {
+          "middle_center_hz": 5769999998,
+          "phase_deg": 0.6314593085324978,
+          "fit_delay_ns": 1.6451296008509486
+        },
+        {
+          "middle_center_hz": 5771499996,
+          "phase_deg": 0.11701947606673425,
+          "fit_delay_ns": 13.256409404219816
+        },
+        {
+          "middle_center_hz": 5773000000,
+          "phase_deg": 0.0037415872704363684,
+          "fit_delay_ns": -11.755201823637012
+        },
+        {
+          "middle_center_hz": 5774499998,
+          "phase_deg": 0.15198732713171292,
+          "fit_delay_ns": -2.3519001104762896
+        },
+        {
+          "middle_center_hz": 5776000000,
+          "phase_deg": 0.048178745414190004,
+          "fit_delay_ns": 1.1371477194860813
+        },
+        {
+          "middle_center_hz": 5777499998,
+          "phase_deg": -1.4373734767909156,
+          "fit_delay_ns": -11.147927953783407
+        },
+        {
+          "middle_center_hz": 5779000002,
+          "phase_deg": 0.12334713325201825,
+          "fit_delay_ns": 8.152199234357505
+        },
+        {
+          "middle_center_hz": 5780500000,
+          "phase_deg": -0.3717116763307545,
+          "fit_delay_ns": 1.0972723573838927
+        },
+        {
+          "middle_center_hz": 5781999998,
+          "phase_deg": -0.2957619011811887,
+          "fit_delay_ns": 16.381383681680852
+        },
+        {
+          "middle_center_hz": 5783500000,
+          "phase_deg": 0.07463231213873647,
+          "fit_delay_ns": 8.111080987472032
+        },
+        {
+          "middle_center_hz": 5784999998,
+          "phase_deg": -0.28079621178419284,
+          "fit_delay_ns": -1.0406519577179372
+        },
+        {
+          "middle_center_hz": 5786500000,
+          "phase_deg": -0.21952600705689523,
+          "fit_delay_ns": -7.327775155696675
+        },
+        {
+          "middle_center_hz": 5787999998,
+          "phase_deg": 0.04481107019930782,
+          "fit_delay_ns": 8.301755049828893
+        },
+        {
+          "middle_center_hz": 5789499996,
+          "phase_deg": 0.23492863207988188,
+          "fit_delay_ns": -1.6674812469360358
+        },
+        {
+          "middle_center_hz": 5791000000,
+          "phase_deg": 0.20121770877717418,
+          "fit_delay_ns": -13.681091451530891
+        },
+        {
+          "middle_center_hz": 5792499998,
+          "phase_deg": 0.5319413176850311,
+          "fit_delay_ns": 6.043299733163397
+        },
+        {
+          "middle_center_hz": 5794000000,
+          "phase_deg": 0.7860353683114997,
+          "fit_delay_ns": 7.615255852578807
+        },
+        {
+          "middle_center_hz": 5795499998,
+          "phase_deg": -0.3629286670631053,
+          "fit_delay_ns": -0.6798960588754663
+        },
+        {
+          "middle_center_hz": 5797000002,
+          "phase_deg": 0.19551095222148956,
+          "fit_delay_ns": -9.12777430327765
+        },
+        {
+          "middle_center_hz": 5798500000,
+          "phase_deg": 0.7016536449404274,
+          "fit_delay_ns": 9.137888287769222
+        },
+        {
+          "middle_center_hz": 5799999998,
+          "phase_deg": 0.5362804398524968,
+          "fit_delay_ns": 0.3302313446864649
+        },
+        {
+          "middle_center_hz": 5801500000,
+          "phase_deg": -0.386841639492264,
+          "fit_delay_ns": -4.2564700943356835
+        },
+        {
+          "middle_center_hz": 5802999998,
+          "phase_deg": 0.27930343316587425,
+          "fit_delay_ns": 4.605268445811892
+        },
+        {
+          "middle_center_hz": 5804500000,
+          "phase_deg": 0.2573879448888616,
+          "fit_delay_ns": -14.697753411326739
+        },
+        {
+          "middle_center_hz": 5805999998,
+          "phase_deg": 0.5841167620538587,
+          "fit_delay_ns": 14.786428650141074
+        },
+        {
+          "middle_center_hz": 5807499996,
+          "phase_deg": 0.31734282244156115,
+          "fit_delay_ns": -5.880398126637492
+        },
+        {
+          "middle_center_hz": 5809000000,
+          "phase_deg": 0.18075563974844475,
+          "fit_delay_ns": -4.011461678344087
+        },
+        {
+          "middle_center_hz": 5810499998,
+          "phase_deg": 0.0069309727261090345,
+          "fit_delay_ns": 6.387403423912806
+        },
+        {
+          "middle_center_hz": 5812000000,
+          "phase_deg": -0.853712629364592,
+          "fit_delay_ns": 13.339301770297729
+        },
+        {
+          "middle_center_hz": 5813499998,
+          "phase_deg": 0.17070302890804445,
+          "fit_delay_ns": -3.8927416436650106
+        },
+        {
+          "middle_center_hz": 5815000000,
+          "phase_deg": 0.282389395950727,
+          "fit_delay_ns": 0.8415619152440192
+        },
+        {
+          "middle_center_hz": 5816499998,
+          "phase_deg": -0.2329497794681081,
+          "fit_delay_ns": 14.304765537759259
+        },
+        {
+          "middle_center_hz": 5817999996,
+          "phase_deg": 0.32782691906450173,
+          "fit_delay_ns": -19.83810125343879
+        },
+        {
+          "middle_center_hz": 5819500000,
+          "phase_deg": -1.0040158116411049,
+          "fit_delay_ns": -10.464154777977395
+        },
+        {
+          "middle_center_hz": 5820999998,
+          "phase_deg": 0.10893309294230685,
+          "fit_delay_ns": 4.785919077257999
+        },
+        {
+          "middle_center_hz": 5822500000,
+          "phase_deg": -1.0348704451508346,
+          "fit_delay_ns": -8.465858892745718
+        },
+        {
+          "middle_center_hz": 5823999998,
+          "phase_deg": -0.08161851303502794,
+          "fit_delay_ns": 27.456316195309796
+        },
+        {
+          "middle_center_hz": 5825500002,
+          "phase_deg": 0.6188427175804764,
+          "fit_delay_ns": -1.6756782185669132
+        },
+        {
+          "middle_center_hz": 5827000000,
+          "phase_deg": -0.8815169219809832,
+          "fit_delay_ns": -19.797539741793063
+        },
+        {
+          "middle_center_hz": 5828499998,
+          "phase_deg": 0.26499542350450866,
+          "fit_delay_ns": 19.771855410948827
+        },
+        {
+          "middle_center_hz": 5830000000,
+          "phase_deg": -0.49097171741255985,
+          "fit_delay_ns": 13.89078269869578
+        },
+        {
+          "middle_center_hz": 5831499998,
+          "phase_deg": -0.04060070026861819,
+          "fit_delay_ns": 19.358630440662157
+        },
+        {
+          "middle_center_hz": 5833000000,
+          "phase_deg": -0.5977255487539869,
+          "fit_delay_ns": -13.753096985046815
+        },
+        {
+          "middle_center_hz": 5834499998,
+          "phase_deg": 0.7983004893651781,
+          "fit_delay_ns": -1.1619516095478908
+        },
+        {
+          "middle_center_hz": 5835999996,
+          "phase_deg": 1.0023167864598261,
+          "fit_delay_ns": -5.598791853003628
+        },
+        {
+          "middle_center_hz": 5837500000,
+          "phase_deg": 0.3414804979236254,
+          "fit_delay_ns": -21.45594508748765
+        },
+        {
+          "middle_center_hz": 5838999998,
+          "phase_deg": 1.7792391686674074,
+          "fit_delay_ns": -2.53120190665459
+        },
+        {
+          "middle_center_hz": 5840500000,
+          "phase_deg": 0.5875619982575827,
+          "fit_delay_ns": 16.671537652148253
+        },
+        {
+          "middle_center_hz": 5841999998,
+          "phase_deg": -0.32078511699178575,
+          "fit_delay_ns": 5.397662732326174
+        },
+        {
+          "middle_center_hz": 5843500002,
+          "phase_deg": 1.6515297764418069,
+          "fit_delay_ns": -20.13939087117896
+        },
+        {
+          "middle_center_hz": 5845000000,
+          "phase_deg": -0.696955936551134,
+          "fit_delay_ns": 31.78832987037799
+        },
+        {
+          "middle_center_hz": 5846499998,
+          "phase_deg": -0.47188574003452427,
+          "fit_delay_ns": -15.616831154016415
+        },
+        {
+          "middle_center_hz": 5848000000,
+          "phase_deg": 0.4962824651734119,
+          "fit_delay_ns": -19.973392176207295
+        },
+        {
+          "middle_center_hz": 5849499998,
+          "phase_deg": -0.474654507067807,
+          "fit_delay_ns": 19.391233081300616
+        },
+        {
+          "middle_center_hz": 5851000000,
+          "phase_deg": -0.7233748422814257,
+          "fit_delay_ns": 52.850405249235706
+        },
+        {
+          "middle_center_hz": 5852499998,
+          "phase_deg": -0.736708794713077,
+          "fit_delay_ns": -4.702288160975006
+        },
+        {
+          "middle_center_hz": 5853999996,
+          "phase_deg": -0.6164188247800495,
+          "fit_delay_ns": 1.2339182631524501
+        },
+        {
+          "middle_center_hz": 5855500000,
+          "phase_deg": 2.518413202517296,
+          "fit_delay_ns": -21.840627974578467
+        },
+        {
+          "middle_center_hz": 5856999998,
+          "phase_deg": -0.43255811740201994,
+          "fit_delay_ns": 2.7681386942475457
+        },
+        {
+          "middle_center_hz": 5858500000,
+          "phase_deg": 0.4629490300647311,
+          "fit_delay_ns": -21.677654087121347
+        },
+        {
+          "middle_center_hz": 5859999998,
+          "phase_deg": 0.7297467845396688,
+          "fit_delay_ns": -29.09178131773586
+        },
+        {
+          "middle_center_hz": 5861500002,
+          "phase_deg": -0.3168413602913213,
+          "fit_delay_ns": 46.395792796068726
+        },
+        {
+          "middle_center_hz": 5863000000,
+          "phase_deg": 0.08899552523897827,
+          "fit_delay_ns": -41.00926476906406
+        },
+        {
+          "middle_center_hz": 5864499998,
+          "phase_deg": -1.2487848892620967,
+          "fit_delay_ns": 33.683838260999366
+        },
+        {
+          "middle_center_hz": 5866000000,
+          "phase_deg": -0.19042440577641112,
+          "fit_delay_ns": -18.015981079155043
+        },
+        {
+          "middle_center_hz": 5867499998,
+          "phase_deg": -1.3833492958396258,
+          "fit_delay_ns": -1.9042962829437573
+        },
+        {
+          "middle_center_hz": 5869000000,
+          "phase_deg": -1.9763172750725064,
+          "fit_delay_ns": 26.232077905902592
+        },
+        {
+          "middle_center_hz": 5870499998,
+          "phase_deg": -0.02418736593537549,
+          "fit_delay_ns": -0.99431625361285
+        }
+      ],
+      "median_absolute_phase_closure_deg": 0.3354981625098452,
+      "p95_absolute_fit_delay_closure_ns": 29.900745883528494,
+      "median_edge_complex_residual": 0.006115333900504163,
+      "gauge_sensitivity": [
+        {
+          "quadratic_delta_rad_per_mhz2": -0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": 51.26953125,
+              "relative_power_db": -43.134417067866025
+            },
+            {
+              "relative_delay_ns": -52.79541015625,
+              "relative_power_db": -45.33832722695519
+            },
+            {
+              "relative_delay_ns": 63.4765625,
+              "relative_power_db": -47.40401208684
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": -0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": -15.869140625,
+              "relative_power_db": -28.577017021040973
+            },
+            {
+              "relative_delay_ns": -29.907226562500014,
+              "relative_power_db": -40.5688120146239
+            },
+            {
+              "relative_delay_ns": -45.166015625,
+              "relative_power_db": -48.84094507617643
+            },
+            {
+              "relative_delay_ns": 45.77636718749999,
+              "relative_power_db": -49.01974555640323
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": 16.17431640625,
+              "relative_power_db": -31.965269765643527
+            },
+            {
+              "relative_delay_ns": 23.498535156249993,
+              "relative_power_db": -37.6098456581753
+            },
+            {
+              "relative_delay_ns": -35.400390625000014,
+              "relative_power_db": -43.0857801013901
+            },
+            {
+              "relative_delay_ns": -50.659179687500014,
+              "relative_power_db": -49.24395909353571
+            },
+            {
+              "relative_delay_ns": 43.3349609375,
+              "relative_power_db": -49.30737602691587
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": -56.762695312499986,
+              "relative_power_db": -47.16907104598137
+            },
+            {
+              "relative_delay_ns": 58.898925781250014,
+              "relative_power_db": -49.96271689808946
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        }
+      ]
+    },
+    {
+      "run_id": "2026-09-05T221649Z_position-01",
+      "position_id": "position-01",
+      "direction": "reverse",
+      "reconstructed_file": {
+        "raw_relative_path": "data/local/deep-analysis/stitch-fixed-degree10/position-01-reverse.npz",
+        "sha256": "7ffb23a3f7b0522d230020d75f514d2da3606ee7dc0ad1f113ca9191c0ccee31"
+      },
+      "baseband_phase_quadratic_delta": 0,
+      "peaks": [
+        {
+          "relative_delay_ns": -22.5830078125,
+          "relative_power_db": -39.671560183263296
+        },
+        {
+          "relative_delay_ns": -30.212402343750014,
+          "relative_power_db": -43.254248057317454
+        },
+        {
+          "relative_delay_ns": 43.02978515625,
+          "relative_power_db": -48.23759765343462
+        },
+        {
+          "relative_delay_ns": 31.738281249999993,
+          "relative_power_db": -48.68583405850518
+        }
+      ],
+      "profile_peak_before_recentering_ns": -75.98876953125,
+      "closure": [
+        {
+          "middle_center_hz": 5729500000,
+          "phase_deg": 0.21917432460511072,
+          "fit_delay_ns": -2.6849718908317204
+        },
+        {
+          "middle_center_hz": 5730999998,
+          "phase_deg": -0.29186513525566044,
+          "fit_delay_ns": -4.107697254175523
+        },
+        {
+          "middle_center_hz": 5732500002,
+          "phase_deg": 0.1886625211647897,
+          "fit_delay_ns": -3.4998264330392543
+        },
+        {
+          "middle_center_hz": 5734000000,
+          "phase_deg": 0.24775105249353851,
+          "fit_delay_ns": 5.821735705473192
+        },
+        {
+          "middle_center_hz": 5735499998,
+          "phase_deg": 0.07441850233018767,
+          "fit_delay_ns": -1.1090900560390684
+        },
+        {
+          "middle_center_hz": 5737000000,
+          "phase_deg": -0.35682433107486716,
+          "fit_delay_ns": -6.823355856065628
+        },
+        {
+          "middle_center_hz": 5738499998,
+          "phase_deg": 0.7868253356470698,
+          "fit_delay_ns": -1.6235035253432395
+        },
+        {
+          "middle_center_hz": 5740000000,
+          "phase_deg": 0.023136103819965594,
+          "fit_delay_ns": -0.08705018677610894
+        },
+        {
+          "middle_center_hz": 5741499998,
+          "phase_deg": 0.48634456558789096,
+          "fit_delay_ns": -5.370787796182813
+        },
+        {
+          "middle_center_hz": 5743000002,
+          "phase_deg": -0.17479981350668758,
+          "fit_delay_ns": 6.438634698850382
+        },
+        {
+          "middle_center_hz": 5744500000,
+          "phase_deg": 0.004986831394304568,
+          "fit_delay_ns": 4.322080664920298
+        },
+        {
+          "middle_center_hz": 5745999998,
+          "phase_deg": -0.09641447014916045,
+          "fit_delay_ns": 0.40806151724529854
+        },
+        {
+          "middle_center_hz": 5747500000,
+          "phase_deg": 0.6178200169874754,
+          "fit_delay_ns": -5.005412911568827
+        },
+        {
+          "middle_center_hz": 5748999998,
+          "phase_deg": -0.3509063840840615,
+          "fit_delay_ns": -1.4340090405813555
+        },
+        {
+          "middle_center_hz": 5750500000,
+          "phase_deg": 0.057471406022965896,
+          "fit_delay_ns": 1.1030940643319511
+        },
+        {
+          "middle_center_hz": 5751999998,
+          "phase_deg": 0.32624657818021996,
+          "fit_delay_ns": -1.4121225627089222
+        },
+        {
+          "middle_center_hz": 5753499996,
+          "phase_deg": -0.585894069987126,
+          "fit_delay_ns": -7.812720771620733
+        },
+        {
+          "middle_center_hz": 5755000000,
+          "phase_deg": 0.3745051282321702,
+          "fit_delay_ns": -4.529213182934433
+        },
+        {
+          "middle_center_hz": 5756499998,
+          "phase_deg": 0.4165029094863512,
+          "fit_delay_ns": 1.510459907087685
+        },
+        {
+          "middle_center_hz": 5758000000,
+          "phase_deg": 0.6975953775062069,
+          "fit_delay_ns": -0.19270632844245433
+        },
+        {
+          "middle_center_hz": 5759499998,
+          "phase_deg": 0.1314139450099885,
+          "fit_delay_ns": 10.295241574534762
+        },
+        {
+          "middle_center_hz": 5761000002,
+          "phase_deg": -0.13482639906895733,
+          "fit_delay_ns": -5.38451981825578
+        },
+        {
+          "middle_center_hz": 5762500000,
+          "phase_deg": 0.6163863373819656,
+          "fit_delay_ns": 14.682136032594476
+        },
+        {
+          "middle_center_hz": 5763999998,
+          "phase_deg": 0.20149620609620264,
+          "fit_delay_ns": 0.15523249214497878
+        },
+        {
+          "middle_center_hz": 5765500000,
+          "phase_deg": -0.45930899777180506,
+          "fit_delay_ns": -9.268237202657165
+        },
+        {
+          "middle_center_hz": 5766999998,
+          "phase_deg": -0.15350866421747938,
+          "fit_delay_ns": -0.5514738244047972
+        },
+        {
+          "middle_center_hz": 5768500000,
+          "phase_deg": 0.39558389841066083,
+          "fit_delay_ns": 5.175114807890204
+        },
+        {
+          "middle_center_hz": 5769999998,
+          "phase_deg": 0.26416019477933955,
+          "fit_delay_ns": 9.624424992555053
+        },
+        {
+          "middle_center_hz": 5771499996,
+          "phase_deg": -0.323318861216178,
+          "fit_delay_ns": 10.183675936755469
+        },
+        {
+          "middle_center_hz": 5773000000,
+          "phase_deg": 0.4076920800794674,
+          "fit_delay_ns": -11.172056560215722
+        },
+        {
+          "middle_center_hz": 5774499998,
+          "phase_deg": 0.05794058259543807,
+          "fit_delay_ns": 7.156694402483588
+        },
+        {
+          "middle_center_hz": 5776000000,
+          "phase_deg": -0.036525526746632196,
+          "fit_delay_ns": 1.2037443948942015
+        },
+        {
+          "middle_center_hz": 5777499998,
+          "phase_deg": -0.47607648413406056,
+          "fit_delay_ns": -0.6690653996061084
+        },
+        {
+          "middle_center_hz": 5779000002,
+          "phase_deg": 0.3138458502282882,
+          "fit_delay_ns": 7.097590040255535
+        },
+        {
+          "middle_center_hz": 5780500000,
+          "phase_deg": -0.47784957442810017,
+          "fit_delay_ns": 5.23207264426616
+        },
+        {
+          "middle_center_hz": 5781999998,
+          "phase_deg": -0.17469095305149024,
+          "fit_delay_ns": -4.280833341756649
+        },
+        {
+          "middle_center_hz": 5783500000,
+          "phase_deg": -0.6202070500736517,
+          "fit_delay_ns": -0.338791242940161
+        },
+        {
+          "middle_center_hz": 5784999998,
+          "phase_deg": -0.4441600777861612,
+          "fit_delay_ns": -9.465952341322408
+        },
+        {
+          "middle_center_hz": 5786500000,
+          "phase_deg": 0.4101002044015281,
+          "fit_delay_ns": -2.5020280683224136
+        },
+        {
+          "middle_center_hz": 5787999998,
+          "phase_deg": -0.39949202670152195,
+          "fit_delay_ns": -15.595831575948507
+        },
+        {
+          "middle_center_hz": 5789499996,
+          "phase_deg": -1.0438514898669302,
+          "fit_delay_ns": -1.7110618717933248
+        },
+        {
+          "middle_center_hz": 5791000000,
+          "phase_deg": -0.25110071509454956,
+          "fit_delay_ns": 12.832471861102377
+        },
+        {
+          "middle_center_hz": 5792499998,
+          "phase_deg": 0.28708247254542446,
+          "fit_delay_ns": 11.069944635526355
+        },
+        {
+          "middle_center_hz": 5794000000,
+          "phase_deg": 0.17559671991934575,
+          "fit_delay_ns": -5.313890693747285
+        },
+        {
+          "middle_center_hz": 5795499998,
+          "phase_deg": -0.33428328086680104,
+          "fit_delay_ns": 8.000364451534741
+        },
+        {
+          "middle_center_hz": 5797000002,
+          "phase_deg": -0.008992792916883329,
+          "fit_delay_ns": 8.132921969446842
+        },
+        {
+          "middle_center_hz": 5798500000,
+          "phase_deg": 0.33856308330228585,
+          "fit_delay_ns": 8.38045230484271
+        },
+        {
+          "middle_center_hz": 5799999998,
+          "phase_deg": -0.23802904087467266,
+          "fit_delay_ns": 9.655895926472736
+        },
+        {
+          "middle_center_hz": 5801500000,
+          "phase_deg": -0.14417241205651943,
+          "fit_delay_ns": 4.596068139970499
+        },
+        {
+          "middle_center_hz": 5802999998,
+          "phase_deg": 1.044708850195524,
+          "fit_delay_ns": -7.623173184713592
+        },
+        {
+          "middle_center_hz": 5804500000,
+          "phase_deg": -0.09454817967440728,
+          "fit_delay_ns": -20.76550569919603
+        },
+        {
+          "middle_center_hz": 5805999998,
+          "phase_deg": -0.13500378913027525,
+          "fit_delay_ns": 3.4428897281568607
+        },
+        {
+          "middle_center_hz": 5807499996,
+          "phase_deg": 0.32092162683531517,
+          "fit_delay_ns": 1.029606040307053
+        },
+        {
+          "middle_center_hz": 5809000000,
+          "phase_deg": -1.1996718657665368,
+          "fit_delay_ns": 16.290867302125502
+        },
+        {
+          "middle_center_hz": 5810499998,
+          "phase_deg": -0.06451388090551204,
+          "fit_delay_ns": -8.231410341502723
+        },
+        {
+          "middle_center_hz": 5812000000,
+          "phase_deg": -0.4697088837266211,
+          "fit_delay_ns": -10.674511302708726
+        },
+        {
+          "middle_center_hz": 5813499998,
+          "phase_deg": 0.7833986041341265,
+          "fit_delay_ns": 14.784384089858433
+        },
+        {
+          "middle_center_hz": 5815000000,
+          "phase_deg": 0.732838586755222,
+          "fit_delay_ns": -20.732625910962785
+        },
+        {
+          "middle_center_hz": 5816499998,
+          "phase_deg": 0.4225833014152606,
+          "fit_delay_ns": 34.03137220966364
+        },
+        {
+          "middle_center_hz": 5817999996,
+          "phase_deg": 0.9193995523217131,
+          "fit_delay_ns": -17.13456331644057
+        },
+        {
+          "middle_center_hz": 5819500000,
+          "phase_deg": -0.3947324476311358,
+          "fit_delay_ns": 12.547868931260828
+        },
+        {
+          "middle_center_hz": 5820999998,
+          "phase_deg": -0.0820255577012811,
+          "fit_delay_ns": 6.276242684413401
+        },
+        {
+          "middle_center_hz": 5822500000,
+          "phase_deg": 0.1269128176505935,
+          "fit_delay_ns": 9.55489846533047
+        },
+        {
+          "middle_center_hz": 5823999998,
+          "phase_deg": 0.0611397338088576,
+          "fit_delay_ns": 8.085130438326773
+        },
+        {
+          "middle_center_hz": 5825500002,
+          "phase_deg": 0.19952923957649807,
+          "fit_delay_ns": 10.728288630992628
+        },
+        {
+          "middle_center_hz": 5827000000,
+          "phase_deg": 0.46825151841668733,
+          "fit_delay_ns": 13.394769458083688
+        },
+        {
+          "middle_center_hz": 5828499998,
+          "phase_deg": 0.08657888908745963,
+          "fit_delay_ns": 14.806165110546212
+        },
+        {
+          "middle_center_hz": 5830000000,
+          "phase_deg": -0.8547536370462999,
+          "fit_delay_ns": 40.93323493402142
+        },
+        {
+          "middle_center_hz": 5831499998,
+          "phase_deg": -0.12967797230001862,
+          "fit_delay_ns": 8.995732102458668
+        },
+        {
+          "middle_center_hz": 5833000000,
+          "phase_deg": -1.1530730154892308,
+          "fit_delay_ns": -12.145863683740084
+        },
+        {
+          "middle_center_hz": 5834499998,
+          "phase_deg": 0.5665367571074247,
+          "fit_delay_ns": 12.58818763083873
+        },
+        {
+          "middle_center_hz": 5835999996,
+          "phase_deg": 2.1850989119841553,
+          "fit_delay_ns": 28.17246871571157
+        },
+        {
+          "middle_center_hz": 5837500000,
+          "phase_deg": 0.2957187618906874,
+          "fit_delay_ns": -24.191087090694232
+        },
+        {
+          "middle_center_hz": 5838999998,
+          "phase_deg": 0.7707181275024245,
+          "fit_delay_ns": 16.74969921184332
+        },
+        {
+          "middle_center_hz": 5840500000,
+          "phase_deg": 0.07805904423035004,
+          "fit_delay_ns": -11.086524278510515
+        },
+        {
+          "middle_center_hz": 5841999998,
+          "phase_deg": -0.32546234344063285,
+          "fit_delay_ns": 9.786266746494734
+        },
+        {
+          "middle_center_hz": 5843500002,
+          "phase_deg": 1.520694705449754,
+          "fit_delay_ns": 8.161571712910076
+        },
+        {
+          "middle_center_hz": 5845000000,
+          "phase_deg": -0.27790061122907483,
+          "fit_delay_ns": 2.445569417810997
+        },
+        {
+          "middle_center_hz": 5846499998,
+          "phase_deg": 0.12951735895169225,
+          "fit_delay_ns": -3.775071715168747
+        },
+        {
+          "middle_center_hz": 5848000000,
+          "phase_deg": 1.3507457166571852,
+          "fit_delay_ns": 5.85916883124818
+        },
+        {
+          "middle_center_hz": 5849499998,
+          "phase_deg": 0.8500419820298522,
+          "fit_delay_ns": -25.032019127211584
+        },
+        {
+          "middle_center_hz": 5851000000,
+          "phase_deg": -2.319756637242347,
+          "fit_delay_ns": 45.98730856510692
+        },
+        {
+          "middle_center_hz": 5852499998,
+          "phase_deg": -0.35723028980511146,
+          "fit_delay_ns": 12.419310223893442
+        },
+        {
+          "middle_center_hz": 5853999996,
+          "phase_deg": 0.9003330287499128,
+          "fit_delay_ns": -0.016759254922366816
+        },
+        {
+          "middle_center_hz": 5855500000,
+          "phase_deg": -0.033949233918870766,
+          "fit_delay_ns": -8.01710754028847
+        },
+        {
+          "middle_center_hz": 5856999998,
+          "phase_deg": -1.2493523606549588,
+          "fit_delay_ns": 16.514976281318425
+        },
+        {
+          "middle_center_hz": 5858500000,
+          "phase_deg": 0.5934686184439595,
+          "fit_delay_ns": -46.011071046901634
+        },
+        {
+          "middle_center_hz": 5859999998,
+          "phase_deg": 0.5166867653333042,
+          "fit_delay_ns": -20.655791740050773
+        },
+        {
+          "middle_center_hz": 5861500002,
+          "phase_deg": 1.4329951174216877,
+          "fit_delay_ns": -21.79562139882684
+        },
+        {
+          "middle_center_hz": 5863000000,
+          "phase_deg": 0.4115360971089548,
+          "fit_delay_ns": -1.9131110468198944
+        },
+        {
+          "middle_center_hz": 5864499998,
+          "phase_deg": -0.1253489845705422,
+          "fit_delay_ns": 19.2982393236297
+        },
+        {
+          "middle_center_hz": 5866000000,
+          "phase_deg": 0.8021140831753611,
+          "fit_delay_ns": -5.791851873178497
+        },
+        {
+          "middle_center_hz": 5867499998,
+          "phase_deg": -0.6562082774870255,
+          "fit_delay_ns": 13.213046147667532
+        },
+        {
+          "middle_center_hz": 5869000000,
+          "phase_deg": -0.14994450794641254,
+          "fit_delay_ns": -26.534247142233827
+        },
+        {
+          "middle_center_hz": 5870499998,
+          "phase_deg": -1.9057738935752722,
+          "fit_delay_ns": -4.564698666856768
+        }
+      ],
+      "median_absolute_phase_closure_deg": 0.3509063840840615,
+      "p95_absolute_fit_delay_closure_ns": 27.025713614277144,
+      "median_edge_complex_residual": 0.006382782473388108,
+      "gauge_sensitivity": [
+        {
+          "quadratic_delta_rad_per_mhz2": -0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": -46.08154296875,
+              "relative_power_db": -43.897868862607254
+            },
+            {
+              "relative_delay_ns": 61.03515625,
+              "relative_power_db": -44.16071704845497
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": -0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": -22.88818359375,
+              "relative_power_db": -39.88866719754344
+            },
+            {
+              "relative_delay_ns": -30.517578125000014,
+              "relative_power_db": -43.761684237440974
+            },
+            {
+              "relative_delay_ns": 43.64013671874999,
+              "relative_power_db": -47.76859388415208
+            },
+            {
+              "relative_delay_ns": 58.28857421875,
+              "relative_power_db": -49.06232637750007
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": 16.17431640625,
+              "relative_power_db": -31.070930432900813
+            },
+            {
+              "relative_delay_ns": 23.193359374999993,
+              "relative_power_db": -38.75121344562825
+            },
+            {
+              "relative_delay_ns": 31.127929687499993,
+              "relative_power_db": -47.79076086023437
+            },
+            {
+              "relative_delay_ns": 42.41943359375,
+              "relative_power_db": -49.3797043067738
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": 59.814453125000014,
+              "relative_power_db": -47.43260936407794
+            },
+            {
+              "relative_delay_ns": -66.83349609374999,
+              "relative_power_db": -48.743455006420184
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        }
+      ]
+    },
+    {
+      "run_id": "2026-09-05T225813Z_position-02",
+      "position_id": "position-02",
+      "direction": "forward",
+      "reconstructed_file": {
+        "raw_relative_path": "data/local/deep-analysis/stitch-fixed-degree10/position-02-forward.npz",
+        "sha256": "9fec06b53020a3d7cbd5a1a00b9d2e7e1dcc99a3558dce9cfc9a1f386c0503d6"
+      },
+      "baseband_phase_quadratic_delta": 0,
+      "peaks": [
+        {
+          "relative_delay_ns": -36.62109375,
+          "relative_power_db": -46.34440137440671
+        },
+        {
+          "relative_delay_ns": 43.94531249999999,
+          "relative_power_db": -49.20666999652285
+        }
+      ],
+      "profile_peak_before_recentering_ns": -75.98876953125,
+      "closure": [
+        {
+          "middle_center_hz": 5729500000,
+          "phase_deg": 0.43911469297988354,
+          "fit_delay_ns": -1.6973457294487964
+        },
+        {
+          "middle_center_hz": 5730999998,
+          "phase_deg": 0.0238518783978285,
+          "fit_delay_ns": -1.7244901143188878
+        },
+        {
+          "middle_center_hz": 5732500002,
+          "phase_deg": -0.22080113288924708,
+          "fit_delay_ns": 2.1463192997679825
+        },
+        {
+          "middle_center_hz": 5734000000,
+          "phase_deg": 0.20699644584626664,
+          "fit_delay_ns": -1.8279594007509783
+        },
+        {
+          "middle_center_hz": 5735499998,
+          "phase_deg": -0.024968002534964825,
+          "fit_delay_ns": -0.18679030147906053
+        },
+        {
+          "middle_center_hz": 5737000000,
+          "phase_deg": -0.1979803584325235,
+          "fit_delay_ns": 3.6546172470309393
+        },
+        {
+          "middle_center_hz": 5738499998,
+          "phase_deg": 0.15924165765311715,
+          "fit_delay_ns": 0.5551256692422984
+        },
+        {
+          "middle_center_hz": 5740000000,
+          "phase_deg": 0.13483435468535343,
+          "fit_delay_ns": -7.369931778017083
+        },
+        {
+          "middle_center_hz": 5741499998,
+          "phase_deg": 0.24065432420592411,
+          "fit_delay_ns": 5.053746573431245
+        },
+        {
+          "middle_center_hz": 5743000002,
+          "phase_deg": -0.1450329084855509,
+          "fit_delay_ns": 3.019258383930277
+        },
+        {
+          "middle_center_hz": 5744500000,
+          "phase_deg": -0.43708159271455305,
+          "fit_delay_ns": 4.105601790919822
+        },
+        {
+          "middle_center_hz": 5745999998,
+          "phase_deg": 0.017153000930847453,
+          "fit_delay_ns": 1.0561729115714966
+        },
+        {
+          "middle_center_hz": 5747500000,
+          "phase_deg": -0.24673201136922476,
+          "fit_delay_ns": 8.696625836222474
+        },
+        {
+          "middle_center_hz": 5748999998,
+          "phase_deg": 0.1947800910431319,
+          "fit_delay_ns": 5.782251671087417
+        },
+        {
+          "middle_center_hz": 5750500000,
+          "phase_deg": 0.3248701304639359,
+          "fit_delay_ns": -6.799802373883126
+        },
+        {
+          "middle_center_hz": 5751999998,
+          "phase_deg": 0.39354578541675617,
+          "fit_delay_ns": -5.957964100119562
+        },
+        {
+          "middle_center_hz": 5753499996,
+          "phase_deg": 0.2675062532739502,
+          "fit_delay_ns": -3.1314937414627337
+        },
+        {
+          "middle_center_hz": 5755000000,
+          "phase_deg": -0.001406212845696002,
+          "fit_delay_ns": 1.309755714276944
+        },
+        {
+          "middle_center_hz": 5756499998,
+          "phase_deg": -0.11513167551236206,
+          "fit_delay_ns": 2.7113186700858694
+        },
+        {
+          "middle_center_hz": 5758000000,
+          "phase_deg": -0.3813915047154346,
+          "fit_delay_ns": 7.188242322241578
+        },
+        {
+          "middle_center_hz": 5759499998,
+          "phase_deg": -0.008952665503488352,
+          "fit_delay_ns": -0.24227397756930366
+        },
+        {
+          "middle_center_hz": 5761000002,
+          "phase_deg": -0.31358692067543076,
+          "fit_delay_ns": 5.432864637231382
+        },
+        {
+          "middle_center_hz": 5762500000,
+          "phase_deg": -0.010281314359870784,
+          "fit_delay_ns": -4.341098228358601
+        },
+        {
+          "middle_center_hz": 5763999998,
+          "phase_deg": 0.12771741865643588,
+          "fit_delay_ns": 2.6421578475442633
+        },
+        {
+          "middle_center_hz": 5765500000,
+          "phase_deg": 0.423001089846556,
+          "fit_delay_ns": 4.99039081862005
+        },
+        {
+          "middle_center_hz": 5766999998,
+          "phase_deg": 0.1334208009658827,
+          "fit_delay_ns": -9.217230136726776
+        },
+        {
+          "middle_center_hz": 5768500000,
+          "phase_deg": -0.5251529278350207,
+          "fit_delay_ns": -2.7043009257619226
+        },
+        {
+          "middle_center_hz": 5769999998,
+          "phase_deg": -0.3085736330144879,
+          "fit_delay_ns": -0.16362872227823252
+        },
+        {
+          "middle_center_hz": 5771499996,
+          "phase_deg": -0.3880018455440604,
+          "fit_delay_ns": -2.9551420183357937
+        },
+        {
+          "middle_center_hz": 5773000000,
+          "phase_deg": -0.3145468640186246,
+          "fit_delay_ns": -7.570397995278147
+        },
+        {
+          "middle_center_hz": 5774499998,
+          "phase_deg": -0.05716308957172215,
+          "fit_delay_ns": 0.17062723794746934
+        },
+        {
+          "middle_center_hz": 5776000000,
+          "phase_deg": -0.3015306850879041,
+          "fit_delay_ns": -1.1816094985690988
+        },
+        {
+          "middle_center_hz": 5777499998,
+          "phase_deg": -0.34392302931096885,
+          "fit_delay_ns": 1.8031123268521272
+        },
+        {
+          "middle_center_hz": 5779000002,
+          "phase_deg": 0.16096057227475585,
+          "fit_delay_ns": -1.1368607439633764
+        },
+        {
+          "middle_center_hz": 5780500000,
+          "phase_deg": 0.0831133324393882,
+          "fit_delay_ns": -1.0843936933623834
+        },
+        {
+          "middle_center_hz": 5781999998,
+          "phase_deg": -0.573022065913541,
+          "fit_delay_ns": -17.857968955367628
+        },
+        {
+          "middle_center_hz": 5783500000,
+          "phase_deg": -0.306887157488498,
+          "fit_delay_ns": -5.84320352521947
+        },
+        {
+          "middle_center_hz": 5784999998,
+          "phase_deg": 0.18880282496919118,
+          "fit_delay_ns": -5.030356074866128
+        },
+        {
+          "middle_center_hz": 5786500000,
+          "phase_deg": -0.6466121313278999,
+          "fit_delay_ns": 4.401446693792888
+        },
+        {
+          "middle_center_hz": 5787999998,
+          "phase_deg": -0.6641036924979593,
+          "fit_delay_ns": -16.16239509839337
+        },
+        {
+          "middle_center_hz": 5789499996,
+          "phase_deg": 0.2522865920272685,
+          "fit_delay_ns": 2.9372704701215837
+        },
+        {
+          "middle_center_hz": 5791000000,
+          "phase_deg": 0.043339192132658966,
+          "fit_delay_ns": -0.5781259492047024
+        },
+        {
+          "middle_center_hz": 5792499998,
+          "phase_deg": -0.7065804295793868,
+          "fit_delay_ns": -1.1238504051669367
+        },
+        {
+          "middle_center_hz": 5794000000,
+          "phase_deg": -0.015483244690453493,
+          "fit_delay_ns": 1.7157998170132855
+        },
+        {
+          "middle_center_hz": 5795499998,
+          "phase_deg": -0.1684443235604685,
+          "fit_delay_ns": -7.316561053516638
+        },
+        {
+          "middle_center_hz": 5797000002,
+          "phase_deg": 0.10726812907453431,
+          "fit_delay_ns": -4.04159998585136
+        },
+        {
+          "middle_center_hz": 5798500000,
+          "phase_deg": -1.079353970999829,
+          "fit_delay_ns": 6.276041492400511
+        },
+        {
+          "middle_center_hz": 5799999998,
+          "phase_deg": -0.28439790493862127,
+          "fit_delay_ns": -2.64513914722622
+        },
+        {
+          "middle_center_hz": 5801500000,
+          "phase_deg": -0.9809368404508385,
+          "fit_delay_ns": 1.2497670905795575
+        },
+        {
+          "middle_center_hz": 5802999998,
+          "phase_deg": 0.2713920336842662,
+          "fit_delay_ns": -0.47959782954609564
+        },
+        {
+          "middle_center_hz": 5804500000,
+          "phase_deg": -0.09755696454274689,
+          "fit_delay_ns": 11.033040028113318
+        },
+        {
+          "middle_center_hz": 5805999998,
+          "phase_deg": -0.5575469404864262,
+          "fit_delay_ns": 8.493918236924374
+        },
+        {
+          "middle_center_hz": 5807499996,
+          "phase_deg": -0.07094834570936431,
+          "fit_delay_ns": 8.517980734539309
+        },
+        {
+          "middle_center_hz": 5809000000,
+          "phase_deg": 0.6985304289425646,
+          "fit_delay_ns": 13.673594776626956
+        },
+        {
+          "middle_center_hz": 5810499998,
+          "phase_deg": -0.31124904743944465,
+          "fit_delay_ns": -6.785390725370797
+        },
+        {
+          "middle_center_hz": 5812000000,
+          "phase_deg": 0.7159806820481085,
+          "fit_delay_ns": -7.829705394770677
+        },
+        {
+          "middle_center_hz": 5813499998,
+          "phase_deg": 0.17479464518012414,
+          "fit_delay_ns": 8.525211766866791
+        },
+        {
+          "middle_center_hz": 5815000000,
+          "phase_deg": 0.152705775559328,
+          "fit_delay_ns": 5.859620096597393
+        },
+        {
+          "middle_center_hz": 5816499998,
+          "phase_deg": -0.14098498803137488,
+          "fit_delay_ns": -6.908235238548023
+        },
+        {
+          "middle_center_hz": 5817999996,
+          "phase_deg": -0.5576943557141206,
+          "fit_delay_ns": -3.2751319423451717
+        },
+        {
+          "middle_center_hz": 5819500000,
+          "phase_deg": -0.015806249277517986,
+          "fit_delay_ns": -7.002627603534003
+        },
+        {
+          "middle_center_hz": 5820999998,
+          "phase_deg": 0.04310279174329964,
+          "fit_delay_ns": -11.508411790462803
+        },
+        {
+          "middle_center_hz": 5822500000,
+          "phase_deg": 0.7793449983249369,
+          "fit_delay_ns": -4.139199001522853
+        },
+        {
+          "middle_center_hz": 5823999998,
+          "phase_deg": 0.42701220946577484,
+          "fit_delay_ns": 14.04017844297348
+        },
+        {
+          "middle_center_hz": 5825500002,
+          "phase_deg": 0.5529966051160677,
+          "fit_delay_ns": 13.967444370877985
+        },
+        {
+          "middle_center_hz": 5827000000,
+          "phase_deg": 0.9183080356996736,
+          "fit_delay_ns": -12.15122307304977
+        },
+        {
+          "middle_center_hz": 5828499998,
+          "phase_deg": -1.6465436752966742,
+          "fit_delay_ns": -3.2480686955159195
+        },
+        {
+          "middle_center_hz": 5830000000,
+          "phase_deg": -0.3668159772016265,
+          "fit_delay_ns": 15.340726806342083
+        },
+        {
+          "middle_center_hz": 5831499998,
+          "phase_deg": -0.6134214654222742,
+          "fit_delay_ns": -20.978791685534684
+        },
+        {
+          "middle_center_hz": 5833000000,
+          "phase_deg": -0.12628564952838306,
+          "fit_delay_ns": -4.317615269968659
+        },
+        {
+          "middle_center_hz": 5834499998,
+          "phase_deg": -1.1467930751276614,
+          "fit_delay_ns": -6.255706787258392
+        },
+        {
+          "middle_center_hz": 5835999996,
+          "phase_deg": -0.09930113969412517,
+          "fit_delay_ns": -14.349333829150842
+        },
+        {
+          "middle_center_hz": 5837500000,
+          "phase_deg": 0.2251889387983755,
+          "fit_delay_ns": 9.971654902084703
+        },
+        {
+          "middle_center_hz": 5838999998,
+          "phase_deg": -0.0013640827574847962,
+          "fit_delay_ns": 15.146103973058606
+        },
+        {
+          "middle_center_hz": 5840500000,
+          "phase_deg": 0.9491272802627438,
+          "fit_delay_ns": -4.6176132721673335
+        },
+        {
+          "middle_center_hz": 5841999998,
+          "phase_deg": -1.3216728330924736,
+          "fit_delay_ns": -3.8103070084353283
+        },
+        {
+          "middle_center_hz": 5843500002,
+          "phase_deg": 0.32011086882042583,
+          "fit_delay_ns": 11.176035311159659
+        },
+        {
+          "middle_center_hz": 5845000000,
+          "phase_deg": 0.6136084381492355,
+          "fit_delay_ns": 33.98403553037441
+        },
+        {
+          "middle_center_hz": 5846499998,
+          "phase_deg": 0.827503215411792,
+          "fit_delay_ns": 18.745113481184948
+        },
+        {
+          "middle_center_hz": 5848000000,
+          "phase_deg": -1.3467737038604337,
+          "fit_delay_ns": -0.2657236509461505
+        },
+        {
+          "middle_center_hz": 5849499998,
+          "phase_deg": -1.953112389623593,
+          "fit_delay_ns": -5.719512041174169
+        },
+        {
+          "middle_center_hz": 5851000000,
+          "phase_deg": -0.5687792447965402,
+          "fit_delay_ns": -13.201681901623399
+        },
+        {
+          "middle_center_hz": 5852499998,
+          "phase_deg": 0.8939484473193637,
+          "fit_delay_ns": -24.47840967883704
+        },
+        {
+          "middle_center_hz": 5853999996,
+          "phase_deg": -0.13108609387311584,
+          "fit_delay_ns": -1.3142903201653355
+        },
+        {
+          "middle_center_hz": 5855500000,
+          "phase_deg": -0.006628982363471387,
+          "fit_delay_ns": 3.906798246414661
+        },
+        {
+          "middle_center_hz": 5856999998,
+          "phase_deg": 0.5655374969035938,
+          "fit_delay_ns": -23.649597970473668
+        },
+        {
+          "middle_center_hz": 5858500000,
+          "phase_deg": -0.007876608379906764,
+          "fit_delay_ns": 10.510131859587425
+        },
+        {
+          "middle_center_hz": 5859999998,
+          "phase_deg": 0.6639737041510232,
+          "fit_delay_ns": -35.405232908951426
+        },
+        {
+          "middle_center_hz": 5861500002,
+          "phase_deg": -0.5431782551813226,
+          "fit_delay_ns": 18.924989334656686
+        },
+        {
+          "middle_center_hz": 5863000000,
+          "phase_deg": -1.6652063449461405,
+          "fit_delay_ns": -26.41261542152556
+        },
+        {
+          "middle_center_hz": 5864499998,
+          "phase_deg": 2.5505761704077017,
+          "fit_delay_ns": -11.065361276241685
+        },
+        {
+          "middle_center_hz": 5866000000,
+          "phase_deg": 1.3774827671265542,
+          "fit_delay_ns": 11.338746377514465
+        },
+        {
+          "middle_center_hz": 5867499998,
+          "phase_deg": -0.5006531183141216,
+          "fit_delay_ns": 54.96596559242597
+        },
+        {
+          "middle_center_hz": 5869000000,
+          "phase_deg": 1.1164852598496264,
+          "fit_delay_ns": -21.139409034374427
+        },
+        {
+          "middle_center_hz": 5870499998,
+          "phase_deg": -0.5213530616577746,
+          "fit_delay_ns": 24.96479728924278
+        }
+      ],
+      "median_absolute_phase_closure_deg": 0.31124904743944465,
+      "p95_absolute_fit_delay_closure_ns": 24.62432596195876,
+      "median_edge_complex_residual": 0.005171539395289874,
+      "gauge_sensitivity": [
+        {
+          "quadratic_delta_rad_per_mhz2": -0.001,
+          "peaks": [],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": -0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": -16.479492187499986,
+              "relative_power_db": -30.259758618394606
+            },
+            {
+              "relative_delay_ns": -23.8037109375,
+              "relative_power_db": -42.73502021024505
+            },
+            {
+              "relative_delay_ns": -31.1279296875,
+              "relative_power_db": -47.89789278999603
+            },
+            {
+              "relative_delay_ns": 44.860839843750014,
+              "relative_power_db": -48.55347053623208
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": 16.479492187499986,
+              "relative_power_db": -32.851262500273165
+            },
+            {
+              "relative_delay_ns": -37.2314453125,
+              "relative_power_db": -45.600679307930235
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.001,
+          "peaks": [],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        }
+      ]
+    },
+    {
+      "run_id": "2026-09-05T225813Z_position-02",
+      "position_id": "position-02",
+      "direction": "reverse",
+      "reconstructed_file": {
+        "raw_relative_path": "data/local/deep-analysis/stitch-fixed-degree10/position-02-reverse.npz",
+        "sha256": "558c633499ecbe6862dcf2ad77df0aee92a639a669818ec12221b6521a85be85"
+      },
+      "baseband_phase_quadratic_delta": 0,
+      "peaks": [
+        {
+          "relative_delay_ns": -29.602050781250014,
+          "relative_power_db": -45.804879886427905
+        },
+        {
+          "relative_delay_ns": -37.53662109375,
+          "relative_power_db": -47.49806651808267
+        },
+        {
+          "relative_delay_ns": 44.5556640625,
+          "relative_power_db": -49.53549584763646
+        },
+        {
+          "relative_delay_ns": 36.31591796874999,
+          "relative_power_db": -49.6956453065941
+        }
+      ],
+      "profile_peak_before_recentering_ns": -75.68359375,
+      "closure": [
+        {
+          "middle_center_hz": 5729500000,
+          "phase_deg": -0.12826177682656179,
+          "fit_delay_ns": -0.5015313667073545
+        },
+        {
+          "middle_center_hz": 5730999998,
+          "phase_deg": -0.27179879013107133,
+          "fit_delay_ns": -0.7769360653639726
+        },
+        {
+          "middle_center_hz": 5732500002,
+          "phase_deg": 0.14062873870718906,
+          "fit_delay_ns": -1.1548443511413375
+        },
+        {
+          "middle_center_hz": 5734000000,
+          "phase_deg": -0.3002859340616235,
+          "fit_delay_ns": 1.1331064946540057
+        },
+        {
+          "middle_center_hz": 5735499998,
+          "phase_deg": -0.09393119983290585,
+          "fit_delay_ns": 4.110493411212119
+        },
+        {
+          "middle_center_hz": 5737000000,
+          "phase_deg": -0.07071527476450425,
+          "fit_delay_ns": 8.288388587914424
+        },
+        {
+          "middle_center_hz": 5738499998,
+          "phase_deg": 0.18861457503542295,
+          "fit_delay_ns": -4.4505845343741495
+        },
+        {
+          "middle_center_hz": 5740000000,
+          "phase_deg": 0.37483059033447647,
+          "fit_delay_ns": 5.357740415187937
+        },
+        {
+          "middle_center_hz": 5741499998,
+          "phase_deg": 0.1158589780372192,
+          "fit_delay_ns": -4.081106227575518
+        },
+        {
+          "middle_center_hz": 5743000002,
+          "phase_deg": 0.022561110484592653,
+          "fit_delay_ns": -2.187692334914441
+        },
+        {
+          "middle_center_hz": 5744500000,
+          "phase_deg": -0.1884302829955157,
+          "fit_delay_ns": 2.8869175709700685
+        },
+        {
+          "middle_center_hz": 5745999998,
+          "phase_deg": 0.4410544377008544,
+          "fit_delay_ns": -0.7150939321882525
+        },
+        {
+          "middle_center_hz": 5747500000,
+          "phase_deg": -0.12546512336776094,
+          "fit_delay_ns": -5.0596684574049675
+        },
+        {
+          "middle_center_hz": 5748999998,
+          "phase_deg": -0.234658284907569,
+          "fit_delay_ns": -3.9771678777513935
+        },
+        {
+          "middle_center_hz": 5750500000,
+          "phase_deg": 0.26851357416109123,
+          "fit_delay_ns": -1.9156323645601538
+        },
+        {
+          "middle_center_hz": 5751999998,
+          "phase_deg": 0.13701492305079985,
+          "fit_delay_ns": 0.19687554584913325
+        },
+        {
+          "middle_center_hz": 5753499996,
+          "phase_deg": 0.1402424783663083,
+          "fit_delay_ns": 1.610831099490614
+        },
+        {
+          "middle_center_hz": 5755000000,
+          "phase_deg": 0.6060645809173679,
+          "fit_delay_ns": -7.415591250401919
+        },
+        {
+          "middle_center_hz": 5756499998,
+          "phase_deg": -0.2938387488988811,
+          "fit_delay_ns": -2.6405812756510727
+        },
+        {
+          "middle_center_hz": 5758000000,
+          "phase_deg": 0.39992924387289747,
+          "fit_delay_ns": -3.244847951679807
+        },
+        {
+          "middle_center_hz": 5759499998,
+          "phase_deg": 0.17346596736158532,
+          "fit_delay_ns": 2.935446972519204
+        },
+        {
+          "middle_center_hz": 5761000002,
+          "phase_deg": -0.06539635471215927,
+          "fit_delay_ns": 1.3321352612117308
+        },
+        {
+          "middle_center_hz": 5762500000,
+          "phase_deg": 0.0910837919821626,
+          "fit_delay_ns": -4.031155630253592
+        },
+        {
+          "middle_center_hz": 5763999998,
+          "phase_deg": 0.26477879331442766,
+          "fit_delay_ns": -3.911817286879243
+        },
+        {
+          "middle_center_hz": 5765500000,
+          "phase_deg": 0.020303367525854755,
+          "fit_delay_ns": 6.625277207860208
+        },
+        {
+          "middle_center_hz": 5766999998,
+          "phase_deg": -0.05032215158223153,
+          "fit_delay_ns": -0.27196076810735575
+        },
+        {
+          "middle_center_hz": 5768500000,
+          "phase_deg": 0.003951178345137647,
+          "fit_delay_ns": 4.9705998127964985
+        },
+        {
+          "middle_center_hz": 5769999998,
+          "phase_deg": 0.5734995199730417,
+          "fit_delay_ns": 0.3625800248934369
+        },
+        {
+          "middle_center_hz": 5771499996,
+          "phase_deg": -0.10213866619535764,
+          "fit_delay_ns": 1.1991010832513462
+        },
+        {
+          "middle_center_hz": 5773000000,
+          "phase_deg": 0.6256068902395872,
+          "fit_delay_ns": 2.1006635621464826
+        },
+        {
+          "middle_center_hz": 5774499998,
+          "phase_deg": 0.06245522938352097,
+          "fit_delay_ns": -8.182272871901137
+        },
+        {
+          "middle_center_hz": 5776000000,
+          "phase_deg": 0.6894173909751221,
+          "fit_delay_ns": -2.118763820759673
+        },
+        {
+          "middle_center_hz": 5777499998,
+          "phase_deg": 0.04234737138221583,
+          "fit_delay_ns": 0.60169752467254
+        },
+        {
+          "middle_center_hz": 5779000002,
+          "phase_deg": 0.0488307057470453,
+          "fit_delay_ns": -4.903224192236773
+        },
+        {
+          "middle_center_hz": 5780500000,
+          "phase_deg": 0.07022806696841744,
+          "fit_delay_ns": 4.100855285502073
+        },
+        {
+          "middle_center_hz": 5781999998,
+          "phase_deg": -0.004893345252158672,
+          "fit_delay_ns": 2.270356861621386
+        },
+        {
+          "middle_center_hz": 5783500000,
+          "phase_deg": -0.22350203459465573,
+          "fit_delay_ns": -4.7550151448161895
+        },
+        {
+          "middle_center_hz": 5784999998,
+          "phase_deg": 0.033504870521606,
+          "fit_delay_ns": -4.24964672784373
+        },
+        {
+          "middle_center_hz": 5786500000,
+          "phase_deg": 0.44458153625376573,
+          "fit_delay_ns": 3.721529763104877
+        },
+        {
+          "middle_center_hz": 5787999998,
+          "phase_deg": -0.15547077934568101,
+          "fit_delay_ns": -1.60427055612852
+        },
+        {
+          "middle_center_hz": 5789499996,
+          "phase_deg": 0.2935214003823309,
+          "fit_delay_ns": -15.338798793441544
+        },
+        {
+          "middle_center_hz": 5791000000,
+          "phase_deg": -0.1908335932916243,
+          "fit_delay_ns": -0.3686838894672798
+        },
+        {
+          "middle_center_hz": 5792499998,
+          "phase_deg": 0.424770822117184,
+          "fit_delay_ns": 2.306765770339844
+        },
+        {
+          "middle_center_hz": 5794000000,
+          "phase_deg": -0.638601362897397,
+          "fit_delay_ns": -1.7934605511779869
+        },
+        {
+          "middle_center_hz": 5795499998,
+          "phase_deg": 0.030559284030296032,
+          "fit_delay_ns": -5.276977426633476
+        },
+        {
+          "middle_center_hz": 5797000002,
+          "phase_deg": 0.5281571915259881,
+          "fit_delay_ns": 3.3987607248860603
+        },
+        {
+          "middle_center_hz": 5798500000,
+          "phase_deg": 0.8332184427109234,
+          "fit_delay_ns": 13.883547313077361
+        },
+        {
+          "middle_center_hz": 5799999998,
+          "phase_deg": 0.29028860837101733,
+          "fit_delay_ns": 13.31247384065798
+        },
+        {
+          "middle_center_hz": 5801500000,
+          "phase_deg": 0.36399276855681484,
+          "fit_delay_ns": -15.207921460574406
+        },
+        {
+          "middle_center_hz": 5802999998,
+          "phase_deg": 0.18868255835915312,
+          "fit_delay_ns": 11.620944737193389
+        },
+        {
+          "middle_center_hz": 5804500000,
+          "phase_deg": -0.1006521488113745,
+          "fit_delay_ns": -11.224939947243486
+        },
+        {
+          "middle_center_hz": 5805999998,
+          "phase_deg": 0.5955554492248966,
+          "fit_delay_ns": -16.566198752514538
+        },
+        {
+          "middle_center_hz": 5807499996,
+          "phase_deg": -0.10453911377368519,
+          "fit_delay_ns": -0.06902296712814852
+        },
+        {
+          "middle_center_hz": 5809000000,
+          "phase_deg": 0.6766544695075375,
+          "fit_delay_ns": 0.7498713937203517
+        },
+        {
+          "middle_center_hz": 5810499998,
+          "phase_deg": -0.8973369357863051,
+          "fit_delay_ns": 0.18486993236975438
+        },
+        {
+          "middle_center_hz": 5812000000,
+          "phase_deg": -0.6968050369025204,
+          "fit_delay_ns": 11.24406622852584
+        },
+        {
+          "middle_center_hz": 5813499998,
+          "phase_deg": 0.6752857965845922,
+          "fit_delay_ns": -7.63010090083721
+        },
+        {
+          "middle_center_hz": 5815000000,
+          "phase_deg": -0.5843201301433079,
+          "fit_delay_ns": 22.27522481371697
+        },
+        {
+          "middle_center_hz": 5816499998,
+          "phase_deg": 0.4013764650346466,
+          "fit_delay_ns": 4.6414850575383495
+        },
+        {
+          "middle_center_hz": 5817999996,
+          "phase_deg": 0.7470797190620224,
+          "fit_delay_ns": -16.699552292538893
+        },
+        {
+          "middle_center_hz": 5819500000,
+          "phase_deg": -0.2544276616804925,
+          "fit_delay_ns": -1.8730795039982322
+        },
+        {
+          "middle_center_hz": 5820999998,
+          "phase_deg": -0.4990916687896095,
+          "fit_delay_ns": 0.15649517187080225
+        },
+        {
+          "middle_center_hz": 5822500000,
+          "phase_deg": -0.945666835022958,
+          "fit_delay_ns": 10.271555883014926
+        },
+        {
+          "middle_center_hz": 5823999998,
+          "phase_deg": 0.6972457194700219,
+          "fit_delay_ns": -5.156629027312048
+        },
+        {
+          "middle_center_hz": 5825500002,
+          "phase_deg": -0.7614194419631267,
+          "fit_delay_ns": -20.614551311760913
+        },
+        {
+          "middle_center_hz": 5827000000,
+          "phase_deg": 0.08967082679917114,
+          "fit_delay_ns": 2.9073284552614775
+        },
+        {
+          "middle_center_hz": 5828499998,
+          "phase_deg": -0.05423022834463363,
+          "fit_delay_ns": -3.829562110290675
+        },
+        {
+          "middle_center_hz": 5830000000,
+          "phase_deg": 0.31783473752951563,
+          "fit_delay_ns": -8.871704688568661
+        },
+        {
+          "middle_center_hz": 5831499998,
+          "phase_deg": 0.5904014482644601,
+          "fit_delay_ns": -11.181877288748828
+        },
+        {
+          "middle_center_hz": 5833000000,
+          "phase_deg": 1.1840029478283483,
+          "fit_delay_ns": -29.879537581702067
+        },
+        {
+          "middle_center_hz": 5834499998,
+          "phase_deg": 1.65068136066197,
+          "fit_delay_ns": 5.281063868316834
+        },
+        {
+          "middle_center_hz": 5835999996,
+          "phase_deg": 0.5752666353205667,
+          "fit_delay_ns": 9.845207163810274
+        },
+        {
+          "middle_center_hz": 5837500000,
+          "phase_deg": 0.28457940236259344,
+          "fit_delay_ns": 2.7756735754449755
+        },
+        {
+          "middle_center_hz": 5838999998,
+          "phase_deg": -0.5674410514549614,
+          "fit_delay_ns": -3.1621139317578777
+        },
+        {
+          "middle_center_hz": 5840500000,
+          "phase_deg": 0.9219618499299457,
+          "fit_delay_ns": 45.35081135308573
+        },
+        {
+          "middle_center_hz": 5841999998,
+          "phase_deg": -0.5878997945516562,
+          "fit_delay_ns": -12.332247006337951
+        },
+        {
+          "middle_center_hz": 5843500002,
+          "phase_deg": 1.5384246510577835,
+          "fit_delay_ns": -16.01506199984682
+        },
+        {
+          "middle_center_hz": 5845000000,
+          "phase_deg": -0.6265672774553691,
+          "fit_delay_ns": 2.1507840268297818
+        },
+        {
+          "middle_center_hz": 5846499998,
+          "phase_deg": 0.3828242194273049,
+          "fit_delay_ns": 19.255151299761916
+        },
+        {
+          "middle_center_hz": 5848000000,
+          "phase_deg": -0.021532497913176952,
+          "fit_delay_ns": 3.8884248711195672
+        },
+        {
+          "middle_center_hz": 5849499998,
+          "phase_deg": 0.6116116406241396,
+          "fit_delay_ns": -9.327047468160266
+        },
+        {
+          "middle_center_hz": 5851000000,
+          "phase_deg": 0.4958186689118416,
+          "fit_delay_ns": -28.370555297963524
+        },
+        {
+          "middle_center_hz": 5852499998,
+          "phase_deg": 0.40244226568722835,
+          "fit_delay_ns": 22.909584752369852
+        },
+        {
+          "middle_center_hz": 5853999996,
+          "phase_deg": -0.46942602402270794,
+          "fit_delay_ns": -6.249901912114553
+        },
+        {
+          "middle_center_hz": 5855500000,
+          "phase_deg": -2.0602795572647903,
+          "fit_delay_ns": -14.341501493743817
+        },
+        {
+          "middle_center_hz": 5856999998,
+          "phase_deg": 0.96582068954259,
+          "fit_delay_ns": -23.59579614911501
+        },
+        {
+          "middle_center_hz": 5858500000,
+          "phase_deg": 1.1572144394760113,
+          "fit_delay_ns": -10.189872896664498
+        },
+        {
+          "middle_center_hz": 5859999998,
+          "phase_deg": 0.291743250063953,
+          "fit_delay_ns": 11.955006942267175
+        },
+        {
+          "middle_center_hz": 5861500002,
+          "phase_deg": -1.0114160799086394,
+          "fit_delay_ns": 8.662915045977606
+        },
+        {
+          "middle_center_hz": 5863000000,
+          "phase_deg": -2.3205706658865366,
+          "fit_delay_ns": 7.7879780402318755
+        },
+        {
+          "middle_center_hz": 5864499998,
+          "phase_deg": -0.18620182335120003,
+          "fit_delay_ns": -32.73205724936831
+        },
+        {
+          "middle_center_hz": 5866000000,
+          "phase_deg": 1.3232089515373142,
+          "fit_delay_ns": 20.18228930596026
+        },
+        {
+          "middle_center_hz": 5867499998,
+          "phase_deg": -0.5048546640468314,
+          "fit_delay_ns": -3.616868645176374
+        },
+        {
+          "middle_center_hz": 5869000000,
+          "phase_deg": -0.8231705178519237,
+          "fit_delay_ns": 16.91603321020005
+        },
+        {
+          "middle_center_hz": 5870499998,
+          "phase_deg": 1.672570655596459,
+          "fit_delay_ns": -19.011392074325006
+        }
+      ],
+      "median_absolute_phase_closure_deg": 0.36399276855681484,
+      "p95_absolute_fit_delay_closure_ns": 23.115448171393396,
+      "median_edge_complex_residual": 0.005000442566608837,
+      "gauge_sensitivity": [
+        {
+          "quadratic_delta_rad_per_mhz2": -0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": -48.217773437500014,
+              "relative_power_db": -46.81658424174735
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": -0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": -16.174316406249986,
+              "relative_power_db": -28.104051038645697
+            },
+            {
+              "relative_delay_ns": -29.9072265625,
+              "relative_power_db": -46.923168128000725
+            },
+            {
+              "relative_delay_ns": 46.081542968750014,
+              "relative_power_db": -48.95510487150486
+            },
+            {
+              "relative_delay_ns": -37.536621093749986,
+              "relative_power_db": -49.310768554585806
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": 16.479492187499986,
+              "relative_power_db": -35.548724696432046
+            },
+            {
+              "relative_delay_ns": -37.536621093750014,
+              "relative_power_db": -46.35099702212683
+            },
+            {
+              "relative_delay_ns": 36.31591796874999,
+              "relative_power_db": -49.01276467996284
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.001,
+          "peaks": [],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        }
+      ]
+    },
+    {
+      "run_id": "2026-09-05T232905Z_position-03",
+      "position_id": "position-03",
+      "direction": "forward",
+      "reconstructed_file": {
+        "raw_relative_path": "data/local/deep-analysis/stitch-fixed-degree10/position-03-forward.npz",
+        "sha256": "d8a019c6b595b7b018bb78d22e3aa26491ba0b708da05919572cbcc934a7e2f7"
+      },
+      "baseband_phase_quadratic_delta": 0,
+      "peaks": [
+        {
+          "relative_delay_ns": 39.06249999999999,
+          "relative_power_db": -46.77953367687244
+        }
+      ],
+      "profile_peak_before_recentering_ns": -75.98876953125,
+      "closure": [
+        {
+          "middle_center_hz": 5729500000,
+          "phase_deg": -0.07025705287801329,
+          "fit_delay_ns": 6.581740053653378
+        },
+        {
+          "middle_center_hz": 5730999998,
+          "phase_deg": 0.5372986799256417,
+          "fit_delay_ns": -0.9195644051684012
+        },
+        {
+          "middle_center_hz": 5732500002,
+          "phase_deg": 0.31716540822797606,
+          "fit_delay_ns": -1.5701320641772805
+        },
+        {
+          "middle_center_hz": 5734000000,
+          "phase_deg": -0.16239463145371702,
+          "fit_delay_ns": 2.817863593960259
+        },
+        {
+          "middle_center_hz": 5735499998,
+          "phase_deg": -0.01178062627686689,
+          "fit_delay_ns": -1.292986563170955
+        },
+        {
+          "middle_center_hz": 5737000000,
+          "phase_deg": -0.2876021835852331,
+          "fit_delay_ns": -1.1493707532169306
+        },
+        {
+          "middle_center_hz": 5738499998,
+          "phase_deg": -0.45908568263403393,
+          "fit_delay_ns": -1.5325652227101094
+        },
+        {
+          "middle_center_hz": 5740000000,
+          "phase_deg": 0.24223613094470547,
+          "fit_delay_ns": 2.447995334004451
+        },
+        {
+          "middle_center_hz": 5741499998,
+          "phase_deg": 0.5330633279924799,
+          "fit_delay_ns": 3.7971184562926226
+        },
+        {
+          "middle_center_hz": 5743000002,
+          "phase_deg": 0.12684759638952864,
+          "fit_delay_ns": 1.0890637226822504
+        },
+        {
+          "middle_center_hz": 5744500000,
+          "phase_deg": 0.13156767477153744,
+          "fit_delay_ns": 1.0260559476398654
+        },
+        {
+          "middle_center_hz": 5745999998,
+          "phase_deg": 0.007745158638193834,
+          "fit_delay_ns": -5.476744645895029
+        },
+        {
+          "middle_center_hz": 5747500000,
+          "phase_deg": -0.0349469419580876,
+          "fit_delay_ns": 5.345841225180102
+        },
+        {
+          "middle_center_hz": 5748999998,
+          "phase_deg": 0.17895568819547508,
+          "fit_delay_ns": -0.14333661328305378
+        },
+        {
+          "middle_center_hz": 5750500000,
+          "phase_deg": -0.15630776867967988,
+          "fit_delay_ns": -3.0377866019477526
+        },
+        {
+          "middle_center_hz": 5751999998,
+          "phase_deg": -0.05366385320609787,
+          "fit_delay_ns": 1.3511998314258424
+        },
+        {
+          "middle_center_hz": 5753499996,
+          "phase_deg": 0.535959198110332,
+          "fit_delay_ns": -5.228650090536607
+        },
+        {
+          "middle_center_hz": 5755000000,
+          "phase_deg": 0.03276206772588243,
+          "fit_delay_ns": -9.794705585827694
+        },
+        {
+          "middle_center_hz": 5756499998,
+          "phase_deg": -0.08848449363913935,
+          "fit_delay_ns": -6.229803848533485
+        },
+        {
+          "middle_center_hz": 5758000000,
+          "phase_deg": 0.22799050398233858,
+          "fit_delay_ns": 6.77031554216642
+        },
+        {
+          "middle_center_hz": 5759499998,
+          "phase_deg": -0.3043276329889464,
+          "fit_delay_ns": -2.2736565347305846
+        },
+        {
+          "middle_center_hz": 5761000002,
+          "phase_deg": -0.37908840835377805,
+          "fit_delay_ns": -13.298088323478074
+        },
+        {
+          "middle_center_hz": 5762500000,
+          "phase_deg": 0.47603046249092923,
+          "fit_delay_ns": -3.2618015089591452
+        },
+        {
+          "middle_center_hz": 5763999998,
+          "phase_deg": 0.1550635047387463,
+          "fit_delay_ns": 0.45111067058578597
+        },
+        {
+          "middle_center_hz": 5765500000,
+          "phase_deg": 0.013176926949889605,
+          "fit_delay_ns": -3.077183126044844
+        },
+        {
+          "middle_center_hz": 5766999998,
+          "phase_deg": 0.27624774426201154,
+          "fit_delay_ns": 2.649570988199992
+        },
+        {
+          "middle_center_hz": 5768500000,
+          "phase_deg": -0.27291293784507914,
+          "fit_delay_ns": -0.5007237738096535
+        },
+        {
+          "middle_center_hz": 5769999998,
+          "phase_deg": -0.8677721751174515,
+          "fit_delay_ns": 5.917236113025152
+        },
+        {
+          "middle_center_hz": 5771499996,
+          "phase_deg": 0.21933860141571787,
+          "fit_delay_ns": 1.0818542834902305
+        },
+        {
+          "middle_center_hz": 5773000000,
+          "phase_deg": 0.4436107870039669,
+          "fit_delay_ns": 9.890181593154777
+        },
+        {
+          "middle_center_hz": 5774499998,
+          "phase_deg": -0.131952336800462,
+          "fit_delay_ns": -1.0856842251081724
+        },
+        {
+          "middle_center_hz": 5776000000,
+          "phase_deg": 0.06809222795396282,
+          "fit_delay_ns": 0.17345781052791306
+        },
+        {
+          "middle_center_hz": 5777499998,
+          "phase_deg": -0.24411959394145016,
+          "fit_delay_ns": 3.68953015393419
+        },
+        {
+          "middle_center_hz": 5779000002,
+          "phase_deg": -0.08218805867068245,
+          "fit_delay_ns": -6.6524267695818935
+        },
+        {
+          "middle_center_hz": 5780500000,
+          "phase_deg": 0.5016716807554776,
+          "fit_delay_ns": -14.331169976597067
+        },
+        {
+          "middle_center_hz": 5781999998,
+          "phase_deg": 0.3273166343789108,
+          "fit_delay_ns": 11.453010447072634
+        },
+        {
+          "middle_center_hz": 5783500000,
+          "phase_deg": -0.18408312200397964,
+          "fit_delay_ns": 6.320602629089296
+        },
+        {
+          "middle_center_hz": 5784999998,
+          "phase_deg": -0.17402343291936206,
+          "fit_delay_ns": -2.602711822588579
+        },
+        {
+          "middle_center_hz": 5786500000,
+          "phase_deg": 0.3349020425674994,
+          "fit_delay_ns": -5.950421421125247
+        },
+        {
+          "middle_center_hz": 5787999998,
+          "phase_deg": 0.009987317091937054,
+          "fit_delay_ns": 6.945321120523052
+        },
+        {
+          "middle_center_hz": 5789499996,
+          "phase_deg": 0.5030846681323289,
+          "fit_delay_ns": 1.7022506737842285
+        },
+        {
+          "middle_center_hz": 5791000000,
+          "phase_deg": 0.340629123642229,
+          "fit_delay_ns": 10.509307698084456
+        },
+        {
+          "middle_center_hz": 5792499998,
+          "phase_deg": 0.7039319749560914,
+          "fit_delay_ns": 8.354118937465632
+        },
+        {
+          "middle_center_hz": 5794000000,
+          "phase_deg": 0.2827362563287891,
+          "fit_delay_ns": 4.8238515045626915
+        },
+        {
+          "middle_center_hz": 5795499998,
+          "phase_deg": -0.35452911334220694,
+          "fit_delay_ns": 23.47566797806976
+        },
+        {
+          "middle_center_hz": 5797000002,
+          "phase_deg": 0.6782406513285377,
+          "fit_delay_ns": 5.27324211594589
+        },
+        {
+          "middle_center_hz": 5798500000,
+          "phase_deg": 0.16448109281317694,
+          "fit_delay_ns": -1.0519380644992307
+        },
+        {
+          "middle_center_hz": 5799999998,
+          "phase_deg": -0.36835355991347574,
+          "fit_delay_ns": -4.414400509174022
+        },
+        {
+          "middle_center_hz": 5801500000,
+          "phase_deg": 0.3195056878059621,
+          "fit_delay_ns": 2.733041791947596
+        },
+        {
+          "middle_center_hz": 5802999998,
+          "phase_deg": -1.4230150778414945,
+          "fit_delay_ns": 1.1976419209690168
+        },
+        {
+          "middle_center_hz": 5804500000,
+          "phase_deg": 0.15418453093675652,
+          "fit_delay_ns": -14.242539064857985
+        },
+        {
+          "middle_center_hz": 5805999998,
+          "phase_deg": 0.3419711258882743,
+          "fit_delay_ns": -4.581108143412634
+        },
+        {
+          "middle_center_hz": 5807499996,
+          "phase_deg": -0.34783273226876665,
+          "fit_delay_ns": 10.178623758075295
+        },
+        {
+          "middle_center_hz": 5809000000,
+          "phase_deg": -0.1804143222536959,
+          "fit_delay_ns": -12.333469223387457
+        },
+        {
+          "middle_center_hz": 5810499998,
+          "phase_deg": 0.4661312874620592,
+          "fit_delay_ns": -26.70289188767108
+        },
+        {
+          "middle_center_hz": 5812000000,
+          "phase_deg": -0.26843540710199554,
+          "fit_delay_ns": -13.4893766499696
+        },
+        {
+          "middle_center_hz": 5813499998,
+          "phase_deg": -0.24701109992457815,
+          "fit_delay_ns": -22.144923757344145
+        },
+        {
+          "middle_center_hz": 5815000000,
+          "phase_deg": 0.37251497243184056,
+          "fit_delay_ns": -18.222417978621518
+        },
+        {
+          "middle_center_hz": 5816499998,
+          "phase_deg": 0.3517374898703697,
+          "fit_delay_ns": -5.169261137220211
+        },
+        {
+          "middle_center_hz": 5817999996,
+          "phase_deg": 0.39703788362143644,
+          "fit_delay_ns": -0.842946702493766
+        },
+        {
+          "middle_center_hz": 5819500000,
+          "phase_deg": 0.2004568760423093,
+          "fit_delay_ns": -11.160154707621906
+        },
+        {
+          "middle_center_hz": 5820999998,
+          "phase_deg": -0.3019426007244169,
+          "fit_delay_ns": -10.088227186543138
+        },
+        {
+          "middle_center_hz": 5822500000,
+          "phase_deg": -0.1624415683985539,
+          "fit_delay_ns": 22.0986456060677
+        },
+        {
+          "middle_center_hz": 5823999998,
+          "phase_deg": 0.9026178328840169,
+          "fit_delay_ns": 15.50239139782276
+        },
+        {
+          "middle_center_hz": 5825500002,
+          "phase_deg": -0.002127509321445194,
+          "fit_delay_ns": 2.074976288131504
+        },
+        {
+          "middle_center_hz": 5827000000,
+          "phase_deg": 1.8082498747122675,
+          "fit_delay_ns": -6.702825978370195
+        },
+        {
+          "middle_center_hz": 5828499998,
+          "phase_deg": -0.05704289218872124,
+          "fit_delay_ns": -8.372045059813523
+        },
+        {
+          "middle_center_hz": 5830000000,
+          "phase_deg": 0.8644526471322383,
+          "fit_delay_ns": 0.7067215247581662
+        },
+        {
+          "middle_center_hz": 5831499998,
+          "phase_deg": -0.8839730390794943,
+          "fit_delay_ns": -18.560009523950672
+        },
+        {
+          "middle_center_hz": 5833000000,
+          "phase_deg": 0.29490709563790085,
+          "fit_delay_ns": 17.878594804641015
+        },
+        {
+          "middle_center_hz": 5834499998,
+          "phase_deg": -0.40488524358263117,
+          "fit_delay_ns": -23.494450651029872
+        },
+        {
+          "middle_center_hz": 5835999996,
+          "phase_deg": 1.7552883966214403,
+          "fit_delay_ns": -7.162216558716863
+        },
+        {
+          "middle_center_hz": 5837500000,
+          "phase_deg": 0.6564142866067829,
+          "fit_delay_ns": 1.3087177254318605
+        },
+        {
+          "middle_center_hz": 5838999998,
+          "phase_deg": -0.9436556321912253,
+          "fit_delay_ns": 27.584733629218444
+        },
+        {
+          "middle_center_hz": 5840500000,
+          "phase_deg": 0.09728813935683839,
+          "fit_delay_ns": -20.42855600807027
+        },
+        {
+          "middle_center_hz": 5841999998,
+          "phase_deg": -0.08523085859928645,
+          "fit_delay_ns": 26.721677046705015
+        },
+        {
+          "middle_center_hz": 5843500002,
+          "phase_deg": 0.6748374299483112,
+          "fit_delay_ns": 13.378049912721364
+        },
+        {
+          "middle_center_hz": 5845000000,
+          "phase_deg": 1.503936862082578,
+          "fit_delay_ns": 32.737437556772726
+        },
+        {
+          "middle_center_hz": 5846499998,
+          "phase_deg": 0.7372696179562234,
+          "fit_delay_ns": -12.10902886921111
+        },
+        {
+          "middle_center_hz": 5848000000,
+          "phase_deg": -0.0020203993319706766,
+          "fit_delay_ns": -9.614986659768222
+        },
+        {
+          "middle_center_hz": 5849499998,
+          "phase_deg": -0.02310977003010158,
+          "fit_delay_ns": -8.923771167380458
+        },
+        {
+          "middle_center_hz": 5851000000,
+          "phase_deg": -0.22941908765657432,
+          "fit_delay_ns": 46.45930229137028
+        },
+        {
+          "middle_center_hz": 5852499998,
+          "phase_deg": -0.14030440624605114,
+          "fit_delay_ns": -38.981827087390364
+        },
+        {
+          "middle_center_hz": 5853999996,
+          "phase_deg": 0.2631268436238891,
+          "fit_delay_ns": 5.467719784903099
+        },
+        {
+          "middle_center_hz": 5855500000,
+          "phase_deg": -0.41881845187876415,
+          "fit_delay_ns": 15.487811517316539
+        },
+        {
+          "middle_center_hz": 5856999998,
+          "phase_deg": 2.335933707300523,
+          "fit_delay_ns": -23.281743829688043
+        },
+        {
+          "middle_center_hz": 5858500000,
+          "phase_deg": -1.18368133255847,
+          "fit_delay_ns": 13.435153566245711
+        },
+        {
+          "middle_center_hz": 5859999998,
+          "phase_deg": -1.0778848696280254,
+          "fit_delay_ns": 66.50771284207192
+        },
+        {
+          "middle_center_hz": 5861500002,
+          "phase_deg": 0.3978619446729863,
+          "fit_delay_ns": 2.2476643048366896
+        },
+        {
+          "middle_center_hz": 5863000000,
+          "phase_deg": -0.2107619636545905,
+          "fit_delay_ns": 32.675397239804134
+        },
+        {
+          "middle_center_hz": 5864499998,
+          "phase_deg": 0.45096191617757275,
+          "fit_delay_ns": 19.136228159625556
+        },
+        {
+          "middle_center_hz": 5866000000,
+          "phase_deg": 1.1074194633234027,
+          "fit_delay_ns": -3.0322658164881755
+        },
+        {
+          "middle_center_hz": 5867499998,
+          "phase_deg": 1.6487256308341882,
+          "fit_delay_ns": -7.288345359859468
+        },
+        {
+          "middle_center_hz": 5869000000,
+          "phase_deg": 2.1036853586694213,
+          "fit_delay_ns": 43.811381247199975
+        },
+        {
+          "middle_center_hz": 5870499998,
+          "phase_deg": -1.5629464413733078,
+          "fit_delay_ns": -11.230209619720434
+        }
+      ],
+      "median_absolute_phase_closure_deg": 0.3043276329889464,
+      "p95_absolute_fit_delay_closure_ns": 32.69400933489471,
+      "median_edge_complex_residual": 0.006025656864147964,
+      "gauge_sensitivity": [
+        {
+          "quadratic_delta_rad_per_mhz2": -0.001,
+          "peaks": [],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": -0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": -16.174316406249986,
+              "relative_power_db": -28.839586443953277
+            },
+            {
+              "relative_delay_ns": -24.10888671875,
+              "relative_power_db": -41.725132279799446
+            },
+            {
+              "relative_delay_ns": 42.419433593750014,
+              "relative_power_db": -46.117958128690134
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": 37.841796875,
+              "relative_power_db": -45.90748509505123
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": 44.86083984375001,
+              "relative_power_db": -43.73989408986412
+            },
+            {
+              "relative_delay_ns": -55.236816406249986,
+              "relative_power_db": -46.32075883359534
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        }
+      ]
+    },
+    {
+      "run_id": "2026-09-05T232905Z_position-03",
+      "position_id": "position-03",
+      "direction": "reverse",
+      "reconstructed_file": {
+        "raw_relative_path": "data/local/deep-analysis/stitch-fixed-degree10/position-03-reverse.npz",
+        "sha256": "16d574f45bb669855a6d3aa74afba7cdcd21ac9c21d407c056d406bdec3fc937"
+      },
+      "baseband_phase_quadratic_delta": 0,
+      "peaks": [
+        {
+          "relative_delay_ns": -30.82275390625,
+          "relative_power_db": -44.57659279092236
+        },
+        {
+          "relative_delay_ns": 39.06249999999999,
+          "relative_power_db": -48.931170166502646
+        },
+        {
+          "relative_delay_ns": -64.697265625,
+          "relative_power_db": -49.30631902975275
+        }
+      ],
+      "profile_peak_before_recentering_ns": -75.98876953125,
+      "closure": [
+        {
+          "middle_center_hz": 5729500000,
+          "phase_deg": 0.4644318915929971,
+          "fit_delay_ns": 8.085073471285517
+        },
+        {
+          "middle_center_hz": 5730999998,
+          "phase_deg": 0.1551163081070531,
+          "fit_delay_ns": 3.2142636310119874
+        },
+        {
+          "middle_center_hz": 5732500002,
+          "phase_deg": 0.18278645400761637,
+          "fit_delay_ns": -2.8202651510880843
+        },
+        {
+          "middle_center_hz": 5734000000,
+          "phase_deg": -0.02266929892302484,
+          "fit_delay_ns": 3.9042672280006254
+        },
+        {
+          "middle_center_hz": 5735499998,
+          "phase_deg": -0.08983253161764602,
+          "fit_delay_ns": -0.9628079344933933
+        },
+        {
+          "middle_center_hz": 5737000000,
+          "phase_deg": -0.34571620574990225,
+          "fit_delay_ns": 8.832662789329925
+        },
+        {
+          "middle_center_hz": 5738499998,
+          "phase_deg": -0.05930285975568148,
+          "fit_delay_ns": -1.275491757032902
+        },
+        {
+          "middle_center_hz": 5740000000,
+          "phase_deg": -0.018151046867219255,
+          "fit_delay_ns": -0.094603695511107
+        },
+        {
+          "middle_center_hz": 5741499998,
+          "phase_deg": 0.14789119163963801,
+          "fit_delay_ns": -0.8671728924491905
+        },
+        {
+          "middle_center_hz": 5743000002,
+          "phase_deg": 0.10218888816242089,
+          "fit_delay_ns": -7.437361256051177
+        },
+        {
+          "middle_center_hz": 5744500000,
+          "phase_deg": 0.1780603990761443,
+          "fit_delay_ns": 6.046831529493683
+        },
+        {
+          "middle_center_hz": 5745999998,
+          "phase_deg": -0.036112531042195736,
+          "fit_delay_ns": -6.354522257367919
+        },
+        {
+          "middle_center_hz": 5747500000,
+          "phase_deg": 0.2823242136353761,
+          "fit_delay_ns": 4.64455873635528
+        },
+        {
+          "middle_center_hz": 5748999998,
+          "phase_deg": 0.18703601647468643,
+          "fit_delay_ns": 0.11681900549984492
+        },
+        {
+          "middle_center_hz": 5750500000,
+          "phase_deg": -0.173270302441406,
+          "fit_delay_ns": -4.660515345416558
+        },
+        {
+          "middle_center_hz": 5751999998,
+          "phase_deg": -0.1556716547319744,
+          "fit_delay_ns": 3.3402352374691207
+        },
+        {
+          "middle_center_hz": 5753499996,
+          "phase_deg": -0.10051915747326741,
+          "fit_delay_ns": -5.314693798425859
+        },
+        {
+          "middle_center_hz": 5755000000,
+          "phase_deg": 0.29351111269278735,
+          "fit_delay_ns": 5.320595822322052
+        },
+        {
+          "middle_center_hz": 5756499998,
+          "phase_deg": -0.14789563761125538,
+          "fit_delay_ns": -6.997249023265674
+        },
+        {
+          "middle_center_hz": 5758000000,
+          "phase_deg": -0.216011870143607,
+          "fit_delay_ns": 8.552168247200147
+        },
+        {
+          "middle_center_hz": 5759499998,
+          "phase_deg": -0.14205322039257212,
+          "fit_delay_ns": -1.8932552714802626
+        },
+        {
+          "middle_center_hz": 5761000002,
+          "phase_deg": 0.2091738126556382,
+          "fit_delay_ns": -3.599820640056088
+        },
+        {
+          "middle_center_hz": 5762500000,
+          "phase_deg": 0.3414922563100503,
+          "fit_delay_ns": 8.056028820191374
+        },
+        {
+          "middle_center_hz": 5763999998,
+          "phase_deg": 0.3331205972596729,
+          "fit_delay_ns": -0.3013044211959663
+        },
+        {
+          "middle_center_hz": 5765500000,
+          "phase_deg": 0.10545906580865516,
+          "fit_delay_ns": -7.886347652702305
+        },
+        {
+          "middle_center_hz": 5766999998,
+          "phase_deg": 0.32215869787985435,
+          "fit_delay_ns": -1.494097653568334
+        },
+        {
+          "middle_center_hz": 5768500000,
+          "phase_deg": 0.7194016586375623,
+          "fit_delay_ns": 2.830610037791434
+        },
+        {
+          "middle_center_hz": 5769999998,
+          "phase_deg": 0.3785766250455393,
+          "fit_delay_ns": -4.263979985189419
+        },
+        {
+          "middle_center_hz": 5771499996,
+          "phase_deg": -0.02385702879906566,
+          "fit_delay_ns": 7.371613394646845
+        },
+        {
+          "middle_center_hz": 5773000000,
+          "phase_deg": -0.16611474877906332,
+          "fit_delay_ns": 6.1451912377690165
+        },
+        {
+          "middle_center_hz": 5774499998,
+          "phase_deg": 0.021238397679174577,
+          "fit_delay_ns": -5.844657008072543
+        },
+        {
+          "middle_center_hz": 5776000000,
+          "phase_deg": 0.5432560433954539,
+          "fit_delay_ns": -0.2850116875901999
+        },
+        {
+          "middle_center_hz": 5777499998,
+          "phase_deg": 0.062265907776012666,
+          "fit_delay_ns": -1.2311938470747423
+        },
+        {
+          "middle_center_hz": 5779000002,
+          "phase_deg": -0.06864196668620359,
+          "fit_delay_ns": 0.3593683622166964
+        },
+        {
+          "middle_center_hz": 5780500000,
+          "phase_deg": 0.05113794059789265,
+          "fit_delay_ns": -8.527612686371024
+        },
+        {
+          "middle_center_hz": 5781999998,
+          "phase_deg": -0.19561960349091853,
+          "fit_delay_ns": -13.84936254019132
+        },
+        {
+          "middle_center_hz": 5783500000,
+          "phase_deg": -0.13624335639319565,
+          "fit_delay_ns": 0.06643509314805272
+        },
+        {
+          "middle_center_hz": 5784999998,
+          "phase_deg": 0.4018008638298028,
+          "fit_delay_ns": -9.398454810391927
+        },
+        {
+          "middle_center_hz": 5786500000,
+          "phase_deg": 0.25431991113047303,
+          "fit_delay_ns": 13.3548499582017
+        },
+        {
+          "middle_center_hz": 5787999998,
+          "phase_deg": -0.36745966677385566,
+          "fit_delay_ns": 2.8849379674619615
+        },
+        {
+          "middle_center_hz": 5789499996,
+          "phase_deg": -0.08828614851470137,
+          "fit_delay_ns": 5.677556785100912
+        },
+        {
+          "middle_center_hz": 5791000000,
+          "phase_deg": -0.3184504453758035,
+          "fit_delay_ns": -13.50357820130481
+        },
+        {
+          "middle_center_hz": 5792499998,
+          "phase_deg": -0.12947667042630343,
+          "fit_delay_ns": -9.64261544259583
+        },
+        {
+          "middle_center_hz": 5794000000,
+          "phase_deg": 0.7137178609673707,
+          "fit_delay_ns": -1.2605470596177208
+        },
+        {
+          "middle_center_hz": 5795499998,
+          "phase_deg": 0.2292519386702979,
+          "fit_delay_ns": -7.467034907809727
+        },
+        {
+          "middle_center_hz": 5797000002,
+          "phase_deg": 0.32273533017047396,
+          "fit_delay_ns": -9.398198322103292
+        },
+        {
+          "middle_center_hz": 5798500000,
+          "phase_deg": -0.1637743647141183,
+          "fit_delay_ns": -2.0832415140436913
+        },
+        {
+          "middle_center_hz": 5799999998,
+          "phase_deg": -0.3355582987078587,
+          "fit_delay_ns": -12.525670312974569
+        },
+        {
+          "middle_center_hz": 5801500000,
+          "phase_deg": 0.6268651925883565,
+          "fit_delay_ns": 4.905495979126753
+        },
+        {
+          "middle_center_hz": 5802999998,
+          "phase_deg": -0.02125899719114012,
+          "fit_delay_ns": -2.9722785150476057
+        },
+        {
+          "middle_center_hz": 5804500000,
+          "phase_deg": 0.8959481756907269,
+          "fit_delay_ns": 18.26540311108905
+        },
+        {
+          "middle_center_hz": 5805999998,
+          "phase_deg": -1.1817111557004667,
+          "fit_delay_ns": -19.130305003954987
+        },
+        {
+          "middle_center_hz": 5807499996,
+          "phase_deg": 1.112294764483257,
+          "fit_delay_ns": -12.440690987855849
+        },
+        {
+          "middle_center_hz": 5809000000,
+          "phase_deg": 0.2721641422886178,
+          "fit_delay_ns": 3.3505253780015125
+        },
+        {
+          "middle_center_hz": 5810499998,
+          "phase_deg": 0.08631768544922593,
+          "fit_delay_ns": -2.6820063942647354
+        },
+        {
+          "middle_center_hz": 5812000000,
+          "phase_deg": 0.24309602011731432,
+          "fit_delay_ns": -0.6186354893831623
+        },
+        {
+          "middle_center_hz": 5813499998,
+          "phase_deg": -0.6067759159381181,
+          "fit_delay_ns": -29.772853433816742
+        },
+        {
+          "middle_center_hz": 5815000000,
+          "phase_deg": 0.8558759517535436,
+          "fit_delay_ns": -4.088689407961265
+        },
+        {
+          "middle_center_hz": 5816499998,
+          "phase_deg": -0.42644340431432987,
+          "fit_delay_ns": 7.445003069402737
+        },
+        {
+          "middle_center_hz": 5817999996,
+          "phase_deg": -0.927795474810049,
+          "fit_delay_ns": -16.127019038089305
+        },
+        {
+          "middle_center_hz": 5819500000,
+          "phase_deg": -0.21273569808875145,
+          "fit_delay_ns": 10.399581521166429
+        },
+        {
+          "middle_center_hz": 5820999998,
+          "phase_deg": 1.0126267434066332,
+          "fit_delay_ns": 3.184369043338118
+        },
+        {
+          "middle_center_hz": 5822500000,
+          "phase_deg": 0.30374443848595173,
+          "fit_delay_ns": -8.281822047764694
+        },
+        {
+          "middle_center_hz": 5823999998,
+          "phase_deg": -0.14764944921109302,
+          "fit_delay_ns": 11.289623621642267
+        },
+        {
+          "middle_center_hz": 5825500002,
+          "phase_deg": 0.07057789327794178,
+          "fit_delay_ns": -7.970829634858237
+        },
+        {
+          "middle_center_hz": 5827000000,
+          "phase_deg": 0.640525657327781,
+          "fit_delay_ns": 25.5694190781193
+        },
+        {
+          "middle_center_hz": 5828499998,
+          "phase_deg": -0.01466627546116334,
+          "fit_delay_ns": 0.8194561832511954
+        },
+        {
+          "middle_center_hz": 5830000000,
+          "phase_deg": -0.7163028478527148,
+          "fit_delay_ns": 1.5171335699347348
+        },
+        {
+          "middle_center_hz": 5831499998,
+          "phase_deg": -1.176946421419616,
+          "fit_delay_ns": -6.43615273202411
+        },
+        {
+          "middle_center_hz": 5833000000,
+          "phase_deg": 0.42746732936794607,
+          "fit_delay_ns": 17.422202749791854
+        },
+        {
+          "middle_center_hz": 5834499998,
+          "phase_deg": -0.8487228893335154,
+          "fit_delay_ns": -15.948962880519439
+        },
+        {
+          "middle_center_hz": 5835999996,
+          "phase_deg": -0.9413866423504234,
+          "fit_delay_ns": 41.82246346238449
+        },
+        {
+          "middle_center_hz": 5837500000,
+          "phase_deg": 1.4448597367114369,
+          "fit_delay_ns": -6.6201183388866065
+        },
+        {
+          "middle_center_hz": 5838999998,
+          "phase_deg": -0.15388203876092085,
+          "fit_delay_ns": 14.988310149998085
+        },
+        {
+          "middle_center_hz": 5840500000,
+          "phase_deg": 1.189835139254326,
+          "fit_delay_ns": 4.443672586750243
+        },
+        {
+          "middle_center_hz": 5841999998,
+          "phase_deg": -0.2875285514052628,
+          "fit_delay_ns": 22.015165143281227
+        },
+        {
+          "middle_center_hz": 5843500002,
+          "phase_deg": -0.265165090839733,
+          "fit_delay_ns": 19.908995509580947
+        },
+        {
+          "middle_center_hz": 5845000000,
+          "phase_deg": 0.7536068558262498,
+          "fit_delay_ns": 5.485708471246726
+        },
+        {
+          "middle_center_hz": 5846499998,
+          "phase_deg": -1.0497306419116186,
+          "fit_delay_ns": 10.841531507793077
+        },
+        {
+          "middle_center_hz": 5848000000,
+          "phase_deg": -1.4043816489791265,
+          "fit_delay_ns": 14.73620109746047
+        },
+        {
+          "middle_center_hz": 5849499998,
+          "phase_deg": -0.5627987281528284,
+          "fit_delay_ns": 13.898327556069052
+        },
+        {
+          "middle_center_hz": 5851000000,
+          "phase_deg": 1.19021942295061,
+          "fit_delay_ns": 2.8046986402929033
+        },
+        {
+          "middle_center_hz": 5852499998,
+          "phase_deg": 0.040430729971286127,
+          "fit_delay_ns": 15.179553406198865
+        },
+        {
+          "middle_center_hz": 5853999996,
+          "phase_deg": 1.886325532367522,
+          "fit_delay_ns": 1.2132388479740461
+        },
+        {
+          "middle_center_hz": 5855500000,
+          "phase_deg": 1.8598610004805018,
+          "fit_delay_ns": -10.92715537079404
+        },
+        {
+          "middle_center_hz": 5856999998,
+          "phase_deg": 0.1821852156332643,
+          "fit_delay_ns": 26.170810291540956
+        },
+        {
+          "middle_center_hz": 5858500000,
+          "phase_deg": 2.972242473295865,
+          "fit_delay_ns": 8.338677095367862
+        },
+        {
+          "middle_center_hz": 5859999998,
+          "phase_deg": 0.5843873647446066,
+          "fit_delay_ns": -16.657966728181655
+        },
+        {
+          "middle_center_hz": 5861500002,
+          "phase_deg": -0.06004310437509344,
+          "fit_delay_ns": -26.54831710881269
+        },
+        {
+          "middle_center_hz": 5863000000,
+          "phase_deg": 0.8125764695551938,
+          "fit_delay_ns": 3.889725054052779
+        },
+        {
+          "middle_center_hz": 5864499998,
+          "phase_deg": 0.5843784424709281,
+          "fit_delay_ns": -2.5755104181958326
+        },
+        {
+          "middle_center_hz": 5866000000,
+          "phase_deg": -0.4934041620243961,
+          "fit_delay_ns": -15.641992308742848
+        },
+        {
+          "middle_center_hz": 5867499998,
+          "phase_deg": 0.6613506102506648,
+          "fit_delay_ns": -3.8901901391875566
+        },
+        {
+          "middle_center_hz": 5869000000,
+          "phase_deg": 0.5971637763599039,
+          "fit_delay_ns": -20.732685125309793
+        },
+        {
+          "middle_center_hz": 5870499998,
+          "phase_deg": 1.5948865262652872,
+          "fit_delay_ns": -19.51882274649423
+        }
+      ],
+      "median_absolute_phase_closure_deg": 0.29351111269278735,
+      "p95_absolute_fit_delay_closure_ns": 23.081441323732637,
+      "median_edge_complex_residual": 0.00529824931117573,
+      "gauge_sensitivity": [
+        {
+          "quadratic_delta_rad_per_mhz2": -0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": 52.490234375,
+              "relative_power_db": -42.68876817218939
+            },
+            {
+              "relative_delay_ns": -64.0869140625,
+              "relative_power_db": -48.26750923145519
+            },
+            {
+              "relative_delay_ns": 65.3076171875,
+              "relative_power_db": -49.359910497534685
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": -0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": -16.174316406249986,
+              "relative_power_db": -28.955144315559657
+            },
+            {
+              "relative_delay_ns": -30.82275390625,
+              "relative_power_db": -44.48962617153565
+            },
+            {
+              "relative_delay_ns": -23.8037109375,
+              "relative_power_db": -46.08780043862801
+            },
+            {
+              "relative_delay_ns": 40.28320312500001,
+              "relative_power_db": -47.621394336167455
+            },
+            {
+              "relative_delay_ns": -64.08691406249999,
+              "relative_power_db": -49.25481544902978
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.0002,
+          "peaks": [
+            {
+              "relative_delay_ns": 22.88818359375,
+              "relative_power_db": -40.31349318568249
+            },
+            {
+              "relative_delay_ns": 29.60205078125,
+              "relative_power_db": -45.496967799494755
+            },
+            {
+              "relative_delay_ns": 38.14697265625,
+              "relative_power_db": -48.948907506992974
+            },
+            {
+              "relative_delay_ns": -65.61279296875003,
+              "relative_power_db": -49.78020858883359
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        },
+        {
+          "quadratic_delta_rad_per_mhz2": 0.001,
+          "peaks": [
+            {
+              "relative_delay_ns": -58.898925781250014,
+              "relative_power_db": -44.24312186693893
+            },
+            {
+              "relative_delay_ns": 45.166015625000014,
+              "relative_power_db": -47.166246953533026
+            }
+          ],
+          "exact_gauge_if_independent_window_timing_allowed": true,
+          "qualification": "This transformation is not an exact ambiguity under the fixed-timing assumption; it shows sensitivity if that assumption is relaxed."
+        }
+      ]
+    }
+  ],
+  "repeat_comparisons": [
+    {
+      "position_id": "position-01",
+      "complex_relative_rmse": 0.018887701143016147,
+      "removed_relative_delay_ns": -0.06813115023285637,
+      "complex_scale_real_imag": [
+        0.9998111547428062,
+        0.004572701322952143
+      ]
+    },
+    {
+      "position_id": "position-02",
+      "complex_relative_rmse": 0.018900314184584266,
+      "removed_relative_delay_ns": -0.07190295039749184,
+      "complex_scale_real_imag": [
+        0.9998193320898767,
+        -0.002020223521108843
+      ]
+    },
+    {
+      "position_id": "position-03",
+      "complex_relative_rmse": 0.014626270445722338,
+      "removed_relative_delay_ns": -0.056995447812253686,
+      "complex_scale_real_imag": [
+        0.9998915605914083,
+        0.0017144302052111223
+      ]
+    }
+  ],
+  "room_geometry_validated": false,
+  "limitations": [
+    "Empirical baseband curvature can absorb physical channel curvature.",
+    "An uncalibrated common quadratic baseband phase changes the reconstructed RF phase quadratically.",
+    "Independent retuning and frame timing leave overall phase, gain and delay ambiguous.",
+    "Delay peaks can arise from finite-band windows or model errors; they are not wall ranges."
+  ]
+}
